@@ -1,0 +1,30 @@
+{
+  "name": "EO - Risto Pub Balestrate",
+  "short_name": "EO RistoPub",
+  "description": "Un'esperienza culinaria unica dove il mare incontra l'innovazione",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#3893ce",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "icons/iconB.png",
+      "sizes": "72x72",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icons/iconB.png",
+      "sizes": "96x96",
+      "type": "image/svg",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icons/iconB.png",
+      "sizes": "128x128",
+      "type": "image/svg",
+      "purpose": "any maskable"
+    }
+  ]
+}

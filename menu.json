@@ -1,0 +1,158 @@
+{
+  "antipasti": [
+    {
+      "nome": "Insalata di Polpo",
+      "descrizione": "Polpo, sedano, carote, olio, limone, sale, pepe (contiene molluschi, sedano)",
+      "prezzo": 10,
+      "immagine": ""
+    },
+    {
+      "nome": "Caponata di Spada",
+      "descrizione": "Melanzane, pesce spada, cipolla, capperi, pomodoro, olive, olio, aceto, sale, pepe, zucchero (contiene pesce, solfiti)",
+      "prezzo": 0,
+      "immagine": ""
+    },
+    {
+      "nome": "Crudo di Gambero Rosso di Mazara",
+      "descrizione": "Gambero rosso (contiene crostacei)",
+      "prezzo": 8,
+      "immagine": ""
+    },
+    {
+      "nome": "Crudo di Scampi",
+      "descrizione": "Scampi (contiene crostacei)",
+      "prezzo": 8,
+      "immagine": ""
+    },
+    {
+      "nome": "Tartare di Tonno",
+      "descrizione": "Tonno (contiene pesce)",
+      "prezzo": 14,
+      "immagine": ""
+    },
+    {
+      "nome": "Menù Degustazione del Giorno (per 2 persone)",
+      "descrizione": "Contiene vari allergeni a seconda della disponibilità: grano, pesce, crostacei, molluschi, senape, soia, solfiti",
+      "prezzo": 20,
+      "immagine": ""
+    }
+  ],
+  "primi": [
+    {
+      "nome": "Spaghetto alle Vongole",
+      "descrizione": "Pasta, vongole, olio, aglio, prezzemolo, pepe (contiene grano, molluschi)",
+      "prezzo": 0,
+      "immagine": ""
+    },
+    {
+      "nome": "Busiate allo Scoglio",
+      "descrizione": "Pasta, vongole, cozze, gamberi, calamari, scampi, olio, pomodoro ciliegino, cipolla, aglio, peperoncino, sale, prezzemolo (contiene grano, molluschi, crostacei)",
+      "prezzo": 0,
+      "immagine": ""
+    },
+    {
+      "nome": "Rettangoli di Cernia con Sugo ai Crostacei",
+      "descrizione": "Pasta, cernia, crostacei, salmone, pomodoro, panna, peperoncino, olio, sale, cipolla (contiene grano, pesce, crostacei, latte)",
+      "prezzo": 0,
+      "immagine": ""
+    },
+    {
+      "nome": "Linguine Gambero Rosso e Pistacchio",
+      "descrizione": "Pasta, gambero rosso, pistacchio, pomodoro ciliegino, aglio, vino, olio, sale (contiene grano, crostacei, pistacchio, solfiti)",
+      "prezzo": 0,
+      "immagine": ""
+    },
+    {
+      "nome": "Spaghetto Tintinnì",
+      "descrizione": "Pasta, cozze, pomodoro, aglio, cipolla, olio, sale, pepe, prezzemolo (contiene grano, molluschi)",
+      "prezzo": 0,
+      "immagine": ""
+    }
+  ],
+  "secondi": [
+    {
+      "nome": "Coppo di Calamaro Fritto",
+      "descrizione": "Calamaro, farina di grano duro, sale (contiene grano, molluschi)",
+      "prezzo": 0,
+      "immagine": ""
+    },
+    {
+      "nome": "Coppo di Pesce Fritto",
+      "descrizione": "Pesce, farina di grano duro, sale (contiene grano, pesce)",
+      "prezzo": 0,
+      "immagine": ""
+    },
+    {
+      "nome": "Calamaro alla Griglia",
+      "descrizione": "Calamaro, olio, sale, limone (contiene molluschi)",
+      "prezzo": 0,
+      "immagine": ""
+    },
+    {
+      "nome": "Tataki di Tonno",
+      "descrizione": "Tonno, pistacchio, basilico, olio, salsa di soia, sale, pepe (contiene pesce, pistacchio, soia, grano)",
+      "prezzo": 0,
+      "immagine": ""
+    },
+    {
+      "nome": "Zuppetta di Cozze",
+      "descrizione": "Cozze, pomodoro, aglio, olio, vino, sale, pepe, prezzemolo (contiene molluschi, solfiti)",
+      "prezzo": 0,
+      "immagine": ""
+    },
+    {
+      "nome": "Pescato del Giorno",
+      "descrizione": "Al forno, arrosto o al sale (contiene pesce, molluschi, crostacei)",
+      "prezzo": 0,
+      "immagine": ""
+    }
+  ],
+  "dolci": [
+    {
+      "nome": "Torta Mirò",
+      "descrizione": "(contiene latte, uovo, soia, grano)",
+      "prezzo": 0,
+      "immagine": ""
+    }
+  ],
+  "bevande": [
+    { "nome": "Acqua Naturale", "descrizione": "", "prezzo": 2, "immagine": "" },
+    { "nome": "Acqua Frizzante", "descrizione": "", "prezzo": 2, "immagine": "" },
+    { "nome": "Acqua Naturale SOC", "descrizione": "", "prezzo": 1, "immagine": "" },
+    { "nome": "Acqua Frizzante SOC", "descrizione": "", "prezzo": 1, "immagine": "" },
+    { "nome": "Coca Cola", "descrizione": "", "prezzo": 2.5, "immagine": "" },
+    { "nome": "Coca Cola Zero", "descrizione": "", "prezzo": 2.5, "immagine": "" },
+    { "nome": "Fanta", "descrizione": "", "prezzo": 2, "immagine": "" },
+    { "nome": "Sprite", "descrizione": "", "prezzo": 2, "immagine": "" },
+    { "nome": "Schweppes Limone", "descrizione": "", "prezzo": 2, "immagine": "" },
+    { "nome": "Fever Tree Tonica Indian Premium", "descrizione": "", "prezzo": 3, "immagine": "" }
+  ],
+  "birre": [
+    { "nome": "Messina Cristalli di Sale 33cl", "descrizione": "", "prezzo": 3, "immagine": "" },
+    { "nome": "Peroni Nastro Azzurro 33cl", "descrizione": "", "prezzo": 2, "immagine": "" }
+  ],
+  "cocktail": [
+    { "nome": "Bombay Tonic", "descrizione": "", "prezzo": 7, "immagine": "" },
+    { "nome": "Tanqueray Tonic", "descrizione": "", "prezzo": 7, "immagine": "" },
+    { "nome": "Aperol Spritz", "descrizione": "", "prezzo": 7, "immagine": "" },
+    { "nome": "Negroni", "descrizione": "", "prezzo": 7, "immagine": "" }
+  ],
+  "vini bianchi": [
+    { "nome": "Bahar Zibibbo DOC – Tenute Orestiadi", "descrizione": "", "prezzo": 18, "immagine": "" },
+    { "nome": "Grillo – Molino a Vento", "descrizione": "", "prezzo": 16, "immagine": "" },
+    { "nome": "Chardonnay – Molino a Vento", "descrizione": "", "prezzo": 16, "immagine": "" },
+    { "nome": "Benedè DOC – Il Bianco di Camporeale", "descrizione": "", "prezzo": 16, "immagine": "" },
+    { "nome": "Anthilia Catarratto – Donnafugata", "descrizione": "", "prezzo": 18, "immagine": "" },
+    { "nome": "Leone Blend – Tenute dei Gilei", "descrizione": "", "prezzo": 25, "immagine": "" },
+    { "nome": "Zahra Grillo – Vitea", "descrizione": "", "prezzo": 16, "immagine": "" },
+    { "nome": "Kikè Traminer – Ina", "descrizione": "", "prezzo": 18, "immagine": "" }
+  ],
+  "bollicine": [
+    { "nome": "Naonis Cuvée Brut – San Jeni", "descrizione": "", "prezzo": 15, "immagine": "" },
+    { "nome": "Charme Bianco", "descrizione": "", "prezzo": 22, "immagine": "" },
+    { "nome": "Charme Rosé", "descrizione": "", "prezzo": 22, "immagine": "" },
+    { "nome": "Metodo Classico Brut – Murgo", "descrizione": "", "prezzo": 0, "immagine": "" },
+    { "nome": "Petramater Metodo Classico Brut – Tenute Orestiadi", "descrizione": "", "prezzo": 35, "immagine": "" }
+  ],
+  "digestivi": []
+}

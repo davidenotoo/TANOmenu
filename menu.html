@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menu Ristorante</title>
+  <link rel="canonical" href="https://eoristopub.netlify.app/menu.html">
+  <meta name="theme-color" content="#1E5F74" />
+  <link rel="icon" href="icons/icon.png" type="image/png" />
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menù EO RistoPub | Ristorante di pesce a Balestrate</title>
+    <meta name="description"
+      content="Scopri il menù completo di EO RistoPub a Balestrate: antipasti di mare e terra, primi di pesce, secondi raffinati e dolci artigianali. Esperienza gourmet sul mare in Sicilia.">
+    <meta name="keywords"
+      content="menu EO Ristopub, ristorante pesce Balestrate, ristorante sicilia, EO ristorante, EO menu, cucina siciliana, primi di mare, secondi di pesce, dolci siciliani, EO winebar, EO balestrate">
+    <meta name="author" content="EO RistoPub">
+    <meta name="robots" content="index, follow">
+
+    <!-- Favicon -->
+    <link rel="icon" href="icons/icon.png" type="image/png" />
+    <link rel="apple-touch-icon" href="icons/icon.png" />
+
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="manifest.json" />
+    <meta name="theme-color" content="#1E5F74" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="restaurant.menu" />
+    <meta property="og:title" content="Menù EO RistoPub | Ristorante di pesce a Balestrate" />
+    <meta property="og:description"
+      content="Scopri il nostro menù completo con antipasti, primi, secondi, dolci e bevande. Cucina siciliana contemporanea sul mare." />
+    <meta property="og:image" content="https://eoristopub.netlify.app/icons/icon.png" />
+    <meta property="og:url" content="https://eoristopub.netlify.app/menu" />
+    <meta property="og:site_name" content="EO RistoPub" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Menù EO RistoPub | Ristorante di pesce a Balestrate" />
+    <meta name="twitter:description"
+      content="Menù completo: primi di pesce, secondi gourmet, dolci artigianali. Vivi l’esperienza EO." />
+    <meta name="twitter:image" content="https://eoristopub.netlify.app/icons/icon.png" />
+    <meta name="twitter:site" content="@eo_ristopub" />
+
+    <!-- WhatsApp/Facebook Share -->
+    <meta property="og:locale" content="it_IT">
+    <meta name="image" content="https://eoristopub.netlify.app/icons/icon.png" />
+
+    <!-- Structured Data / JSON-LD -->
+    <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Menu",
+    "name": "Menù EO RistoPub",
+    "url": "https://eoristopub.netlify.app/menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "Antipasti di Mare",
+        "hasMenuItem": {
+          "@type": "MenuItem",
+          "name": "Polpo Grigliato",
+          "description": "Polpo alla griglia servito su crema di ceci e olio al rosmarino.",
+          "offers": {
+            "@type": "Offer",
+            "price": "14.00",
+            "priceCurrency": "EUR"
+          }
+        }
+      },
+      {
+        "@type": "MenuSection",
+        "name": "Primi di Pesce",
+        "hasMenuItem": {
+          "@type": "MenuItem",
+          "name": "Linguine gamberi e pistacchio",
+          "description": "Linguine con gamberi freschi e pesto di pistacchio di Bronte.",
+          "offers": {
+            "@type": "Offer",
+            "price": "16.00",
+            "priceCurrency": "EUR"
+          }
+        }
+      }
+    ]
+  }
+  </script>
+  </head>
+
+  <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { primary: "#1E5F74", secondary: "#3CAEA3" },
+          borderRadius: {
+            none: "0px",
+            sm: "4px",
+            DEFAULT: "8px",
+            md: "12px",
+            lg: "16px",
+            xl: "20px",
+            "2xl": "24px",
+            "3xl": "32px",
+            full: "9999px",
+            button: "8px",
+          },
+        },
+      },
+    };
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" />
+  <style>
+    :where([class^="ri-"])::before {
+      content: "\f3c2";
+    }
+
+    body {
+      font-family: 'Lora', serif;
+      padding-top: 30px;
+      /* Spazio per la navbar fissa */
+      padding-bottom: 65px;
+
+    }
+
+    .category-scroll::-webkit-scrollbar {
+      background-color: #3893ce;
+      height: 4px;
+    }
+
+    .category-scroll::-webkit-scrollbar-track {
+      background: #f1f1f1;
+      border-radius: 10px;
+    }
+
+    .category-scroll::-webkit-scrollbar-thumb {
+      background: #3893ce;
+      border-radius: 10px;
+    }
+
+    .menu-item {
+      background-color: rgba(255, 255, 255, 0.123);
+      border: 1px solid #ec8274;
+      border-radius: 24px;
+      padding: 1rem 1rem;
+      box-shadow:
+        0 2px 4px rgba(0, 0, 0, 0.04),
+        0 12px 28px rgba(0, 0, 0, 0.08);
+      font-family: 'Lora', serif;
+      position: relative;
+      isolation: isolate;
+      overflow: hidden;
+    }
+
+    .menu-item::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      border-radius: inherit;
+      background: radial-gradient(circle at 30% 20%, rgba(30, 95, 116, 0.05), transparent 70%);
+      z-index: 0;
+    }
+
+    .menu-item>div {
+      position: relative;
+      z-index: 10;
+    }
+
+    /* Titolo e prezzo */
+    .menu-item h4 {
+      font-size: 1.375rem;
+      /* text-xl+ */
+      font-weight: 700;
+      color: #3893ce;
+      /* gray-800 */
+      letter-spacing: -0.25px;
+      margin-bottom: 0.25rem;
+      line-height: 1.3;
+    }
+
+    .menu-item span {
+      font-size: 1.125rem;
+      font-weight: 600;
+      color: #ec8274;
+      margin-top: 0.125rem;
+    }
+
+    /* Descrizione */
+    .menu-item p {
+      font-size: 1.125rem;
+      color: #475569;
+      margin-top: 1.25rem;
+      line-height: 1.8;
+      border-top: 1px dashed #cbd5e1;
+      padding-top: 1.25rem;
+    }
+
+    .menu-item .load-image-btn {
+      background-color: rgba(255, 255, 255, 0.7);
+      color: #3893ce;
+      width: 40px;
+      height: 40px;
+      border-radius: 12px;
+      border: 1px solid rgba(30, 95, 116, 0.2);
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      margin-left: auto;
+      flex-shrink: 0;
+      transition: all 0.2s ease;
+      backdrop-filter: blur(4px);
+    }
+
+
+    .menu-item .load-image-btn:active {
+      transform: scale(0.95);
+    }
+
+
+
+
+    /* Modal */
+    .modal {
+      background-color: rgba(255, 255, 255, 0.123);
+      transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+
+    .modal.hidden {
+      opacity: 0;
+      transform: scale(0.95);
+      pointer-events: none;
+    }
+
+    /* NAVBAR COLORI */
+    .category-icon {
+      background-color: #3893ce !important;
+    }
+
+    .category-icon i {
+      color: white !important;
+    }
+
+    .category-icon.active {
+      background-color: #ec8274 !important;
+    }
+
+    .category-icon.active i {
+      color: white !important;
+    }
+
+
+    /* Scroll behavior */
+    .category-container {
+      scroll-behavior: smooth;
+    }
+
+    /* Navbar con sfondo semi-trasparente + blur + ombra */
+    header {
+      background-color: rgba(255, 255, 255, 0);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      position: fixed;
+      width: 100%;
+      z-index: 50;
+    }
+
+    .load-image-btn {
+      background-color: #3893ce;
+      /* blu primario */
+      color: white;
+      /* icona bianca */
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      padding: 0;
+    }
+
+    .load-image-btn:hover,
+    .load-image-btn:focus {
+      background-color: #3893ce;
+      /* blu più scuro al hover/focus */
+      outline: none;
+    }
+
+    /* Icona più piccola dentro */
+    .load-image-btn i {
+      font-size: 16px;
+      /* o ri-sm */
+      line-height: 1;
+    }
+  </style>
+
+</head>
+<div class="fixed inset-0 -z-10">
+  <img src="img/sfTan.jpg" alt="Sfondo" class="w-full h-full object-cover" />
+  <div class="absolute inset-0 bg-black/50 backdrop-blur-sm"></div>
+</div>
+
+
+
+<body class="bg-white  text-gray-800 max-w-[375px] w-full min-h-[762px] mx-auto relative">
+  <!-- Nav Bar -->
+  <header
+    class="fixed top-0 left-0 right-0 z-50 px-4 py-3 flex justify-between items-center max-w-[375px] w-full mx-auto">
+    <div class="w-10 h-10"></div>
+    <img src="icons/icon.png" alt="Logo" class="w-14 h-14 object-cover" />
+    <button id="infoButton" class="w-8 h-8 flex items-center justify-center text-white cursor-pointer">
+      <i class="ri-information-line ri-lg"></i>
+    </button>
+
+  </header>
+
+
+  <!-- Main Content -->
+  <main class="pt-20 pb-24 px-4">
+    <!-- <div class="mb-6 text-center">
+      <h2 class="font-['Pacifico'] ">
+        Menu
+      </h2>
+      <p class="text-sm text-gray-600 italic">
+        Sapori freschi del mare alla tua tavola
+      </p>
+    </div> -->
+
+    <!-- Menu Items Container -->
+    <div id="menuContainer" class="space-y-6">
+      <!-- Menu items will be loaded here -->
+    </div>
+  </main>
+
+  <!-- Category Navigation -->
+  <!-- Category Navigation -->
+  <div
+    class="fixed bottom-4 left-1/2 -translate-x-1/2 z-40 w-[calc(100%-1.5rem)] max-w-sm rounded-2xl backdrop-blur-md bg-white/60 border border-white/30 shadow-[0_8px_30px_rgba(0,0,0,0.1)]">
+    <div id="categoryContainer" class="category-scroll overflow-x-auto py-3 px-2 flex space-x-4 category-container">
+      <div class="category-item flex flex-col items-center min-w-[70px] cursor-pointer" data-category="antipasti">
+        <div
+          class="category-icon w-14 h-14 rounded-lg bg-gray-100 flex items-center justify-center mb-1 border-2 border-transparent hover:border-primary active">
+          <i class="ri-restaurant-line ri-lg text-gray-700"></i>
+        </div>
+        <span class="text-xs whitespace-nowrap overflow-hidden text-overflow-ellipsis">Antipasti</span>
+      </div>
+      <div class="category-item flex flex-col items-center min-w-[70px] cursor-pointer" data-category="primi">
+        <div
+          class="category-icon w-14 h-14 rounded-lg bg-gray-100 flex items-center justify-center mb-1 border-2 border-transparent hover:border-primary">
+          <i class="ri-bowl-line ri-lg text-gray-700"></i>
+        </div>
+        <span class="text-xs whitespace-nowrap overflow-hidden text-overflow-ellipsis">Primi</span>
+      </div>
+      <div class="category-item flex flex-col items-center min-w-[70px] cursor-pointer" data-category="secondi">
+        <div
+          class="category-icon w-14 h-14 rounded-lg bg-gray-100 flex items-center justify-center mb-1 border-2 border-transparent hover:border-primary">
+          <i class="ri-knife-line ri-lg text-gray-700"></i>
+        </div>
+        <span class="text-xs whitespace-nowrap overflow-hidden text-overflow-ellipsis">Secondi</span>
+      </div>
+      <div class="category-item flex flex-col items-center min-w-[70px] cursor-pointer" data-category="dolci">
+        <div
+          class="category-icon w-14 h-14 rounded-lg bg-gray-100 flex items-center justify-center mb-1 border-2 border-transparent hover:border-primary">
+          <i class="ri-cake-3-line ri-lg text-gray-700"></i>
+        </div>
+        <span class="text-xs whitespace-nowrap overflow-hidden text-overflow-ellipsis">Dolci</span>
+      </div>
+      <div class="category-item flex flex-col items-center min-w-[70px] cursor-pointer" data-category="bevande">
+        <div
+          class="category-icon w-14 h-14 rounded-lg bg-gray-100 flex items-center justify-center mb-1 border-2 border-transparent hover:border-primary">
+          <i class="ri-cup-line ri-lg text-gray-700"></i>
+        </div>
+        <span class="text-xs whitespace-nowrap overflow-hidden text-overflow-ellipsis">Bevande</span>
+      </div>
+      <div class="category-item flex flex-col items-center min-w-[70px] cursor-pointer" data-category="birre">
+        <div
+          class="category-icon w-14 h-14 rounded-lg bg-gray-100 flex items-center justify-center mb-1 border-2 border-transparent hover:border-primary">
+          <i class="ri-beer-line ri-lg text-gray-700"></i>
+        </div>
+        <span class="text-xs whitespace-nowrap overflow-hidden text-overflow-ellipsis">Birre</span>
+      </div>
+      <div class="category-item flex flex-col items-center min-w-[70px] cursor-pointer" data-category="cocktail">
+        <div
+          class="category-icon w-14 h-14 rounded-lg bg-gray-100 flex items-center justify-center mb-1 border-2 border-transparent hover:border-primary">
+          <i class="ri-goblet-line ri-lg text-gray-700"></i>
+        </div>
+        <span class="text-xs whitespace-nowrap overflow-hidden text-overflow-ellipsis">Cocktail</span>
+      </div>
+      <div class="category-item flex flex-col items-center min-w-[70px] cursor-pointer" data-category="vini bianchi">
+        <div
+          class="category-icon w-14 h-14 rounded-lg bg-gray-100 flex items-center justify-center mb-1 border-2 border-transparent hover:border-primary">
+          <i class="ri-wine-line ri-lg text-gray-700"></i>
+        </div>
+        <span class="text-xs whitespace-nowrap overflow-hidden text-overflow-ellipsis">Vini Bianchi</span>
+      </div>
+      <div class="category-item flex flex-col items-center min-w-[70px] cursor-pointer" data-category="bollicine">
+        <div
+          class="category-icon w-14 h-14 rounded-lg bg-gray-100 flex items-center justify-center mb-1 border-2 border-transparent hover:border-primary">
+          <i class="ri-sparkling-line ri-lg text-gray-700"></i>
+        </div>
+        <span class="text-xs whitespace-nowrap overflow-hidden text-overflow-ellipsis">Bollicine</span>
+      </div>
+      <div class="category-item flex flex-col items-center min-w-[70px] cursor-pointer" data-category="digestivi">
+        <div
+          class="category-icon w-14 h-14 rounded-lg bg-gray-100 flex items-center justify-center mb-1 border-2 border-transparent hover:border-primary">
+          <i class="ri-shot-line ri-lg text-gray-700"></i>
+        </div>
+        <span class="text-xs whitespace-nowrap overflow-hidden text-overflow-ellipsis">Digestivi</span>
+      </div>
+    </div>
+
+  </div>
+  </div>
+
+  <!-- Info Modal -->
+  <div id="infoModal" class="modal hidden fixed inset-0 z-50 flex items-center justify-center">
+    <div class="absolute inset-0 bg-black bg-opacity-50" id="modalOverlay"></div>
+    <div class="bg-white rounded-lg w-[320px] max-h-[80vh] overflow-y-auto relative z-10 shadow-xl">
+      <div class="p-5">
+        <div class="flex justify-between items-center mb-4">
+          <h3 class="text-xl font-semibold text-gray-800">
+            Informazioni Utili
+          </h3>
+          <button id="closeModal"
+            class="w-8 h-8 flex items-center justify-center text-gray-500 hover:text-gray-700 cursor-pointer !rounded-button">
+            <i class="ri-close-line ri-lg"></i>
+          </button>
+        </div>
+        <div class="space-y-4">
+          <div class="border-b pb-3">
+            <h4 class="font-medium text-gray-800 mb-2">Coperto</h4>
+            <p class="text-gray-600">€3,00 a persona</p>
+          </div>
+          <div class="border-b pb-3">
+            <h4 class="font-medium text-gray-800 mb-2">Spese Aggiuntive</h4>
+            <ul class="text-gray-600 space-y-1">
+              <li>• Servizio al tavolo incluso</li>
+              <li>• Pane e grissini: €2,00 per cestino</li>
+              <li>• Acqua: €2,50 (0,75L)</li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-medium text-gray-800 mb-2">Prodotti Congelati</h4>
+            <p class="text-gray-600">
+              I piatti contrassegnati con (*) potrebbero contenere ingredienti
+              surgelati o congelati, in base alla disponibilità stagionale.
+            </p>
+          </div>
+          <div class="border-t pt-3 mt-4">
+            <h4 class="font-medium text-gray-800 mb-2">Allergeni</h4>
+            <p class="text-gray-600 text-sm">
+              Per informazioni sugli allergeni presenti nei nostri piatti, si
+              prega di chiedere al personale di sala.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script id="menuData">
+    // Variabile globale per i dati del menu
+    let menuData = {};
+
+    // Funzione per caricare i dati del menu dal file JSON
+    async function loadMenuData() {
+      try {
+        const response = await fetch('menu.json');
+        if (!response.ok) {
+          throw new Error(`Errore nel caricamento del menu: ${response.status}`);
+        }
+        menuData = await response.json();
+        // Inizializza il menu con i dati caricati
+        initializeMenu();
+      } catch (error) {
+        console.error('Errore nel caricamento del menu:', error);
+        document.getElementById('menuContainer').innerHTML = `
+            <div class="p-4 bg-red-100 text-red-700 rounded-lg">
+              <p>Si è verificato un errore nel caricamento del menu. Riprova più tardi.</p>
+            </div>
+          `;
+      }
+    }
+
+    // Funzione per inizializzare il menu dopo il caricamento dei dati
+    function initializeMenu() {
+      const categoryItems = document.querySelectorAll(".category-item");
+
+      // Renderizza la prima categoria
+      renderMenuItems("antipasti");
+      setActiveCategory("antipasti");
+      window.scrollTo({ top: 0, behavior: "smooth" });
+
+      // Aggiungi gli event listener alle categorie
+      categoryItems.forEach((item) => {
+        item.addEventListener("click", function () {
+          const category = this.getAttribute("data-category");
+          renderMenuItems(category);
+          setActiveCategory(category);
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+
+      });
+    }
+
+    // Carica i dati del menu quando il documento è pronto
+    document.addEventListener("DOMContentLoaded", loadMenuData);
+  </script>
+
+  <script id="menuRendering">
+    // Funzione per renderizzare gli elementi del menu per una categoria specifica
+    function renderMenuItems(category) {
+      const menuContainer = document.getElementById("menuContainer");
+      menuContainer.innerHTML = "";
+
+      const categoryTitle = document.createElement("h3");
+      categoryTitle.className = "font-['Pacifico'] text-2xl text-white text-center mb-4";
+      categoryTitle.textContent = category.charAt(0).toUpperCase() + category.slice(1);
+      menuContainer.appendChild(categoryTitle);
+
+      const menuGrid = document.createElement("div");
+      menuGrid.className = "grid grid-cols-1 gap-6";
+
+      menuData[category].forEach((item, index) => {
+        const menuItem = document.createElement("div");
+
+        menuItem.className = "menu-item bg-white/70 backdrop-blur-md rounded-lg shadow-md overflow-hidden transition-all duration-300";
+
+        const itemId = `item-${category.replace(/\s+/g, '-')}-${index}`;
+
+        let menuItemHTML = `
+      <div class="p-4">
+        <div class="flex justify-between items-center mb-2">
+          <div>
+            <h4 class="text-lg font-medium text-gray-800">${item.nome}</h4>
+            <span class="text-primary font-medium">€${item.prezzo.toFixed(2)}</span>
+          </div>`;
+
+        if (item.immagine && item.immagine.trim() !== "") {
+          menuItemHTML += `
+          <div class="relative">
+  <button
+    class="load-image-btn"
+    data-image="${item.immagine}"
+    data-alt="${item.nome}"
+    data-item-id="${itemId}"
+    aria-label="Mostra immagine"
+    title="Mostra immagine"
+  >
+    <i class="ri-image-line ri-sm"></i>
+  </button>
+<span class="notification-dot absolute top-0 right-0 translate-x-1/2 -translate-y-1/2 w-2 h-2 rounded-full bg-red-500 border border-white"
+      data-notification-id="dot-${itemId}"></span>
+</div>
+
+`;
+        }
+
+        menuItemHTML += `
+        </div>
+        <p class="text-gray-600 text-sm mb-3">${item.descrizione}</p>
+      </div>
+      <div id="img-container-${itemId}" class="image-container hidden overflow-hidden transition-all duration-500" style="height: 0;"></div>
+    `;
+
+        menuItem.innerHTML = menuItemHTML;
+        menuGrid.appendChild(menuItem);
+      });
+
+      menuContainer.appendChild(menuGrid);
+
+      // Event listener bottone carica immagine — bottone sparisce dopo caricamento
+      document.querySelectorAll('.load-image-btn').forEach(button => {
+        if (button.hasListenerAttached) return;
+        button.hasListenerAttached = true;
+
+        button.addEventListener('click', async function () {
+          const imageSrc = this.getAttribute('data-image');
+          const imageAlt = this.getAttribute('data-alt');
+          const itemId = this.getAttribute('data-item-id');
+          const container = document.getElementById(`img-container-${itemId}`);
+
+          //  Rimuove il pallino di notifica
+          const dot = document.querySelector(`[data-notification-id="dot-${itemId}"]`);
+          if (dot) dot.remove();
+
+
+          this.disabled = true;
+          this.innerHTML = '<i class="ri-loader-4-line animate-spin"></i><span class="ml-2">Caricamento...</span>';
+          container.classList.remove('hidden');
+          container.style.height = '200px';
+
+          try {
+            await loadImageWithProgressAsync(imageSrc, imageAlt, container);
+            // Rimuovo il bottone dopo caricamento
+            this.remove();
+          } catch {
+            container.innerHTML = `
+          <div class="h-32 flex items-center justify-center bg-red-50 text-red-600">
+            <div class="text-center">
+              <i class="ri-error-warning-line ri-2x mb-2"></i>
+              <p class="text-sm">Errore nel caricamento dell'immagine</p>
+            </div>
+          </div>`;
+            this.disabled = false;
+            this.innerHTML = '<i class="ri-refresh-line"></i><span class="ml-2">Riprova</span>';
+          }
+        });
+      });
+    }
+
+    // Funzione caricamento immagine con progress bar
+    function loadImageWithProgressAsync(src, alt, container) {
+      return new Promise((resolve, reject) => {
+        container.innerHTML = `
+      <div class="h-full flex flex-col items-center justify-center bg-gray-100 p-4">
+        <div class="w-full max-w-xs">
+          <div class="flex justify-between text-sm text-gray-600 mb-2">
+            <span>Caricamento immagine</span>
+            <span id="progress-text">0%</span>
+          </div>
+          <div class="w-full bg-gray-200 rounded-full h-2">
+            <div id="progress-bar" class="bg-primary h-2 rounded-full transition-all duration-300" style="width: 0%"></div>
+          </div>
+        </div>
+      </div>`;
+
+        const progressBar = container.querySelector('#progress-bar');
+        const progressText = container.querySelector('#progress-text');
+        let progress = 0;
+
+        const interval = setInterval(() => {
+          progress += Math.random() * 15;
+          if (progress > 90) progress = 90;
+          if (progressBar) progressBar.style.width = progress + '%';
+          if (progressText) progressText.textContent = Math.round(progress) + '%';
+        }, 100);
+
+        const img = new Image();
+        img.alt = alt;
+        img.className = 'w-full h-full object-cover object-center';
+
+        img.onload = () => {
+          clearInterval(interval);
+          if (progressBar) progressBar.style.width = '100%';
+          if (progressText) progressText.textContent = '100%';
+
+          setTimeout(() => {
+            container.innerHTML = '';
+            container.appendChild(img);
+            container.style.height = '200px';
+            resolve();
+          }, 300);
+        };
+
+        img.onerror = () => {
+          clearInterval(interval);
+          reject();
+        };
+
+        img.src = src;
+      });
+    }
+
+
+    // Function to load image with progress simulation
+    HTMLButtonElement.prototype.loadImageWithProgress = function (imageSrc, imageAlt, itemId, container, button) {
+      const progressBarId = `progress-bar-${itemId}`;
+      const progressTextId = `progress-${itemId}`;
+
+      // Elementi progress bar
+      let progress = 0;
+      const progressInterval = setInterval(() => {
+        progress += Math.random() * 15;
+        if (progress > 90) progress = 90;
+
+        const bar = document.getElementById(progressBarId);
+        const text = document.getElementById(progressTextId);
+        if (bar) bar.style.width = progress + '%';
+        if (text) text.textContent = Math.round(progress) + '%';
+      }, 100);
+
+      // Carica immagine
+      const img = document.createElement('img');
+      img.className = 'w-full h-full object-cover object-center';
+      img.alt = imageAlt;
+      img.onload = function () {
+        clearInterval(progressInterval);
+
+        // Completa la barra
+        const bar = document.getElementById(progressBarId);
+        const text = document.getElementById(progressTextId);
+        if (bar) bar.style.width = '100%';
+        if (text) text.textContent = '100%';
+
+        setTimeout(() => {
+          // Inserisce immagine
+          container.innerHTML = '';
+          container.appendChild(img);
+          container.style.height = '200px';
+
+          // Stato toggle visibilità
+          let isVisible = true;
+
+          // Bottone di toggle
+          button.disabled = false;
+          button.innerHTML = '<i class="ri-eye-off-line"></i><span class="ml-2">Nascondi immagine</span><i class="ri-arrow-up-s-line ml-1"></i>';
+
+          button.onclick = function () {
+            isVisible = !isVisible;
+            if (isVisible) {
+              container.classList.remove('hidden');
+              container.style.height = '200px';
+              button.innerHTML = '<i class="ri-eye-off-line"></i><span class="ml-2">Nascondi immagine</span><i class="ri-arrow-up-s-line ml-1"></i>';
+            } else {
+              container.classList.add('hidden');
+              container.style.height = '0';
+              button.innerHTML = '<i class="ri-image-line"></i><span class="ml-2">Mostra immagine</span><i class="ri-arrow-down-s-line ml-1"></i>';
+            }
+          };
+        }, 500);
+      };
+
+      img.onerror = function () {
+        clearInterval(progressInterval);
+        container.innerHTML = `
+      <div class="h-32 flex items-center justify-center bg-red-50 text-red-600">
+        <div class="text-center">
+          <i class="ri-error-warning-line ri-2x mb-2"></i>
+          <p class="text-sm">Errore nel caricamento dell'immagine</p>
+        </div>
+      </div>`;
+        button.disabled = false;
+        button.innerHTML = '<i class="ri-refresh-line"></i><span class="ml-2">Riprova</span>';
+      };
+
+      // Imposta src (inizia caricamento)
+      img.src = imageSrc;
+    };
+
+
+    // Funzione per impostare la categoria attiva
+    function setActiveCategory(category) {
+      // Remove active class from all categories
+      document.querySelectorAll(".category-icon").forEach((icon) => {
+        icon.classList.remove("active");
+      });
+
+      // Add active class to selected category
+      const selectedCategory = document.querySelector(
+        `.category-item[data-category="${category}"] .category-icon`,
+      );
+      if (selectedCategory) {
+        selectedCategory.classList.add("active");
+      }
+
+      // Center the selected category
+      const categoryContainer = document.getElementById("categoryContainer");
+      const categoryItem = document.querySelector(
+        `.category-item[data-category="${category}"]`,
+      );
+
+      if (categoryContainer && categoryItem) {
+        const containerWidth = categoryContainer.offsetWidth;
+        const itemWidth = categoryItem.offsetWidth;
+        const itemLeft = categoryItem.offsetLeft;
+
+        categoryContainer.scrollLeft =
+          itemLeft - containerWidth / 2 + itemWidth / 2;
+      }
+    }
+  </script>
+
+  <script id="modalHandling">
+    document.addEventListener("DOMContentLoaded", function () {
+      const infoButton = document.getElementById("infoButton");
+      const infoModal = document.getElementById("infoModal");
+      const closeModal = document.getElementById("closeModal");
+      const modalOverlay = document.getElementById("modalOverlay");
+
+      // Open modal
+      infoButton.addEventListener("click", function () {
+        infoModal.classList.remove("hidden");
+      });
+
+      // Close modal functions
+      function closeModalFunction() {
+        infoModal.classList.add("hidden");
+      }
+
+      closeModal.addEventListener("click", closeModalFunction);
+      modalOverlay.addEventListener("click", closeModalFunction);
+    });
+  </script>
+</body>
+
+</html>

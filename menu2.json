@@ -1,0 +1,264 @@
+{
+  "antipasti": [
+  {
+    "nome": "INSALATA DI POLPO",
+    "descrizione": "Polpo, sedano, carote, olio, limone, sale, pepe",
+    "prezzo": 10,
+    "immagine": ""
+  },
+  {
+    "nome": "Caponata di Spada",
+    "descrizione": "Melanzane, pesce spada, cipolla, capperi, pomodoro, olive, olio, aceto, sale, pepe, zucchero",
+    "prezzo": 8,
+    "immagine": ""
+  },
+  {
+    "nome": "Crudo di Gambero Rosso di Mazzara",
+    "descrizione": "Gambero rosso",
+    "prezzo": 8,
+    "immagine": ""
+  },
+  {
+    "nome": "Crudo di Scampi",
+    "descrizione": "Scampi",
+    "prezzo": 8,
+    "immagine": ""
+  },
+  {
+    "nome": "Tartare di Tonno",
+    "descrizione": "Tonno",
+    "prezzo": 14,
+    "immagine": ""
+  },
+  {
+    "nome": "Menu Degustazione del Giorno",
+    "descrizione": "per 2 persone",
+    "prezzo": 20,
+    "immagine": ""
+  }
+]
+,
+
+
+  "primi": [
+    {
+      "nome": "Spaghetto alle vongole",
+      "descrizione": "pasta, vongole, olio, aglio, prezzemolo, pepe",
+      "prezzo": 14,
+      "immagine": ""
+    },
+    {
+      "nome": "Busiate allo Scoglio",
+      "descrizione": "pasta , vongole, cozze, gamberi, calamari, scampi, olio, ciliegino, cipolla, aglio, peperoncino, sale, prezzemolo",
+      "prezzo": 16,
+      "immagine": ""
+    },
+    {
+      "nome": "RETTANGOLI Dl CERNIA CON SUGO Al CROSTACEI",
+      "descrizione": "pasta, cernia, crostacei, salmone, pomodoro, panna, peperoncino, olio, sale, cipolla",
+      "prezzo": 15,
+      "immagine": ""
+    },
+    {
+      "nome": "LINGUINE GAMBERO ROSSO E PISTACCHIO",
+      "descrizione": "pasta, gambero rosso, pistacchio, ciliegino, aglio, vino, olio, sale",
+      "prezzo": 16,
+      "immagine": ""
+    },
+    {
+      "nome": "SPAGHETTO ALLA TARANTINA",
+      "descrizione": "pasta, cozze, pomodoro, aglio, cipolla, olio, sale, pepe, prezzemolo",
+      "prezzo": 8,
+      "immagine": ""
+    }
+  ],
+
+
+  "secondi": [
+    {
+      "nome": "COPPO DI CALAMARI FRITTO",
+      "descrizione": "calamaro, farina di grano duro, sale",
+      "prezzo": 14,
+      "immagine": ""
+    },
+    {
+      "nome": "COPPO DI PARANZA",
+      "descrizione": "pesce, farina di grano duro",
+      "prezzo": 12,
+      "immagine": ""
+    },
+    {
+      "nome": "CALAMARO ALLA GRIGLIA",
+      "descrizione": "calamaro, olio, sale, limone",
+      "prezzo": 14,
+      "immagine": ""
+    },
+    {
+      "nome": "TATAKI DI TONNO",
+      "descrizione": "tonno, pistacchio, basilico, olio, salsa di soia,sale, pepe",
+      "prezzo": 18,
+      "immagine": ""
+    },
+    {
+      "nome": "ZUPPA DI COZZE",
+      "descrizione": "cozze, pomodoro, aglio, olio, vino, sale, pepe, prezzemolo",
+      "prezzo": 8,
+      "immagine": ""
+    },
+    {
+      "nome": "PESCATO DEL GIORNO",
+      "descrizione": "al forno | arrosto | al sale (prezzo al Kg)",
+      "prezzo": 40,
+      "immagine": ""
+    }
+  ],
+
+
+  "dolci": [
+    {
+      "nome": "TORTA MIRO",
+      "descrizione": "",
+      "prezzo": 5,
+      "immagine": ""
+    },
+    {
+      "nome": "FRUTTA",
+      "descrizione": "",
+      "prezzo": 5,
+      "immagine": ""
+    }
+  ],
+
+
+  "bevande": [
+    {
+      "nome": "",
+      "descrizione": "",
+      "prezzo": 0,
+      "immagine": ""
+    },
+    {
+      "nome": "",
+      "descrizione": "",
+      "prezzo": 0,
+      "immagine": ""
+    },
+    {
+      "nome": "",
+      "descrizione": "",
+      "prezzo": 0,
+      "immagine": ""
+    }
+  ],
+
+
+  "birre": [
+    {
+      "nome": "",
+      "descrizione": "",
+      "prezzo": 0,
+      "immagine": ""
+    },
+    {
+      "nome": "",
+      "descrizione": "",
+      "prezzo": 0,
+      "immagine": ""
+    },
+    {
+      "nome": "",
+      "descrizione": "",
+      "prezzo": 0,
+      "immagine": ""
+    }
+  ],
+
+
+  "cocktail": [
+    {
+      "nome": "",
+      "descrizione": "",
+      "prezzo": 0,
+      "immagine": ""
+    },
+    {
+      "nome": "",
+      "descrizione": "",
+      "prezzo": 0,
+      "immagine": ""
+    },
+    {
+      "nome": "",
+      "descrizione": "",
+      "prezzo": 0,
+      "immagine": ""
+    }
+  ],
+
+
+  "vini bianchi": [
+    {
+      "nome": "",
+      "descrizione": "",
+      "prezzo": 0,
+      "immagine": ""
+    },
+    {
+      "nome": "",
+      "descrizione": "",
+      "prezzo": 0,
+      "immagine": ""
+    },
+    {
+      "nome": "",
+      "descrizione": "",
+      "prezzo": 0,
+      "immagine": ""
+    }
+  ],
+
+
+  "bollicine": [
+    {
+      "nome": "",
+      "descrizione": "",
+      "prezzo": 0,
+      "immagine": ""
+    },
+    {
+      "nome": "",
+      "descrizione": "",
+      "prezzo": 0,
+      "immagine": ""
+    },
+    {
+      "nome": "",
+      "descrizione": "",
+      "prezzo": 0,
+      "immagine": ""
+    }
+  ],
+
+
+  "digestivi": [
+    {
+      "nome": "",
+      "descrizione": "",
+      "prezzo": 0,
+      "immagine": ""
+    },
+    {
+      "nome": "",
+      "descrizione": "",
+      "prezzo": 0,
+      "immagine": ""
+    },
+    {
+      "nome": "",
+      "descrizione": "",
+      "prezzo": 0,
+      "immagine": ""
+    }
+  ]
+
+}
