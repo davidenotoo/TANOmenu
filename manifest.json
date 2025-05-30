@@ -1,29 +1,29 @@
 {
-  "name": "EO - Risto Pub Balestrate",
-  "short_name": "EO RistoPub",
-  "description": "Un'esperienza culinaria unica dove il mare incontra l'innovazione",
+  "name": "TANO Pescheria - Ristorante di pesce ad Alcamo",
+  "short_name": "TANO Pescheria",
+  "description": "Menù di pesce fresco, crudi, primi gourmet e secondi grigliati. Pescheria con cucina a km 0 nel cuore di Alcamo.",
   "start_url": "./",
   "display": "standalone",
   "background_color": "#ffffff",
-  "theme_color": "#3893ce",
+  "theme_color": "#3192d0",
   "orientation": "portrait-primary",
   "icons": [
     {
-      "src": "icons/iconB.png",
+      "src": "icons/icon.png",
       "sizes": "72x72",
       "type": "image/png",
       "purpose": "any maskable"
     },
     {
-      "src": "icons/iconB.png",
+      "src": "icons/icon.png",
       "sizes": "96x96",
-      "type": "image/svg",
+      "type": "image/png",
       "purpose": "any maskable"
     },
     {
-      "src": "icons/iconB.png",
+      "src": "icons/icon.png",
       "sizes": "128x128",
-      "type": "image/svg",
+      "type": "image/png",
       "purpose": "any maskable"
     }
   ]

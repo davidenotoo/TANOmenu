@@ -4,112 +4,95 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Menu Ristorante</title>
-  <link rel="canonical" href="https://eoristopub.netlify.app/menu.html">
-  <meta name="theme-color" content="#1E5F74" />
+  <title>Menù TANO Pescheria | Ristorante di pesce fresco ad Alcamo</title>
+  <meta name="description"
+    content="Scopri il menù di TANO Pescheria ad Alcamo: crudi di mare, primi piatti gourmet, secondi grigliati e dolci artigianali. Pescheria con cucina a km 0 in Sicilia." />
+  <meta name="keywords"
+    content="TANO Pescheria Alcamo, ristorante pesce Alcamo, pescheria con cucina Sicilia, crudi di mare, primi pesce fresco, pesce alla griglia, menù pesce Alcamo" />
+  <meta name="author" content="TANO Pescheria">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://tanomenu.netlify.app/menu.html" />
+  <meta name="theme-color" content="#3192d0" />
+
+  <!-- Favicon -->
   <link rel="icon" href="icons/icon.png" type="image/png" />
+  <link rel="apple-touch-icon" href="icons/icon.png" />
 
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Menù EO RistoPub | Ristorante di pesce a Balestrate</title>
-    <meta name="description"
-      content="Scopri il menù completo di EO RistoPub a Balestrate: antipasti di mare e terra, primi di pesce, secondi raffinati e dolci artigianali. Esperienza gourmet sul mare in Sicilia.">
-    <meta name="keywords"
-      content="menu EO Ristopub, ristorante pesce Balestrate, ristorante sicilia, EO ristorante, EO menu, cucina siciliana, primi di mare, secondi di pesce, dolci siciliani, EO winebar, EO balestrate">
-    <meta name="author" content="EO RistoPub">
-    <meta name="robots" content="index, follow">
+  <!-- Fonts e Remixicon -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" />
 
-    <!-- Favicon -->
-    <link rel="icon" href="icons/icon.png" type="image/png" />
-    <link rel="apple-touch-icon" href="icons/icon.png" />
+  <!-- Manifest -->
+  <link rel="manifest" href="manifest.json" />
 
-    <!-- PWA Manifest -->
-    <link rel="manifest" href="manifest.json" />
-    <meta name="theme-color" content="#1E5F74" />
+  <!-- Open Graph -->
+  <meta property="og:type" content="restaurant.menu" />
+  <meta property="og:title" content="Menù TANO Pescheria | Ristorante di pesce fresco ad Alcamo" />
+  <meta property="og:description"
+    content="Consulta il menù di TANO Pescheria: specialità di mare, crudi, primi gourmet e secondi grigliati. Solo pesce fresco locale." />
+  <meta property="og:image" content="https://tanomenu.netlify.app/icons/icon.png" />
+  <meta property="og:url" content="https://tanomenu.netlify.app/menu" />
+  <meta property="og:site_name" content="TANO Pescheria" />
+  <meta property="og:locale" content="it_IT" />
 
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="restaurant.menu" />
-    <meta property="og:title" content="Menù EO RistoPub | Ristorante di pesce a Balestrate" />
-    <meta property="og:description"
-      content="Scopri il nostro menù completo con antipasti, primi, secondi, dolci e bevande. Cucina siciliana contemporanea sul mare." />
-    <meta property="og:image" content="https://eoristopub.netlify.app/icons/icon.png" />
-    <meta property="og:url" content="https://eoristopub.netlify.app/menu" />
-    <meta property="og:site_name" content="EO RistoPub" />
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Menù TANO Pescheria | Crudi e pesce fresco ad Alcamo" />
+  <meta name="twitter:description"
+    content="Piatti di mare freschi ogni giorno. Crudi, primi di pesce, secondi alla griglia. Consulta il menù di TANO ad Alcamo." />
+  <meta name="twitter:image" content="https://tanomenu.netlify.app/icons/icon.png" />
+  <meta name="twitter:site" content="@tano_pescheria" />
 
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Menù EO RistoPub | Ristorante di pesce a Balestrate" />
-    <meta name="twitter:description"
-      content="Menù completo: primi di pesce, secondi gourmet, dolci artigianali. Vivi l’esperienza EO." />
-    <meta name="twitter:image" content="https://eoristopub.netlify.app/icons/icon.png" />
-    <meta name="twitter:site" content="@eo_ristopub" />
-
-    <!-- WhatsApp/Facebook Share -->
-    <meta property="og:locale" content="it_IT">
-    <meta name="image" content="https://eoristopub.netlify.app/icons/icon.png" />
-
-    <!-- Structured Data / JSON-LD -->
-    <script type="application/ld+json">
+  <!-- Structured Data -->
+  <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Menu",
-    "name": "Menù EO RistoPub",
-    "url": "https://eoristopub.netlify.app/menu",
-    "hasMenuSection": [
-      {
-        "@type": "MenuSection",
-        "name": "Antipasti di Mare",
-        "hasMenuItem": {
-          "@type": "MenuItem",
-          "name": "Polpo Grigliato",
-          "description": "Polpo alla griglia servito su crema di ceci e olio al rosmarino.",
-          "offers": {
-            "@type": "Offer",
-            "price": "14.00",
-            "priceCurrency": "EUR"
-          }
-        }
-      },
-      {
-        "@type": "MenuSection",
-        "name": "Primi di Pesce",
-        "hasMenuItem": {
-          "@type": "MenuItem",
-          "name": "Linguine gamberi e pistacchio",
-          "description": "Linguine con gamberi freschi e pesto di pistacchio di Bronte.",
-          "offers": {
-            "@type": "Offer",
-            "price": "16.00",
-            "priceCurrency": "EUR"
-          }
-        }
-      }
-    ]
+    "@type": "Restaurant",
+    "name": "TANO Pescheria",
+    "description": "Pescheria con cucina ad Alcamo. Menù di pesce fresco, primi gourmet e secondi alla griglia. Specialità siciliane e crudi di mare.",
+    "image": "https://tanomenu.netlify.app/icons/icon.png",
+    "url": "https://tanomenu.netlify.app/menu",
+    "telephone": "+39 0911234567",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Via del Mare 45",
+      "addressLocality": "Alcamo",
+      "addressRegion": "Sicilia",
+      "postalCode": "91011",
+      "addressCountry": "IT"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 37.978,
+      "longitude": 12.960
+    },
+    "servesCuisine": ["Pesce", "Siciliana", "Mediterranea"],
+    "priceRange": "$$",
+    "hasMenu": {
+      "@type": "Menu",
+      "name": "Menù TANO Pescheria",
+      "url": "https://tanomenu.netlify.app/menu"
+    }
   }
   </script>
-  </head>
 
+  <!-- Tailwind -->
   <script src="https://cdn.tailwindcss.com/3.4.16"></script>
   <script>
     tailwind.config = {
       theme: {
         extend: {
-          colors: { primary: "#1E5F74", secondary: "#3CAEA3" },
+          colors: { primary: "#3192d0", secondary: "#ec4e39" },
           borderRadius: {
-            none: "0px",
-            sm: "4px",
-            DEFAULT: "8px",
-            md: "12px",
-            lg: "16px",
-            xl: "20px",
-            "2xl": "24px",
-            "3xl": "32px",
-            full: "9999px",
-            button: "8px",
-          },
-        },
-      },
+            button: "8px"
+          }
+        }
+      }
     };
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -118,6 +101,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
     rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" />
+  <!-- STILI -->
+
+
   <style>
     :where([class^="ri-"])::before {
       content: "\f3c2";
@@ -132,7 +118,7 @@
     }
 
     .category-scroll::-webkit-scrollbar {
-      background-color: #3893ce;
+      background-color: #3192d0;
       height: 4px;
     }
 
@@ -142,13 +128,13 @@
     }
 
     .category-scroll::-webkit-scrollbar-thumb {
-      background: #3893ce;
+      background: #3192d0;
       border-radius: 10px;
     }
 
     .menu-item {
       background-color: rgba(255, 255, 255, 0.123);
-      border: 1px solid #ec8274;
+      border: 1px solid #ffffff;
       border-radius: 24px;
       padding: 1rem 1rem;
       box-shadow:
@@ -179,7 +165,7 @@
       font-size: 1.375rem;
       /* text-xl+ */
       font-weight: 700;
-      color: #3893ce;
+      color: #3192d0;
       /* gray-800 */
       letter-spacing: -0.25px;
       margin-bottom: 0.25rem;
@@ -189,7 +175,7 @@
     .menu-item span {
       font-size: 1.125rem;
       font-weight: 600;
-      color: #ec8274;
+      color: #ec4e39;
       margin-top: 0.125rem;
     }
 
@@ -205,7 +191,7 @@
 
     .menu-item .load-image-btn {
       background-color: rgba(255, 255, 255, 0.7);
-      color: #3893ce;
+      color: #3192d0;
       width: 40px;
       height: 40px;
       border-radius: 12px;
@@ -221,11 +207,29 @@
       backdrop-filter: blur(4px);
     }
 
+    .menu-item p.italic {
+      font-style: italic;
+      color: #9ca3af;
+      /* gray-400 */
+    }
 
     .menu-item .load-image-btn:active {
       transform: scale(0.95);
     }
 
+
+    .menu-item .allergeni {
+      font-size: 0.75rem;
+      /* più piccolo */
+      color: #dc26266c;
+      /* rosso chiaro */
+      font-style: italic;
+      margin-top: 0.5rem;
+      word-wrap: break-word;
+      line-height: 1.4;
+      overflow-wrap: break-word;
+      white-space: normal;
+    }
 
 
 
@@ -241,9 +245,19 @@
       pointer-events: none;
     }
 
+    .category-title {
+      font-family: 'Anton', sans-serif;
+      font-size: 1.75rem;
+      color: #ffffff;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      text-align: center;
+    }
+
+
     /* NAVBAR COLORI */
     .category-icon {
-      background-color: #3893ce !important;
+      background-color: #3192d0 !important;
     }
 
     .category-icon i {
@@ -251,7 +265,7 @@
     }
 
     .category-icon.active {
-      background-color: #ec8274 !important;
+      background-color: #ec4e39 !important;
     }
 
     .category-icon.active i {
@@ -276,7 +290,7 @@
     }
 
     .load-image-btn {
-      background-color: #3893ce;
+      background-color: #3192d0;
       /* blu primario */
       color: white;
       /* icona bianca */
@@ -294,7 +308,7 @@
 
     .load-image-btn:hover,
     .load-image-btn:focus {
-      background-color: #3893ce;
+      background-color: #3192d0;
       /* blu più scuro al hover/focus */
       outline: none;
     }
@@ -306,11 +320,11 @@
       line-height: 1;
     }
   </style>
-
 </head>
+
 <div class="fixed inset-0 -z-10">
-  <img src="img/sfTan.jpg" alt="Sfondo" class="w-full h-full object-cover" />
-  <div class="absolute inset-0 bg-black/50 backdrop-blur-sm"></div>
+  <img src="img/sfondo.jpg" alt="Sfondo" class="w-full h-full object-cover" />
+  <div class="absolute inset-0 bg-black/30 backdrop-blur-none"></div>
 </div>
 
 
@@ -320,7 +334,7 @@
   <header
     class="fixed top-0 left-0 right-0 z-50 px-4 py-3 flex justify-between items-center max-w-[375px] w-full mx-auto">
     <div class="w-10 h-10"></div>
-    <img src="icons/icon.png" alt="Logo" class="w-14 h-14 object-cover" />
+    <img src="icons/log2.png" alt="Logo" class="w-50 h-14 object-cover" />
     <button id="infoButton" class="w-8 h-8 flex items-center justify-center text-white cursor-pointer">
       <i class="ri-information-line ri-lg"></i>
     </button>
@@ -352,70 +366,70 @@
     <div id="categoryContainer" class="category-scroll overflow-x-auto py-3 px-2 flex space-x-4 category-container">
       <div class="category-item flex flex-col items-center min-w-[70px] cursor-pointer" data-category="antipasti">
         <div
-          class="category-icon w-14 h-14 rounded-lg bg-gray-100 flex items-center justify-center mb-1 border-2 border-transparent hover:border-primary active">
+          class="category-icon w-14 h-14 rounded-lg bg-gray-100 flex items-center justify-center mb-1 border-2 border-transparent  active">
           <i class="ri-restaurant-line ri-lg text-gray-700"></i>
         </div>
         <span class="text-xs whitespace-nowrap overflow-hidden text-overflow-ellipsis">Antipasti</span>
       </div>
       <div class="category-item flex flex-col items-center min-w-[70px] cursor-pointer" data-category="primi">
         <div
-          class="category-icon w-14 h-14 rounded-lg bg-gray-100 flex items-center justify-center mb-1 border-2 border-transparent hover:border-primary">
+          class="category-icon w-14 h-14 rounded-lg bg-gray-100 flex items-center justify-center mb-1 border-2 border-transparent ">
           <i class="ri-bowl-line ri-lg text-gray-700"></i>
         </div>
         <span class="text-xs whitespace-nowrap overflow-hidden text-overflow-ellipsis">Primi</span>
       </div>
       <div class="category-item flex flex-col items-center min-w-[70px] cursor-pointer" data-category="secondi">
         <div
-          class="category-icon w-14 h-14 rounded-lg bg-gray-100 flex items-center justify-center mb-1 border-2 border-transparent hover:border-primary">
+          class="category-icon w-14 h-14 rounded-lg bg-gray-100 flex items-center justify-center mb-1 border-2 border-transparent ">
           <i class="ri-knife-line ri-lg text-gray-700"></i>
         </div>
         <span class="text-xs whitespace-nowrap overflow-hidden text-overflow-ellipsis">Secondi</span>
       </div>
       <div class="category-item flex flex-col items-center min-w-[70px] cursor-pointer" data-category="dolci">
         <div
-          class="category-icon w-14 h-14 rounded-lg bg-gray-100 flex items-center justify-center mb-1 border-2 border-transparent hover:border-primary">
+          class="category-icon w-14 h-14 rounded-lg bg-gray-100 flex items-center justify-center mb-1 border-2 border-transparent ">
           <i class="ri-cake-3-line ri-lg text-gray-700"></i>
         </div>
         <span class="text-xs whitespace-nowrap overflow-hidden text-overflow-ellipsis">Dolci</span>
       </div>
       <div class="category-item flex flex-col items-center min-w-[70px] cursor-pointer" data-category="bevande">
         <div
-          class="category-icon w-14 h-14 rounded-lg bg-gray-100 flex items-center justify-center mb-1 border-2 border-transparent hover:border-primary">
+          class="category-icon w-14 h-14 rounded-lg bg-gray-100 flex items-center justify-center mb-1 border-2 border-transparent ">
           <i class="ri-cup-line ri-lg text-gray-700"></i>
         </div>
         <span class="text-xs whitespace-nowrap overflow-hidden text-overflow-ellipsis">Bevande</span>
       </div>
       <div class="category-item flex flex-col items-center min-w-[70px] cursor-pointer" data-category="birre">
         <div
-          class="category-icon w-14 h-14 rounded-lg bg-gray-100 flex items-center justify-center mb-1 border-2 border-transparent hover:border-primary">
+          class="category-icon w-14 h-14 rounded-lg bg-gray-100 flex items-center justify-center mb-1 border-2 border-transparent ">
           <i class="ri-beer-line ri-lg text-gray-700"></i>
         </div>
         <span class="text-xs whitespace-nowrap overflow-hidden text-overflow-ellipsis">Birre</span>
       </div>
       <div class="category-item flex flex-col items-center min-w-[70px] cursor-pointer" data-category="cocktail">
         <div
-          class="category-icon w-14 h-14 rounded-lg bg-gray-100 flex items-center justify-center mb-1 border-2 border-transparent hover:border-primary">
+          class="category-icon w-14 h-14 rounded-lg bg-gray-100 flex items-center justify-center mb-1 border-2 border-transparent ">
           <i class="ri-goblet-line ri-lg text-gray-700"></i>
         </div>
         <span class="text-xs whitespace-nowrap overflow-hidden text-overflow-ellipsis">Cocktail</span>
       </div>
       <div class="category-item flex flex-col items-center min-w-[70px] cursor-pointer" data-category="vini bianchi">
         <div
-          class="category-icon w-14 h-14 rounded-lg bg-gray-100 flex items-center justify-center mb-1 border-2 border-transparent hover:border-primary">
+          class="category-icon w-14 h-14 rounded-lg bg-gray-100 flex items-center justify-center mb-1 border-2 border-transparent ">
           <i class="ri-wine-line ri-lg text-gray-700"></i>
         </div>
         <span class="text-xs whitespace-nowrap overflow-hidden text-overflow-ellipsis">Vini Bianchi</span>
       </div>
       <div class="category-item flex flex-col items-center min-w-[70px] cursor-pointer" data-category="bollicine">
         <div
-          class="category-icon w-14 h-14 rounded-lg bg-gray-100 flex items-center justify-center mb-1 border-2 border-transparent hover:border-primary">
+          class="category-icon w-14 h-14 rounded-lg bg-gray-100 flex items-center justify-center mb-1 border-2 border-transparent ">
           <i class="ri-sparkling-line ri-lg text-gray-700"></i>
         </div>
         <span class="text-xs whitespace-nowrap overflow-hidden text-overflow-ellipsis">Bollicine</span>
       </div>
       <div class="category-item flex flex-col items-center min-w-[70px] cursor-pointer" data-category="digestivi">
         <div
-          class="category-icon w-14 h-14 rounded-lg bg-gray-100 flex items-center justify-center mb-1 border-2 border-transparent hover:border-primary">
+          class="category-icon w-14 h-14 rounded-lg bg-gray-100 flex items-center justify-center mb-1 border-2 border-transparent ">
           <i class="ri-shot-line ri-lg text-gray-700"></i>
         </div>
         <span class="text-xs whitespace-nowrap overflow-hidden text-overflow-ellipsis">Digestivi</span>
@@ -528,7 +542,7 @@
       menuContainer.innerHTML = "";
 
       const categoryTitle = document.createElement("h3");
-      categoryTitle.className = "font-['Pacifico'] text-2xl text-white text-center mb-4";
+      categoryTitle.className = "category-title";
       categoryTitle.textContent = category.charAt(0).toUpperCase() + category.slice(1);
       menuContainer.appendChild(categoryTitle);
 
@@ -573,6 +587,10 @@
         menuItemHTML += `
         </div>
         <p class="text-gray-600 text-sm mb-3">${item.descrizione}</p>
+${item.allergeni && item.allergeni.length > 0 ? `
+  <p class="allergeni">Allergeni: ${item.allergeni.join(", ")}</p>
+` : ""}
+
       </div>
       <div id="img-container-${itemId}" class="image-container hidden overflow-hidden transition-all duration-500" style="height: 0;"></div>
     `;

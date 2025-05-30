@@ -1,118 +1,137 @@
 {
+  
   "antipasti": [
     {
       "nome": "Insalata di Polpo",
-      "descrizione": "Polpo, sedano, carote, olio, limone, sale, pepe (contiene molluschi, sedano)",
+      "descrizione": "Polpo, sedano, carote, olio, limone, sale, pepe",
       "prezzo": 10,
-      "immagine": ""
+      "immagine": "",
+      "allergeni": ["molluschi", "sedano"]
     },
     {
       "nome": "Caponata di Spada",
-      "descrizione": "Melanzane, pesce spada, cipolla, capperi, pomodoro, olive, olio, aceto, sale, pepe, zucchero (contiene pesce, solfiti)",
-      "prezzo": 0,
-      "immagine": ""
+      "descrizione": "Melanzane, pesce spada, cipolla, capperi, pomodoro, olive, olio, aceto, sale, pepe, zucchero",
+      "prezzo": 8,
+      "immagine": "",
+      "allergeni": ["pesce", "solfiti"]
     },
     {
-      "nome": "Crudo di Gambero Rosso di Mazara",
-      "descrizione": "Gambero rosso (contiene crostacei)",
+      "nome": "Crudo di Gambero Rosso di Mazzara",
+      "descrizione": "Gambero rosso",
       "prezzo": 8,
-      "immagine": ""
+      "immagine": "",
+      "allergeni": ["crostacei"]
     },
     {
       "nome": "Crudo di Scampi",
-      "descrizione": "Scampi (contiene crostacei)",
+      "descrizione": "Scampi",
       "prezzo": 8,
-      "immagine": ""
+      "immagine": "",
+      "allergeni": ["crostacei"]
     },
     {
       "nome": "Tartare di Tonno",
-      "descrizione": "Tonno (contiene pesce)",
+      "descrizione": "Tonno ",
       "prezzo": 14,
-      "immagine": ""
+      "immagine": "",
+      "allergeni": ["pesce"]
     },
     {
-      "nome": "Menù Degustazione del Giorno (per 2 persone)",
-      "descrizione": "Contiene vari allergeni a seconda della disponibilità: grano, pesce, crostacei, molluschi, senape, soia, solfiti",
+      "nome": "Menù Degustazione del Giorno ",
+      "descrizione": "(per 2 persone)",
       "prezzo": 20,
-      "immagine": ""
+      "immagine": "",
+      "allergeni": ["grano", "pesce", "crostacei", "molluschi", "senape", "soia", "solfiti"]
     }
   ],
   "primi": [
     {
       "nome": "Spaghetto alle Vongole",
-      "descrizione": "Pasta, vongole, olio, aglio, prezzemolo, pepe (contiene grano, molluschi)",
+      "descrizione": "Pasta, vongole, olio, aglio, prezzemolo, pepe",
       "prezzo": 0,
-      "immagine": ""
+      "immagine": "",
+      "allergeni": ["grano", "molluschi"]
     },
     {
       "nome": "Busiate allo Scoglio",
-      "descrizione": "Pasta, vongole, cozze, gamberi, calamari, scampi, olio, pomodoro ciliegino, cipolla, aglio, peperoncino, sale, prezzemolo (contiene grano, molluschi, crostacei)",
+      "descrizione": "Pasta, vongole, cozze, gamberi, calamari, scampi, olio, pomodoro ciliegino, cipolla, aglio, peperoncino, sale, prezzemolo",
       "prezzo": 0,
-      "immagine": ""
+      "immagine": "",
+      "allergeni": ["grano", "molluschi", "crostacei"]
     },
     {
       "nome": "Rettangoli di Cernia con Sugo ai Crostacei",
-      "descrizione": "Pasta, cernia, crostacei, salmone, pomodoro, panna, peperoncino, olio, sale, cipolla (contiene grano, pesce, crostacei, latte)",
+      "descrizione": "Pasta, cernia, crostacei, salmone, pomodoro, panna, peperoncino, olio, sale, cipolla",
       "prezzo": 0,
-      "immagine": ""
+      "immagine": "",
+      "allergeni": ["grano", "pesce", "crostacei", "latte"]
     },
     {
       "nome": "Linguine Gambero Rosso e Pistacchio",
-      "descrizione": "Pasta, gambero rosso, pistacchio, pomodoro ciliegino, aglio, vino, olio, sale (contiene grano, crostacei, pistacchio, solfiti)",
+      "descrizione": "Pasta, gambero rosso, pistacchio, pomodoro ciliegino, aglio, vino, olio, sale",
       "prezzo": 0,
-      "immagine": ""
+      "immagine": "",
+      "allergeni": ["grano", "crostacei", "pistacchio", "solfiti"]
     },
     {
       "nome": "Spaghetto Tintinnì",
-      "descrizione": "Pasta, cozze, pomodoro, aglio, cipolla, olio, sale, pepe, prezzemolo (contiene grano, molluschi)",
+      "descrizione": "Pasta, cozze, pomodoro, aglio, cipolla, olio, sale, pepe, prezzemolo",
       "prezzo": 0,
-      "immagine": ""
+      "immagine": "",
+      "allergeni": ["grano", "molluschi"]
     }
   ],
   "secondi": [
     {
       "nome": "Coppo di Calamaro Fritto",
-      "descrizione": "Calamaro, farina di grano duro, sale (contiene grano, molluschi)",
+      "descrizione": "Calamaro, farina di grano duro, sale",
       "prezzo": 0,
-      "immagine": ""
+      "immagine": "",
+      "allergeni": ["grano", "molluschi"]
     },
     {
       "nome": "Coppo di Pesce Fritto",
-      "descrizione": "Pesce, farina di grano duro, sale (contiene grano, pesce)",
+      "descrizione": "Pesce, farina di grano duro, sale",
       "prezzo": 0,
-      "immagine": ""
+      "immagine": "",
+      "allergeni": ["grano", "pesce"]
     },
     {
       "nome": "Calamaro alla Griglia",
-      "descrizione": "Calamaro, olio, sale, limone (contiene molluschi)",
+      "descrizione": "Calamaro, olio, sale, limone",
       "prezzo": 0,
-      "immagine": ""
+      "immagine": "",
+      "allergeni": ["molluschi"]
     },
     {
       "nome": "Tataki di Tonno",
-      "descrizione": "Tonno, pistacchio, basilico, olio, salsa di soia, sale, pepe (contiene pesce, pistacchio, soia, grano)",
+      "descrizione": "Tonno, pistacchio, basilico, olio, salsa di soia, sale, pepe",
       "prezzo": 0,
-      "immagine": ""
+      "immagine": "",
+      "allergeni": ["pesce", "pistacchio", "soia", "grano"]
     },
     {
       "nome": "Zuppetta di Cozze",
-      "descrizione": "Cozze, pomodoro, aglio, olio, vino, sale, pepe, prezzemolo (contiene molluschi, solfiti)",
+      "descrizione": "Cozze, pomodoro, aglio, olio, vino, sale, pepe, prezzemolo",
       "prezzo": 0,
-      "immagine": ""
+      "immagine": "",
+      "allergeni": ["molluschi", "solfiti"]
     },
     {
       "nome": "Pescato del Giorno",
-      "descrizione": "Al forno, arrosto o al sale (contiene pesce, molluschi, crostacei)",
+      "descrizione": "Al forno, arrosto o al sale",
       "prezzo": 0,
-      "immagine": ""
+      "immagine": "",
+      "allergeni": ["pesce", "molluschi", "crostacei"]
     }
   ],
   "dolci": [
     {
       "nome": "Torta Mirò",
-      "descrizione": "(contiene latte, uovo, soia, grano)",
+      "descrizione": "",
       "prezzo": 0,
-      "immagine": ""
+      "immagine": "",
+      "allergeni": ["latte", "uovo", "soia", "grano"]
     }
   ],
   "bevande": [
