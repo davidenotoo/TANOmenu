@@ -4,466 +4,808 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>EO - Ristorante Pub Balestrate</title>
-  <link rel="canonical" href="https://eoristopub.netlify.app/">
-  <link rel="icon" href="icons/iconB.png" type="image/png" />
-  <link rel="manifest" href="manifest.json" />
+  <title>Menu Ristorante</title>
+  <link rel="canonical" href="https://eoristopub.netlify.app/menu.html">
   <meta name="theme-color" content="#1E5F74" />
-  <meta name="mobile-web-app-capable" content="yes" />
-  <meta name="apple-mobile-web-app-capable" content="yes" />
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-  <script defer src="https://unpkg.com/@material/web/all.js"></script>
-  <script>
+  <link rel="icon" href="icons/icon.png" type="image/png" />
 
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            primary: "#1E5F74",
-            secondary: "#3CAEA3"
-          },
-          fontFamily: {
-            pacifico: ["Pacifico", "cursive"],
-            lora: ["Lora", "serif"]
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menù EO RistoPub | Ristorante di pesce a Balestrate</title>
+    <meta name="description"
+      content="Scopri il menù completo di EO RistoPub a Balestrate: antipasti di mare e terra, primi di pesce, secondi raffinati e dolci artigianali. Esperienza gourmet sul mare in Sicilia.">
+    <meta name="keywords"
+      content="menu EO Ristopub, ristorante pesce Balestrate, ristorante sicilia, EO ristorante, EO menu, cucina siciliana, primi di mare, secondi di pesce, dolci siciliani, EO winebar, EO balestrate">
+    <meta name="author" content="EO RistoPub">
+    <meta name="robots" content="index, follow">
+
+    <!-- Favicon -->
+    <link rel="icon" href="icons/icon.png" type="image/png" />
+    <link rel="apple-touch-icon" href="icons/icon.png" />
+
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="manifest.json" />
+    <meta name="theme-color" content="#1E5F74" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="restaurant.menu" />
+    <meta property="og:title" content="Menù EO RistoPub | Ristorante di pesce a Balestrate" />
+    <meta property="og:description"
+      content="Scopri il nostro menù completo con antipasti, primi, secondi, dolci e bevande. Cucina siciliana contemporanea sul mare." />
+    <meta property="og:image" content="https://eoristopub.netlify.app/icons/icon.png" />
+    <meta property="og:url" content="https://eoristopub.netlify.app/menu" />
+    <meta property="og:site_name" content="EO RistoPub" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Menù EO RistoPub | Ristorante di pesce a Balestrate" />
+    <meta name="twitter:description"
+      content="Menù completo: primi di pesce, secondi gourmet, dolci artigianali. Vivi l’esperienza EO." />
+    <meta name="twitter:image" content="https://eoristopub.netlify.app/icons/icon.png" />
+    <meta name="twitter:site" content="@eo_ristopub" />
+
+    <!-- WhatsApp/Facebook Share -->
+    <meta property="og:locale" content="it_IT">
+    <meta name="image" content="https://eoristopub.netlify.app/icons/icon.png" />
+
+    <!-- Structured Data / JSON-LD -->
+    <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Menu",
+    "name": "Menù EO RistoPub",
+    "url": "https://eoristopub.netlify.app/menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "Antipasti di Mare",
+        "hasMenuItem": {
+          "@type": "MenuItem",
+          "name": "Polpo Grigliato",
+          "description": "Polpo alla griglia servito su crema di ceci e olio al rosmarino.",
+          "offers": {
+            "@type": "Offer",
+            "price": "14.00",
+            "priceCurrency": "EUR"
+          }
+        }
+      },
+      {
+        "@type": "MenuSection",
+        "name": "Primi di Pesce",
+        "hasMenuItem": {
+          "@type": "MenuItem",
+          "name": "Linguine gamberi e pistacchio",
+          "description": "Linguine con gamberi freschi e pesto di pistacchio di Bronte.",
+          "offers": {
+            "@type": "Offer",
+            "price": "16.00",
+            "priceCurrency": "EUR"
           }
         }
       }
-    };
-
-    document.addEventListener("DOMContentLoaded", () => {
-      AOS.init({
-        duration: 800,                // più veloce
-        once: true,
-        mirror: false,
-        offset: 60,                   // trigger più anticipato
-        delay: 0,
-        easing: 'ease-out',
-        anchorPlacement: 'top-center' // innesca prima su dispositivi piccoli
-      });
-
-
-    });
+    ]
+  }
   </script>
-  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Lora:wght@400;700&display=swap"
+  </head>
+
+  <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { primary: "#1E5F74", secondary: "#3CAEA3" },
+          borderRadius: {
+            none: "0px",
+            sm: "4px",
+            DEFAULT: "8px",
+            md: "12px",
+            lg: "16px",
+            xl: "20px",
+            "2xl": "24px",
+            "3xl": "32px",
+            full: "9999px",
+            button: "8px",
+          },
+        },
+      },
+    };
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
     rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/icon?family=Material+Symbols+Rounded" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" />
   <style>
-    html {
-      scroll-padding-top: 100px;
+    :where([class^="ri-"])::before {
+      content: "\f3c2";
+    }
+
+    body {
+      font-family: 'Lora', serif;
+      padding-top: 30px;
+      /* Spazio per la navbar fissa */
+      padding-bottom: 65px;
+
+    }
+
+    .category-scroll::-webkit-scrollbar {
+      background-color: #3893ce;
+      height: 4px;
+    }
+
+    .category-scroll::-webkit-scrollbar-track {
+      background: #f1f1f1;
+      border-radius: 10px;
+    }
+
+    .category-scroll::-webkit-scrollbar-thumb {
+      background: #3893ce;
+      border-radius: 10px;
+    }
+
+    .menu-item {
+      background-color: rgba(255, 255, 255, 0.123);
+      border: 1px solid #ec8274;
+      border-radius: 24px;
+      padding: 1rem 1rem;
+      box-shadow:
+        0 2px 4px rgba(0, 0, 0, 0.04),
+        0 12px 28px rgba(0, 0, 0, 0.08);
+      font-family: 'Lora', serif;
+      position: relative;
+      isolation: isolate;
+      overflow: hidden;
+    }
+
+    .menu-item::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      border-radius: inherit;
+      background: radial-gradient(circle at 30% 20%, rgba(30, 95, 116, 0.05), transparent 70%);
+      z-index: 0;
+    }
+
+    .menu-item>div {
+      position: relative;
+      z-index: 10;
+    }
+
+    /* Titolo e prezzo */
+    .menu-item h4 {
+      font-size: 1.375rem;
+      /* text-xl+ */
+      font-weight: 700;
+      color: #3893ce;
+      /* gray-800 */
+      letter-spacing: -0.25px;
+      margin-bottom: 0.25rem;
+      line-height: 1.3;
+    }
+
+    .menu-item span {
+      font-size: 1.125rem;
+      font-weight: 600;
+      color: #ec8274;
+      margin-top: 0.125rem;
+    }
+
+    /* Descrizione */
+    .menu-item p {
+      font-size: 1.125rem;
+      color: #475569;
+      margin-top: 1.25rem;
+      line-height: 1.8;
+      border-top: 1px dashed #cbd5e1;
+      padding-top: 1.25rem;
+    }
+
+    .menu-item .load-image-btn {
+      background-color: rgba(255, 255, 255, 0.7);
+      color: #3893ce;
+      width: 40px;
+      height: 40px;
+      border-radius: 12px;
+      border: 1px solid rgba(30, 95, 116, 0.2);
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      margin-left: auto;
+      flex-shrink: 0;
+      transition: all 0.2s ease;
+      backdrop-filter: blur(4px);
+    }
+
+
+    .menu-item .load-image-btn:active {
+      transform: scale(0.95);
+    }
+
+
+
+
+    /* Modal */
+    .modal {
+      background-color: rgba(255, 255, 255, 0.123);
+      transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+
+    .modal.hidden {
+      opacity: 0;
+      transform: scale(0.95);
+      pointer-events: none;
+    }
+
+    /* NAVBAR COLORI */
+    .category-icon {
+      background-color: #3893ce !important;
+    }
+
+    .category-icon i {
+      color: white !important;
+    }
+
+    .category-icon.active {
+      background-color: #ec8274 !important;
+    }
+
+    .category-icon.active i {
+      color: white !important;
+    }
+
+
+    /* Scroll behavior */
+    .category-container {
       scroll-behavior: smooth;
     }
 
-    .material-symbols-rounded {
-      font-variation-settings:
-        'FILL' 1,
-        'wght' 300,
-        'GRAD' 0,
-        'opsz' 48;
+    /* Navbar con sfondo semi-trasparente + blur + ombra */
+    header {
+      background-color: rgba(255, 255, 255, 0);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      position: fixed;
+      width: 100%;
+      z-index: 50;
+    }
+
+    .load-image-btn {
+      background-color: #3893ce;
+      /* blu primario */
+      color: white;
+      /* icona bianca */
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      padding: 0;
+    }
+
+    .load-image-btn:hover,
+    .load-image-btn:focus {
+      background-color: #3893ce;
+      /* blu più scuro al hover/focus */
+      outline: none;
+    }
+
+    /* Icona più piccola dentro */
+    .load-image-btn i {
+      font-size: 16px;
+      /* o ri-sm */
+      line-height: 1;
     }
   </style>
 
-  <!-- SEO Meta Tags -->
-  <meta name="description"
-    content="EO RistoPub a Balestrate: ristorante e pub con specialità di mare, eventi, cocktail d'autore e atmosfera unica. Prenota ora!" />
-  <meta name="keywords"
-    content="ristorante Balestrate, EO RistoPub, cucina mediterranea, pesce fresco, eventi Balestrate, pub Palermo, aperitivi Sicilia, ristorante mare, pranzo cena, chef Norvese, barman Alex" />
-  <meta name="author" content="EO RistoPub" />
-  <meta name="robots" content="index, follow" />
-  <meta name="theme-color" content="#1E5F74" />
-
-  <!-- Open Graph / WhatsApp -->
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="EO RistoPub - Ristorante e Pub a Balestrate" />
-  <meta property="og:description"
-    content="Cucina mediterranea, eventi speciali, atmosfera unica. Vieni a scoprire EO RistoPub!" />
-  <meta property="og:image" content="https://eoristopub.netlify.app/img/iconB.png" />
-  <meta property="og:url" content="https://eoristopub.netlify.app" />
-  <meta property="og:site_name" content="EO RistoPub" />
-
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="EO RistoPub - Ristorante e Pub a Balestrate" />
-  <meta name="twitter:description"
-    content="Sapori autentici del mare e serate indimenticabili. Prenota ora il tuo tavolo da EO RistoPub." />
-  <meta name="twitter:image" content="https://eoristopub.netlify.app/img/iconB.png" />
-
-  <!-- JSON-LD Structured Data -->
-  <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Restaurant",
-  "name": "EO RistoPub",
-  "image": "https://eoristopub.netlify.app/img/iconB.png",
-  "url": "https://eoristopub.netlify.app",
-  "telephone": "+393516982396",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "Via G. Garibaldi, 20",
-    "addressLocality": "Balestrate",
-    "addressRegion": "PA",
-    "postalCode": "90041",
-    "addressCountry": "IT"
-  },
-  "servesCuisine": ["Mediterranea", "Pesce", "Cocktail"],
-  "priceRange": "€€",
-  "openingHours": [
-    "Mo-Su 12:00-02:00",
-    "Tu Off"
-  ],
-  "sameAs": [
-    "https://www.facebook.com/eoristopub",
-    "https://www.instagram.com/eo_ristopub"
-  ]
-}
-</script>
-
 </head>
+<div class="fixed inset-0 -z-10">
+  <img src="img/sfTan.jpg" alt="Sfondo" class="w-full h-full object-cover" />
+  <div class="absolute inset-0 bg-black/50 backdrop-blur-sm"></div>
+</div>
 
-<body class="font-lora bg-white text-gray-900">
 
-  <!-- NAVBAR SECTION -->
-  <header class="fixed top-0 w-full z-50 bg-white/30 backdrop-blur-md shadow-md">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
 
-      <!-- Logo a sinistra -->
-      <div class="flex items-center space-x-2">
-        <a href="/" class="flex items-center">
-          <img src="icons/fav.png" alt="Logo EO" class="w-14 h-14 object-cover" />
-        </a>
-        <!-- Se vuoi aggiungere un testo accanto al logo, togli il commento qui sotto -->
-        <span class="text-primary font-pacifico text-2xl">RistoPub</span>
-      </div>
+<body class="bg-white  text-gray-800 max-w-[375px] w-full min-h-[762px] mx-auto relative">
+  <!-- Nav Bar -->
+  <header
+    class="fixed top-0 left-0 right-0 z-50 px-4 py-3 flex justify-between items-center max-w-[375px] w-full mx-auto">
+    <div class="w-10 h-10"></div>
+    <img src="icons/icon.png" alt="Logo" class="w-14 h-14 object-cover" />
+    <button id="infoButton" class="w-8 h-8 flex items-center justify-center text-white cursor-pointer">
+      <i class="ri-information-line ri-lg"></i>
+    </button>
 
-      <!-- Menu Desktop -->
-      <nav class="hidden md:flex space-x-6 text-sm font-semibold text-gray-800">
-        <a href="#chi-siamo" class="nav-link hover:text-primary">Chi Siamo</a>
-        <a href="#team" class="nav-link hover:text-primary">Team</a>
-        <a href="#eventi" class="nav-link hover:text-primary">Eventi</a>
-        <a href="#prenota" class="nav-link hover:text-primary">Prenota</a>
-      </nav>
-
-      <!-- Bottone Hamburger -->
-      <button class="md:hidden text-gray-800" id="mobile-menu-button">
-        <span class="material-symbols-rounded text-3xl">menu</span>
-      </button>
-    </div>
-
-    <!-- Mobile Menu -->
-    <div id="mobile-menu"
-      class="md:hidden hidden flex-col divide-y divide-gray-300 bg-white/90 backdrop-blur-md px-4 py-4 text-center transition-all duration-300 ease-in-out">
-      <a href="#chi-siamo" class="mobile-link block py-3 text-lg text-primary font-semibold">Chi Siamo</a>
-      <a href="#team" class="mobile-link block py-3 text-lg text-primary font-semibold">Team</a>
-      <a href="#eventi" class="mobile-link block py-3 text-lg text-primary font-semibold">Eventi</a>
-      <a href="#prenota" class="mobile-link block py-3 text-lg text-primary font-semibold">Prenota</a>
-    </div>
   </header>
 
 
+  <!-- Main Content -->
+  <main class="pt-20 pb-24 px-4">
+    <!-- <div class="mb-6 text-center">
+      <h2 class="font-['Pacifico'] ">
+        Menu
+      </h2>
+      <p class="text-sm text-gray-600 italic">
+        Sapori freschi del mare alla tua tavola
+      </p>
+    </div> -->
 
-
-  <!-- Hero Section -->
-  <section class="relative h-screen bg-cover bg-center flex items-center justify-center text-white"
-    style="background-image: url('img/sfondo.jpg');">
-    <div class="absolute inset-0 bg-black/50 backdrop-blur-sm"></div>
-    <div class="z-10 text-center" data-aos="fade-down">
-      <img src="icons/fav.png" alt="Logo" class="mx-auto w-28 h-28 rounded-full mb-4 shadow-2xl animate-pulse">
-      <h1 class="text-5xl font-pacifico mb-4 animate-bounce">Benvenuto da EO RistoPub</h1>
-      <p class="text-lg mb-6 animate-fade-in">Sapori autentici del mare, direttamente sulla tua tavola</p>
-
-      <a href="tel:+390123456789"
-        class="inline-block bg-primary text-white px-6 py-2 rounded-full hover:bg-secondary transition-all shadow-lg ripple">Prenota
-        Ora</a>
-
-      <a href="menu.html"
-        class="inline-block bg-secondary text-white px-6 py-2 rounded-full hover:bg-primary transition-all ripple">Scopri
-        il MENU</a>
+    <!-- Menu Items Container -->
+    <div id="menuContainer" class="space-y-6">
+      <!-- Menu items will be loaded here -->
     </div>
-  </section>
+  </main>
 
+  <!-- Category Navigation -->
+  <!-- Category Navigation -->
+  <div
+    class="fixed bottom-4 left-1/2 -translate-x-1/2 z-40 w-[calc(100%-1.5rem)] max-w-sm rounded-2xl backdrop-blur-md bg-white/60 border border-white/30 shadow-[0_8px_30px_rgba(0,0,0,0.1)]">
+    <div id="categoryContainer" class="category-scroll overflow-x-auto py-3 px-2 flex space-x-4 category-container">
+      <div class="category-item flex flex-col items-center min-w-[70px] cursor-pointer" data-category="antipasti">
+        <div
+          class="category-icon w-14 h-14 rounded-lg bg-gray-100 flex items-center justify-center mb-1 border-2 border-transparent hover:border-primary active">
+          <i class="ri-restaurant-line ri-lg text-gray-700"></i>
+        </div>
+        <span class="text-xs whitespace-nowrap overflow-hidden text-overflow-ellipsis">Antipasti</span>
+      </div>
+      <div class="category-item flex flex-col items-center min-w-[70px] cursor-pointer" data-category="primi">
+        <div
+          class="category-icon w-14 h-14 rounded-lg bg-gray-100 flex items-center justify-center mb-1 border-2 border-transparent hover:border-primary">
+          <i class="ri-bowl-line ri-lg text-gray-700"></i>
+        </div>
+        <span class="text-xs whitespace-nowrap overflow-hidden text-overflow-ellipsis">Primi</span>
+      </div>
+      <div class="category-item flex flex-col items-center min-w-[70px] cursor-pointer" data-category="secondi">
+        <div
+          class="category-icon w-14 h-14 rounded-lg bg-gray-100 flex items-center justify-center mb-1 border-2 border-transparent hover:border-primary">
+          <i class="ri-knife-line ri-lg text-gray-700"></i>
+        </div>
+        <span class="text-xs whitespace-nowrap overflow-hidden text-overflow-ellipsis">Secondi</span>
+      </div>
+      <div class="category-item flex flex-col items-center min-w-[70px] cursor-pointer" data-category="dolci">
+        <div
+          class="category-icon w-14 h-14 rounded-lg bg-gray-100 flex items-center justify-center mb-1 border-2 border-transparent hover:border-primary">
+          <i class="ri-cake-3-line ri-lg text-gray-700"></i>
+        </div>
+        <span class="text-xs whitespace-nowrap overflow-hidden text-overflow-ellipsis">Dolci</span>
+      </div>
+      <div class="category-item flex flex-col items-center min-w-[70px] cursor-pointer" data-category="bevande">
+        <div
+          class="category-icon w-14 h-14 rounded-lg bg-gray-100 flex items-center justify-center mb-1 border-2 border-transparent hover:border-primary">
+          <i class="ri-cup-line ri-lg text-gray-700"></i>
+        </div>
+        <span class="text-xs whitespace-nowrap overflow-hidden text-overflow-ellipsis">Bevande</span>
+      </div>
+      <div class="category-item flex flex-col items-center min-w-[70px] cursor-pointer" data-category="birre">
+        <div
+          class="category-icon w-14 h-14 rounded-lg bg-gray-100 flex items-center justify-center mb-1 border-2 border-transparent hover:border-primary">
+          <i class="ri-beer-line ri-lg text-gray-700"></i>
+        </div>
+        <span class="text-xs whitespace-nowrap overflow-hidden text-overflow-ellipsis">Birre</span>
+      </div>
+      <div class="category-item flex flex-col items-center min-w-[70px] cursor-pointer" data-category="cocktail">
+        <div
+          class="category-icon w-14 h-14 rounded-lg bg-gray-100 flex items-center justify-center mb-1 border-2 border-transparent hover:border-primary">
+          <i class="ri-goblet-line ri-lg text-gray-700"></i>
+        </div>
+        <span class="text-xs whitespace-nowrap overflow-hidden text-overflow-ellipsis">Cocktail</span>
+      </div>
+      <div class="category-item flex flex-col items-center min-w-[70px] cursor-pointer" data-category="vini bianchi">
+        <div
+          class="category-icon w-14 h-14 rounded-lg bg-gray-100 flex items-center justify-center mb-1 border-2 border-transparent hover:border-primary">
+          <i class="ri-wine-line ri-lg text-gray-700"></i>
+        </div>
+        <span class="text-xs whitespace-nowrap overflow-hidden text-overflow-ellipsis">Vini Bianchi</span>
+      </div>
+      <div class="category-item flex flex-col items-center min-w-[70px] cursor-pointer" data-category="bollicine">
+        <div
+          class="category-icon w-14 h-14 rounded-lg bg-gray-100 flex items-center justify-center mb-1 border-2 border-transparent hover:border-primary">
+          <i class="ri-sparkling-line ri-lg text-gray-700"></i>
+        </div>
+        <span class="text-xs whitespace-nowrap overflow-hidden text-overflow-ellipsis">Bollicine</span>
+      </div>
+      <div class="category-item flex flex-col items-center min-w-[70px] cursor-pointer" data-category="digestivi">
+        <div
+          class="category-icon w-14 h-14 rounded-lg bg-gray-100 flex items-center justify-center mb-1 border-2 border-transparent hover:border-primary">
+          <i class="ri-shot-line ri-lg text-gray-700"></i>
+        </div>
+        <span class="text-xs whitespace-nowrap overflow-hidden text-overflow-ellipsis">Digestivi</span>
+      </div>
+    </div>
 
-  <!-- Chi Siamo -->
-  <section id="chi-siamo" class="py-16 px-6 max-w-3xl mx-auto text-center scroll-section scroll-mt-20"
-    data-aos="zoom-in-up" data-aos-anchor-placement="top-bottom">
-    <h2 class="text-3xl font-pacifico text-primary mb-4">Chi Siamo</h2>
-    <p class="text-gray-700">
-      EO è una nuova realtà gastronomica che sta rapidamente facendo parlare di sé. Con un’attenzione maniacale alla
-      qualità, ingredienti freschissimi e una cucina ispirata al mare, offriamo un’esperienza autentica e contemporanea
-      che sta conquistando il cuore di chi ci scopre.
-    </p>
-  </section>
+  </div>
+  </div>
 
-
-  <!-- Chef Section -->
-  <section id="team" class="py-16 px-6 bg-gray-100 scroll-section scroll-mt-20" data-aos="fade-right">
-    <div class="max-w-4xl mx-auto">
-      <h2 class="text-3xl font-pacifico text-primary text-center mb-8">Il Nostro Chef</h2>
-      <div class="flex flex-col md:flex-row items-center gap-8">
-        <img src="imgSito/chef.png" alt="Chef" class="w-48 h-48 rounded-full object-cover shadow-xl">
-        <div>
-          <h3 class="text-xl font-bold mb-2">Chef Norvese</h3>
-          <p class="text-gray-700">Con oltre 25 anni di esperienza, il nostro executive chef combina innovazione e
-            tradizione per offrire piatti che raccontano storie di mare, stagioni e cultura mediterranea.</p>
+  <!-- Info Modal -->
+  <div id="infoModal" class="modal hidden fixed inset-0 z-50 flex items-center justify-center">
+    <div class="absolute inset-0 bg-black bg-opacity-50" id="modalOverlay"></div>
+    <div class="bg-white rounded-lg w-[320px] max-h-[80vh] overflow-y-auto relative z-10 shadow-xl">
+      <div class="p-5">
+        <div class="flex justify-between items-center mb-4">
+          <h3 class="text-xl font-semibold text-gray-800">
+            Informazioni Utili
+          </h3>
+          <button id="closeModal"
+            class="w-8 h-8 flex items-center justify-center text-gray-500 hover:text-gray-700 cursor-pointer !rounded-button">
+            <i class="ri-close-line ri-lg"></i>
+          </button>
+        </div>
+        <div class="space-y-4">
+          <div class="border-b pb-3">
+            <h4 class="font-medium text-gray-800 mb-2">Coperto</h4>
+            <p class="text-gray-600">€3,00 a persona</p>
+          </div>
+          <div class="border-b pb-3">
+            <h4 class="font-medium text-gray-800 mb-2">Spese Aggiuntive</h4>
+            <ul class="text-gray-600 space-y-1">
+              <li>• Servizio al tavolo incluso</li>
+              <li>• Pane e grissini: €2,00 per cestino</li>
+              <li>• Acqua: €2,50 (0,75L)</li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-medium text-gray-800 mb-2">Prodotti Congelati</h4>
+            <p class="text-gray-600">
+              I piatti contrassegnati con (*) potrebbero contenere ingredienti
+              surgelati o congelati, in base alla disponibilità stagionale.
+            </p>
+          </div>
+          <div class="border-t pt-3 mt-4">
+            <h4 class="font-medium text-gray-800 mb-2">Allergeni</h4>
+            <p class="text-gray-600 text-sm">
+              Per informazioni sugli allergeni presenti nei nostri piatti, si
+              prega di chiedere al personale di sala.
+            </p>
+          </div>
         </div>
       </div>
     </div>
-  </section>
+  </div>
 
-  <!-- barman Section -->
-  <section class="py-16 px-6 " data-aos="fade-left">
-    <div class="max-w-4xl mx-auto">
-      <h2 class="text-3xl font-pacifico text-primary text-center mb-8">Il Nostro Barman</h2>
-      <div class="flex flex-col md:flex-row items-center gap-8">
-        <img src="imgSito/bar.jpg" alt="Barman" class="w-48 h-48 rounded-full object-cover shadow-xl">
-        <div>
-          <h3 class="text-xl font-bold mb-2">Alex</h3>
-          <p class="text-gray-700">
-            Alex è molto più di un barman: è un vero artista del gusto. Con oltre 35 anni di esperienza dietro il
-            bancone, crea cocktail d’autore che sorprendono e conquistano. Ogni suo drink è un viaggio sensoriale tra
-            sapori ricercati, tecniche moderne e un pizzico di magia.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
+  <!-- Scripts -->
+  <script id="menuData">
+    // Variabile globale per i dati del menu
+    let menuData = {};
 
-  <!-- Rossella Section -->
-  <section class="py-16 px-6 bg-gray-100" data-aos="fade-left">
-    <div class="max-w-4xl mx-auto">
-      <h2 class="text-3xl font-pacifico text-primary text-center mb-8">La nostra Manager</h2>
-      <div class="flex flex-col md:flex-row items-center gap-8">
-        <img src="imgSito/ross.png" alt="Manager Rossella" class="w-48 h-48 rounded-full object-cover shadow-xl">
-        <div>
-          <h3 class="text-xl font-bold mb-2">Rossella</h3>
-          <p class="text-gray-700">
-            Rossella è il cuore organizzativo di EO RistoPub. Con una passione innata per l’ospitalità e anni di
-            esperienza nella gestione della ristorazione, coordina con eleganza e precisione ogni dettaglio
-            dell’esperienza dei nostri ospiti. La sua attenzione al cliente, il sorriso sempre presente e la capacità di
-            guidare il team con empatia e determinazione la rendono un punto di riferimento per staff e clienti. Grazie
-            a lei, ogni serata da EO è un mix perfetto di accoglienza, armonia e qualità.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
+    // Funzione per caricare i dati del menu dal file JSON
+    async function loadMenuData() {
+      try {
+        const response = await fetch('menu.json');
+        if (!response.ok) {
+          throw new Error(`Errore nel caricamento del menu: ${response.status}`);
+        }
+        menuData = await response.json();
+        // Inizializza il menu con i dati caricati
+        initializeMenu();
+      } catch (error) {
+        console.error('Errore nel caricamento del menu:', error);
+        document.getElementById('menuContainer').innerHTML = `
+            <div class="p-4 bg-red-100 text-red-700 rounded-lg">
+              <p>Si è verificato un errore nel caricamento del menu. Riprova più tardi.</p>
+            </div>
+          `;
+      }
+    }
 
+    // Funzione per inizializzare il menu dopo il caricamento dei dati
+    function initializeMenu() {
+      const categoryItems = document.querySelectorAll(".category-item");
 
-  <!-- Specialità -->
-  <section class="py-16 px-6 bg-gray-100 backdrop-blur-md min-h-screen scroll-section scroll-mt-20"
-    data-aos="zoom-in-up">
-    <h2 class="text-3xl font-pacifico text-primary mb-6">Le Nostre Specialità</h2>
-    <div class="grid md:grid-cols-3 gap-6">
+      // Renderizza la prima categoria
+      renderMenuItems("antipasti");
+      setActiveCategory("antipasti");
+      window.scrollTo({ top: 0, behavior: "smooth" });
 
-      <!-- Linguine -->
-      <div class="bg-white/80 backdrop-blur-sm rounded-xl shadow-md p-6 hover:scale-105 transition-transform ripple">
-        <img src="img/linguine.jpg" alt="Linguine al pesto e gamberi" class="w-full h-40 object-cover rounded-md mb-4">
-        <h3 class="text-lg font-semibold text-primary">Linguine al Pesto e Gamberi</h3>
-        <p class="text-gray-700">Linguine fresche condite con pesto artigianale e gamberi scottati: un connubio di terra
-          e mare dal profumo irresistibile.</p>
-      </div>
-
-      <!-- Frittura -->
-      <div class="bg-white/80 backdrop-blur-sm rounded-xl shadow-md p-6 hover:scale-105 transition-transform ripple">
-        <img src="img/calafri.jpg" alt="Frittura di Calamari" class="w-full h-40 object-cover rounded-md mb-4">
-        <h3 class="text-lg font-semibold text-primary">Frittura di Calamari</h3>
-        <p class="text-gray-700">Calamari dorati e croccanti, fritti alla perfezione e serviti con maionese agli agrumi.
-          Un classico che conquista tutti.</p>
-      </div>
-
-      <!-- Salmone -->
-      <div class="bg-white/80 backdrop-blur-sm rounded-xl shadow-md p-6 hover:scale-105 transition-transform ripple">
-        <img src="img/salm.jpg" alt="Salmone Affumicato" class="w-full h-40 object-cover rounded-md mb-4">
-        <h3 class="text-lg font-semibold text-primary">Salmone Affumicato</h3>
-        <p class="text-gray-700">Filetto di salmone affumicato servito su rucola fresca, arricchito da granella di
-          pistacchio e gocce di riduzione balsamica.</p>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- MULTIPLI EVENTI-->
-  <!-- <section class="py-16 px-6 bg-gray-100 backdrop-blur-md min-h-screen" data-aos="zoom-in-up">
-
-    <div class="max-w-5xl mx-auto text-center">
-      <h2 class="text-3xl font-pacifico text-primary mb-4">Il Tuo Evento Speciale</h2>
-      <p class="text-gray-700 mb-8 text-lg">
-        Cerchi il luogo perfetto per festeggiare un compleanno, una laurea o una cena aziendale? <br
-          class="hidden sm:inline">
-        Da EO RistoPub rendiamo unico ogni momento, con menu personalizzati e ambientazioni curate nei minimi dettagli.
-      </p>
-
-      <div class="grid md:grid-cols-2 gap-6 mb-10">
-        <img src="imgSito/60.png" alt="Evento privato al ristorante"
-          class="w-full h-64 object-cover rounded-xl shadow-lg hover:scale-105 transition-transform duration-300">
-        <img src="imgSito/evento2.jpg" alt="Tavolata festiva"
-          class="w-full h-64 object-cover rounded-xl shadow-lg hover:scale-105 transition-transform duration-300">
-      </div>
-
-      <a href="tel:+393516982396"
-        class="inline-block bg-primary text-white px-8 py-3 rounded-full hover:bg-secondary transition-all shadow-md ripple text-lg font-semibold">
-        Organizza il Tuo Evento
-      </a>
-    </div>
-  </section> -->
-
-  <!-- Il Tuo Evento -->
-  <section id="eventi" class="py-16 px-6  backdrop-blur-md min-h-screen scroll-section scroll-mt-20"
-    data-aos="zoom-in-up">
-    <div class="max-w-5xl mx-auto text-center">
-      <h2 class="text-3xl font-pacifico text-primary mb-4">Il Tuo Evento Speciale</h2>
-      <p class="text-gray-700 mb-8 text-lg">
-        Cerchi il luogo perfetto per festeggiare un compleanno, una laurea o una cena aziendale? <br
-          class="hidden sm:inline">
-        Da EO RistoPub rendiamo unico ogni momento, con menu personalizzati e ambientazioni curate nei minimi dettagli.
-      </p>
-
-      <div class="mb-10">
-        <img src="imgSito/60.png" alt="Evento privato al ristorante"
-          class="w-full h-64 object-cover rounded-xl shadow-lg hover:scale-105 transition-transform duration-300">
-      </div>
-
-      <a href="tel:+393516982396"
-        class="inline-block bg-primary text-white px-8 py-3 rounded-full hover:bg-secondary transition-all shadow-md ripple text-lg font-semibold">
-        Organizza il Tuo Evento
-      </a>
-    </div>
-  </section>
-
-
-
-  <!-- Prenotazioni -->
-  <section id="prenota" class="py-16 px-6 text-center scroll-section scroll-mt-20" data-aos="zoom-in">
-    <h2 class="text-3xl font-pacifico text-primary mb-4">Prenota un Tavolo</h2>
-    <p class="mb-6 text-gray-700">Chiamaci per riservare il tuo tavolo e vivere un’esperienza culinaria unica.</p>
-
-    <!-- Immagini -->
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto mb-8">
-      <img src="imgSito/esterno.jpg" alt="Tavolo apparecchiato"
-        class="w-full h-64 object-cover rounded-xl shadow-lg hover:scale-105 transition-transform duration-300">
-      <img src="imgSito/interno.jpg" alt="Vista del locale"
-        class="w-full h-64 object-cover rounded-xl shadow-lg hover:scale-105 transition-transform duration-300">
-    </div>
-
-    <!-- Pulsante -->
-    <a href="tel:+393516982396"
-      class="inline-block bg-secondary text-white px-8 py-3 rounded-full hover:bg-primary transition-all shadow-md ripple text-lg font-semibold">Chiama
-      Ora</a>
-  </section>
-
-
-  <!-- Recensioni -->
-  <section class="bg-primary text-white py-16 px-6 text-center" data-aos="zoom-in-up"
-    data-aos-anchor-placement="top-bottom">
-    <h2 class="text-3xl font-pacifico mb-8">Cosa Dicono di Noi</h2>
-    <div class="space-y-6 max-w-3xl mx-auto">
-      <blockquote>
-        <p class="text-lg italic">“Un'esperienza culinaria indimenticabile! Il pesce era freschissimo e il personale
-          accogliente.”</p>
-        <footer class="mt-2">– Lucia R.</footer>
-      </blockquote>
-      <blockquote>
-        <p class="text-lg italic">“Il miglior ristorante di pesce della costa. Ottima atmosfera e sapori eccezionali.”
-        </p>
-        <footer class="mt-2">– Marco B.</footer>
-      </blockquote>
-    </div>
-  </section>
-
-
-  <!-- Orari e Mappa -->
-  <section class="py-16 px-6 bg-gray-100" data-aos="zoom-in-up" data-aos-anchor-placement="top-bottom">
-    <div class="max-w-4xl mx-auto text-center">
-      <h2 class="text-3xl font-pacifico text-primary mb-4">Orari di Apertura</h2>
-
-      <p class="mb-4 text-gray-700 leading-relaxed">
-        <strong>Lunedì:</strong> 12:00 – 02:00<br>
-        <strong>Martedì:</strong> Chiuso<br>
-        <strong>Mercoledì - Domenica:</strong> 12:00 – 02:00
-      </p>
-
-      <h3 class="text-xl font-semibold mt-8 mb-4">Dove Siamo</h3>
-      <p class="text-gray-700 mb-4">EO RistoPub, Via G. Garibaldi, 20, 90041 Balestrate PA</p>
-
-      <div class="flex justify-center gap-6 mb-6">
-        <a href="https://www.google.com/maps/place/EO+RistoPub,+Via+G.+Garibaldi,+20,+90041+Balestrate+PA"
-          target="_blank" class="flex items-center space-x-2 hover:underline">
-          <img src="imgSito/gmaps.png" alt="Google Maps" class="w-6 h-6">
-          <span class="text-sm text-primary font-semibold">Google Maps</span>
-        </a>
-        <a href="https://maps.apple.com/?q=EO+RistoPub,+Via+G.+Garibaldi,+20,+90041+Balestrate+PA" target="_blank"
-          class="flex items-center space-x-2 hover:underline">
-          <img src="imgSito/maps.png" alt="Apple Maps" class="w-6 h-6">
-          <span class="text-sm text-primary font-semibold">Maps</span>
-        </a>
-      </div>
-
-      <iframe class="w-full h-64 rounded-lg shadow"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3146.542100609881!2d13.010046915625402!3d38.049931679709915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13198f7645f14335%3A0xed339ccbd9fa9822!2sEO%20RistoPub!5e0!3m2!1sit!2sit!4v1716831600000!5m2!1sit!2sit"
-        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-      </iframe>
-    </div>
-  </section>
-
-
-
-
-  <!-- Footer -->
-  <footer class="bg-primary text-white py-8 text-center" data-aos="fade-in">
-    <p class="mb-4">© 2025 EO RistoPub. Tutti i diritti riservati.</p>
-    <div class="flex justify-center space-x-6 items-center">
-
-      <a href="https://www.facebook.com/eoristopub" target="_blank" rel="noopener noreferrer"
-        class="flex items-center space-x-2 hover:underline">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook"
-          class="w-5 h-5">
-      </a>
-
-      <a href="https://www.instagram.com/eo_ristopub?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
-        target="_blank" rel="noopener noreferrer" class="flex items-center space-x-2 hover:underline">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram"
-          class="w-5 h-5">
-      </a>
-
-      <!-- <a href="https://www.tripadvisor.it/Restaurant_Review-g1020805-d7716494-Reviews-Eo_Winebar-Balestrate_Province_of_Palermo_Sicily.html"
-        target="_blank" rel="noopener noreferrer" class="flex items-center space-x-2 hover:underline">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/7/7b/Tripadvisor_Icon_logo.svg" alt="TripAdvisor"
-          class="w-5 h-5">
-        <span>TripAdvisor</span>
-      </a> -->
-
-    </div>
-  </footer>
-
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      const mobileBtn = document.getElementById('mobile-menu-button');
-      const mobileMenu = document.getElementById('mobile-menu');
-      const links = document.querySelectorAll('.nav-link, .mobile-link');
-
-      // Toggle mobile menu
-      mobileBtn.addEventListener('click', () => {
-        mobileMenu.classList.toggle('hidden');
-      });
-
-      // Scroll animation + close menu
-      links.forEach(link => {
-        link.addEventListener('click', (e) => {
-          e.preventDefault();
-          const targetId = link.getAttribute('href').substring(1);
-          const targetEl = document.getElementById(targetId);
-          if (targetEl) {
-            window.scrollTo({
-              top: targetEl.offsetTop - 60,
-              behavior: 'smooth'
-            });
-          }
-          mobileMenu.classList.add('hidden');
+      // Aggiungi gli event listener alle categorie
+      categoryItems.forEach((item) => {
+        item.addEventListener("click", function () {
+          const category = this.getAttribute("data-category");
+          renderMenuItems(category);
+          setActiveCategory(category);
+          window.scrollTo({ top: 0, behavior: "smooth" });
         });
+
       });
-    });
+    }
+
+    // Carica i dati del menu quando il documento è pronto
+    document.addEventListener("DOMContentLoaded", loadMenuData);
   </script>
 
+  <script id="menuRendering">
+    // Funzione per renderizzare gli elementi del menu per una categoria specifica
+    function renderMenuItems(category) {
+      const menuContainer = document.getElementById("menuContainer");
+      menuContainer.innerHTML = "";
+
+      const categoryTitle = document.createElement("h3");
+      categoryTitle.className = "font-['Pacifico'] text-2xl text-white text-center mb-4";
+      categoryTitle.textContent = category.charAt(0).toUpperCase() + category.slice(1);
+      menuContainer.appendChild(categoryTitle);
+
+      const menuGrid = document.createElement("div");
+      menuGrid.className = "grid grid-cols-1 gap-6";
+
+      menuData[category].forEach((item, index) => {
+        const menuItem = document.createElement("div");
+
+        menuItem.className = "menu-item bg-white/70 backdrop-blur-md rounded-lg shadow-md overflow-hidden transition-all duration-300";
+
+        const itemId = `item-${category.replace(/\s+/g, '-')}-${index}`;
+
+        let menuItemHTML = `
+      <div class="p-4">
+        <div class="flex justify-between items-center mb-2">
+          <div>
+            <h4 class="text-lg font-medium text-gray-800">${item.nome}</h4>
+            <span class="text-primary font-medium">€${item.prezzo.toFixed(2)}</span>
+          </div>`;
+
+        if (item.immagine && item.immagine.trim() !== "") {
+          menuItemHTML += `
+          <div class="relative">
+  <button
+    class="load-image-btn"
+    data-image="${item.immagine}"
+    data-alt="${item.nome}"
+    data-item-id="${itemId}"
+    aria-label="Mostra immagine"
+    title="Mostra immagine"
+  >
+    <i class="ri-image-line ri-sm"></i>
+  </button>
+<span class="notification-dot absolute top-0 right-0 translate-x-1/2 -translate-y-1/2 w-2 h-2 rounded-full bg-red-500 border border-white"
+      data-notification-id="dot-${itemId}"></span>
+</div>
+
+`;
+        }
+
+        menuItemHTML += `
+        </div>
+        <p class="text-gray-600 text-sm mb-3">${item.descrizione}</p>
+      </div>
+      <div id="img-container-${itemId}" class="image-container hidden overflow-hidden transition-all duration-500" style="height: 0;"></div>
+    `;
+
+        menuItem.innerHTML = menuItemHTML;
+        menuGrid.appendChild(menuItem);
+      });
+
+      menuContainer.appendChild(menuGrid);
+
+      // Event listener bottone carica immagine — bottone sparisce dopo caricamento
+      document.querySelectorAll('.load-image-btn').forEach(button => {
+        if (button.hasListenerAttached) return;
+        button.hasListenerAttached = true;
+
+        button.addEventListener('click', async function () {
+          const imageSrc = this.getAttribute('data-image');
+          const imageAlt = this.getAttribute('data-alt');
+          const itemId = this.getAttribute('data-item-id');
+          const container = document.getElementById(`img-container-${itemId}`);
+
+          //  Rimuove il pallino di notifica
+          const dot = document.querySelector(`[data-notification-id="dot-${itemId}"]`);
+          if (dot) dot.remove();
+
+
+          this.disabled = true;
+          this.innerHTML = '<i class="ri-loader-4-line animate-spin"></i><span class="ml-2">Caricamento...</span>';
+          container.classList.remove('hidden');
+          container.style.height = '200px';
+
+          try {
+            await loadImageWithProgressAsync(imageSrc, imageAlt, container);
+            // Rimuovo il bottone dopo caricamento
+            this.remove();
+          } catch {
+            container.innerHTML = `
+          <div class="h-32 flex items-center justify-center bg-red-50 text-red-600">
+            <div class="text-center">
+              <i class="ri-error-warning-line ri-2x mb-2"></i>
+              <p class="text-sm">Errore nel caricamento dell'immagine</p>
+            </div>
+          </div>`;
+            this.disabled = false;
+            this.innerHTML = '<i class="ri-refresh-line"></i><span class="ml-2">Riprova</span>';
+          }
+        });
+      });
+    }
+
+    // Funzione caricamento immagine con progress bar
+    function loadImageWithProgressAsync(src, alt, container) {
+      return new Promise((resolve, reject) => {
+        container.innerHTML = `
+      <div class="h-full flex flex-col items-center justify-center bg-gray-100 p-4">
+        <div class="w-full max-w-xs">
+          <div class="flex justify-between text-sm text-gray-600 mb-2">
+            <span>Caricamento immagine</span>
+            <span id="progress-text">0%</span>
+          </div>
+          <div class="w-full bg-gray-200 rounded-full h-2">
+            <div id="progress-bar" class="bg-primary h-2 rounded-full transition-all duration-300" style="width: 0%"></div>
+          </div>
+        </div>
+      </div>`;
+
+        const progressBar = container.querySelector('#progress-bar');
+        const progressText = container.querySelector('#progress-text');
+        let progress = 0;
+
+        const interval = setInterval(() => {
+          progress += Math.random() * 15;
+          if (progress > 90) progress = 90;
+          if (progressBar) progressBar.style.width = progress + '%';
+          if (progressText) progressText.textContent = Math.round(progress) + '%';
+        }, 100);
+
+        const img = new Image();
+        img.alt = alt;
+        img.className = 'w-full h-full object-cover object-center';
+
+        img.onload = () => {
+          clearInterval(interval);
+          if (progressBar) progressBar.style.width = '100%';
+          if (progressText) progressText.textContent = '100%';
+
+          setTimeout(() => {
+            container.innerHTML = '';
+            container.appendChild(img);
+            container.style.height = '200px';
+            resolve();
+          }, 300);
+        };
+
+        img.onerror = () => {
+          clearInterval(interval);
+          reject();
+        };
+
+        img.src = src;
+      });
+    }
+
+
+    // Function to load image with progress simulation
+    HTMLButtonElement.prototype.loadImageWithProgress = function (imageSrc, imageAlt, itemId, container, button) {
+      const progressBarId = `progress-bar-${itemId}`;
+      const progressTextId = `progress-${itemId}`;
+
+      // Elementi progress bar
+      let progress = 0;
+      const progressInterval = setInterval(() => {
+        progress += Math.random() * 15;
+        if (progress > 90) progress = 90;
+
+        const bar = document.getElementById(progressBarId);
+        const text = document.getElementById(progressTextId);
+        if (bar) bar.style.width = progress + '%';
+        if (text) text.textContent = Math.round(progress) + '%';
+      }, 100);
+
+      // Carica immagine
+      const img = document.createElement('img');
+      img.className = 'w-full h-full object-cover object-center';
+      img.alt = imageAlt;
+      img.onload = function () {
+        clearInterval(progressInterval);
+
+        // Completa la barra
+        const bar = document.getElementById(progressBarId);
+        const text = document.getElementById(progressTextId);
+        if (bar) bar.style.width = '100%';
+        if (text) text.textContent = '100%';
+
+        setTimeout(() => {
+          // Inserisce immagine
+          container.innerHTML = '';
+          container.appendChild(img);
+          container.style.height = '200px';
+
+          // Stato toggle visibilità
+          let isVisible = true;
+
+          // Bottone di toggle
+          button.disabled = false;
+          button.innerHTML = '<i class="ri-eye-off-line"></i><span class="ml-2">Nascondi immagine</span><i class="ri-arrow-up-s-line ml-1"></i>';
+
+          button.onclick = function () {
+            isVisible = !isVisible;
+            if (isVisible) {
+              container.classList.remove('hidden');
+              container.style.height = '200px';
+              button.innerHTML = '<i class="ri-eye-off-line"></i><span class="ml-2">Nascondi immagine</span><i class="ri-arrow-up-s-line ml-1"></i>';
+            } else {
+              container.classList.add('hidden');
+              container.style.height = '0';
+              button.innerHTML = '<i class="ri-image-line"></i><span class="ml-2">Mostra immagine</span><i class="ri-arrow-down-s-line ml-1"></i>';
+            }
+          };
+        }, 500);
+      };
+
+      img.onerror = function () {
+        clearInterval(progressInterval);
+        container.innerHTML = `
+      <div class="h-32 flex items-center justify-center bg-red-50 text-red-600">
+        <div class="text-center">
+          <i class="ri-error-warning-line ri-2x mb-2"></i>
+          <p class="text-sm">Errore nel caricamento dell'immagine</p>
+        </div>
+      </div>`;
+        button.disabled = false;
+        button.innerHTML = '<i class="ri-refresh-line"></i><span class="ml-2">Riprova</span>';
+      };
+
+      // Imposta src (inizia caricamento)
+      img.src = imageSrc;
+    };
+
+
+    // Funzione per impostare la categoria attiva
+    function setActiveCategory(category) {
+      // Remove active class from all categories
+      document.querySelectorAll(".category-icon").forEach((icon) => {
+        icon.classList.remove("active");
+      });
+
+      // Add active class to selected category
+      const selectedCategory = document.querySelector(
+        `.category-item[data-category="${category}"] .category-icon`,
+      );
+      if (selectedCategory) {
+        selectedCategory.classList.add("active");
+      }
+
+      // Center the selected category
+      const categoryContainer = document.getElementById("categoryContainer");
+      const categoryItem = document.querySelector(
+        `.category-item[data-category="${category}"]`,
+      );
+
+      if (categoryContainer && categoryItem) {
+        const containerWidth = categoryContainer.offsetWidth;
+        const itemWidth = categoryItem.offsetWidth;
+        const itemLeft = categoryItem.offsetLeft;
+
+        categoryContainer.scrollLeft =
+          itemLeft - containerWidth / 2 + itemWidth / 2;
+      }
+    }
+  </script>
+
+  <script id="modalHandling">
+    document.addEventListener("DOMContentLoaded", function () {
+      const infoButton = document.getElementById("infoButton");
+      const infoModal = document.getElementById("infoModal");
+      const closeModal = document.getElementById("closeModal");
+      const modalOverlay = document.getElementById("modalOverlay");
+
+      // Open modal
+      infoButton.addEventListener("click", function () {
+        infoModal.classList.remove("hidden");
+      });
+
+      // Close modal functions
+      function closeModalFunction() {
+        infoModal.classList.add("hidden");
+      }
+
+      closeModal.addEventListener("click", closeModalFunction);
+      modalOverlay.addEventListener("click", closeModalFunction);
+    });
+  </script>
 </body>
 
 </html>
