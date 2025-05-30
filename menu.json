@@ -1,177 +1,441 @@
 {
-  
   "antipasti": [
     {
       "nome": "Insalata di Polpo",
       "descrizione": "Polpo, sedano, carote, olio, limone, sale, pepe",
       "prezzo": 10,
       "immagine": "",
-      "allergeni": ["molluschi", "sedano"]
+      "allergeni": [
+        "molluschi",
+        "sedano"
+      ]
     },
     {
       "nome": "Caponata di Spada",
       "descrizione": "Melanzane, pesce spada, cipolla, capperi, pomodoro, olive, olio, aceto, sale, pepe, zucchero",
       "prezzo": 8,
       "immagine": "",
-      "allergeni": ["pesce", "solfiti"]
+      "allergeni": [
+        "pesce",
+        "solfiti"
+      ]
     },
     {
       "nome": "Crudo di Gambero Rosso di Mazzara",
       "descrizione": "Gambero rosso",
       "prezzo": 8,
       "immagine": "",
-      "allergeni": ["crostacei"]
+      "allergeni": [
+        "crostacei"
+      ]
     },
     {
       "nome": "Crudo di Scampi",
       "descrizione": "Scampi",
       "prezzo": 8,
       "immagine": "",
-      "allergeni": ["crostacei"]
+      "allergeni": [
+        "crostacei"
+      ]
     },
     {
       "nome": "Tartare di Tonno",
       "descrizione": "Tonno ",
       "prezzo": 14,
       "immagine": "",
-      "allergeni": ["pesce"]
+      "allergeni": [
+        "pesce"
+      ]
     },
     {
       "nome": "Menù Degustazione del Giorno ",
       "descrizione": "(per 2 persone)",
       "prezzo": 20,
       "immagine": "",
-      "allergeni": ["grano", "pesce", "crostacei", "molluschi", "senape", "soia", "solfiti"]
+      "allergeni": [
+        "grano",
+        "pesce",
+        "crostacei",
+        "molluschi",
+        "senape",
+        "soia",
+        "solfiti"
+      ]
     }
   ],
   "primi": [
     {
       "nome": "Spaghetto alle Vongole",
       "descrizione": "Pasta, vongole, olio, aglio, prezzemolo, pepe",
-      "prezzo": 0,
+      "prezzo": 14,
       "immagine": "",
-      "allergeni": ["grano", "molluschi"]
+      "allergeni": [
+        "grano",
+        "molluschi"
+      ]
     },
     {
       "nome": "Busiate allo Scoglio",
       "descrizione": "Pasta, vongole, cozze, gamberi, calamari, scampi, olio, pomodoro ciliegino, cipolla, aglio, peperoncino, sale, prezzemolo",
-      "prezzo": 0,
+      "prezzo": 16,
       "immagine": "",
-      "allergeni": ["grano", "molluschi", "crostacei"]
+      "allergeni": [
+        "grano",
+        "molluschi",
+        "crostacei"
+      ]
     },
     {
       "nome": "Rettangoli di Cernia con Sugo ai Crostacei",
       "descrizione": "Pasta, cernia, crostacei, salmone, pomodoro, panna, peperoncino, olio, sale, cipolla",
-      "prezzo": 0,
+      "prezzo": 15,
       "immagine": "",
-      "allergeni": ["grano", "pesce", "crostacei", "latte"]
+      "allergeni": [
+        "grano",
+        "pesce",
+        "crostacei",
+        "latte"
+      ]
     },
     {
       "nome": "Linguine Gambero Rosso e Pistacchio",
       "descrizione": "Pasta, gambero rosso, pistacchio, pomodoro ciliegino, aglio, vino, olio, sale",
-      "prezzo": 0,
+      "prezzo": 16,
       "immagine": "",
-      "allergeni": ["grano", "crostacei", "pistacchio", "solfiti"]
+      "allergeni": [
+        "grano",
+        "crostacei",
+        "pistacchio",
+        "solfiti"
+      ]
     },
     {
       "nome": "Spaghetto Tintinnì",
       "descrizione": "Pasta, cozze, pomodoro, aglio, cipolla, olio, sale, pepe, prezzemolo",
-      "prezzo": 0,
+      "prezzo": 8,
       "immagine": "",
-      "allergeni": ["grano", "molluschi"]
+      "allergeni": [
+        "grano",
+        "molluschi"
+      ]
     }
   ],
   "secondi": [
     {
       "nome": "Coppo di Calamaro Fritto",
       "descrizione": "Calamaro, farina di grano duro, sale",
-      "prezzo": 0,
+      "prezzo": 14,
       "immagine": "",
-      "allergeni": ["grano", "molluschi"]
+      "allergeni": [
+        "grano",
+        "molluschi"
+      ]
     },
     {
       "nome": "Coppo di Pesce Fritto",
       "descrizione": "Pesce, farina di grano duro, sale",
-      "prezzo": 0,
+      "prezzo": 12,
       "immagine": "",
-      "allergeni": ["grano", "pesce"]
+      "allergeni": [
+        "grano",
+        "pesce"
+      ]
     },
     {
       "nome": "Calamaro alla Griglia",
       "descrizione": "Calamaro, olio, sale, limone",
-      "prezzo": 0,
+      "prezzo": 14,
       "immagine": "",
-      "allergeni": ["molluschi"]
+      "allergeni": [
+        "molluschi"
+      ]
     },
     {
       "nome": "Tataki di Tonno",
       "descrizione": "Tonno, pistacchio, basilico, olio, salsa di soia, sale, pepe",
-      "prezzo": 0,
+      "prezzo": 18,
       "immagine": "",
-      "allergeni": ["pesce", "pistacchio", "soia", "grano"]
+      "allergeni": [
+        "pesce",
+        "pistacchio",
+        "soia",
+        "grano"
+      ]
     },
     {
       "nome": "Zuppetta di Cozze",
       "descrizione": "Cozze, pomodoro, aglio, olio, vino, sale, pepe, prezzemolo",
-      "prezzo": 0,
+      "prezzo": 8,
       "immagine": "",
-      "allergeni": ["molluschi", "solfiti"]
+      "allergeni": [
+        "molluschi",
+        "solfiti"
+      ]
     },
     {
       "nome": "Pescato del Giorno",
-      "descrizione": "Al forno, arrosto o al sale",
-      "prezzo": 0,
+      "descrizione": "Al forno, arrosto o al sale (prezzo al KG)",
+      "prezzo": 40,
       "immagine": "",
-      "allergeni": ["pesce", "molluschi", "crostacei"]
+      "allergeni": [
+        "pesce",
+        "molluschi",
+        "crostacei"
+      ]
     }
   ],
   "dolci": [
     {
       "nome": "Torta Mirò",
       "descrizione": "",
-      "prezzo": 0,
+      "prezzo": 5,
       "immagine": "",
-      "allergeni": ["latte", "uovo", "soia", "grano"]
+      "allergeni": [
+        "latte",
+        "uovo",
+        "soia",
+        "grano"
+      ]
+    },
+    {
+      "nome": "Frutta",
+      "descrizione": "",
+      "prezzo": 5,
+      "immagine": "",
+      "allergeni": [
+        "latte",
+        "uovo",
+        "soia",
+        "grano"
+      ]
     }
   ],
   "bevande": [
-    { "nome": "Acqua Naturale", "descrizione": "", "prezzo": 2, "immagine": "" },
-    { "nome": "Acqua Frizzante", "descrizione": "", "prezzo": 2, "immagine": "" },
-    { "nome": "Acqua Naturale SOC", "descrizione": "", "prezzo": 1, "immagine": "" },
-    { "nome": "Acqua Frizzante SOC", "descrizione": "", "prezzo": 1, "immagine": "" },
-    { "nome": "Coca Cola", "descrizione": "", "prezzo": 2.5, "immagine": "" },
-    { "nome": "Coca Cola Zero", "descrizione": "", "prezzo": 2.5, "immagine": "" },
-    { "nome": "Fanta", "descrizione": "", "prezzo": 2, "immagine": "" },
-    { "nome": "Sprite", "descrizione": "", "prezzo": 2, "immagine": "" },
-    { "nome": "Schweppes Limone", "descrizione": "", "prezzo": 2, "immagine": "" },
-    { "nome": "Fever Tree Tonica Indian Premium", "descrizione": "", "prezzo": 3, "immagine": "" }
+    {
+      "nome": "Acqua Naturale",
+      "descrizione": "",
+      "prezzo": 2,
+      "immagine": ""
+    },
+    {
+      "nome": "Acqua Frizzante",
+      "descrizione": "",
+      "prezzo": 2,
+      "immagine": ""
+    },
+    {
+      "nome": "Acqua Naturale SOC",
+      "descrizione": "",
+      "prezzo": 1,
+      "immagine": ""
+    },
+    {
+      "nome": "Acqua Frizzante SOC",
+      "descrizione": "",
+      "prezzo": 1,
+      "immagine": ""
+    },
+    {
+      "nome": "Coca Cola",
+      "descrizione": "",
+      "prezzo": 2.5,
+      "immagine": ""
+    },
+    {
+      "nome": "Coca Cola Zero",
+      "descrizione": "",
+      "prezzo": 2.5,
+      "immagine": ""
+    },
+    {
+      "nome": "Fanta",
+      "descrizione": "",
+      "prezzo": 2,
+      "immagine": ""
+    },
+    {
+      "nome": "Sprite",
+      "descrizione": "",
+      "prezzo": 2,
+      "immagine": ""
+    },
+    {
+      "nome": "Schweppes Limone",
+      "descrizione": "",
+      "prezzo": 2,
+      "immagine": ""
+    },
+    {
+      "nome": "Fever Tree Tonica Indian Premium",
+      "descrizione": "",
+      "prezzo": 3,
+      "immagine": ""
+    }
   ],
   "birre": [
-    { "nome": "Messina Cristalli di Sale 33cl", "descrizione": "", "prezzo": 3, "immagine": "" },
-    { "nome": "Peroni Nastro Azzurro 33cl", "descrizione": "", "prezzo": 2, "immagine": "" }
+    {
+      "nome": "Messina Cristalli di Sale 33cl",
+      "descrizione": "",
+      "prezzo": 3,
+      "immagine": ""
+    },
+    {
+      "nome": "Peroni Nastro Azzurro 33cl",
+      "descrizione": "",
+      "prezzo": 2,
+      "immagine": ""
+    }
   ],
   "cocktail": [
-    { "nome": "Bombay Tonic", "descrizione": "", "prezzo": 7, "immagine": "" },
-    { "nome": "Tanqueray Tonic", "descrizione": "", "prezzo": 7, "immagine": "" },
-    { "nome": "Aperol Spritz", "descrizione": "", "prezzo": 7, "immagine": "" },
-    { "nome": "Negroni", "descrizione": "", "prezzo": 7, "immagine": "" }
+    {
+      "nome": "Bombay Tonic",
+      "descrizione": "",
+      "prezzo": 7,
+      "immagine": ""
+    },
+    {
+      "nome": "Tanqueray Tonic",
+      "descrizione": "",
+      "prezzo": 7,
+      "immagine": ""
+    },
+    {
+      "nome": "Aperol Spritz",
+      "descrizione": "",
+      "prezzo": 7,
+      "immagine": ""
+    },
+    {
+      "nome": "Negroni",
+      "descrizione": "",
+      "prezzo": 7,
+      "immagine": ""
+    }
   ],
   "vini bianchi": [
-    { "nome": "Bahar Zibibbo DOC – Tenute Orestiadi", "descrizione": "", "prezzo": 18, "immagine": "" },
-    { "nome": "Grillo – Molino a Vento", "descrizione": "", "prezzo": 16, "immagine": "" },
-    { "nome": "Chardonnay – Molino a Vento", "descrizione": "", "prezzo": 16, "immagine": "" },
-    { "nome": "Benedè DOC – Il Bianco di Camporeale", "descrizione": "", "prezzo": 16, "immagine": "" },
-    { "nome": "Anthilia Catarratto – Donnafugata", "descrizione": "", "prezzo": 18, "immagine": "" },
-    { "nome": "Leone Blend – Tenute dei Gilei", "descrizione": "", "prezzo": 25, "immagine": "" },
-    { "nome": "Zahra Grillo – Vitea", "descrizione": "", "prezzo": 16, "immagine": "" },
-    { "nome": "Kikè Traminer – Ina", "descrizione": "", "prezzo": 18, "immagine": "" }
+    {
+      "nome": "Bahar Zibibbo DOC",
+      "descrizione": "Tenute Orestiadi",
+      "prezzo": 18,
+      "immagine": ""
+    },
+    {
+      "nome": "Grillo – Molino a Vento ",
+      "descrizione": "Tenute Orestiadi",
+      "prezzo": 16,
+      "immagine": ""
+    },
+    {
+      "nome": "Chardonnay – Molino a Vento",
+      "descrizione": "Tenute Orestiadi",
+      "prezzo": 16,
+      "immagine": ""
+    },
+    {
+      "nome": "Benedè DOC",
+      "descrizione": "Alessandro di Camporeale",
+      "prezzo": 16,
+      "immagine": ""
+    },
+    {
+      "nome": "Anthilia Catarratto",
+      "descrizione": "Donnafugata",
+      "prezzo": 18,
+      "immagine": ""
+    },
+    {
+      "nome": "Leone Blend",
+      "descrizione": "Tenute dei Gilei",
+      "prezzo": 25,
+      "immagine": ""
+    },
+    {
+      "nome": "Zahra Grillo",
+      "descrizione": "Vitea",
+      "prezzo": 16,
+      "immagine": ""
+    },
+    {
+      "nome": "Kikè Traminer",
+      "descrizione": "Fina",
+      "prezzo": 18,
+      "immagine": ""
+    }
   ],
   "bollicine": [
-    { "nome": "Naonis Cuvée Brut – San Jeni", "descrizione": "", "prezzo": 15, "immagine": "" },
-    { "nome": "Charme Bianco", "descrizione": "", "prezzo": 22, "immagine": "" },
-    { "nome": "Charme Rosé", "descrizione": "", "prezzo": 22, "immagine": "" },
-    { "nome": "Metodo Classico Brut – Murgo", "descrizione": "", "prezzo": 0, "immagine": "" },
-    { "nome": "Petramater Metodo Classico Brut – Tenute Orestiadi", "descrizione": "", "prezzo": 35, "immagine": "" }
+    {
+      "nome": "Naonis Cuvée Brut – San Jeni ",
+      "descrizione": "Vitale",
+      "prezzo": 15,
+      "immagine": ""
+    },
+    {
+      "nome": "Charme Bianco",
+      "descrizione": "Firriato",
+      "prezzo": 22,
+      "immagine": ""
+    },
+    {
+      "nome": "Charme Rosé",
+      "descrizione": "Firriato",
+      "prezzo": 22,
+      "immagine": ""
+    },
+    {
+      "nome": "Metodo Classico Brut",
+      "descrizione": "Murgo",
+      "prezzo": 0,
+      "immagine": ""
+    },
+    {
+      "nome": "Petramater Metodo Classico Brut",
+      "descrizione": "Tenute Orestiadi",
+      "prezzo": 35,
+      "immagine": ""
+    }
   ],
-  "digestivi": []
+  "digestivi": [
+    {
+      "nome": "Amaro del Capo",
+      "descrizione": "",
+      "prezzo": 4,
+      "immagine": "",
+      "allergeni": ""
+    },
+    {
+      "nome": "Amaro Monte Polizzo",
+      "descrizione": "",
+      "prezzo": 4,
+      "immagine": "",
+      "allergeni": ""
+    },
+    {
+      "nome": "Limoncello Pallini",
+      "descrizione": "",
+      "prezzo": 3,
+      "immagine": "",
+      "allergeni": ""
+    },
+    {
+      "nome": "Marsala",
+      "descrizione": "",
+      "prezzo": 4,
+      "immagine": "",
+      "allergeni": ""
+    },
+    {
+      "nome": "Wisky",
+      "descrizione": "",
+      "prezzo": 5,
+      "immagine": "",
+      "allergeni": ""
+    },
+    {
+      "nome": "Grappa",
+      "descrizione": "",
+      "prezzo": 5,
+      "immagine": "",
+      "allergeni": ""
+    }
+  ]
 }

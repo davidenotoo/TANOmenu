@@ -11,7 +11,7 @@
     content="TANO Pescheria Alcamo, ristorante pesce Alcamo, pescheria con cucina Sicilia, crudi di mare, primi pesce fresco, pesce alla griglia, menù pesce Alcamo" />
   <meta name="author" content="TANO Pescheria">
   <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://tanomenu.netlify.app/menu.html" />
+  <link rel="canonical" href="https://tanomenu.netlify.app/" />
   <meta name="theme-color" content="#3192d0" />
 
   <!-- Favicon -->
@@ -36,7 +36,7 @@
   <meta property="og:description"
     content="Consulta il menù di TANO Pescheria: specialità di mare, crudi, primi gourmet e secondi grigliati. Solo pesce fresco locale." />
   <meta property="og:image" content="https://tanomenu.netlify.app/icons/icon.png" />
-  <meta property="og:url" content="https://tanomenu.netlify.app/menu" />
+  <meta property="og:url" content="https://tanomenu.netlify.app/" />
   <meta property="og:site_name" content="TANO Pescheria" />
   <meta property="og:locale" content="it_IT" />
 
@@ -56,7 +56,7 @@
     "name": "TANO Pescheria",
     "description": "Pescheria con cucina ad Alcamo. Menù di pesce fresco, primi gourmet e secondi alla griglia. Specialità siciliane e crudi di mare.",
     "image": "https://tanomenu.netlify.app/icons/icon.png",
-    "url": "https://tanomenu.netlify.app/menu",
+    "url": "https://tanomenu.netlify.app/",
     "telephone": "+39 0911234567",
     "address": {
       "@type": "PostalAddress",
@@ -76,7 +76,7 @@
     "hasMenu": {
       "@type": "Menu",
       "name": "Menù TANO Pescheria",
-      "url": "https://tanomenu.netlify.app/menu"
+      "url": "https://tanomenu.netlify.app/"
     }
   }
   </script>
@@ -335,7 +335,8 @@
     class="fixed top-0 left-0 right-0 z-50 px-4 py-3 flex justify-between items-center max-w-[375px] w-full mx-auto">
     <div class="w-10 h-10"></div>
     <img src="icons/log2.png" alt="Logo" class="w-50 h-14 object-cover" />
-    <button id="infoButton" class="w-8 h-8 flex items-center justify-center text-white cursor-pointer">
+    <button id="infoButton"
+      class="w-8 h-8 flex items-center justify-center bg-[#ec4e39] text-white rounded-full shadow cursor-pointer">
       <i class="ri-information-line ri-lg"></i>
     </button>
 
@@ -442,48 +443,56 @@
   <!-- Info Modal -->
   <div id="infoModal" class="modal hidden fixed inset-0 z-50 flex items-center justify-center">
     <div class="absolute inset-0 bg-black bg-opacity-50" id="modalOverlay"></div>
-    <div class="bg-white rounded-lg w-[320px] max-h-[80vh] overflow-y-auto relative z-10 shadow-xl">
-      <div class="p-5">
-        <div class="flex justify-between items-center mb-4">
-          <h3 class="text-xl font-semibold text-gray-800">
-            Informazioni Utili
-          </h3>
-          <button id="closeModal"
-            class="w-8 h-8 flex items-center justify-center text-gray-500 hover:text-gray-700 cursor-pointer !rounded-button">
-            <i class="ri-close-line ri-lg"></i>
-          </button>
+
+    <div class="bg-white rounded-[24px] w-[320px] max-h-[80vh] overflow-y-auto relative z-10 shadow-xl p-5">
+      <div class="flex justify-between items-center mb-4">
+        <h3 class="text-xl font-bold text-gray-800">Informazioni Utili</h3>
+        <button id="closeModal"
+          class="w-8 h-8 flex items-center justify-center text-gray-500 hover:text-gray-700 cursor-pointer">
+          <i class="ri-close-line ri-lg"></i>
+        </button>
+      </div>
+
+      <div class="space-y-5 text-gray-700 text-sm leading-relaxed">
+
+        <div>
+          <h4 class="font-semibold text-base text-gray-800 mb-1">Coperto</h4>
+          <p>€2,00 a persona</p>
         </div>
-        <div class="space-y-4">
-          <div class="border-b pb-3">
-            <h4 class="font-medium text-gray-800 mb-2">Coperto</h4>
-            <p class="text-gray-600">€3,00 a persona</p>
-          </div>
-          <div class="border-b pb-3">
-            <h4 class="font-medium text-gray-800 mb-2">Spese Aggiuntive</h4>
-            <ul class="text-gray-600 space-y-1">
-              <li>• Servizio al tavolo incluso</li>
-              <li>• Pane e grissini: €2,00 per cestino</li>
-              <li>• Acqua: €2,50 (0,75L)</li>
-            </ul>
-          </div>
-          <div>
-            <h4 class="font-medium text-gray-800 mb-2">Prodotti Congelati</h4>
-            <p class="text-gray-600">
-              I piatti contrassegnati con (*) potrebbero contenere ingredienti
-              surgelati o congelati, in base alla disponibilità stagionale.
-            </p>
-          </div>
-          <div class="border-t pt-3 mt-4">
-            <h4 class="font-medium text-gray-800 mb-2">Allergeni</h4>
-            <p class="text-gray-600 text-sm">
-              Per informazioni sugli allergeni presenti nei nostri piatti, si
-              prega di chiedere al personale di sala.
-            </p>
-          </div>
+
+        <div>
+          <h4 class="font-semibold text-base text-gray-800 mb-1">Prodotti Congelati</h4>
+          <p>I piatti contrassegnati con (*) possono contenere ingredienti congelati, in base alla disponibilità
+            stagionale.</p>
+        </div>
+
+        <div class="border-t pt-3">
+          <h4 class="font-semibold text-base text-gray-800 mb-1">Allergeni</h4>
+          <p>Alcuni piatti possono contenere i seguenti allergeni:</p>
+          <ul class="list-disc list-inside mt-2 space-y-1">
+            <li>Cereali contenenti glutine (grano, orzo, segale, avena...)</li>
+            <li>Crostacei e prodotti derivati</li>
+            <li>Uova e prodotti a base di uova</li>
+            <li>Pesce e prodotti a base di pesce</li>
+            <li>Arachidi</li>
+            <li>Soia</li>
+            <li>Latte e prodotti lattiero-caseari (incluso lattosio)</li>
+            <li>Frutta a guscio (mandorle, nocciole, noci, pistacchi...)</li>
+            <li>Sedano</li>
+            <li>Senape</li>
+            <li>Sesamo</li>
+            <li>Anidride solforosa e solfiti</li>
+            <li>Lupini</li>
+            <li>Molluschi</li>
+          </ul>
+          <p class="mt-3 text-gray-500 text-xs italic">
+            Per maggiori dettagli sugli ingredienti e la presenza di allergeni, rivolgiti al personale di sala.
+          </p>
         </div>
       </div>
     </div>
   </div>
+
 
   <!-- Scripts -->
   <script id="menuData">
@@ -542,7 +551,11 @@
       menuContainer.innerHTML = "";
 
       const categoryTitle = document.createElement("h3");
-      categoryTitle.className = "category-title";
+      categoryTitle.className = "category-title text-[#ec4e39]";
+      categoryTitle.style.textShadow =
+        "-2px -2px 0 white, 2px -2px 0 white, -2px 2px 0 white, 2px 2px 0 white";
+
+
       categoryTitle.textContent = category.charAt(0).toUpperCase() + category.slice(1);
       menuContainer.appendChild(categoryTitle);
 
