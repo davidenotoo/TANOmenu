@@ -1,45 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
-  <!-- Homepage -->
   <url>
-    <loc>https://eoristopub.netlify.app/</loc>
-    <lastmod>2025-05-28</lastmod>
+    <loc>https://tanomenu.netlify.app/</loc>
+    <lastmod>2025-05-30</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
 
-  <!-- Sezioni interne ancorate -->
   <url>
-    <loc>https://eoristopub.netlify.app/#chi-siamo</loc>
-    <lastmod>2025-05-28</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://eoristopub.netlify.app/#chef</loc>
-    <lastmod>2025-05-28</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://eoristopub.netlify.app/#barman</loc>
-    <lastmod>2025-05-28</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://eoristopub.netlify.app/#eventi</loc>
-    <lastmod>2025-05-28</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://eoristopub.netlify.app/#prenota</loc>
-    <lastmod>2025-05-28</lastmod>
-    <priority>0.8</priority>
+    <loc>https://tanomenu.netlify.app/menu.html</loc>
+    <lastmod>2025-05-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
   </url>
 
-  <!-- Menu page -->
   <url>
-    <loc>https://eoristopub.netlify.app/menu.html</loc>
-    <lastmod>2025-05-28</lastmod>
-    <priority>0.9</priority>
+    <loc>https://tanomenu.netlify.app/manifest.json</loc>
+    <lastmod>2025-05-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.2</priority>
   </url>
 
 </urlset>
