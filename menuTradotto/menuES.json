@@ -1,0 +1,359 @@
+{
+  "antipasti": [
+    {
+      "nome": "Ensalada de pulpo",
+      "descrizione": "pulpo, apio, zanahoria, aceite de oliva, limón, sal, pimienta",
+      "prezzo": 12,
+      "immagine": "",
+      "allergeni": [
+        "moluscos",
+        "apio"
+      ]
+    },
+    {
+      "nome": "Caponata con pez espada",
+      "descrizione": "berenjenas, pez espada, cebolla, alcaparras, tomates, aceitunas, aceite, vinagre, sal, pimienta, azúcar",
+      "prezzo": 10,
+      "immagine": "",
+      "allergeni": [
+        "pescado",
+        "dióxidos y sulfitos"
+      ]
+    },
+    {
+      "nome": "Carpaccio de gambas rojas Mazzara",
+      "descrizione": "gambas rojas",
+      "prezzo": 10,
+      "immagine": "",
+      "allergeni": [
+        "crustáceos"
+      ]
+    },
+    {
+      "nome": "Carpaccio de escórpora",
+      "descrizione": "escórpora",
+      "prezzo": 10,
+      "immagine": "",
+      "allergeni": [
+        "crustáceos"
+      ]
+    },
+    {
+      "nome": "Tartar de atún",
+      "descrizione": "atún",
+      "prezzo": 14,
+      "immagine": "",
+      "allergeni": [
+        "pescado"
+      ]
+    },
+    {
+      "nome": "Menú degustación del día",
+      "descrizione": "(para 2 personas)",
+      "prezzo": 22,
+      "immagine": "",
+      "allergeni": [
+        "trigo",
+        "pescado",
+        "crustáceos",
+        "moluscos",
+        "mostaza",
+        "soja",
+        "dióxidos y sulfitos"
+      ]
+    }
+  ],
+  "primi": [
+    {
+      "nome": "Spaghetti alle vongole",
+      "descrizione": "spaghetti, moluscos, aceite, ajo, perejil, pimienta",
+      "prezzo": 14,
+      "immagine": "",
+      "allergeni": [
+        "trigo",
+        "moluscos"
+      ]
+    },
+    {
+      "nome": "Spaghetti con mariscos",
+      "descrizione": "spaghetti, moluscos, mejillones, gambas, calamares, escórpora, aceite, cherry, cebolla, ajo, chile, sal, perejil",
+      "prezzo": 16,
+      "immagine": "",
+      "allergeni": [
+        "trigo",
+        "moluscos",
+        "crustáceos"
+      ]
+    },
+    {
+      "nome": "Tagliatelle con mero en salsa cremosa de crustáceos",
+      "descrizione": "pasta, mero, crustáceos, salmón, tomates, nata, chile, aceite, sal, cebolla",
+      "prezzo": 15,
+      "immagine": "",
+      "allergeni": [
+        "trigo",
+        "pescado",
+        "crustáceos",
+        "lácteos"
+      ]
+    },
+    {
+      "nome": "Tagliatelle con gambas rojas y pistachos",
+      "descrizione": "pasta, gambas rojas, pistachos, cherry, ajo, vino blanco, aceite, sal",
+      "prezzo": 16,
+      "immagine": "",
+      "allergeni": [
+        "trigo",
+        "crustáceos",
+        "pistachos",
+        "dióxidos y sulfitos"
+      ]
+    },
+    {
+      "nome": "Pasta Tintinni",
+      "descrizione": "pasta, mejillones, tomates, ajo, cebolla, aceite, sal, pimienta, perejil",
+      "prezzo": 8,
+      "immagine": "",
+      "allergeni": [
+        "trigo",
+        "moluscos"
+      ]
+    }
+  ],
+  "secondi": [
+    {
+      "nome": "Calamares fritos",
+      "descrizione": "calamares, harina de trigo duro, sal",
+      "prezzo": 14,
+      "immagine": "",
+      "allergeni": [
+        "trigo",
+        "moluscos"
+      ]
+    },
+    {
+      "nome": "Pescado frito",
+      "descrizione": "pescado, harina de trigo duro, sal",
+      "prezzo": 12,
+      "immagine": "",
+      "allergeni": [
+        "trigo",
+        "pescado"
+      ]
+    },
+    {
+      "nome": "Calamares a la parrilla",
+      "descrizione": "calamares, aceite, sal, limón",
+      "prezzo": 14,
+      "immagine": "",
+      "allergeni": [
+        "moluscos"
+      ]
+    },
+    {
+      "nome": "Tartar de atún al horno",
+      "descrizione": "atún, pistachos, albahaca, aceite, salsa de soja, sal, pimienta",
+      "prezzo": 18,
+      "immagine": "",
+      "allergeni": [
+        "pescado",
+        "pistachos",
+        "soja",
+        "trigo"
+      ]
+    },
+    {
+      "nome": "Sopa de mejillones",
+      "descrizione": "mejillones, tomates, ajo, aceite, vino blanco, sal, pimienta, perejil",
+      "prezzo": 8,
+      "immagine": "",
+      "allergeni": [
+        "moluscos",
+        "dióxidos y sulfitos"
+      ]
+    },
+    {
+      "nome": "Pescado del día",
+      "descrizione": "a la parrilla, frito, al horno con sal (precio por 100 g)",
+      "prezzo": 40,
+      "immagine": "",
+      "allergeni": [
+        "pescado",
+        "moluscos",
+        "crustáceos"
+      ]
+    }
+  ],
+  "dolci": [
+    {
+      "nome": "Tarta Miraggio",
+      "descrizione": "",
+      "prezzo": 5,
+      "immagine": "",
+      "allergeni": [
+        "lácteos",
+        "huevos",
+        "soja",
+        "trigo"
+      ]
+    },
+    {
+      "nome": "Frutas",
+      "descrizione": "",
+      "prezzo": 5,
+      "immagine": "",
+      "allergeni": [
+        "lácteos",
+        "huevos",
+        "soja",
+        "trigo"
+      ]
+    }
+  ],
+  "bevande": [
+    {
+      "nome": "Agua mineral",
+      "descrizione": "",
+      "prezzo": 2,
+      "immagine": ""
+    },
+    {
+      "nome": "Agua con gas",
+      "descrizione": "",
+      "prezzo": 2,
+      "immagine": ""
+    },
+    {
+      "nome": "Agua mineral SOC",
+      "descrizione": "",
+      "prezzo": 1,
+      "immagine": ""
+    },
+    {
+      "nome": "Agua con gas SOC",
+      "descrizione": "",
+      "prezzo": 1,
+      "immagine": ""
+    },
+    {
+      "nome": "Coca-Cola",
+      "descrizione": "",
+      "prezzo": 2.5,
+      "immagine": ""
+    },
+    {
+      "nome": "Coca-Cola Zero",
+      "descrizione": "",
+      "prezzo": 2.5,
+      "immagine": ""
+    },
+    {
+      "nome": "Fanta",
+      "descrizione": "",
+      "prezzo": 2,
+      "immagine": ""
+    },
+    {
+      "nome": "Sprite",
+      "descrizione": "",
+      "prezzo": 2,
+      "immagine": ""
+    },
+    {
+      "nome": "Sprite con limón",
+      "descrizione": "",
+      "prezzo": 2,
+      "immagine": ""
+    },
+    {
+      "nome": "Tónica Fever-Tree Indian",
+      "descrizione": "",
+      "prezzo": 3,
+      "immagine": ""
+    }
+  ],
+  "birre": [
+    {
+      "nome": "Messina Birra Cristalli di Sale 33cl",
+      "descrizione": "",
+      "prezzo": 3,
+      "immagine": ""
+    },
+    {
+      "nome": "Peroni Nastro Azzurro 33cl",
+      "descrizione": "",
+      "prezzo": 2,
+      "immagine": ""
+    }
+  ],
+  "cocktail": [
+    {
+      "nome": "Bombay Tonic",
+      "descrizione": "",
+      "prezzo": 7,
+      "immagine": ""
+    },
+    {
+      "nome": "Tanqueray Tonic",
+      "descrizione": "",
+      "prezzo": 7,
+      "immagine": ""
+    },
+    {
+      "nome": "Aperol Spritz",
+      "descrizione": "",
+      "prezzo": 7,
+      "immagine": ""
+    },
+    {
+      "nome": "Negroni",
+      "descrizione": "",
+      "prezzo": 7,
+      "immagine": ""
+    }
+  ],
+  "digestivi": [
+    {
+      "nome": "Amaro del Capo",
+      "descrizione": "",
+      "prezzo": 4,
+      "immagine": "",
+      "allergeni": ""
+    },
+    {
+      "nome": "Amaro Montepulciano",
+      "descrizione": "",
+      "prezzo": 4,
+      "immagine": "",
+      "allergeni": ""
+    },
+    {
+      "nome": "Parini Limoncello",
+      "descrizione": "",
+      "prezzo": 3,
+      "immagine": "",
+      "allergeni": ""
+    },
+    {
+      "nome": "Marsala",
+      "descrizione": "",
+      "prezzo": 4,
+      "immagine": "",
+      "allergeni": ""
+    },
+    {
+      "nome": "Whisky",
+      "descrizione": "",
+      "prezzo": 5,
+      "immagine": "",
+      "allergeni": ""
+    },
+    {
+      "nome": "Grappa",
+      "descrizione": "",
+      "prezzo": 5,
+      "immagine": "",
+      "allergeni": ""
+    }
+  ]
+}

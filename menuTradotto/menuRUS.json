@@ -1,0 +1,359 @@
+{
+  "antipasti": [
+    {
+      "nome": "Салат с осьминогом",
+      "descrizione": "осьминог, сельдерей, морковь, оливковое масло, лимон, соль, перец",
+      "prezzo": 12,
+      "immagine": "",
+      "allergeni": [
+        "моллюски",
+        "сельдерей"
+      ]
+    },
+    {
+      "nome": "Капоната с меч-рыбой",
+      "descrizione": "баклажаны, меч-рыба, лук, каперсы, помидоры, оливки, масло, уксус, соль, перец, сахар",
+      "prezzo": 10,
+      "immagine": "",
+      "allergeni": [
+        "рыба",
+        "диоксиды и сульфиты"
+      ]
+    },
+    {
+      "nome": "Карпаччо из красных креветок Маццара",
+      "descrizione": "красные креветки",
+      "prezzo": 10,
+      "immagine": "",
+      "allergeni": [
+        "ракообразные"
+      ]
+    },
+    {
+      "nome": "Карпаччо из скарпи",
+      "descrizione": "скарпи",
+      "prezzo": 10,
+      "immagine": "",
+      "allergeni": [
+        "ракообразные"
+      ]
+    },
+    {
+      "nome": "Тартар из тунца",
+      "descrizione": "тунец",
+      "prezzo": 14,
+      "immagine": "",
+      "allergeni": [
+        "рыба"
+      ]
+    },
+    {
+      "nome": "Дегустационное меню на сегодня",
+      "descrizione": "(на 2 персоны)",
+      "prezzo": 22,
+      "immagine": "",
+      "allergeni": [
+        "пшеница",
+        "рыба",
+        "ракообразные",
+        "моллюски",
+        "горчица",
+        "соя",
+        "диоксиды и сульфиты"
+      ]
+    }
+  ],
+  "primi": [
+    {
+      "nome": "Спагетти вонголе",
+      "descrizione": "спагетти, моллюски, масло, чеснок, петрушка, перец",
+      "prezzo": 14,
+      "immagine": "",
+      "allergeni": [
+        "пшеница",
+        "моллюски"
+      ]
+    },
+    {
+      "nome": "Спагетти с морепродуктами",
+      "descrizione": "спагетти, моллюски, мидии, креветки, кальмары, скарпи, масло, черри, лук, чеснок, перец чили, соль, петрушка",
+      "prezzo": 16,
+      "immagine": "",
+      "allergeni": [
+        "пшеница",
+        "моллюски",
+        "ракообразные"
+      ]
+    },
+    {
+      "nome": "Тальятелле с групером в кремовом соусе из ракообразных",
+      "descrizione": "паста, групер, ракообразные, лосось, помидоры, сливки, перец чили, масло, соль, лук",
+      "prezzo": 15,
+      "immagine": "",
+      "allergeni": [
+        "пшеница",
+        "рыба",
+        "ракообразные",
+        "молочные продукты"
+      ]
+    },
+    {
+      "nome": "Тальятелле с красными креветками и фисташками",
+      "descrizione": "паста, красные креветки, фисташки, черри, чеснок, белое вино, масло, соль",
+      "prezzo": 16,
+      "immagine": "",
+      "allergeni": [
+        "пшеница",
+        "ракообразные",
+        "фисташки",
+        "диоксиды и сульфиты"
+      ]
+    },
+    {
+      "nome": "Паста Тинтинни",
+      "descrizione": "паста, мидии, помидоры, чеснок, лук, масло, соль, перец, петрушка",
+      "prezzo": 8,
+      "immagine": "",
+      "allergeni": [
+        "пшеница",
+        "моллюски"
+      ]
+    }
+  ],
+  "secondi": [
+    {
+      "nome": "Кальмары во фритюре",
+      "descrizione": "кальмары, мука из твердых сортов пшеницы, соль",
+      "prezzo": 14,
+      "immagine": "",
+      "allergeni": [
+        "пшеница",
+        "моллюски"
+      ]
+    },
+    {
+      "nome": "Рыба во фритюре",
+      "descrizione": "рыба, мука из твердых сортов пшеницы, соль",
+      "prezzo": 12,
+      "immagine": "",
+      "allergeni": [
+        "пшеница",
+        "рыба"
+      ]
+    },
+    {
+      "nome": "Кальмары на гриле",
+      "descrizione": "кальмары, масло, соль, лимон",
+      "prezzo": 14,
+      "immagine": "",
+      "allergeni": [
+        "моллюски"
+      ]
+    },
+    {
+      "nome": "Запеченный тартар из тунца",
+      "descrizione": "тунец, фисташки, базилик, масло, соевый соус, соль, перец",
+      "prezzo": 18,
+      "immagine": "",
+      "allergeni": [
+        "рыба",
+        "фисташки",
+        "соя",
+        "пшеница"
+      ]
+    },
+    {
+      "nome": "Суп из мидий",
+      "descrizione": "мидии, помидоры, чеснок, масло, белое вино, соль, перец, петрушка",
+      "prezzo": 8,
+      "immagine": "",
+      "allergeni": [
+        "моллюски",
+        "диоксиды и сульфиты"
+      ]
+    },
+    {
+      "nome": "Рыба дня",
+      "descrizione": "гриль, жареная, запеченная в соли (цена за 100 г)",
+      "prezzo": 40,
+      "immagine": "",
+      "allergeni": [
+        "рыба",
+        "моллюски",
+        "ракообразные"
+      ]
+    }
+  ],
+  "dolci": [
+    {
+      "nome": "Торт Мираж",
+      "descrizione": "",
+      "prezzo": 5,
+      "immagine": "",
+      "allergeni": [
+        "молочные продукты",
+        "яйца",
+        "соя",
+        "пшеница"
+      ]
+    },
+    {
+      "nome": "Фрукты",
+      "descrizione": "",
+      "prezzo": 5,
+      "immagine": "",
+      "allergeni": [
+        "молочные продукты",
+        "яйца",
+        "соя",
+        "пшеница"
+      ]
+    }
+  ],
+  "bevande": [
+    {
+      "nome": "Минеральная вода",
+      "descrizione": "",
+      "prezzo": 2,
+      "immagine": ""
+    },
+    {
+      "nome": "Газированная вода",
+      "descrizione": "",
+      "prezzo": 2,
+      "immagine": ""
+    },
+    {
+      "nome": "Минеральная вода SOC",
+      "descrizione": "",
+      "prezzo": 1,
+      "immagine": ""
+    },
+    {
+      "nome": "Газированная вода SOC",
+      "descrizione": "",
+      "prezzo": 1,
+      "immagine": ""
+    },
+    {
+      "nome": "Кока-Кола",
+      "descrizione": "",
+      "prezzo": 2.5,
+      "immagine": ""
+    },
+    {
+      "nome": "Кока-Кола Зеро",
+      "descrizione": "",
+      "prezzo": 2.5,
+      "immagine": ""
+    },
+    {
+      "nome": "Фанта",
+      "descrizione": "",
+      "prezzo": 2,
+      "immagine": ""
+    },
+    {
+      "nome": "Спрайт",
+      "descrizione": "",
+      "prezzo": 2,
+      "immagine": ""
+    },
+    {
+      "nome": "Лимонный Спрайт",
+      "descrizione": "",
+      "prezzo": 2,
+      "immagine": ""
+    },
+    {
+      "nome": "Тоник Fever-Tree Indian",
+      "descrizione": "",
+      "prezzo": 3,
+      "immagine": ""
+    }
+  ],
+  "birre": [
+    {
+      "nome": "Messina Birra Cristalli di Sale 33cl",
+      "descrizione": "",
+      "prezzo": 3,
+      "immagine": ""
+    },
+    {
+      "nome": "Peroni Nastro Azzurro 33cl",
+      "descrizione": "",
+      "prezzo": 2,
+      "immagine": ""
+    }
+  ],
+  "cocktail": [
+    {
+      "nome": "Bombay Tonic",
+      "descrizione": "",
+      "prezzo": 7,
+      "immagine": ""
+    },
+    {
+      "nome": "Tanqueray Tonic",
+      "descrizione": "",
+      "prezzo": 7,
+      "immagine": ""
+    },
+    {
+      "nome": "Aperol Spritz",
+      "descrizione": "",
+      "prezzo": 7,
+      "immagine": ""
+    },
+    {
+      "nome": "Negroni",
+      "descrizione": "",
+      "prezzo": 7,
+      "immagine": ""
+    }
+  ],
+  "digestivi": [
+    {
+      "nome": "Амаро дель Капо",
+      "descrizione": "",
+      "prezzo": 4,
+      "immagine": "",
+      "allergeni": ""
+    },
+    {
+      "nome": "Амаро Монте-полчиано",
+      "descrizione": "",
+      "prezzo": 4,
+      "immagine": "",
+      "allergeni": ""
+    },
+    {
+      "nome": "Парини Лимончелло",
+      "descrizione": "",
+      "prezzo": 3,
+      "immagine": "",
+      "allergeni": ""
+    },
+    {
+      "nome": "Марсала",
+      "descrizione": "",
+      "prezzo": 4,
+      "immagine": "",
+      "allergeni": ""
+    },
+    {
+      "nome": "Виски",
+      "descrizione": "",
+      "prezzo": 5,
+      "immagine": "",
+      "allergeni": ""
+    },
+    {
+      "nome": "Граппа",
+      "descrizione": "",
+      "prezzo": 5,
+      "immagine": "",
+      "allergeni": ""
+    }
+  ]
+}

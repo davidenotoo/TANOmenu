@@ -1,0 +1,289 @@
+{
+  "antipasti": [
+    {
+      "nome": "Salade de Poulpe",
+      "descrizione": "Poulpe, céleri, carottes, huile, citron, sel, poivre",
+      "prezzo": 12,
+      "immagine": "",
+      "allergeni": ["mollusques", "céleri"]
+    },
+    {
+      "nome": "Caponata d’Espadon",
+      "descrizione": "Aubergines, espadon, oignon, câpres, tomate, olives, huile, vinaigre, sel, poivre, sucre",
+      "prezzo": 10,
+      "immagine": "",
+      "allergeni": ["poisson", "sulfites"]
+    },
+    {
+      "nome": "Crevettes Rouges de Mazzara Crues",
+      "descrizione": "Crevette rouge",
+      "prezzo": 10,
+      "immagine": "",
+      "allergeni": ["crustacés"]
+    },
+    {
+      "nome": "Langoustines Crues",
+      "descrizione": "Langoustines",
+      "prezzo": 10,
+      "immagine": "",
+      "allergeni": ["crustacés"]
+    },
+    {
+      "nome": "Tartare de Thon",
+      "descrizione": "Thon",
+      "prezzo": 14,
+      "immagine": "",
+      "allergeni": ["poisson"]
+    },
+    {
+      "nome": "Menu Dégustation du Jour",
+      "descrizione": "(pour 2 personnes)",
+      "prezzo": 22,
+      "immagine": "",
+      "allergeni": ["blé", "poisson", "crustacés", "mollusques", "moutarde", "soja", "sulfites"]
+    }
+  ],
+  "primi": [
+    {
+      "nome": "Spaghetti aux Palourdes",
+      "descrizione": "Pâtes, palourdes, huile, ail, persil, poivre",
+      "prezzo": 14,
+      "immagine": "",
+      "allergeni": ["blé", "mollusques"]
+    },
+    {
+      "nome": "Busiate aux Fruits de Mer",
+      "descrizione": "Pâtes, palourdes, moules, crevettes, calmars, langoustines, huile, tomates cerises, oignon, ail, piment, sel, persil",
+      "prezzo": 16,
+      "immagine": "",
+      "allergeni": ["blé", "mollusques", "crustacés"]
+    },
+    {
+      "nome": "Raviolis de Mérou Sauce Crustacés",
+      "descrizione": "Pâtes, mérou, crustacés, saumon, tomate, crème, piment, huile, sel, oignon",
+      "prezzo": 15,
+      "immagine": "",
+      "allergeni": ["blé", "poisson", "crustacés", "lait"]
+    },
+    {
+      "nome": "Linguine Crevette Rouge et Pistache",
+      "descrizione": "Pâtes, crevette rouge, pistache, tomates cerises, ail, vin, huile, sel",
+      "prezzo": 16,
+      "immagine": "",
+      "allergeni": ["blé", "crustacés", "pistache", "sulfites"]
+    },
+    {
+      "nome": "Spaghetti Tintinnì",
+      "descrizione": "Pâtes, moules, tomate, ail, oignon, huile, sel, poivre, persil",
+      "prezzo": 8,
+      "immagine": "",
+      "allergeni": ["blé", "mollusques"]
+    }
+  ],
+  "secondi": [
+    {
+      "nome": "Cornet de Calamars Frits",
+      "descrizione": "Calamar, farine de blé dur, sel",
+      "prezzo": 14,
+      "immagine": "",
+      "allergeni": ["blé", "mollusques"]
+    },
+    {
+      "nome": "Cornet de Poisson Frit",
+      "descrizione": "Poisson, farine de blé dur, sel",
+      "prezzo": 12,
+      "immagine": "",
+      "allergeni": ["blé", "poisson"]
+    },
+    {
+      "nome": "Calamar Grillé",
+      "descrizione": "Calamar, huile, sel, citron",
+      "prezzo": 14,
+      "immagine": "",
+      "allergeni": ["mollusques"]
+    },
+    {
+      "nome": "Tataki de Thon",
+      "descrizione": "Thon, pistache, basilic, huile, sauce soja, sel, poivre",
+      "prezzo": 18,
+      "immagine": "",
+      "allergeni": ["poisson", "pistache", "soja", "blé"]
+    },
+    {
+      "nome": "Soupe de Moules",
+      "descrizione": "Moules, tomate, ail, huile, vin, sel, poivre, persil",
+      "prezzo": 8,
+      "immagine": "",
+      "allergeni": ["mollusques", "sulfites"]
+    },
+    {
+      "nome": "Poisson du Jour",
+      "descrizione": "Au four, grillé ou en croûte de sel (prix au KG)",
+      "prezzo": 40,
+      "immagine": "",
+      "allergeni": ["poisson", "mollusques", "crustacés"]
+    }
+  ],
+  "desserts": [
+    {
+      "nome": "Gâteau Mirò",
+      "descrizione": "",
+      "prezzo": 5,
+      "immagine": "",
+      "allergeni": ["lait", "œuf", "soja", "blé"]
+    },
+    {
+      "nome": "Fruits",
+      "descrizione": "",
+      "prezzo": 5,
+      "immagine": "",
+      "allergeni": ["lait", "œuf", "soja", "blé"]
+    }
+  ],
+  "boissons": [
+    {
+      "nome": "Eau Plate",
+      "descrizione": "",
+      "prezzo": 2,
+      "immagine": ""
+    },
+    {
+      "nome": "Eau Gazeuse",
+      "descrizione": "",
+      "prezzo": 2,
+      "immagine": ""
+    },
+    {
+      "nome": "Eau Plate SOC",
+      "descrizione": "",
+      "prezzo": 1,
+      "immagine": ""
+    },
+    {
+      "nome": "Eau Gazeuse SOC",
+      "descrizione": "",
+      "prezzo": 1,
+      "immagine": ""
+    },
+    {
+      "nome": "Coca Cola",
+      "descrizione": "",
+      "prezzo": 2.5,
+      "immagine": ""
+    },
+    {
+      "nome": "Coca Cola Zéro",
+      "descrizione": "",
+      "prezzo": 2.5,
+      "immagine": ""
+    },
+    {
+      "nome": "Fanta",
+      "descrizione": "",
+      "prezzo": 2,
+      "immagine": ""
+    },
+    {
+      "nome": "Sprite",
+      "descrizione": "",
+      "prezzo": 2,
+      "immagine": ""
+    },
+    {
+      "nome": "Schweppes Citron",
+      "descrizione": "",
+      "prezzo": 2,
+      "immagine": ""
+    },
+    {
+      "nome": "Fever Tree Tonic Indian Premium",
+      "descrizione": "",
+      "prezzo": 3,
+      "immagine": ""
+    }
+  ],
+  "bières": [
+    {
+      "nome": "Messina Cristaux de Sel 33cl",
+      "descrizione": "",
+      "prezzo": 3,
+      "immagine": ""
+    },
+    {
+      "nome": "Peroni Nastro Azzurro 33cl",
+      "descrizione": "",
+      "prezzo": 2,
+      "immagine": ""
+    }
+  ],
+  "cocktails": [
+    {
+      "nome": "Bombay Tonic",
+      "descrizione": "",
+      "prezzo": 7,
+      "immagine": ""
+    },
+    {
+      "nome": "Tanqueray Tonic",
+      "descrizione": "",
+      "prezzo": 7,
+      "immagine": ""
+    },
+    {
+      "nome": "Aperol Spritz",
+      "descrizione": "",
+      "prezzo": 7,
+      "immagine": ""
+    },
+    {
+      "nome": "Negroni",
+      "descrizione": "",
+      "prezzo": 7,
+      "immagine": ""
+    }
+  ],
+  "digestifs": [
+    {
+      "nome": "Amaro del Capo",
+      "descrizione": "",
+      "prezzo": 4,
+      "immagine": "",
+      "allergeni": ""
+    },
+    {
+      "nome": "Amaro Monte Polizzo",
+      "descrizione": "",
+      "prezzo": 4,
+      "immagine": "",
+      "allergeni": ""
+    },
+    {
+      "nome": "Limoncello Pallini",
+      "descrizione": "",
+      "prezzo": 3,
+      "immagine": "",
+      "allergeni": ""
+    },
+    {
+      "nome": "Marsala",
+      "descrizione": "",
+      "prezzo": 4,
+      "immagine": "",
+      "allergeni": ""
+    },
+    {
+      "nome": "Whisky",
+      "descrizione": "",
+      "prezzo": 5,
+      "immagine": "",
+      "allergeni": ""
+    },
+    {
+      "nome": "Grappa",
+      "descrizione": "",
+      "prezzo": 5,
+      "immagine": "",
+      "allergeni": ""
+    }
+  ]
+}

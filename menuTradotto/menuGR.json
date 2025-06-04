@@ -1,0 +1,359 @@
+{
+  "antipasti": [
+    {
+      "nome": "Χταπόδι σαλάτα",
+      "descrizione": "χταπόδι, σέλινο, καρότο, ελαιόλαδο, λεμόνι, αλάτι, πιπέρι",
+      "prezzo": 12,
+      "immagine": "",
+      "allergeni": [
+        "μαλάκια",
+        "σέλινο"
+      ]
+    },
+    {
+      "nome": "Καπονάτα με ξιφία",
+      "descrizione": "μελιτζάνες, ξιφίας, κρεμμύδι, κάπαρη, ντομάτες, ελιές, λάδι, ξύδι, αλάτι, πιπέρι, ζάχαρη",
+      "prezzo": 10,
+      "immagine": "",
+      "allergeni": [
+        "ψάρι",
+        "θειώδη και θειώδη άλατα"
+      ]
+    },
+    {
+      "nome": "Καρπάτσιο κόκκινων γαρίδων Μάζαρα",
+      "descrizione": "κόκκινες γαρίδες",
+      "prezzo": 10,
+      "immagine": "",
+      "allergeni": [
+        "καρκινοειδή"
+      ]
+    },
+    {
+      "nome": "Καρπάτσιο σκόρπας",
+      "descrizione": "σκόρπα",
+      "prezzo": 10,
+      "immagine": "",
+      "allergeni": [
+        "καρκινοειδή"
+      ]
+    },
+    {
+      "nome": "Ταρτάρ τόνου",
+      "descrizione": "τόνος",
+      "prezzo": 14,
+      "immagine": "",
+      "allergeni": [
+        "ψάρι"
+      ]
+    },
+    {
+      "nome": "Μενού γευσιγνωσίας ημέρας",
+      "descrizione": "(για 2 άτομα)",
+      "prezzo": 22,
+      "immagine": "",
+      "allergeni": [
+        "σίτος",
+        "ψάρι",
+        "καρκινοειδή",
+        "μαλάκια",
+        "μουστάρδα",
+        "σόγια",
+        "θειώδη και θειώδη άλατα"
+      ]
+    }
+  ],
+  "primi": [
+    {
+      "nome": "Σπαγγέτι με μύδια",
+      "descrizione": "σπαγγέτι, μαλάκια, λάδι, σκόρδο, μαϊντανός, πιπέρι",
+      "prezzo": 14,
+      "immagine": "",
+      "allergeni": [
+        "σίτος",
+        "μαλάκια"
+      ]
+    },
+    {
+      "nome": "Σπαγγέτι με θαλασσινά",
+      "descrizione": "σπαγγέτι, μαλάκια, μύδια, γαρίδες, καλαμάρια, σκόρπα, λάδι, ντοματίνια, κρεμμύδι, σκόρδο, τσίλι, αλάτι, μαϊντανός",
+      "prezzo": 16,
+      "immagine": "",
+      "allergeni": [
+        "σίτος",
+        "μαλάκια",
+        "καρκινοειδή"
+      ]
+    },
+    {
+      "nome": "Ταλιατέλες με groupa σε κρεμώδη σάλτσα καρκινοειδών",
+      "descrizione": "ζυμαρικά, groupa, καρκινοειδή, σολομός, ντομάτες, κρέμα, τσίλι, λάδι, αλάτι, κρεμμύδι",
+      "prezzo": 15,
+      "immagine": "",
+      "allergeni": [
+        "σίτος",
+        "ψάρι",
+        "καρκινοειδή",
+        "γαλακτοκομικά"
+      ]
+    },
+    {
+      "nome": "Ταλιατέλες με κόκκινες γαρίδες και φυστίκια",
+      "descrizione": "ζυμαρικά, κόκκινες γαρίδες, φυστίκια, ντοματίνια, σκόρδο, λευκό κρασί, λάδι, αλάτι",
+      "prezzo": 16,
+      "immagine": "",
+      "allergeni": [
+        "σίτος",
+        "καρκινοειδή",
+        "φυστίκια",
+        "θειώδη και θειώδη άλατα"
+      ]
+    },
+    {
+      "nome": "Ζυμαρικά Tintinni",
+      "descrizione": "ζυμαρικά, μύδια, ντομάτες, σκόρδο, κρεμμύδι, λάδι, αλάτι, πιπέρι, μαϊντανός",
+      "prezzo": 8,
+      "immagine": "",
+      "allergeni": [
+        "σίτος",
+        "μαλάκια"
+      ]
+    }
+  ],
+  "secondi": [
+    {
+      "nome": "Τηγανητά καλαμάρια",
+      "descrizione": "καλαμάρια, σκληρό αλεύρι σίτου, αλάτι",
+      "prezzo": 14,
+      "immagine": "",
+      "allergeni": [
+        "σίτος",
+        "μαλάκια"
+      ]
+    },
+    {
+      "nome": "Τηγανητό ψάρι",
+      "descrizione": "ψάρι, σκληρό αλεύρι σίτου, αλάτι",
+      "prezzo": 12,
+      "immagine": "",
+      "allergeni": [
+        "σίτος",
+        "ψάρι"
+      ]
+    },
+    {
+      "nome": "Καλαμάρια στη σχάρα",
+      "descrizione": "καλαμάρια, λάδι, αλάτι, λεμόνι",
+      "prezzo": 14,
+      "immagine": "",
+      "allergeni": [
+        "μαλάκια"
+      ]
+    },
+    {
+      "nome": "Ταρτάρ ψητού τόνου",
+      "descrizione": "τόνος, φυστίκια, βασιλικός, λάδι, σόγια σος, αλάτι, πιπέρι",
+      "prezzo": 18,
+      "immagine": "",
+      "allergeni": [
+        "ψάρι",
+        "φυστίκια",
+        "σόγια",
+        "σίτος"
+      ]
+    },
+    {
+      "nome": "Σούπα με μύδια",
+      "descrizione": "μύδια, ντομάτες, σκόρδο, λάδι, λευκό κρασί, αλάτι, πιπέρι, μαϊντανός",
+      "prezzo": 8,
+      "immagine": "",
+      "allergeni": [
+        "μαλάκια",
+        "θειώδη και θειώδη άλατα"
+      ]
+    },
+    {
+      "nome": "Ψάρι ημέρας",
+      "descrizione": "στη σχάρα, τηγανητό, ψητό με αλάτι (τιμή ανά 100 γρ.)",
+      "prezzo": 40,
+      "immagine": "",
+      "allergeni": [
+        "ψάρι",
+        "μαλάκια",
+        "καρκινοειδή"
+      ]
+    }
+  ],
+  "dolci": [
+    {
+      "nome": "Τούρτα Miraggio",
+      "descrizione": "",
+      "prezzo": 5,
+      "immagine": "",
+      "allergeni": [
+        "γαλακτοκομικά",
+        "αυγά",
+        "σόγια",
+        "σίτος"
+      ]
+    },
+    {
+      "nome": "Φρούτα",
+      "descrizione": "",
+      "prezzo": 5,
+      "immagine": "",
+      "allergeni": [
+        "γαλακτοκομικά",
+        "αυγά",
+        "σόγια",
+        "σίτος"
+      ]
+    }
+  ],
+  "bevande": [
+    {
+      "nome": "Μεταλλικό νερό",
+      "descrizione": "",
+      "prezzo": 2,
+      "immagine": ""
+    },
+    {
+      "nome": "Ανθρακούχο νερό",
+      "descrizione": "",
+      "prezzo": 2,
+      "immagine": ""
+    },
+    {
+      "nome": "Μεταλλικό νερό SOC",
+      "descrizione": "",
+      "prezzo": 1,
+      "immagine": ""
+    },
+    {
+      "nome": "Ανθρακούχο νερό SOC",
+      "descrizione": "",
+      "prezzo": 1,
+      "immagine": ""
+    },
+    {
+      "nome": "Coca-Cola",
+      "descrizione": "",
+      "prezzo": 2.5,
+      "immagine": ""
+    },
+    {
+      "nome": "Coca-Cola Zero",
+      "descrizione": "",
+      "prezzo": 2.5,
+      "immagine": ""
+    },
+    {
+      "nome": "Fanta",
+      "descrizione": "",
+      "prezzo": 2,
+      "immagine": ""
+    },
+    {
+      "nome": "Sprite",
+      "descrizione": "",
+      "prezzo": 2,
+      "immagine": ""
+    },
+    {
+      "nome": "Sprite με λεμόνι",
+      "descrizione": "",
+      "prezzo": 2,
+      "immagine": ""
+    },
+    {
+      "nome": "Τόνικ Fever-Tree Indian",
+      "descrizione": "",
+      "prezzo": 3,
+      "immagine": ""
+    }
+  ],
+  "birre": [
+    {
+      "nome": "Μπύρα Messina Cristalli di Sale 33cl",
+      "descrizione": "",
+      "prezzo": 3,
+      "immagine": ""
+    },
+    {
+      "nome": "Peroni Nastro Azzurro 33cl",
+      "descrizione": "",
+      "prezzo": 2,
+      "immagine": ""
+    }
+  ],
+  "cocktail": [
+    {
+      "nome": "Bombay Tonic",
+      "descrizione": "",
+      "prezzo": 7,
+      "immagine": ""
+    },
+    {
+      "nome": "Tanqueray Tonic",
+      "descrizione": "",
+      "prezzo": 7,
+      "immagine": ""
+    },
+    {
+      "nome": "Aperol Spritz",
+      "descrizione": "",
+      "prezzo": 7,
+      "immagine": ""
+    },
+    {
+      "nome": "Negroni",
+      "descrizione": "",
+      "prezzo": 7,
+      "immagine": ""
+    }
+  ],
+  "digestivi": [
+    {
+      "nome": "Amaro del Capo",
+      "descrizione": "",
+      "prezzo": 4,
+      "immagine": "",
+      "allergeni": ""
+    },
+    {
+      "nome": "Amaro Montepulciano",
+      "descrizione": "",
+      "prezzo": 4,
+      "immagine": "",
+      "allergeni": ""
+    },
+    {
+      "nome": "Parini Limoncello",
+      "descrizione": "",
+      "prezzo": 3,
+      "immagine": "",
+      "allergeni": ""
+    },
+    {
+      "nome": "Marsala",
+      "descrizione": "",
+      "prezzo": 4,
+      "immagine": "",
+      "allergeni": ""
+    },
+    {
+      "nome": "Ουίσκι",
+      "descrizione": "",
+      "prezzo": 5,
+      "immagine": "",
+      "allergeni": ""
+    },
+    {
+      "nome": "Γκράπα",
+      "descrizione": "",
+      "prezzo": 5,
+      "immagine": "",
+      "allergeni": ""
+    }
+  ]
+}

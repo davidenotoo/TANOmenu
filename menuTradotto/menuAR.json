@@ -1,0 +1,359 @@
+{
+  "antipasti": [
+    {
+      "nome": "سلطة الأخطبوط",
+      "descrizione": "أخطبوط، كرفس، جزر، زيت زيتون، ليمون، ملح، فلفل",
+      "prezzo": 12,
+      "immagine": "",
+      "allergeni": [
+        "رخويات",
+        "كرفس"
+      ]
+    },
+    {
+      "nome": "كابوناتا مع سمك أبو سيف",
+      "descrizione": "باذنجان، سمك أبو سيف، بصل، كبر، طماطم، زيتون، زيت، خل، ملح، فلفل، سكر",
+      "prezzo": 10,
+      "immagine": "",
+      "allergeni": [
+        "سمك",
+        "كبريتات وكبريتات صوديوم"
+      ]
+    },
+    {
+      "nome": "كارباتشيو الجمبري الأحمر مازارا",
+      "descrizione": "جمبري أحمر",
+      "prezzo": 10,
+      "immagine": "",
+      "allergeni": [
+        "قشريات"
+      ]
+    },
+    {
+      "nome": "كارباتشيو السمك العقرب",
+      "descrizione": "سمك العقرب",
+      "prezzo": 10,
+      "immagine": "",
+      "allergeni": [
+        "قشريات"
+      ]
+    },
+    {
+      "nome": "تارتار التونة",
+      "descrizione": "تونة",
+      "prezzo": 14,
+      "immagine": "",
+      "allergeni": [
+        "سمك"
+      ]
+    },
+    {
+      "nome": "قائمة تذوق اليوم",
+      "descrizione": "(لشخصين)",
+      "prezzo": 22,
+      "immagine": "",
+      "allergeni": [
+        "قمح",
+        "سمك",
+        "قشريات",
+        "رخويات",
+        "خردل",
+        "صويا",
+        "كبريتات وكبريتات صوديوم"
+      ]
+    }
+  ],
+  "primi": [
+    {
+      "nome": "سباغيتي مع بلح البحر",
+      "descrizione": "سباغيتي، رخويات، زيت، ثوم، بقدونس، فلفل",
+      "prezzo": 14,
+      "immagine": "",
+      "allergeni": [
+        "قمح",
+        "رخويات"
+      ]
+    },
+    {
+      "nome": "سباغيتي مع المأكولات البحرية",
+      "descrizione": "سباغيتي، رخويات، بلح البحر، جمبري، كالاماري، سمك العقرب، زيت، طماطم كرزية، بصل، ثوم، فلفل حار، ملح، بقدونس",
+      "prezzo": 16,
+      "immagine": "",
+      "allergeni": [
+        "قمح",
+        "رخويات",
+        "قشريات"
+      ]
+    },
+    {
+      "nome": "تالياتيلي مع جروبا في صلصة كريمية للقشريات",
+      "descrizione": "معكرونة، جروبا، قشريات، سلمون، طماطم، كريمة، فلفل حار، زيت، ملح، بصل",
+      "prezzo": 15,
+      "immagine": "",
+      "allergeni": [
+        "قمح",
+        "سمك",
+        "قشريات",
+        "منتجات ألبان"
+      ]
+    },
+    {
+      "nome": "تالياتيلي مع الجمبري الأحمر والفستق",
+      "descrizione": "معكرونة، جمبري أحمر، فستق، طماطم كرزية، ثوم، نبيذ أبيض، زيت، ملح",
+      "prezzo": 16,
+      "immagine": "",
+      "allergeni": [
+        "قمح",
+        "قشريات",
+        "فستق",
+        "كبريتات وكبريتات صوديوم"
+      ]
+    },
+    {
+      "nome": "معكرونة تينتيني",
+      "descrizione": "معكرونة، بلح البحر، طماطم، ثوم، بصل، زيت، ملح، فلفل، بقدونس",
+      "prezzo": 8,
+      "immagine": "",
+      "allergeni": [
+        "قمح",
+        "رخويات"
+      ]
+    }
+  ],
+  "secondi": [
+    {
+      "nome": "كالاماري مقلي",
+      "descrizione": "كالاماري، دقيق قمح صلب، ملح",
+      "prezzo": 14,
+      "immagine": "",
+      "allergeni": [
+        "قمح",
+        "رخويات"
+      ]
+    },
+    {
+      "nome": "سمك مقلي",
+      "descrizione": "سمك، دقيق قمح صلب، ملح",
+      "prezzo": 12,
+      "immagine": "",
+      "allergeni": [
+        "قمح",
+        "سمك"
+      ]
+    },
+    {
+      "nome": "كالاماري مشوي",
+      "descrizione": "كالاماري، زيت، ملح، ليمون",
+      "prezzo": 14,
+      "immagine": "",
+      "allergeni": [
+        "رخويات"
+      ]
+    },
+    {
+      "nome": "تارتار تونة مشوية",
+      "descrizione": "تونة، فستق، ريحان، زيت، صلصة صويا، ملح، فلفل",
+      "prezzo": 18,
+      "immagine": "",
+      "allergeni": [
+        "سمك",
+        "فستق",
+        "صويا",
+        "قمح"
+      ]
+    },
+    {
+      "nome": "شوربة بلح البحر",
+      "descrizione": "بلح البحر، طماطم، ثوم، زيت، نبيذ أبيض، ملح، فلفل، بقدونس",
+      "prezzo": 8,
+      "immagine": "",
+      "allergeni": [
+        "رخويات",
+        "كبريتات وكبريتات صوديوم"
+      ]
+    },
+    {
+      "nome": "سمك اليوم",
+      "descrizione": "مشوي، مقلي، مشوي بالملح (السعر لكل 100 غرام)",
+      "prezzo": 40,
+      "immagine": "",
+      "allergeni": [
+        "سمك",
+        "رخويات",
+        "قشريات"
+      ]
+    }
+  ],
+  "dolci": [
+    {
+      "nome": "كيك ميراجيو",
+      "descrizione": "",
+      "prezzo": 5,
+      "immagine": "",
+      "allergeni": [
+        "منتجات ألبان",
+        "بيض",
+        "صويا",
+        "قمح"
+      ]
+    },
+    {
+      "nome": "فاكهة",
+      "descrizione": "",
+      "prezzo": 5,
+      "immagine": "",
+      "allergeni": [
+        "منتجات ألبان",
+        "بيض",
+        "صويا",
+        "قمح"
+      ]
+    }
+  ],
+  "bevande": [
+    {
+      "nome": "ماء معدني",
+      "descrizione": "",
+      "prezzo": 2,
+      "immagine": ""
+    },
+    {
+      "nome": "ماء غازي",
+      "descrizione": "",
+      "prezzo": 2,
+      "immagine": ""
+    },
+    {
+      "nome": "ماء معدني SOC",
+      "descrizione": "",
+      "prezzo": 1,
+      "immagine": ""
+    },
+    {
+      "nome": "ماء غازي SOC",
+      "descrizione": "",
+      "prezzo": 1,
+      "immagine": ""
+    },
+    {
+      "nome": "كوكاكولا",
+      "descrizione": "",
+      "prezzo": 2.5,
+      "immagine": ""
+    },
+    {
+      "nome": "كوكاكولا زيرو",
+      "descrizione": "",
+      "prezzo": 2.5,
+      "immagine": ""
+    },
+    {
+      "nome": "فانتا",
+      "descrizione": "",
+      "prezzo": 2,
+      "immagine": ""
+    },
+    {
+      "nome": "سبرايت",
+      "descrizione": "",
+      "prezzo": 2,
+      "immagine": ""
+    },
+    {
+      "nome": "سبرايت بالليمون",
+      "descrizione": "",
+      "prezzo": 2,
+      "immagine": ""
+    },
+    {
+      "nome": "تونيك فيفر تري إندي",
+      "descrizione": "",
+      "prezzo": 3,
+      "immagine": ""
+    }
+  ],
+  "birre": [
+    {
+      "nome": "بيرة ميسينا كريستالي دي سال 33سم",
+      "descrizione": "",
+      "prezzo": 3,
+      "immagine": ""
+    },
+    {
+      "nome": "بيروني ناسترو أزورو 33سم",
+      "descrizione": "",
+      "prezzo": 2,
+      "immagine": ""
+    }
+  ],
+  "cocktail": [
+    {
+      "nome": "بومباي تونيك",
+      "descrizione": "",
+      "prezzo": 7,
+      "immagine": ""
+    },
+    {
+      "nome": "تانكويراي تونيك",
+      "descrizione": "",
+      "prezzo": 7,
+      "immagine": ""
+    },
+    {
+      "nome": "أبرول سبريتز",
+      "descrizione": "",
+      "prezzo": 7,
+      "immagine": ""
+    },
+    {
+      "nome": "نيغروني",
+      "descrizione": "",
+      "prezzo": 7,
+      "immagine": ""
+    }
+  ],
+  "digestivi": [
+    {
+      "nome": "أمارو ديل كابو",
+      "descrizione": "",
+      "prezzo": 4,
+      "immagine": "",
+      "allergeni": ""
+    },
+    {
+      "nome": "أمارو مونتيبولسيانو",
+      "descrizione": "",
+      "prezzo": 4,
+      "immagine": "",
+      "allergeni": ""
+    },
+    {
+      "nome": "باريني ليمونسيلو",
+      "descrizione": "",
+      "prezzo": 3,
+      "immagine": "",
+      "allergeni": ""
+    },
+    {
+      "nome": "مارسال",
+      "descrizione": "",
+      "prezzo": 4,
+      "immagine": "",
+      "allergeni": ""
+    },
+    {
+      "nome": "ويسكي",
+      "descrizione": "",
+      "prezzo": 5,
+      "immagine": "",
+      "allergeni": ""
+    },
+    {
+      "nome": "غراپا",
+      "descrizione": "",
+      "prezzo": 5,
+      "immagine": "",
+      "allergeni": ""
+    }
+  ]
+}

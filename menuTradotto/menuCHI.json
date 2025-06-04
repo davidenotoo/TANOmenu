@@ -1,0 +1,359 @@
+{
+  "antipasti": [
+    {
+      "nome": "章鱼沙拉",
+      "descrizione": "章鱼、芹菜、胡萝卜、橄榄油、柠檬、盐、胡椒",
+      "prezzo": 12,
+      "immagine": "",
+      "allergeni": [
+        "贝类",
+        "芹菜"
+      ]
+    },
+    {
+      "nome": "剑鱼卡波纳塔",
+      "descrizione": "茄子、剑鱼、洋葱、刺山柑、西红柿、橄榄、油、醋、盐、胡椒、糖",
+      "prezzo": 10,
+      "immagine": "",
+      "allergeni": [
+        "鱼类",
+        "亚硫酸盐"
+      ]
+    },
+    {
+      "nome": "马扎拉红虾生食",
+      "descrizione": "红虾",
+      "prezzo": 10,
+      "immagine": "",
+      "allergeni": [
+        "甲壳类"
+      ]
+    },
+    {
+      "nome": "大虾生食",
+      "descrizione": "大虾",
+      "prezzo": 10,
+      "immagine": "",
+      "allergeni": [
+        "甲壳类"
+      ]
+    },
+    {
+      "nome": "金枪鱼塔塔",
+      "descrizione": "金枪鱼",
+      "prezzo": 14,
+      "immagine": "",
+      "allergeni": [
+        "鱼类"
+      ]
+    },
+    {
+      "nome": "每日品尝菜单",
+      "descrizione": "（2人份）",
+      "prezzo": 22,
+      "immagine": "",
+      "allergeni": [
+        "小麦",
+        "鱼类",
+        "甲壳类",
+        "贝类",
+        "芥末",
+        "大豆",
+        "亚硫酸盐"
+      ]
+    }
+  ],
+  "primi": [
+    {
+      "nome": "蛤蜊意大利面",
+      "descrizione": "意大利面、蛤蜊、油、大蒜、欧芹、胡椒",
+      "prezzo": 14,
+      "immagine": "",
+      "allergeni": [
+        "小麦",
+        "贝类"
+      ]
+    },
+    {
+      "nome": "贝类海鲜意面",
+      "descrizione": "意大利面、蛤蜊、贻贝、虾、鱿鱼、大虾、油、樱桃番茄、洋葱、大蒜、辣椒、盐、欧芹",
+      "prezzo": 16,
+      "immagine": "",
+      "allergeni": [
+        "小麦",
+        "贝类",
+        "甲壳类"
+      ]
+    },
+    {
+      "nome": "石斑鱼长方形意面配甲壳类酱",
+      "descrizione": "意大利面、石斑鱼、甲壳类、三文鱼、西红柿、奶油、辣椒、油、盐、洋葱",
+      "prezzo": 15,
+      "immagine": "",
+      "allergeni": [
+        "小麦",
+        "鱼类",
+        "甲壳类",
+        "乳制品"
+      ]
+    },
+    {
+      "nome": "红虾开心果扁面",
+      "descrizione": "意大利面、红虾、开心果、樱桃番茄、大蒜、葡萄酒、油、盐",
+      "prezzo": 16,
+      "immagine": "",
+      "allergeni": [
+        "小麦",
+        "甲壳类",
+        "开心果",
+        "亚硫酸盐"
+      ]
+    },
+    {
+      "nome": "Tintinnì意大利面",
+      "descrizione": "意大利面、贻贝、西红柿、大蒜、洋葱、油、盐、胡椒、欧芹",
+      "prezzo": 8,
+      "immagine": "",
+      "allergeni": [
+        "小麦",
+        "贝类"
+      ]
+    }
+  ],
+  "secondi": [
+    {
+      "nome": "炸鱿鱼杯",
+      "descrizione": "鱿鱼、硬小麦粉、盐",
+      "prezzo": 14,
+      "immagine": "",
+      "allergeni": [
+        "小麦",
+        "贝类"
+      ]
+    },
+    {
+      "nome": "炸鱼杯",
+      "descrizione": "鱼、硬小麦粉、盐",
+      "prezzo": 12,
+      "immagine": "",
+      "allergeni": [
+        "小麦",
+        "鱼类"
+      ]
+    },
+    {
+      "nome": "烤鱿鱼",
+      "descrizione": "鱿鱼、油、盐、柠檬",
+      "prezzo": 14,
+      "immagine": "",
+      "allergeni": [
+        "贝类"
+      ]
+    },
+    {
+      "nome": "金枪鱼塔塔烧",
+      "descrizione": "金枪鱼、开心果、罗勒、油、酱油、盐、胡椒",
+      "prezzo": 18,
+      "immagine": "",
+      "allergeni": [
+        "鱼类",
+        "开心果",
+        "大豆",
+        "小麦"
+      ]
+    },
+    {
+      "nome": "贻贝汤",
+      "descrizione": "贻贝、西红柿、大蒜、油、葡萄酒、盐、胡椒、欧芹",
+      "prezzo": 8,
+      "immagine": "",
+      "allergeni": [
+        "贝类",
+        "亚硫酸盐"
+      ]
+    },
+    {
+      "nome": "每日鲜鱼",
+      "descrizione": "烤、焗或盐焗（按公斤计价）",
+      "prezzo": 40,
+      "immagine": "",
+      "allergeni": [
+        "鱼类",
+        "贝类",
+        "甲壳类"
+      ]
+    }
+  ],
+  "dolci": [
+    {
+      "nome": "米罗蛋糕",
+      "descrizione": "",
+      "prezzo": 5,
+      "immagine": "",
+      "allergeni": [
+        "乳制品",
+        "鸡蛋",
+        "大豆",
+        "小麦"
+      ]
+    },
+    {
+      "nome": "水果",
+      "descrizione": "",
+      "prezzo": 5,
+      "immagine": "",
+      "allergeni": [
+        "乳制品",
+        "鸡蛋",
+        "大豆",
+        "小麦"
+      ]
+    }
+  ],
+  "bevande": [
+    {
+      "nome": "矿泉水",
+      "descrizione": "",
+      "prezzo": 2,
+      "immagine": ""
+    },
+    {
+      "nome": "汽泡水",
+      "descrizione": "",
+      "prezzo": 2,
+      "immagine": ""
+    },
+    {
+      "nome": "SOC 矿泉水",
+      "descrizione": "",
+      "prezzo": 1,
+      "immagine": ""
+    },
+    {
+      "nome": "SOC 汽泡水",
+      "descrizione": "",
+      "prezzo": 1,
+      "immagine": ""
+    },
+    {
+      "nome": "可口可乐",
+      "descrizione": "",
+      "prezzo": 2.5,
+      "immagine": ""
+    },
+    {
+      "nome": "零度可乐",
+      "descrizione": "",
+      "prezzo": 2.5,
+      "immagine": ""
+    },
+    {
+      "nome": "芬达",
+      "descrizione": "",
+      "prezzo": 2,
+      "immagine": ""
+    },
+    {
+      "nome": "雪碧",
+      "descrizione": "",
+      "prezzo": 2,
+      "immagine": ""
+    },
+    {
+      "nome": "雪碧柠檬味",
+      "descrizione": "",
+      "prezzo": 2,
+      "immagine": ""
+    },
+    {
+      "nome": "Fever Tree 印度奢华汤力水",
+      "descrizione": "",
+      "prezzo": 3,
+      "immagine": ""
+    }
+  ],
+  "birre": [
+    {
+      "nome": "Messina 盐晶啤酒 33cl",
+      "descrizione": "",
+      "prezzo": 3,
+      "immagine": ""
+    },
+    {
+      "nome": "Peroni Nastro Azzurro 33cl",
+      "descrizione": "",
+      "prezzo": 2,
+      "immagine": ""
+    }
+  ],
+  "cocktail": [
+    {
+      "nome": "孟买汤力",
+      "descrizione": "",
+      "prezzo": 7,
+      "immagine": ""
+    },
+    {
+      "nome": "Tanqueray 汤力",
+      "descrizione": "",
+      "prezzo": 7,
+      "immagine": ""
+    },
+    {
+      "nome": "Aperol Spritz",
+      "descrizione": "",
+      "prezzo": 7,
+      "immagine": ""
+    },
+    {
+      "nome": "尼格罗尼",
+      "descrizione": "",
+      "prezzo": 7,
+      "immagine": ""
+    }
+  ],
+  "digestivi": [
+    {
+      "nome": "卡波苦酒",
+      "descrizione": "",
+      "prezzo": 4,
+      "immagine": "",
+      "allergeni": ""
+    },
+    {
+      "nome": "蒙特波利佐苦酒",
+      "descrizione": "",
+      "prezzo": 4,
+      "immagine": "",
+      "allergeni": ""
+    },
+    {
+      "nome": "帕利尼柠檬酒",
+      "descrizione": "",
+      "prezzo": 3,
+      "immagine": "",
+      "allergeni": ""
+    },
+    {
+      "nome": "马沙拉酒",
+      "descrizione": "",
+      "prezzo": 4,
+      "immagine": "",
+      "allergeni": ""
+    },
+    {
+      "nome": "威士忌",
+      "descrizione": "",
+      "prezzo": 5,
+      "immagine": "",
+      "allergeni": ""
+    },
+    {
+      "nome": "格拉巴白兰地",
+      "descrizione": "",
+      "prezzo": 5,
+      "immagine": "",
+      "allergeni": ""
+    }
+  ]
+}

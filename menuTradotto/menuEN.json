@@ -1,0 +1,531 @@
+{
+   "meta": {
+    "antipasti": { "label": "Appetizer", "icon": "ri-restaurant-line" },
+    "primi": { "label": "First Courses", "icon": "ri-bowl-line" },
+    "secondi": { "label": "Seconds", "icon": "ri-knife-line" },
+    "dolci": { "label": "Dessert", "icon": "ri-cake-3-line" },
+    "bevande": { "label": "Drinks", "icon": "ri-cup-line" },
+    "birre": { "label": "Beers", "icon": "ri-beer-line" },
+    "cocktail": { "label": "Cocktails", "icon": "ri-goblet-line" },
+    "vini bianchi": { "label": "White wine", "icon": "ri-wine-line" },
+    "bollicine": { "label": "Sparkling Wine", "icon": "ri-sparkling-line" },
+    "digestivi": { "label": "Digestive", "icon": "ri-shot-line" }
+  },
+  "antipasti": [
+    {
+      "nome": "Octopus Salad",
+      "descrizione": "Octopus, celery, carrots, oil, lemon, salt, pepper",
+      "prezzo": 12,
+      "immagine": "",
+      "allergeni": [
+        "mollusks",
+        "celery"
+      ]
+    },
+    {
+      "nome": "Swordfish Caponata",
+      "descrizione": "Eggplant, swordfish, onion, capers, tomato, olives, oil, vinegar, salt, pepper, sugar",
+      "prezzo": 10,
+      "immagine": "",
+      "allergeni": [
+        "fish",
+        "sulfites"
+      ]
+    },
+    {
+      "nome": "Raw Red Shrimp from Mazara",
+      "descrizione": "Red shrimp",
+      "prezzo": 10,
+      "immagine": "",
+      "allergeni": [
+        "crustaceans"
+      ]
+    },
+    {
+      "nome": "Raw Scampi",
+      "descrizione": "Scampi",
+      "prezzo": 10,
+      "immagine": "",
+      "allergeni": [
+        "crustaceans"
+      ]
+    },
+    {
+      "nome": "Tuna Tartare",
+      "descrizione": "Tuna",
+      "prezzo": 14,
+      "immagine": "",
+      "allergeni": [
+        "fish"
+      ]
+    },
+    {
+      "nome": "Tasting Menu of the Day",
+      "descrizione": "(for 2 people)",
+      "prezzo": 22,
+      "immagine": "",
+      "allergeni": [
+        "wheat",
+        "fish",
+        "crustaceans",
+        "mollusks",
+        "mustard",
+        "soy",
+        "sulfites"
+      ]
+    }
+  ],
+  "primi": [
+    {
+      "nome": "Spaghetti with Clams",
+      "descrizione": "Pasta, clams, oil, garlic, parsley, pepper",
+      "prezzo": 14,
+      "immagine": "",
+      "allergeni": [
+        "wheat",
+        "mollusks"
+      ]
+    },
+    {
+      "nome": "Busiate allo Scoglio",
+      "descrizione": "Pasta, clams, mussels, shrimp, squid, scampi, oil, cherry tomatoes, onion, garlic, chili pepper, salt, parsley",
+      "prezzo": 16,
+      "immagine": "",
+      "allergeni": [
+        "wheat",
+        "mollusks",
+        "crustaceans"
+      ]
+    },
+    {
+      "nome": "Grouper Ravioli with Crustacean Sauce",
+      "descrizione": "Pasta, grouper, crustaceans, salmon, tomato, cream, chili pepper, oil, salt, onion",
+      "prezzo": 15,
+      "immagine": "",
+      "allergeni": [
+        "wheat",
+        "fish",
+        "crustaceans",
+        "milk"
+      ]
+    },
+    {
+      "nome": "Linguine with Red Shrimp and Pistachio",
+      "descrizione": "Pasta, red shrimp, pistachio, cherry tomatoes, garlic, wine, oil, salt",
+      "prezzo": 16,
+      "immagine": "",
+      "allergeni": [
+        "wheat",
+        "crustaceans",
+        "pistachio",
+        "sulfites"
+      ]
+    },
+    {
+      "nome": "Tintinnì Spaghetti",
+      "descrizione": "Pasta, mussels, tomato, garlic, onion, oil, salt, pepper, parsley",
+      "prezzo": 8,
+      "immagine": "",
+      "allergeni": [
+        "wheat",
+        "mollusks"
+      ]
+    }
+  ],
+  "secondi": [
+    {
+      "nome": "Fried Calamari Cone",
+      "descrizione": "Calamari, durum wheat flour, salt",
+      "prezzo": 14,
+      "immagine": "",
+      "allergeni": [
+        "wheat",
+        "mollusks"
+      ]
+    },
+    {
+      "nome": "Fried Fish Cone",
+      "descrizione": "Fish, durum wheat flour, salt",
+      "prezzo": 12,
+      "immagine": "",
+      "allergeni": [
+        "wheat",
+        "fish"
+      ]
+    },
+    {
+      "nome": "Grilled Calamari",
+      "descrizione": "Calamari, oil, salt, lemon",
+      "prezzo": 14,
+      "immagine": "",
+      "allergeni": [
+        "mollusks"
+      ]
+    },
+    {
+      "nome": "Tuna Tataki",
+      "descrizione": "Tuna, pistachio, basil, oil, soy sauce, salt, pepper",
+      "prezzo": 18,
+      "immagine": "",
+      "allergeni": [
+        "fish",
+        "pistachio",
+        "soy",
+        "wheat"
+      ]
+    },
+    {
+      "nome": "Mussel Soup",
+      "descrizione": "Mussels, tomato, garlic, oil, wine, salt, pepper, parsley",
+      "prezzo": 8,
+      "immagine": "",
+      "allergeni": [
+        "mollusks",
+        "sulfites"
+      ]
+    },
+    {
+      "nome": "Catch of the Day",
+      "descrizione": "Baked, grilled or salt-crusted (prezzo per KG)",
+      "prezzo": 40,
+      "immagine": "",
+      "allergeni": [
+        "fish",
+        "mollusks",
+        "crustaceans"
+      ]
+    }
+  ],
+  "dolci": [
+    {
+      "nome": "Mirò Cake",
+      "descrizione": "",
+      "prezzo": 5,
+      "immagine": "",
+      "allergeni": [
+        "milk",
+        "egg",
+        "soy",
+        "wheat"
+      ]
+    },
+    {
+      "nome": "Fruit",
+      "descrizione": "",
+      "prezzo": 5,
+      "immagine": "",
+      "allergeni": [
+        "milk",
+        "egg",
+        "soy",
+        "wheat"
+      ]
+    }
+  ],
+  "bevande": [
+    {
+      "nome": "Still Water",
+      "descrizione": "",
+      "prezzo": 2,
+      "immagine": ""
+    },
+    {
+      "nome": "Sparkling Water",
+      "descrizione": "",
+      "prezzo": 2,
+      "immagine": ""
+    },
+    {
+      "nome": "Still Water SOC",
+      "descrizione": "",
+      "prezzo": 1,
+      "immagine": ""
+    },
+    {
+      "nome": "Sparkling Water SOC",
+      "descrizione": "",
+      "prezzo": 1,
+      "immagine": ""
+    },
+    {
+      "nome": "Coca Cola",
+      "descrizione": "",
+      "prezzo": 2.5,
+      "immagine": ""
+    },
+    {
+      "nome": "Coca Cola Zero",
+      "descrizione": "",
+      "prezzo": 2.5,
+      "immagine": ""
+    },
+    {
+      "nome": "Fanta",
+      "descrizione": "",
+      "prezzo": 2,
+      "immagine": ""
+    },
+    {
+      "nome": "Sprite",
+      "descrizione": "",
+      "prezzo": 2,
+      "immagine": ""
+    },
+    {
+      "nome": "Schweppes Lemon",
+      "descrizione": "",
+      "prezzo": 2,
+      "immagine": ""
+    },
+    {
+      "nome": "Fever Tree Indian Premium Tonic",
+      "descrizione": "",
+      "prezzo": 3,
+      "immagine": ""
+    }
+  ],
+  "birre": [
+    {
+      "nome": "Messina Sea Salt Crystals 33cl",
+      "descrizione": "",
+      "prezzo": 3,
+      "immagine": ""
+    },
+    {
+      "nome": "Peroni Nastro Azzurro 33cl",
+      "descrizione": "",
+      "prezzo": 2,
+      "immagine": ""
+    }
+  ],
+  "cocktail": [
+    {
+      "nome": "Bombay Tonic",
+      "descrizione": "",
+      "prezzo": 7,
+      "immagine": ""
+    },
+    {
+      "nome": "Tanqueray Tonic",
+      "descrizione": "",
+      "prezzo": 7,
+      "immagine": ""
+    },
+    {
+      "nome": "Aperol Spritz",
+      "descrizione": "",
+      "prezzo": 7,
+      "immagine": ""
+    },
+    {
+      "nome": "Negroni",
+      "descrizione": "",
+      "prezzo": 7,
+      "immagine": ""
+    }
+  ],
+  "digestives": [
+    {
+      "nome": "Amaro del Capo",
+      "descrizione": "",
+      "prezzo": 4,
+      "immagine": "",
+      "allergeni": ""
+    },
+    {
+      "nome": "Amaro Monte Polizzo",
+      "descrizione": "",
+      "prezzo": 4,
+      "immagine": "",
+      "allergeni": ""
+    },
+    {
+      "nome": "Limoncello Pallini",
+      "descrizione": "",
+      "prezzo": 3,
+      "immagine": "",
+      "allergeni": ""
+    },
+    {
+      "nome": "Marsala",
+      "descrizione": "",
+      "prezzo": 4,
+      "immagine": "",
+      "allergeni": ""
+    },
+    {
+      "nome": "Whisky",
+      "descrizione": "",
+      "prezzo": 5,
+      "immagine": "",
+      "allergeni": ""
+    },
+    {
+      "nome": "Grappa",
+      "descrizione": "",
+      "prezzo": 5,
+      "immagine": "",
+      "allergeni": ""
+    }
+  ],"vini bianchi": [
+  {
+    "nome": "Mucino Grillo affinato in botte",
+    "descrizione": "Candido",
+    "prezzo": 35,
+    "immagine": ""
+  },
+  {
+    "nome": "Arrìdi Sauvignon Blanc",
+    "descrizione": "Candido",
+    "prezzo": 25,
+    "immagine": ""
+  },
+  {
+    "nome": "Guardalòmu Grillo",
+    "descrizione": "Candido",
+    "prezzo": 22,
+    "immagine": ""
+  },
+  {
+    "nome": "Inzolia",
+    "descrizione": "Candido",
+    "prezzo": 20,
+    "immagine": ""
+  },
+  {
+    "nome": "Etna Bianco",
+    "descrizione": "Tenuta San Michele",
+    "prezzo": 25,
+    "immagine": ""
+  },
+  {
+    "nome": "Grillo",
+    "descrizione": "Alessandro di Camporeale",
+    "prezzo": 20,
+    "immagine": ""
+  },
+  {
+    "nome": "Kaid Sauvignon",
+    "descrizione": "Alessandro di Camporeale",
+    "prezzo": 25,
+    "immagine": ""
+  },
+  {
+    "nome": "Benedé Catarratto",
+    "descrizione": "Alessandro di Camporeale",
+    "prezzo": 18,
+    "immagine": ""
+  },
+  {
+    "nome": "Leone Blend",
+    "descrizione": "Tenuta Regaleali",
+    "prezzo": 22,
+    "immagine": ""
+  },
+  {
+    "nome": "Pinzeri Grillo",
+    "descrizione": "Funaro",
+    "prezzo": 20,
+    "immagine": ""
+  },
+  {
+    "nome": "Mondura Catarratto",
+    "descrizione": "Funaro",
+    "prezzo": 20,
+    "immagine": ""
+  },
+  {
+    "nome": "Gatto Bianco",
+    "descrizione": "Funaro",
+    "prezzo": 18,
+    "immagine": ""
+  },
+  {
+    "nome": "Maria Costanza",
+    "descrizione": "G. Milazzo",
+    "prezzo": 28,
+    "immagine": ""
+  },
+  {
+    "nome": "Zahra",
+    "descrizione": "Vitale",
+    "prezzo": 16,
+    "immagine": ""
+  },
+  {
+    "nome": "Kikè",
+    "descrizione": "Fina",
+    "prezzo": 20,
+    "immagine": ""
+  },
+  {
+    "nome": "Kiggiari Grecanico",
+    "descrizione": "Baglio Oro",
+    "prezzo": 22,
+    "immagine": ""
+  },
+  {
+    "nome": "Charme",
+    "descrizione": "Firriato",
+    "prezzo": 22,
+    "immagine": ""
+  },
+  {
+    "nome": "Bianco di Nera",
+    "descrizione": "G. Milazzo",
+    "prezzo": 26,
+    "immagine": ""
+  },
+  {
+    "nome": "Viveur",
+    "descrizione": "Funaro",
+    "prezzo": 20,
+    "immagine": ""
+  },
+  {
+    "nome": "Murgo Brut",
+    "descrizione": "Tenuta San Michele",
+    "prezzo": 40,
+    "immagine": ""
+  },
+  {
+    "nome": "Sanjení Brut",
+    "descrizione": "Vitale",
+    "prezzo": 16,
+    "immagine": ""
+  }
+]
+,
+  "bollicine": [
+    {
+      "nome": "Naonis Cuvée Brut – San Jeni ",
+      "descrizione": "Vitale",
+      "prezzo": 15,
+      "immagine": ""
+    },
+    {
+      "nome": "Charme Bianco",
+      "descrizione": "Firriato",
+      "prezzo": 22,
+      "immagine": ""
+    },
+    {
+      "nome": "Charme Rosé",
+      "descrizione": "Firriato",
+      "prezzo": 22,
+      "immagine": ""
+    },
+    {
+      "nome": "Metodo Classico Brut",
+      "descrizione": "Murgo",
+      "prezzo": 0,
+      "immagine": ""
+    },
+    {
+      "nome": "Petramater Metodo Classico Brut",
+      "descrizione": "Tenute Orestiadi",
+      "prezzo": 35,
+      "immagine": ""
+    }
+  ]
+}
