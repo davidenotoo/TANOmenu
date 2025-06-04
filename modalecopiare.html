@@ -98,148 +98,148 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" />
-  <!-- STILI -->
-
 
   <style>
-    :where([class^="ri-"])::before {
-      content: "\f3c2";
-    }
-
-    body {
-      font-family: 'Lora', serif;
-      padding-top: 30px;
-      /* Spazio per la navbar fissa */
-      padding-bottom: 65px;
-
-    }
-
-    .category-scroll::-webkit-scrollbar {
-      background-color: #3192d0;
-      height: 4px;
-    }
-
-    .category-scroll::-webkit-scrollbar-track {
-      background: #f1f1f1;
-      border-radius: 10px;
-    }
-
-    .category-scroll::-webkit-scrollbar-thumb {
-      background: #3192d0;
-      border-radius: 10px;
-    }
-
-    .menu-item {
-      background-color: rgba(255, 255, 255, 0.123);
-      border: 1px solid #ffffff;
-      border-radius: 24px;
-      padding: 1rem 1rem;
-      box-shadow:
-        0 2px 4px rgba(0, 0, 0, 0.04),
-        0 12px 28px rgba(0, 0, 0, 0.08);
-      font-family: 'Lora', serif;
-      position: relative;
-      isolation: isolate;
+    /* Contenitore per l'immagine di sfondo fissa */
+    .background-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
       overflow: hidden;
     }
 
-    .menu-item::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      border-radius: inherit;
-      background: radial-gradient(circle at 30% 20%, rgba(30, 95, 116, 0.05), transparent 70%);
-      z-index: 0;
+    /* Stile per la categoria attiva */
+    .category-item .category-icon.active {
+      background: linear-gradient(135deg, #ec4e39, #3192d0);
+      border-color: #ffffff;
+      box-shadow: 0 4px 12px rgba(236, 78, 57, 0.4);
     }
 
-    .menu-item>div {
-      position: relative;
-      z-index: 10;
+    /* Effetto hover per le categorie */
+    .category-item:hover .category-icon {
+      background: linear-gradient(135deg, #ec4e39, #3192d0);
+      border-color: #ffffff;
+      box-shadow: 0 4px 12px rgba(236, 78, 57, 0.3);
+      transform: scale(1.05);
+      transition: all 0.3s ease;
     }
 
-    /* Titolo e prezzo */
-    .menu-item h4 {
-      font-size: 1.375rem;
-      /* text-xl+ */
-      font-weight: 700;
-      color: #3192d0;
-      /* gray-800 */
-      letter-spacing: -0.25px;
-      margin-bottom: 0.25rem;
-      line-height: 1.3;
+    /* Scrollbar personalizzata per la navigazione delle categorie */
+    .category-container::-webkit-scrollbar {
+      height: 4px;
     }
 
-    .menu-item span {
-      font-size: 1.125rem;
-      font-weight: 600;
-      color: #ec4e39;
-      margin-top: 0.125rem;
+    .category-container::-webkit-scrollbar-track {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 4px;
     }
 
-    /* Descrizione */
-    .menu-item p {
-      font-size: 1.125rem;
-      color: #475569;
-      margin-top: 1.25rem;
-      line-height: 1.8;
-      border-top: 1px dashed #cbd5e1;
-      padding-top: 1.25rem;
+    .category-container::-webkit-scrollbar-thumb {
+      background: rgba(236, 78, 57, 0.6);
+      border-radius: 4px;
     }
 
-    .menu-item .load-image-btn {
-      background-color: rgba(255, 255, 255, 0.7);
-      color: #3192d0;
-      width: 40px;
-      height: 40px;
-      border-radius: 12px;
-      border: 1px solid rgba(30, 95, 116, 0.2);
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+    .category-container::-webkit-scrollbar-thumb:hover {
+      background: rgba(236, 78, 57, 0.8);
+    }
+
+    /* Animazioni per i menu items */
+    .menu-item {
+      transform: translateY(0);
+      transition: all 0.3s ease;
+    }
+
+    .menu-item:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    }
+
+    /* Stile per il bottone di caricamento immagine */
+    .load-image-btn {
+      background: linear-gradient(135deg, #3192d0, #2980b9);
+      color: white;
+      border: none;
+      border-radius: 50%;
+      width: 32px;
+      height: 32px;
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 18px;
-      margin-left: auto;
-      flex-shrink: 0;
-      transition: all 0.2s ease;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 2px 8px rgba(49, 146, 208, 0.3);
+    }
+
+    .load-image-btn:hover {
+      background: linear-gradient(135deg, #2980b9, #3192d0);
+      transform: scale(1.1);
+      box-shadow: 0 4px 12px rgba(49, 146, 208, 0.4);
+    }
+
+    /* Animazione per le notifiche */
+    .notification-dot {
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0% {
+        box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.7);
+      }
+
+      70% {
+        box-shadow: 0 0 0 10px rgba(239, 68, 68, 0);
+      }
+
+      100% {
+        box-shadow: 0 0 0 0 rgba(239, 68, 68, 0);
+      }
+    }
+
+    /* Contenitore per l'immagine con animazione */
+    .image-container {
+      transition: height 0.5s ease, opacity 0.3s ease;
+    }
+
+    .image-container.show {
+      opacity: 1;
+    }
+
+    .image-container.hidden {
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    /* Stile per l'immagine caricata */
+    .loaded-image {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Modal styles */
+    .modal-overlay {
+      background-color: rgba(0, 0, 0, 0.5);
       backdrop-filter: blur(4px);
     }
 
-    .menu-item p.italic {
-      font-style: italic;
-      color: #9ca3af;
-      /* gray-400 */
+    .modal-content {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
     }
 
-    .menu-item .load-image-btn:active {
-      transform: scale(0.95);
+    .modal-content.show {
+      opacity: 1;
+      transform: scale(1);
+      pointer-events: auto;
     }
 
-
-    .menu-item .allergeni {
-      font-size: 0.75rem;
-      /* più piccolo */
-      color: #dc26266c;
-      /* rosso chiaro */
-      font-style: italic;
-      margin-top: 0.5rem;
-      word-wrap: break-word;
-      line-height: 1.4;
-      overflow-wrap: break-word;
-      white-space: normal;
-    }
-
-
-
-    /* Modal */
-    .modal {
-      background-color: rgba(255, 255, 255, 0.123);
-      transition: opacity 0.3s ease, transform 0.3s ease;
-    }
-
-    .modal.hidden {
+    .modal-content.hidden {
       opacity: 0;
       transform: scale(0.95);
       pointer-events: none;
@@ -251,29 +251,25 @@
       color: #ffffff;
       text-transform: uppercase;
       letter-spacing: 1px;
+      margin-bottom: 1.5rem;
+      background: linear-gradient(135deg, #ec4e39, #3192d0);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
       text-align: center;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
     }
 
-
-    /* NAVBAR COLORI */
-    .category-icon {
-      background-color: #3192d0 !important;
+    /* Effetti per il container delle categorie */
+    .category-container {
+      overflow-x: auto;
+      overflow-y: hidden;
+      white-space: nowrap;
+      padding-bottom: 8px;
+      scrollbar-width: thin;
+      scrollbar-color: rgba(236, 78, 57, 0.6) rgba(255, 255, 255, 0.1);
     }
 
-    .category-icon i {
-      color: white !important;
-    }
-
-    .category-icon.active {
-      background-color: #ec4e39 !important;
-    }
-
-    .category-icon.active i {
-      color: white !important;
-    }
-
-
-    /* Scroll behavior */
     .category-container {
       scroll-behavior: smooth;
     }
@@ -285,47 +281,54 @@
       -webkit-backdrop-filter: blur(10px);
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
       position: fixed;
-      width: 100%;
+      top: 0;
+      left: 0;
+      right: 0;
       z-index: 50;
-    }
-
-    .load-image-btn {
-      background-color: #3192d0;
-      /* blu primario */
-      color: white;
-      /* icona bianca */
-      width: 32px;
-      height: 32px;
-      border-radius: 50%;
+      padding: 12px 16px;
       display: flex;
+      justify-content: space-between;
       align-items: center;
-      justify-content: center;
-      border: none;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-      padding: 0;
+      max-width: 375px;
+      width: 100%;
+      margin: 0 auto;
     }
 
-    .load-image-btn:hover,
-    .load-image-btn:focus {
-      background-color: #3192d0;
-      /* blu più scuro al hover/focus */
-      outline: none;
+    /* Stile per il logo con ombra morbida */
+    header img {
+      filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
     }
 
-    /* Icona più piccola dentro */
-    .load-image-btn i {
-      font-size: 16px;
-      /* o ri-sm */
-      line-height: 1;
+    /* Effetto hover per il pulsante informazioni */
+    #infoButton {
+      transition: all 0.3s ease;
+    }
+
+    #infoButton:hover {
+      background-color: #d73527;
+      transform: scale(1.05);
+      box-shadow: 0 4px 12px rgba(231, 76, 60, 0.3);
+    }
+
+    /* Contenitore principale con margini ottimizzati */
+    main {
+      padding-top: 80px;
+      padding-bottom: 96px;
+      padding-left: 16px;
+      padding-right: 16px;
+      min-height: calc(100vh - 80px);
+    }
+
+    /* Animazioni per la categoria di navigazione */
+    .category-item {
+      transition: all 0.3s ease;
+    }
+
+    .category-item:active {
+      transform: scale(0.95);
     }
   </style>
 </head>
-
-<div class="fixed inset-0 -z-10">
-  <img src="img/sfondo.jpg" alt="Sfondo" class="w-full h-full object-cover" />
-  <div class="absolute inset-0 bg-black/5 backdrop-blur-sm"></div>
-</div>
 
 
 
@@ -334,7 +337,7 @@
   <header
     class="fixed top-0 left-0 right-0 z-50 px-4 py-3 flex justify-between items-center max-w-[375px] w-full mx-auto">
     <div class="w-10 h-10"></div>
-    <img src="icons/log2.png" alt="Logo" class="w-50 h-14 object-cover" />
+    <img src="icons/log2.svg" alt="Logo" class="w-50 h-14 object-cover" />
     <button id="infoButton"
       class="w-8 h-8 flex items-center justify-center bg-[#ec4e39] text-white rounded-full shadow cursor-pointer">
       <i class="ri-information-line ri-lg"></i>
@@ -346,27 +349,27 @@
   <!-- Main Content -->
   <main class="pt-20 pb-24 px-4">
     <!-- <div class="mb-6 text-center">
-      <h2 class="font-['Pacifico'] ">
-        Menu
-      </h2>
-      <p class="text-sm text-gray-600 italic">
-        Sapori freschi del mare alla tua tavola
-      </p>
+      <h1 class="text-3xl font-bold text-primary mb-2" style="font-family: 'Pacifico', cursive;">Menù TANO Pescheria
+      </h1>
+      <p class="text-gray-600 text-sm">Pesce fresco • Sapori autentici • Alcamo, Sicilia</p>
     </div> -->
 
-    <!-- Menu Items Container -->
+    <!-- Category Navigation -->
+    <div id="categoryContainer"
+      class="category-container flex gap-4 overflow-x-auto pb-2 mb-6 border-b border-gray-200 sticky top-16 bg-white/80 backdrop-blur-md py-3 -mx-4 px-4 z-40">
+      <!-- Le categorie verranno generate dinamicamente -->
+    </div>
+
+    <!-- Menu Container -->
     <div id="menuContainer" class="space-y-6">
-      <!-- Menu items will be loaded here -->
+      <!-- I contenuti del menu verranno caricati qui dinamicamente -->
+    </div>
+
+    <!-- Background container -->
+    <div class="background-container">
+      <img src="img/sfondo.svg" alt="Sfondo" class="w-full h-full object-cover" />
     </div>
   </main>
-  <!-- Navbar dinamica delle categorie -->
-  <div
-    class="fixed bottom-4 left-1/2 -translate-x-1/2 z-40 w-[calc(100%-1.5rem)] max-w-sm rounded-2xl backdrop-blur-md bg-white/60 border border-white/30 shadow-[0_8px_30px_rgba(0,0,0,0.1)]">
-    <div id="categoryContainer" class="category-scroll overflow-x-auto py-3 px-2 flex space-x-4 category-container">
-    </div>
-  </div>
-
-  </div>
 
   <!-- Modal Informazioni -->
   <div id="infoModal" class="modal-overlay fixed inset-0 z-50 flex items-center justify-center p-4 hidden">
@@ -433,15 +436,9 @@
   </div>
 
   <script>
-    // ===== SISTEMA RILEVAMENTO AUTOMATICO LINGUA =====
+    // ===== RILEVAMENTO AUTOMATICO LINGUA E CARICAMENTO MENU =====
     // Il sistema rileva automaticamente la lingua del browser e carica 
     // il file JSON appropriato dalla cartella menuTradotto/
-    
-    // Variabile globale per la lingua rilevata
-    let currentLanguage = '';
-
-    console.log("🔧 Sistema di rilevamento automatico lingua attivo");
-
 
   </script>
 
@@ -451,21 +448,24 @@
     // Variabile globale per i dati del menu
     let menuData = {};
 
+    // Variabile globale per la lingua rilevata
+    let currentLanguage = '';
+    
     // Funzione per caricare i dati del menu dal file JSON
     async function loadMenuData() {
-      // Mappa delle lingue supportate con i suffissi dei file
+      // Mappa delle lingue supportate
       const langMap = {
-        ar: "AR",      // Arabo
-        zh: "CHI",     // Cinese 
-        'zh-cn': "CHI", // Cinese semplificato
-        'zh-tw': "CHI", // Cinese tradizionale
-        de: "DE",      // Tedesco
-        en: "EN",      // Inglese
-        es: "ES",      // Spagnolo
-        fr: "FR",      // Francese
-        el: "GR",      // Greco
-        ja: "JAP",     // Giapponese
-        ru: "RUS"      // Russo
+        ar: "AR",
+        zh: "CHI", 
+        'zh-cn': "CHI",
+        'zh-tw': "CHI",
+        de: "DE",
+        en: "EN",
+        es: "ES",
+        fr: "FR",
+        el: "GR",
+        ja: "JAP",
+        ru: "RUS"
       };
 
       // Rileva la lingua del browser
@@ -493,7 +493,6 @@
               menuData = await fallbackResponse.json();
               console.log("✅ Menu caricato in inglese (fallback)");
               initializeMenu();
-              showLanguageIndicator('en');
               return;
             }
           }
@@ -503,11 +502,9 @@
         menuData = await response.json();
         console.log("✅ Menu caricato con successo in", currentLanguage === 'it' ? 'italiano' : 'lingua straniera');
         initializeMenu();
-        showLanguageIndicator(currentLanguage);
         
       } catch (err) {
         console.error("❌ Errore caricamento menu:", err);
-        
         // Prova a caricare il menu italiano come ultimo fallback
         try {
           const fallbackResponse = await fetch('menu.json');
@@ -515,66 +512,19 @@
             menuData = await fallbackResponse.json();
             console.log("✅ Menu caricato in italiano (fallback finale)");
             initializeMenu();
-            showLanguageIndicator('it');
             return;
           }
         } catch (fallbackErr) {
           console.error("❌ Errore anche nel caricamento del fallback:", fallbackErr);
         }
         
-        // Se tutto fallisce, mostra errore dettagliato
         document.getElementById('menuContainer').innerHTML = `
           <div class="p-4 bg-red-100 text-red-700 rounded-lg">
-            <p class="font-bold mb-2">Errore nel caricamento del menù</p>
-            <p class="text-sm mb-2">Lingua rilevata: <span class="font-mono">${currentLanguage}</span></p>
-            <p class="text-sm mb-2">File tentato: <span class="font-mono">${filePath}</span></p>
-            <button onclick="window.location.reload()" class="mt-2 px-4 py-2 bg-red-600 text-white rounded hover:bg-red-700">
-              Ricarica Pagina
-            </button>
+            <p>Errore nel caricamento del menù. Prova a ricaricare la pagina.</p>
+            <p class="text-sm mt-2">Lingua rilevata: ${currentLanguage}</p>
+            <p class="text-sm">File tentato: ${filePath}</p>
           </div>`;
       }
-    }
-
-    // Funzione per mostrare un indicatore temporaneo della lingua caricata
-    function showLanguageIndicator(lang) {
-      const languageNames = {
-        'it': '🇮🇹 Italiano',
-        'en': '🇬🇧 English', 
-        'es': '🇪🇸 Español',
-        'fr': '🇫🇷 Français',
-        'de': '🇩🇪 Deutsch',
-        'ar': '🇸🇦 العربية',
-        'zh': '🇨🇳 中文',
-        'el': '🇬🇷 Ελληνικά',
-        'ja': '🇯🇵 日本語',
-        'ru': '🇷🇺 Русский'
-      };
-      
-      const languageName = languageNames[lang] || `🌍 ${lang.toUpperCase()}`;
-      
-      // Crea e mostra il badge temporaneo
-      const indicator = document.createElement('div');
-      indicator.innerHTML = `
-        <div class="fixed top-20 right-4 z-50 bg-green-500 text-white px-3 py-2 rounded-lg shadow-lg text-sm font-medium transition-all duration-300">
-          ${languageName}
-        </div>
-      `;
-      
-      document.body.appendChild(indicator);
-      
-      // Rimuovi il badge dopo 3 secondi con animazione
-      setTimeout(() => {
-        const badge = indicator.querySelector('div');
-        if (badge) {
-          badge.style.opacity = '0';
-          badge.style.transform = 'translateX(100%)';
-          setTimeout(() => {
-            if (indicator.parentNode) {
-              indicator.remove();
-            }
-          }, 300);
-        }
-      }, 3000);
     }
 
 
@@ -600,7 +550,7 @@
         `;
         container.appendChild(item);
 
-        // Le etichette sono già tradotte nel file JSON caricato
+        // Le label sono già tradotte nel file JSON caricato
       });
 
 
@@ -608,9 +558,8 @@
       document.querySelectorAll(".category-item").forEach((item) => {
         item.addEventListener("click", function () {
           const category = this.getAttribute("data-category");
-          renderMenuItems(category);
           setActiveCategory(category);
-          window.scrollTo({ top: 0, behavior: "smooth" });
+          renderMenuItems(category);
         });
       });
     }
@@ -622,15 +571,50 @@
       renderMenuItems(firstCategory);
       setActiveCategory(firstCategory);
       window.scrollTo({ top: 0, behavior: "smooth" });
+      
+      // Mostra brevemente quale lingua è stata rilevata
+      showLanguageIndicator();
+    }
+
+    // Funzione per mostrare un indicatore della lingua rilevata
+    function showLanguageIndicator() {
+      const languageNames = {
+        'it': '🇮🇹 Italiano',
+        'en': '🇬🇧 English', 
+        'es': '🇪🇸 Español',
+        'fr': '🇫🇷 Français',
+        'de': '🇩🇪 Deutsch',
+        'ar': '🇸🇦 العربية',
+        'zh': '🇨🇳 中文',
+        'el': '🇬🇷 Ελληνικά',
+        'ja': '🇯🇵 日本語',
+        'ru': '🇷🇺 Русский'
+      };
+      
+      const languageName = languageNames[currentLanguage] || `🌍 ${currentLanguage.toUpperCase()}`;
+      
+      // Crea il badge temporaneo
+      const indicator = document.createElement('div');
+      indicator.innerHTML = `
+        <div class="fixed top-20 right-4 z-50 bg-green-500 text-white px-3 py-2 rounded-lg shadow-lg text-sm font-medium">
+          ${languageName}
+        </div>
+      `;
+      
+      document.body.appendChild(indicator);
+      
+      // Rimuovi il badge dopo 3 secondi
+      setTimeout(() => {
+        if (indicator.parentNode) {
+          indicator.remove();
+        }
+      }, 3000);
     }
 
 
     // Carica i dati del menu quando il documento è pronto
     document.addEventListener("DOMContentLoaded", loadMenuData);
-  </script>
 
-  <script id="menuRendering">
-    // Funzione per renderizzare gli elementi del menu per una categoria specifica
     function renderMenuItems(category) {
       const menuContainer = document.getElementById("menuContainer");
       menuContainer.innerHTML = "";
@@ -694,198 +678,116 @@
 
       menuContainer.appendChild(menuGrid);
 
-      // Attiva i pulsanti immagine
+      // ✅ Event listeners per le immagini dopo aver generato i menu items
       document.querySelectorAll('.load-image-btn').forEach(button => {
-        if (button.hasListenerAttached) return;
-        button.hasListenerAttached = true;
-
-        button.addEventListener('click', async function () {
-          const imageSrc = this.getAttribute('data-image');
-          const imageAlt = this.getAttribute('data-alt');
+        button.addEventListener('click', function () {
+          const imageUrl = this.getAttribute('data-image');
+          const altText = this.getAttribute('data-alt');
           const itemId = this.getAttribute('data-item-id');
-          const container = document.getElementById(`img-container-${itemId}`);
 
-          const dot = document.querySelector(`[data-notification-id="dot-${itemId}"]`);
-          if (dot) dot.remove();
-
-          this.disabled = true;
-          this.innerHTML = '<i class="ri-loader-4-line animate-spin"></i><span class="ml-2">Caricamento...</span>';
-          container.classList.remove('hidden');
-          container.style.height = '200px';
-
-          try {
-            await loadImageWithProgressAsync(imageSrc, imageAlt, container);
-            this.remove();
-          } catch {
-            container.innerHTML = `
-          <div class="h-32 flex items-center justify-center bg-red-50 text-red-600">
-            <div class="text-center">
-              <i class="ri-error-warning-line ri-2x mb-2"></i>
-              <p class="text-sm">Errore nel caricamento dell'immagine</p>
-            </div>
-          </div>`;
-            this.disabled = false;
-            this.innerHTML = '<i class="ri-refresh-line"></i><span class="ml-2">Riprova</span>';
-          }
+          loadItemImage(imageUrl, altText, itemId);
         });
       });
     }
 
-    // Funzione caricamento immagine con progress bar
-    function loadImageWithProgressAsync(src, alt, container) {
-      return new Promise((resolve, reject) => {
-        container.innerHTML = `
-      <div class="h-full flex flex-col items-center justify-center bg-gray-100 p-4">
-        <div class="w-full max-w-xs">
-          <div class="flex justify-between text-sm text-gray-600 mb-2">
-            <span>Caricamento immagine</span>
-            <span id="progress-text">0%</span>
-          </div>
-          <div class="w-full bg-gray-200 rounded-full h-2">
-            <div id="progress-bar" class="bg-primary h-2 rounded-full transition-all duration-300" style="width: 0%"></div>
-          </div>
-        </div>
-      </div>`;
+    function setActiveCategory(activeCategory) {
+      document.querySelectorAll(".category-item").forEach((item) => {
+        const icon = item.querySelector(".category-icon");
+        icon.classList.remove("active");
 
-        const progressBar = container.querySelector('#progress-bar');
-        const progressText = container.querySelector('#progress-text');
-        let progress = 0;
-
-        const interval = setInterval(() => {
-          progress += Math.random() * 15;
-          if (progress > 90) progress = 90;
-          if (progressBar) progressBar.style.width = progress + '%';
-          if (progressText) progressText.textContent = Math.round(progress) + '%';
-        }, 100);
-
-        const img = new Image();
-        img.alt = alt;
-        img.className = 'w-full h-full object-cover object-center';
-
-        img.onload = () => {
-          clearInterval(interval);
-          if (progressBar) progressBar.style.width = '100%';
-          if (progressText) progressText.textContent = '100%';
-
-          setTimeout(() => {
-            container.innerHTML = '';
-            container.appendChild(img);
-            container.style.height = '200px';
-            resolve();
-          }, 300);
-        };
-
-        img.onerror = () => {
-          clearInterval(interval);
-          reject();
-        };
-
-        img.src = src;
+        if (item.getAttribute("data-category") === activeCategory) {
+          icon.classList.add("active");
+        }
       });
+
+      // Scroll orizzontale per centrare la categoria attiva
+      const categoryContainer = document.getElementById("categoryContainer");
+      const activeItem = document.querySelector(`[data-category="${activeCategory}"]`);
+
+      if (activeItem && categoryContainer) {
+        const containerWidth = categoryContainer.offsetWidth;
+        const itemLeft = activeItem.offsetLeft;
+        const itemWidth = activeItem.offsetWidth;
+
+        categoryContainer.scrollLeft =
+          itemLeft - containerWidth / 2 + itemWidth / 2;
+      }
     }
 
+    // ✅ Funzione per caricare e mostrare immagini
+    function loadItemImage(imageUrl, altText, itemId) {
+      const container = document.getElementById(`img-container-${itemId}`);
+      const notificationDot = document.querySelector(`[data-notification-id="dot-${itemId}"]`);
 
-    // Function to load image with progress simulation
-    HTMLButtonElement.prototype.loadImageWithProgress = function (imageSrc, imageAlt, itemId, container, button) {
-      const progressBarId = `progress-bar-${itemId}`;
-      const progressTextId = `progress-${itemId}`;
+      if (container.classList.contains('show')) {
+        // Se l'immagine è già mostrata, nascondila
+        container.style.height = '0';
+        container.classList.remove('show');
+        container.classList.add('hidden');
+        setTimeout(() => {
+          container.innerHTML = '';
+        }, 500);
+        return;
+      }
 
-      // Elementi progress bar
-      let progress = 0;
-      const progressInterval = setInterval(() => {
-        progress += Math.random() * 15;
-        if (progress > 90) progress = 90;
+      // Nascondi la notifica
+      if (notificationDot) {
+        notificationDot.style.display = 'none';
+      }
 
-        const bar = document.getElementById(progressBarId);
-        const text = document.getElementById(progressTextId);
-        if (bar) bar.style.width = progress + '%';
-        if (text) text.textContent = Math.round(progress) + '%';
-      }, 100);
-
-      // Carica immagine
+      // Carica l'immagine
       const img = document.createElement('img');
-      img.className = 'w-full h-full object-cover object-center';
-      img.alt = imageAlt;
-      img.onload = function () {
-        clearInterval(progressInterval);
+      img.className = 'loaded-image';
+      img.alt = altText;
+      img.style.opacity = '0';
+      img.style.transition = 'opacity 0.3s ease';
 
-        // Completa la barra
-        const bar = document.getElementById(progressBarId);
-        const text = document.getElementById(progressTextId);
-        if (bar) bar.style.width = '100%';
-        if (text) text.textContent = '100%';
+      img.onload = function () {
+        container.innerHTML = '';
+        container.appendChild(img);
+        container.classList.remove('hidden');
+        container.classList.add('show');
+        container.style.height = '200px';
 
         setTimeout(() => {
-          // Inserisce immagine
-          container.innerHTML = '';
-          container.appendChild(img);
-          container.style.height = '200px';
-
-          // Stato toggle visibilità
-          let isVisible = true;
-
-          // Bottone di toggle
-          button.disabled = false;
-          button.innerHTML = '<i class="ri-eye-off-line"></i><span class="ml-2">Nascondi immagine</span><i class="ri-arrow-up-s-line ml-1"></i>';
-
-          button.onclick = function () {
-            isVisible = !isVisible;
-            if (isVisible) {
-              container.classList.remove('hidden');
-              container.style.height = '200px';
-              button.innerHTML = '<i class="ri-eye-off-line"></i><span class="ml-2">Nascondi immagine</span><i class="ri-arrow-up-s-line ml-1"></i>';
-            } else {
-              container.classList.add('hidden');
-              container.style.height = '0';
-              button.innerHTML = '<i class="ri-image-line"></i><span class="ml-2">Mostra immagine</span><i class="ri-arrow-down-s-line ml-1"></i>';
-            }
-          };
-        }, 500);
+          img.style.opacity = '1';
+        }, 100);
       };
 
       img.onerror = function () {
-        clearInterval(progressInterval);
         container.innerHTML = `
-      <div class="h-32 flex items-center justify-center bg-red-50 text-red-600">
-        <div class="text-center">
-          <i class="ri-error-warning-line ri-2x mb-2"></i>
-          <p class="text-sm">Errore nel caricamento dell'immagine</p>
+        <div class="p-4 text-center text-gray-500 bg-gray-100 rounded">
+          <i class="ri-image-line ri-2x mb-2"></i>
+          <p class="text-sm">Immagine non disponibile</p>
         </div>
-      </div>`;
-        button.disabled = false;
-        button.innerHTML = '<i class="ri-refresh-line"></i><span class="ml-2">Riprova</span>';
+      `;
+        container.classList.remove('hidden');
+        container.classList.add('show');
+        container.style.height = 'auto';
       };
 
-      // Imposta src (inizia caricamento)
-      img.src = imageSrc;
-    };
+      img.src = imageUrl;
+    }
 
-
-    // Funzione per impostare la categoria attiva
-    function setActiveCategory(category) {
-      // Remove active class from all categories
-      document.querySelectorAll(".category-icon").forEach((icon) => {
+    // ✅ Centra automaticamente la categoria attiva nello scroll orizzontale
+    function setActiveCategory(activeCategory) {
+      document.querySelectorAll(".category-item").forEach((item) => {
+        const icon = item.querySelector(".category-icon");
         icon.classList.remove("active");
+
+        if (item.getAttribute("data-category") === activeCategory) {
+          icon.classList.add("active");
+        }
       });
 
-      // Add active class to selected category
-      const selectedCategory = document.querySelector(
-        `.category-item[data-category="${category}"] .category-icon`,
-      );
-      if (selectedCategory) {
-        selectedCategory.classList.add("active");
-      }
-
-      // Center the selected category
+      // Scroll orizzontale per centrare la categoria attiva
       const categoryContainer = document.getElementById("categoryContainer");
-      const categoryItem = document.querySelector(
-        `.category-item[data-category="${category}"]`,
-      );
+      const activeItem = document.querySelector(`[data-category="${activeCategory}"]`);
 
-      if (categoryContainer && categoryItem) {
+      if (activeItem && categoryContainer) {
         const containerWidth = categoryContainer.offsetWidth;
-        const itemWidth = categoryItem.offsetWidth;
-        const itemLeft = categoryItem.offsetLeft;
+        const itemLeft = activeItem.offsetLeft;
+        const itemWidth = activeItem.offsetWidth;
 
         categoryContainer.scrollLeft =
           itemLeft - containerWidth / 2 + itemWidth / 2;
@@ -914,8 +816,8 @@
       modalOverlay.addEventListener("click", closeModalFunction);
     });
 
-    // Debug: il sistema di rilevamento automatico lingua è ora attivo
-    console.log("✅ Sistema completato - Lingua attiva:", currentLanguage);
+    // Debug finale - questi log sono gestiti nella funzione loadMenuData()
+    console.log("🔧 Sistema di rilevamento automatico lingua attivo");
 
   </script>
 </body>

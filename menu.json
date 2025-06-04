@@ -1,4 +1,17 @@
+
 {
+  "meta": {
+    "antipasti": { "label": "Antipasti", "icon": "ri-restaurant-line" },
+    "primi": { "label": "Primi", "icon": "ri-bowl-line" },
+    "secondi": { "label": "Secondi", "icon": "ri-knife-line" },
+    "dolci": { "label": "Dolci", "icon": "ri-cake-3-line" },
+    "bevande": { "label": "Bevande", "icon": "ri-cup-line" },
+    "birre": { "label": "Birre", "icon": "ri-beer-line" },
+    "cocktail": { "label": "Cocktail", "icon": "ri-goblet-line" },
+    "vini bianchi": { "label": "Vini Bianchi", "icon": "ri-wine-line" },
+    "bollicine": { "label": "Bollicine", "icon": "ri-sparkling-line" },
+    "digestivi": { "label": "Digestivi", "icon": "ri-shot-line" }
+  },
   "antipasti": [
     {
       "nome": "Insalata di Polpo",
