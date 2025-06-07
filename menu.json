@@ -421,7 +421,10 @@
     "descrizione": "Baglio Oro",
     "prezzo": 22,
     "immagine": ""
-  },
+  }
+  ]
+,
+  "bollicine": [
   {
     "nome": "Charme",
     "descrizione": "Firriato",
@@ -451,10 +454,8 @@
     "descrizione": "Vitale",
     "prezzo": 16,
     "immagine": ""
-  }
-]
-,
-  "bollicine": [
+  },
+
     {
       "nome": "Naonis Cuvée Brut – San Jeni ",
       "descrizione": "Vitale",
@@ -476,7 +477,7 @@
     {
       "nome": "Metodo Classico Brut",
       "descrizione": "Murgo",
-      "prezzo": 0,
+      "prezzo": 45,
       "immagine": ""
     },
     {
