@@ -14,6 +14,16 @@
   },
   "antipasti": [
     {
+      "nome": "Polpette di tonno",
+      "descrizione": "Tonno, finocchietto, mollica,uva passa, pinoli, aglio, cipolla, sale, pepe",
+      "prezzo": 12,
+      "immagine": "",
+      "allergeni": [
+        "molluschi",
+        "sedano"
+      ]
+    },
+    {
       "nome": "Insalata di Polpo",
       "descrizione": "Polpo, sedano, carote, olio, limone, sale, pepe",
       "prezzo": 12,
@@ -199,7 +209,43 @@
   ],
   "dolci": [
     {
-      "nome": "Torta Mirò",
+      "nome": "Cheescake",
+      "descrizione": "Con topping di caramello, cioccolato o pistacchio",
+      "prezzo": 5,
+      "immagine": "",
+      "allergeni": [
+        "latte",
+        "uovo",
+        "soia",
+        "grano"
+      ]
+    },
+    {
+      "nome": "Tortino ricotta e caffè",
+      "descrizione": "",
+      "prezzo": 5,
+      "immagine": "",
+      "allergeni": [
+        "latte",
+        "uovo",
+        "soia",
+        "grano"
+      ]
+    },
+    {
+      "nome": "Tortino semifreddo con granita ai frutti di bosco",
+      "descrizione": "",
+      "prezzo": 5,
+      "immagine": "",
+      "allergeni": [
+        "latte",
+        "uovo",
+        "soia",
+        "grano"
+      ]
+    },
+    {
+      "nome": "Tortino Mirò",
       "descrizione": "",
       "prezzo": 5,
       "immagine": "",
