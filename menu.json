@@ -14,6 +14,16 @@
   },
   "antipasti": [
     {
+      "nome": "Polpette di tonno",
+      "descrizione": "Tonno, finocchietto, mollica, uva passa, pinoli, aglio, cipolla, sale, pepe",
+      "prezzo": 12,
+      "immagine": "",
+      "allergeni": [
+        "molluschi",
+        "sedano"
+      ]
+    },
+    {
       "nome": "Insalata di Polpo",
       "descrizione": "Polpo, sedano, carote, olio, limone, sale, pepe",
       "prezzo": 12,
@@ -198,31 +208,60 @@
     }
   ],
   "dolci": [
-    {
-      "nome": "Torta Mirò",
-      "descrizione": "",
-      "prezzo": 5,
-      "immagine": "",
-      "allergeni": [
-        "latte",
-        "uovo",
-        "soia",
-        "grano"
-      ]
-    },
-    {
-      "nome": "Frutta",
-      "descrizione": "",
-      "prezzo": 5,
-      "immagine": "",
-      "allergeni": [
-        "latte",
-        "uovo",
-        "soia",
-        "grano"
-      ]
-    }
-  ],
+  {
+    "nome": "Cheesecake",
+    "descrizione": "Con topping di caramello, cioccolato o pistacchio",
+    "prezzo": 5,
+    "immagine": "",
+    "allergeni": [
+      "latte",
+      "uova",
+      "glutine",
+      "soia",
+      "frutta a guscio"
+    ]
+  },
+  {
+    "nome": "Tortino ricotta e caffè",
+    "descrizione": "",
+    "prezzo": 5,
+    "immagine": "",
+    "allergeni": [
+      "latte",
+      "uova",
+      "glutine"
+    ]
+  },
+  {
+    "nome": "Tortino semifreddo con granita ai frutti di bosco",
+    "descrizione": "",
+    "prezzo": 5,
+    "immagine": "",
+    "allergeni": [
+      "latte",
+      "uova"
+    ]
+  },
+  {
+    "nome": "Tortino Mirò",
+    "descrizione": "",
+    "prezzo": 5,
+    "immagine": "",
+    "allergeni": [
+      "latte",
+      "uova",
+      "glutine",
+      "frutta a guscio"
+    ]
+  },
+  {
+    "nome": "Frutta",
+    "descrizione": "",
+    "prezzo": 5,
+    "immagine": "",
+    "allergeni": []
+  }
+],
   "bevande": [
     {
       "nome": "Acqua Naturale",
@@ -421,7 +460,10 @@
     "descrizione": "Baglio Oro",
     "prezzo": 22,
     "immagine": ""
-  },
+  }
+  ]
+,
+  "bollicine": [
   {
     "nome": "Charme",
     "descrizione": "Firriato",
@@ -451,10 +493,8 @@
     "descrizione": "Vitale",
     "prezzo": 16,
     "immagine": ""
-  }
-]
-,
-  "bollicine": [
+  },
+
     {
       "nome": "Naonis Cuvée Brut – San Jeni ",
       "descrizione": "Vitale",
@@ -476,7 +516,7 @@
     {
       "nome": "Metodo Classico Brut",
       "descrizione": "Murgo",
-      "prezzo": 0,
+      "prezzo": 45,
       "immagine": ""
     },
     {
