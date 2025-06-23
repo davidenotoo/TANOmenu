@@ -1,4 +1,16 @@
 {
+  "meta": {
+  "antipasti": { "label": "Entrantes", "icon": "ri-restaurant-line" },
+  "primi": { "label": "Pastas", "icon": "ri-bowl-line" },
+  "secondi": { "label": "Platos principales", "icon": "ri-knife-line" },
+  "dolci": { "label": "Postres", "icon": "ri-cake-3-line" },
+  "bevande": { "label": "Bebidas", "icon": "ri-cup-line" },
+  "birre": { "label": "Cervezas", "icon": "ri-beer-line" },
+  "cocktail": { "label": "Cócteles", "icon": "ri-goblet-line" },
+  "vini bianchi": { "label": "Vinos Blancos", "icon": "ri-wine-line" },
+  "bollicine": { "label": "Espumosos", "icon": "ri-sparkling-line" },
+  "digestivi": { "label": "Digestivos", "icon": "ri-shot-line" }
+},
   "antipasti": [
     {
       "nome": "Ensalada de pulpo",

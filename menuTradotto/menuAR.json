@@ -1,4 +1,46 @@
 {
+  "meta": {
+    "antipasti": {
+      "label": "المقبلات",
+      "icon": "ri-restaurant-line"
+    },
+    "primi": {
+      "label": "أطباق المعكرونة",
+      "icon": "ri-bowl-line"
+    },
+    "secondi": {
+      "label": "الأطباق الرئيسية",
+      "icon": "ri-knife-line"
+    },
+    "dolci": {
+      "label": "الحلويات",
+      "icon": "ri-cake-3-line"
+    },
+    "bevande": {
+      "label": "المشروبات",
+      "icon": "ri-cup-line"
+    },
+    "birre": {
+      "label": "البيرة",
+      "icon": "ri-beer-line"
+    },
+    "cocktail": {
+      "label": "الكوكتيلات",
+      "icon": "ri-goblet-line"
+    },
+    "vini bianchi": {
+      "label": "النبيذ الأبيض",
+      "icon": "ri-wine-line"
+    },
+    "bollicine": {
+      "label": "النبيذ الفوار",
+      "icon": "ri-sparkling-line"
+    },
+    "digestivi": {
+      "label": "مشروبات الهضم",
+      "icon": "ri-shot-line"
+    }
+  },
   "antipasti": [
     {
       "nome": "سلطة الأخطبوط",

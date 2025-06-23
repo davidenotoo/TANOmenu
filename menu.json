@@ -8,9 +8,9 @@
     "bevande": { "label": "Bevande", "icon": "ri-cup-line" },
     "birre": { "label": "Birre", "icon": "ri-beer-line" },
     "cocktail": { "label": "Cocktail", "icon": "ri-goblet-line" },
-    "vini bianchi": { "label": "Vini Bianchi", "icon": "ri-wine-line" },
+    "vini bianchi": { "label": "Vini Bianchi", "icon": "ri-glass-line" },
     "bollicine": { "label": "Bollicine", "icon": "ri-sparkling-line" },
-    "digestivi": { "label": "Digestivi", "icon": "ri-shot-line" }
+"digestivi": { "label": "Digestivi", "icon": "ri-whiskey-line" }
   },
   "antipasti": [
     {
@@ -198,31 +198,60 @@
     }
   ],
   "dolci": [
-    {
-      "nome": "Torta Mirò",
-      "descrizione": "",
-      "prezzo": 5,
-      "immagine": "",
-      "allergeni": [
-        "latte",
-        "uovo",
-        "soia",
-        "grano"
-      ]
-    },
-    {
-      "nome": "Frutta",
-      "descrizione": "",
-      "prezzo": 5,
-      "immagine": "",
-      "allergeni": [
-        "latte",
-        "uovo",
-        "soia",
-        "grano"
-      ]
-    }
-  ],
+  {
+    "nome": "Cheesecake",
+    "descrizione": "Con topping di caramello, cioccolato o pistacchio",
+    "prezzo": 5,
+    "immagine": "",
+    "allergeni": [
+      "latte",
+      "uova",
+      "glutine",
+      "soia",
+      "frutta a guscio"
+    ]
+  },
+  {
+    "nome": "Tortino ricotta e caffè",
+    "descrizione": "",
+    "prezzo": 5,
+    "immagine": "",
+    "allergeni": [
+      "latte",
+      "uova",
+      "glutine"
+    ]
+  },
+  {
+    "nome": "Tortino semifreddo con granita ai frutti di bosco",
+    "descrizione": "",
+    "prezzo": 5,
+    "immagine": "",
+    "allergeni": [
+      "latte",
+      "uova"
+    ]
+  },
+  {
+    "nome": "Tortino Mirò",
+    "descrizione": "",
+    "prezzo": 5,
+    "immagine": "",
+    "allergeni": [
+      "latte",
+      "uova",
+      "glutine",
+      "frutta a guscio"
+    ]
+  },
+  {
+    "nome": "Frutta",
+    "descrizione": "",
+    "prezzo": 5,
+    "immagine": "",
+    "allergeni": []
+  }
+],
   "bevande": [
     {
       "nome": "Acqua Naturale",
@@ -421,7 +450,10 @@
     "descrizione": "Baglio Oro",
     "prezzo": 22,
     "immagine": ""
-  },
+  }
+  ]
+,
+  "bollicine": [
   {
     "nome": "Charme",
     "descrizione": "Firriato",
@@ -451,10 +483,8 @@
     "descrizione": "Vitale",
     "prezzo": 16,
     "immagine": ""
-  }
-]
-,
-  "bollicine": [
+  },
+
     {
       "nome": "Naonis Cuvée Brut – San Jeni ",
       "descrizione": "Vitale",
@@ -476,7 +506,7 @@
     {
       "nome": "Metodo Classico Brut",
       "descrizione": "Murgo",
-      "prezzo": 0,
+      "prezzo": 45,
       "immagine": ""
     },
     {

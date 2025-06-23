@@ -1,4 +1,17 @@
 {
+  "meta": {
+  "antipasti": { "label": "前菜", "icon": "ri-restaurant-line" },
+  "primi": { "label": "パスタ", "icon": "ri-bowl-line" },
+  "secondi": { "label": "メインディッシュ", "icon": "ri-knife-line" },
+  "dolci": { "label": "デザート", "icon": "ri-cake-3-line" },
+  "bevande": { "label": "飲み物", "icon": "ri-cup-line" },
+  "birre": { "label": "ビール", "icon": "ri-beer-line" },
+  "cocktail": { "label": "カクテル", "icon": "ri-goblet-line" },
+  "vini bianchi": { "label": "白ワイン", "icon": "ri-wine-line" },
+  "bollicine": { "label": "スパークリング", "icon": "ri-sparkling-line" },
+  "digestivi": { "label": "食後酒", "icon": "ri-shot-line" }
+}
+,
   "antipasti": [
     {
       "nome": "タコのサラダ",

@@ -27,6 +27,8 @@
     rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" />
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" />
+
   <!-- Manifest -->
   <link rel="manifest" href="manifest.json" />
 
@@ -329,11 +331,34 @@
 
 
 
-<body class="bg-white  text-gray-800 max-w-[375px] w-full min-h-[762px] mx-auto relative">
+<body class="bg-white text-gray-800 w-full min-h-screen mx-auto relative px-4 md:px-8 lg:px-12">
   <!-- Nav Bar -->
   <header
-    class="fixed top-0 left-0 right-0 z-50 px-4 py-3 flex justify-between items-center max-w-[375px] w-full mx-auto">
-    <div class="w-10 h-10"></div>
+    class="fixed top-0 left-0 right-0 z-50 px-4 py-3 flex justify-between items-center w-full px-4 md:px-8 lg:px-12">
+    <!-- Selettore lingua completo -->
+    <div class="relative">
+      <button id="langSelector"
+        class="flex items-center gap-2 px-2 py-1 bg-white/80 text-gray-700 rounded-md text-sm shadow border border-gray-300 hover:bg-white transition">
+        <span id="currentFlag">🌍</span>
+        <i class="ri-arrow-down-s-line"></i>
+      </button>
+
+      <ul id="langDropdown"
+        class="absolute left-0 mt-1 w-40 bg-white rounded shadow border border-gray-200 hidden z-50">
+        <li data-lang="it" class="px-3 py-2 hover:bg-gray-100 cursor-pointer">🇮🇹 Italiano</li>
+        <li data-lang="en" class="px-3 py-2 hover:bg-gray-100 cursor-pointer">🇬🇧 English</li>
+        <li data-lang="fr" class="px-3 py-2 hover:bg-gray-100 cursor-pointer">🇫🇷 Français</li>
+        <li data-lang="de" class="px-3 py-2 hover:bg-gray-100 cursor-pointer">🇩🇪 Deutsch</li>
+        <li data-lang="es" class="px-3 py-2 hover:bg-gray-100 cursor-pointer">🇪🇸 Español</li>
+        <li data-lang="ar" class="px-3 py-2 hover:bg-gray-100 cursor-pointer text-right">🇸🇦 العربية</li>
+        <li data-lang="zh" class="px-3 py-2 hover:bg-gray-100 cursor-pointer">🇨🇳 中文</li>
+        <li data-lang="el" class="px-3 py-2 hover:bg-gray-100 cursor-pointer">🇬🇷 Ελληνικά</li>
+        <li data-lang="ja" class="px-3 py-2 hover:bg-gray-100 cursor-pointer">🇯🇵 日本語</li>
+        <li data-lang="ru" class="px-3 py-2 hover:bg-gray-100 cursor-pointer">🇷🇺 Русский</li>
+      </ul>
+    </div>
+
+
     <img src="icons/log2.png" alt="Logo" class="w-50 h-14 object-cover" />
     <button id="infoButton"
       class="w-8 h-8 flex items-center justify-center bg-[#ec4e39] text-white rounded-full shadow cursor-pointer">
@@ -360,9 +385,18 @@
     </div>
   </main>
   <!-- Navbar dinamica delle categorie -->
-  <div
-    class="fixed bottom-4 left-1/2 -translate-x-1/2 z-40 w-[calc(100%-1.5rem)] max-w-sm rounded-2xl backdrop-blur-md bg-white/60 border border-white/30 shadow-[0_8px_30px_rgba(0,0,0,0.1)]">
+  <div class="fixed bottom-4 left-1/2 -translate-x-1/2 z-40 
+            w-[calc(100%-1.5rem)] 
+            md:w-[calc(100%-3rem)] 
+            lg:w-[calc(100%-6rem)] 
+            max-w-4xl 
+            rounded-2xl 
+            backdrop-blur-md 
+            bg-white/60 
+            border border-white/30 
+            shadow-[0_8px_30px_rgba(0,0,0,0.1)]">
     <div id="categoryContainer" class="category-scroll overflow-x-auto py-3 px-2 flex space-x-4 category-container">
+      <!-- Le categorie verranno caricate dinamicamente qui via JS -->
     </div>
   </div>
 
@@ -374,7 +408,8 @@
     <div id="modalOverlay" class="absolute inset-0"></div>
 
     <!-- Contenuto del modal -->
-    <div class="modal-content relative bg-white rounded-xl p-6 max-w-sm w-full mx-4 transform transition-all duration-300">
+    <div
+      class="modal-content relative bg-white rounded-xl p-6 max-w-sm w-full mx-4 transform transition-all duration-300">
       <!-- Header con titolo e pulsante chiudi -->
       <div class="flex justify-between items-center mb-4">
         <h3 class="text-xl font-bold text-gray-800">Informazioni Utili</h3>
@@ -436,7 +471,7 @@
     // ===== SISTEMA RILEVAMENTO AUTOMATICO LINGUA =====
     // Il sistema rileva automaticamente la lingua del browser e carica 
     // il file JSON appropriato dalla cartella menuTradotto/
-    
+
     // Variabile globale per la lingua rilevata
     let currentLanguage = '';
 
@@ -469,17 +504,20 @@
       };
 
       // Rileva la lingua del browser
-      const browserLang = navigator.language || navigator.userLanguage || 'it';
+      const urlLang = new URLSearchParams(window.location.search).get('lang');
+      const browserLang = urlLang || navigator.language || 'it';
       currentLanguage = browserLang.split('-')[0].toLowerCase();
-      
+
+
+
       // Debug info
       console.log("🌍 Lingua del browser rilevata:", browserLang);
       console.log("🔤 Lingua estratta:", currentLanguage);
-      
+
       // Determina il suffisso del file e il percorso
       const langSuffix = langMap[currentLanguage] || langMap[browserLang.toLowerCase()] || 'EN';
       const filePath = currentLanguage === 'it' ? 'menu.json' : `menuTradotto/menu${langSuffix}.json`;
-      
+
       console.log("📁 Caricamento file:", filePath);
 
       try {
@@ -499,15 +537,15 @@
           }
           throw new Error(`Errore nel caricamento del file ${filePath}`);
         }
-        
+
         menuData = await response.json();
         console.log("✅ Menu caricato con successo in", currentLanguage === 'it' ? 'italiano' : 'lingua straniera');
         initializeMenu();
         showLanguageIndicator(currentLanguage);
-        
+
       } catch (err) {
         console.error("❌ Errore caricamento menu:", err);
-        
+
         // Prova a caricare il menu italiano come ultimo fallback
         try {
           const fallbackResponse = await fetch('menu.json');
@@ -521,7 +559,7 @@
         } catch (fallbackErr) {
           console.error("❌ Errore anche nel caricamento del fallback:", fallbackErr);
         }
-        
+
         // Se tutto fallisce, mostra errore dettagliato
         document.getElementById('menuContainer').innerHTML = `
           <div class="p-4 bg-red-100 text-red-700 rounded-lg">
@@ -539,7 +577,7 @@
     function showLanguageIndicator(lang) {
       const languageNames = {
         'it': '🇮🇹 Italiano',
-        'en': '🇬🇧 English', 
+        'en': '🇬🇧 English',
         'es': '🇪🇸 Español',
         'fr': '🇫🇷 Français',
         'de': '🇩🇪 Deutsch',
@@ -549,9 +587,9 @@
         'ja': '🇯🇵 日本語',
         'ru': '🇷🇺 Русский'
       };
-      
+
       const languageName = languageNames[lang] || `🌍 ${lang.toUpperCase()}`;
-      
+
       // Crea e mostra il badge temporaneo
       const indicator = document.createElement('div');
       indicator.innerHTML = `
@@ -559,9 +597,9 @@
           ${languageName}
         </div>
       `;
-      
+
       document.body.appendChild(indicator);
-      
+
       // Rimuovi il badge dopo 3 secondi con animazione
       setTimeout(() => {
         const badge = indicator.querySelector('div');
@@ -644,52 +682,51 @@
       menuContainer.appendChild(categoryTitle);
 
       const menuGrid = document.createElement("div");
-      menuGrid.className = "grid grid-cols-1 gap-6";
+      menuGrid.className = "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center";
 
       menuData[category].forEach((item, index) => {
-        const menuItem = document.createElement("div");
-        menuItem.className = "menu-item bg-white/70 backdrop-blur-md rounded-lg shadow-md overflow-hidden transition-all duration-300";
-
         const itemId = `item-${category.replace(/\s+/g, '-')}-${index}`;
 
+        const menuItem = document.createElement("div");
+        menuItem.className =
+          "menu-item max-w-sm w-full text-center bg-white/70 backdrop-blur-md rounded-lg shadow-md overflow-hidden transition-all duration-300 h-[300px] flex flex-col justify-between";
+
         let menuItemHTML = `
-    <div class="p-4">
-      <div class="flex justify-between items-center mb-2">
-        <div>
+      <div class="p-4">
+        <div class="flex flex-col items-center mb-2">
           <h4 id="name-${itemId}" class="text-lg font-medium text-gray-800">${item.nome}</h4>
           <span class="text-primary font-medium">€${item.prezzo.toFixed(2)}</span>
         </div>`;
 
         if (item.immagine && item.immagine.trim() !== "") {
           menuItemHTML += `
-      <div class="relative">
-        <button
-          class="load-image-btn"
-          data-image="${item.immagine}"
-          data-alt="${item.nome}"
-          data-item-id="${itemId}"
-          aria-label="Mostra immagine"
-          title="Mostra immagine"
-        >
-          <i class="ri-image-line ri-sm"></i>
-        </button>
-        <span class="notification-dot absolute top-0 right-0 translate-x-1/2 -translate-y-1/2 w-2 h-2 rounded-full bg-red-500 border border-white"
-          data-notification-id="dot-${itemId}"></span>
-      </div>`;
+        <div class="relative flex justify-center mb-2">
+          <button
+            class="load-image-btn"
+            data-image="${item.immagine}"
+            data-alt="${item.nome}"
+            data-item-id="${itemId}"
+            aria-label="Mostra immagine"
+            title="Mostra immagine"
+          >
+            <i class="ri-image-line ri-sm"></i>
+          </button>
+          <span class="notification-dot absolute top-0 right-0 translate-x-1/2 -translate-y-1/2 w-2 h-2 rounded-full bg-red-500 border border-white"
+            data-notification-id="dot-${itemId}"></span>
+        </div>`;
         }
 
         menuItemHTML += `
+        <p id="desc-${itemId}" class="text-gray-600 text-sm line-clamp-3">${item.descrizione || ''}</p>
+        ${item.allergeni && item.allergeni.length > 0
+            ? `<p class="allergeni">Allergeni: ${item.allergeni.join(", ")}</p>`
+            : ""}
       </div>
-      <p id="desc-${itemId}" class="text-gray-600 text-sm mb-3">${item.descrizione}</p>
-      ${item.allergeni && item.allergeni.length > 0 ? `<p class="allergeni">Allergeni: ${item.allergeni.join(", ")}</p>` : ""}
-    </div>
-    <div id="img-container-${itemId}" class="image-container hidden overflow-hidden transition-all duration-500" style="height: 0;"></div>
-  `;
+      <div id="img-container-${itemId}" class="image-container hidden overflow-hidden transition-all duration-500" style="height: 0;"></div>
+    `;
 
         menuItem.innerHTML = menuItemHTML;
         menuGrid.appendChild(menuItem);
-
-        // I testi sono già tradotti nel file JSON caricato
       });
 
       menuContainer.appendChild(menuGrid);
@@ -709,7 +746,7 @@
           if (dot) dot.remove();
 
           this.disabled = true;
-          this.innerHTML = '<i class="ri-loader-4-line animate-spin"></i><span class="ml-2">Caricamento...</span>';
+          this.innerHTML = '<i class="ri-loader-4-line animate-spin"></i>';
           container.classList.remove('hidden');
           container.style.height = '200px';
 
@@ -725,11 +762,12 @@
             </div>
           </div>`;
             this.disabled = false;
-            this.innerHTML = '<i class="ri-refresh-line"></i><span class="ml-2">Riprova</span>';
+            this.innerHTML = '<i class="ri-refresh-line"></i>';
           }
         });
       });
     }
+
 
     // Funzione caricamento immagine con progress bar
     function loadImageWithProgressAsync(src, alt, container) {
@@ -918,6 +956,43 @@
     console.log("✅ Sistema completato - Lingua attiva:", currentLanguage);
 
   </script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const langSelector = document.getElementById("langSelector");
+      const langDropdown = document.getElementById("langDropdown");
+      const currentFlag = document.getElementById("currentFlag");
+
+      langSelector.addEventListener("click", (e) => {
+        e.stopPropagation();
+        langDropdown.classList.toggle("hidden");
+      });
+
+      window.addEventListener("click", () => {
+        langDropdown.classList.add("hidden");
+      });
+
+      const langFlags = {
+        it: "🇮🇹", en: "🇬🇧", fr: "🇫🇷", de: "🇩🇪", es: "🇪🇸",
+        ar: "🇸🇦", zh: "🇨🇳", el: "🇬🇷", ja: "🇯🇵", ru: "🇷🇺"
+      };
+
+      const urlParams = new URLSearchParams(window.location.search);
+      const activeLang = urlParams.get("lang") || (navigator.language || "it").split("-")[0];
+      currentFlag.textContent = langFlags[activeLang] || "🌍";
+
+      langDropdown.querySelectorAll("li").forEach(item => {
+        item.addEventListener("click", () => {
+          const selected = item.dataset.lang;
+          const url = new URL(window.location.href);
+          url.searchParams.set("lang", selected);
+          window.location.href = url.toString(); // reload con lingua
+        });
+      });
+    });
+  </script>
+
+
 </body>
 
 </html>

@@ -1,4 +1,46 @@
 {
+  "meta": {
+    "antipasti": {
+      "label": "Закуски",
+      "icon": "ri-restaurant-line"
+    },
+    "primi": {
+      "label": "Паста",
+      "icon": "ri-bowl-line"
+    },
+    "secondi": {
+      "label": "Основные блюда",
+      "icon": "ri-knife-line"
+    },
+    "dolci": {
+      "label": "Десерты",
+      "icon": "ri-cake-3-line"
+    },
+    "bevande": {
+      "label": "Напитки",
+      "icon": "ri-cup-line"
+    },
+    "birre": {
+      "label": "Пиво",
+      "icon": "ri-beer-line"
+    },
+    "cocktail": {
+      "label": "Коктейли",
+      "icon": "ri-goblet-line"
+    },
+    "vini bianchi": {
+      "label": "Белые вина",
+      "icon": "ri-wine-line"
+    },
+    "bollicine": {
+      "label": "Игристые вина",
+      "icon": "ri-sparkling-line"
+    },
+    "digestivi": {
+      "label": "Дижестивы",
+      "icon": "ri-shot-line"
+    }
+  },
   "antipasti": [
     {
       "nome": "Салат с осьминогом",

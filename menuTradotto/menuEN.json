@@ -1,15 +1,45 @@
 {
-   "meta": {
-    "antipasti": { "label": "Appetizer", "icon": "ri-restaurant-line" },
-    "primi": { "label": "First Courses", "icon": "ri-bowl-line" },
-    "secondi": { "label": "Seconds", "icon": "ri-knife-line" },
-    "dolci": { "label": "Dessert", "icon": "ri-cake-3-line" },
-    "bevande": { "label": "Drinks", "icon": "ri-cup-line" },
-    "birre": { "label": "Beers", "icon": "ri-beer-line" },
-    "cocktail": { "label": "Cocktails", "icon": "ri-goblet-line" },
-    "vini bianchi": { "label": "White wine", "icon": "ri-wine-line" },
-    "bollicine": { "label": "Sparkling Wine", "icon": "ri-sparkling-line" },
-    "digestivi": { "label": "Digestive", "icon": "ri-shot-line" }
+  "meta": {
+    "antipasti": {
+      "label": "Appetizer",
+      "icon": "ri-restaurant-line"
+    },
+    "primi": {
+      "label": "First Courses",
+      "icon": "ri-bowl-line"
+    },
+    "secondi": {
+      "label": "Seconds",
+      "icon": "ri-knife-line"
+    },
+    "dolci": {
+      "label": "Dessert",
+      "icon": "ri-cake-3-line"
+    },
+    "bevande": {
+      "label": "Drinks",
+      "icon": "ri-cup-line"
+    },
+    "birre": {
+      "label": "Beers",
+      "icon": "ri-beer-line"
+    },
+    "cocktail": {
+      "label": "Cocktails",
+      "icon": "ri-goblet-line"
+    },
+    "vini bianchi": {
+      "label": "White wine",
+      "icon": "ri-wine-line"
+    },
+    "bollicine": {
+      "label": "Sparkling Wine",
+      "icon": "ri-sparkling-line"
+    },
+    "digestivi": {
+      "label": "Digestive",
+      "icon": "ri-shot-line"
+    }
   },
   "antipasti": [
     {
@@ -367,135 +397,135 @@
       "immagine": "",
       "allergeni": ""
     }
-  ],"vini bianchi": [
-  {
-    "nome": "Mucino Grillo affinato in botte",
-    "descrizione": "Candido",
-    "prezzo": 35,
-    "immagine": ""
-  },
-  {
-    "nome": "Arrìdi Sauvignon Blanc",
-    "descrizione": "Candido",
-    "prezzo": 25,
-    "immagine": ""
-  },
-  {
-    "nome": "Guardalòmu Grillo",
-    "descrizione": "Candido",
-    "prezzo": 22,
-    "immagine": ""
-  },
-  {
-    "nome": "Inzolia",
-    "descrizione": "Candido",
-    "prezzo": 20,
-    "immagine": ""
-  },
-  {
-    "nome": "Etna Bianco",
-    "descrizione": "Tenuta San Michele",
-    "prezzo": 25,
-    "immagine": ""
-  },
-  {
-    "nome": "Grillo",
-    "descrizione": "Alessandro di Camporeale",
-    "prezzo": 20,
-    "immagine": ""
-  },
-  {
-    "nome": "Kaid Sauvignon",
-    "descrizione": "Alessandro di Camporeale",
-    "prezzo": 25,
-    "immagine": ""
-  },
-  {
-    "nome": "Benedé Catarratto",
-    "descrizione": "Alessandro di Camporeale",
-    "prezzo": 18,
-    "immagine": ""
-  },
-  {
-    "nome": "Leone Blend",
-    "descrizione": "Tenuta Regaleali",
-    "prezzo": 22,
-    "immagine": ""
-  },
-  {
-    "nome": "Pinzeri Grillo",
-    "descrizione": "Funaro",
-    "prezzo": 20,
-    "immagine": ""
-  },
-  {
-    "nome": "Mondura Catarratto",
-    "descrizione": "Funaro",
-    "prezzo": 20,
-    "immagine": ""
-  },
-  {
-    "nome": "Gatto Bianco",
-    "descrizione": "Funaro",
-    "prezzo": 18,
-    "immagine": ""
-  },
-  {
-    "nome": "Maria Costanza",
-    "descrizione": "G. Milazzo",
-    "prezzo": 28,
-    "immagine": ""
-  },
-  {
-    "nome": "Zahra",
-    "descrizione": "Vitale",
-    "prezzo": 16,
-    "immagine": ""
-  },
-  {
-    "nome": "Kikè",
-    "descrizione": "Fina",
-    "prezzo": 20,
-    "immagine": ""
-  },
-  {
-    "nome": "Kiggiari Grecanico",
-    "descrizione": "Baglio Oro",
-    "prezzo": 22,
-    "immagine": ""
-  },
-  {
-    "nome": "Charme",
-    "descrizione": "Firriato",
-    "prezzo": 22,
-    "immagine": ""
-  },
-  {
-    "nome": "Bianco di Nera",
-    "descrizione": "G. Milazzo",
-    "prezzo": 26,
-    "immagine": ""
-  },
-  {
-    "nome": "Viveur",
-    "descrizione": "Funaro",
-    "prezzo": 20,
-    "immagine": ""
-  },
-  {
-    "nome": "Murgo Brut",
-    "descrizione": "Tenuta San Michele",
-    "prezzo": 40,
-    "immagine": ""
-  },
-  {
-    "nome": "Sanjení Brut",
-    "descrizione": "Vitale",
-    "prezzo": 16,
-    "immagine": ""
-  }
-]
-,
+  ],
+  "vini bianchi": [
+    {
+      "nome": "Mucino Grillo affinato in botte",
+      "descrizione": "Candido",
+      "prezzo": 35,
+      "immagine": ""
+    },
+    {
+      "nome": "Arrìdi Sauvignon Blanc",
+      "descrizione": "Candido",
+      "prezzo": 25,
+      "immagine": ""
+    },
+    {
+      "nome": "Guardalòmu Grillo",
+      "descrizione": "Candido",
+      "prezzo": 22,
+      "immagine": ""
+    },
+    {
+      "nome": "Inzolia",
+      "descrizione": "Candido",
+      "prezzo": 20,
+      "immagine": ""
+    },
+    {
+      "nome": "Etna Bianco",
+      "descrizione": "Tenuta San Michele",
+      "prezzo": 25,
+      "immagine": ""
+    },
+    {
+      "nome": "Grillo",
+      "descrizione": "Alessandro di Camporeale",
+      "prezzo": 20,
+      "immagine": ""
+    },
+    {
+      "nome": "Kaid Sauvignon",
+      "descrizione": "Alessandro di Camporeale",
+      "prezzo": 25,
+      "immagine": ""
+    },
+    {
+      "nome": "Benedé Catarratto",
+      "descrizione": "Alessandro di Camporeale",
+      "prezzo": 18,
+      "immagine": ""
+    },
+    {
+      "nome": "Leone Blend",
+      "descrizione": "Tenuta Regaleali",
+      "prezzo": 22,
+      "immagine": ""
+    },
+    {
+      "nome": "Pinzeri Grillo",
+      "descrizione": "Funaro",
+      "prezzo": 20,
+      "immagine": ""
+    },
+    {
+      "nome": "Mondura Catarratto",
+      "descrizione": "Funaro",
+      "prezzo": 20,
+      "immagine": ""
+    },
+    {
+      "nome": "Gatto Bianco",
+      "descrizione": "Funaro",
+      "prezzo": 18,
+      "immagine": ""
+    },
+    {
+      "nome": "Maria Costanza",
+      "descrizione": "G. Milazzo",
+      "prezzo": 28,
+      "immagine": ""
+    },
+    {
+      "nome": "Zahra",
+      "descrizione": "Vitale",
+      "prezzo": 16,
+      "immagine": ""
+    },
+    {
+      "nome": "Kikè",
+      "descrizione": "Fina",
+      "prezzo": 20,
+      "immagine": ""
+    },
+    {
+      "nome": "Kiggiari Grecanico",
+      "descrizione": "Baglio Oro",
+      "prezzo": 22,
+      "immagine": ""
+    },
+    {
+      "nome": "Charme",
+      "descrizione": "Firriato",
+      "prezzo": 22,
+      "immagine": ""
+    },
+    {
+      "nome": "Bianco di Nera",
+      "descrizione": "G. Milazzo",
+      "prezzo": 26,
+      "immagine": ""
+    },
+    {
+      "nome": "Viveur",
+      "descrizione": "Funaro",
+      "prezzo": 20,
+      "immagine": ""
+    },
+    {
+      "nome": "Murgo Brut",
+      "descrizione": "Tenuta San Michele",
+      "prezzo": 40,
+      "immagine": ""
+    },
+    {
+      "nome": "Sanjení Brut",
+      "descrizione": "Vitale",
+      "prezzo": 16,
+      "immagine": ""
+    }
+  ],
   "bollicine": [
     {
       "nome": "Naonis Cuvée Brut – San Jeni ",

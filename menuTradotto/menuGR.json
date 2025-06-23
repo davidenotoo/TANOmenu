@@ -1,4 +1,16 @@
 {
+  "meta": {
+  "antipasti": { "label": "Ορεκτικά", "icon": "ri-restaurant-line" },
+  "primi": { "label": "Ζυμαρικά", "icon": "ri-bowl-line" },
+  "secondi": { "label": "Κυρίως πιάτα", "icon": "ri-knife-line" },
+  "dolci": { "label": "Επιδόρπια", "icon": "ri-cake-3-line" },
+  "bevande": { "label": "Ποτά", "icon": "ri-cup-line" },
+  "birre": { "label": "Μπύρες", "icon": "ri-beer-line" },
+  "cocktail": { "label": "Κοκτέιλ", "icon": "ri-goblet-line" },
+  "vini bianchi": { "label": "Λευκά Κρασιά", "icon": "ri-wine-line" },
+  "bollicine": { "label": "Αφρώδη Κρασιά", "icon": "ri-sparkling-line" },
+  "digestivi": { "label": "Χωνευτικά", "icon": "ri-shot-line" }
+},
   "antipasti": [
     {
       "nome": "Χταπόδι σαλάτα",

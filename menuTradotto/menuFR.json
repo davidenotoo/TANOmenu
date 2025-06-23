@@ -1,46 +1,108 @@
 {
+  "meta": {
+    "antipasti": {
+      "label": "Entrées",
+      "icon": "ri-restaurant-line"
+    },
+    "primi": {
+      "label": "Plats de pâtes",
+      "icon": "ri-bowl-line"
+    },
+    "secondi": {
+      "label": "Plats principaux",
+      "icon": "ri-knife-line"
+    },
+    "dolci": {
+      "label": "Desserts",
+      "icon": "ri-cake-3-line"
+    },
+    "bevande": {
+      "label": "Boissons",
+      "icon": "ri-cup-line"
+    },
+    "birre": {
+      "label": "Bières",
+      "icon": "ri-beer-line"
+    },
+    "cocktail": {
+      "label": "Cocktails",
+      "icon": "ri-goblet-line"
+    },
+    "vini bianchi": {
+      "label": "Vins Blancs",
+      "icon": "ri-wine-line"
+    },
+    "bollicine": {
+      "label": "Vins Mousseux",
+      "icon": "ri-sparkling-line"
+    },
+    "digestivi": {
+      "label": "Digestifs",
+      "icon": "ri-shot-line"
+    }
+  },
   "antipasti": [
     {
       "nome": "Salade de Poulpe",
       "descrizione": "Poulpe, céleri, carottes, huile, citron, sel, poivre",
       "prezzo": 12,
       "immagine": "",
-      "allergeni": ["mollusques", "céleri"]
+      "allergeni": [
+        "mollusques",
+        "céleri"
+      ]
     },
     {
       "nome": "Caponata d’Espadon",
       "descrizione": "Aubergines, espadon, oignon, câpres, tomate, olives, huile, vinaigre, sel, poivre, sucre",
       "prezzo": 10,
       "immagine": "",
-      "allergeni": ["poisson", "sulfites"]
+      "allergeni": [
+        "poisson",
+        "sulfites"
+      ]
     },
     {
       "nome": "Crevettes Rouges de Mazzara Crues",
       "descrizione": "Crevette rouge",
       "prezzo": 10,
       "immagine": "",
-      "allergeni": ["crustacés"]
+      "allergeni": [
+        "crustacés"
+      ]
     },
     {
       "nome": "Langoustines Crues",
       "descrizione": "Langoustines",
       "prezzo": 10,
       "immagine": "",
-      "allergeni": ["crustacés"]
+      "allergeni": [
+        "crustacés"
+      ]
     },
     {
       "nome": "Tartare de Thon",
       "descrizione": "Thon",
       "prezzo": 14,
       "immagine": "",
-      "allergeni": ["poisson"]
+      "allergeni": [
+        "poisson"
+      ]
     },
     {
       "nome": "Menu Dégustation du Jour",
       "descrizione": "(pour 2 personnes)",
       "prezzo": 22,
       "immagine": "",
-      "allergeni": ["blé", "poisson", "crustacés", "mollusques", "moutarde", "soja", "sulfites"]
+      "allergeni": [
+        "blé",
+        "poisson",
+        "crustacés",
+        "mollusques",
+        "moutarde",
+        "soja",
+        "sulfites"
+      ]
     }
   ],
   "primi": [
@@ -49,35 +111,55 @@
       "descrizione": "Pâtes, palourdes, huile, ail, persil, poivre",
       "prezzo": 14,
       "immagine": "",
-      "allergeni": ["blé", "mollusques"]
+      "allergeni": [
+        "blé",
+        "mollusques"
+      ]
     },
     {
       "nome": "Busiate aux Fruits de Mer",
       "descrizione": "Pâtes, palourdes, moules, crevettes, calmars, langoustines, huile, tomates cerises, oignon, ail, piment, sel, persil",
       "prezzo": 16,
       "immagine": "",
-      "allergeni": ["blé", "mollusques", "crustacés"]
+      "allergeni": [
+        "blé",
+        "mollusques",
+        "crustacés"
+      ]
     },
     {
       "nome": "Raviolis de Mérou Sauce Crustacés",
       "descrizione": "Pâtes, mérou, crustacés, saumon, tomate, crème, piment, huile, sel, oignon",
       "prezzo": 15,
       "immagine": "",
-      "allergeni": ["blé", "poisson", "crustacés", "lait"]
+      "allergeni": [
+        "blé",
+        "poisson",
+        "crustacés",
+        "lait"
+      ]
     },
     {
       "nome": "Linguine Crevette Rouge et Pistache",
       "descrizione": "Pâtes, crevette rouge, pistache, tomates cerises, ail, vin, huile, sel",
       "prezzo": 16,
       "immagine": "",
-      "allergeni": ["blé", "crustacés", "pistache", "sulfites"]
+      "allergeni": [
+        "blé",
+        "crustacés",
+        "pistache",
+        "sulfites"
+      ]
     },
     {
       "nome": "Spaghetti Tintinnì",
       "descrizione": "Pâtes, moules, tomate, ail, oignon, huile, sel, poivre, persil",
       "prezzo": 8,
       "immagine": "",
-      "allergeni": ["blé", "mollusques"]
+      "allergeni": [
+        "blé",
+        "mollusques"
+      ]
     }
   ],
   "secondi": [
@@ -86,42 +168,62 @@
       "descrizione": "Calamar, farine de blé dur, sel",
       "prezzo": 14,
       "immagine": "",
-      "allergeni": ["blé", "mollusques"]
+      "allergeni": [
+        "blé",
+        "mollusques"
+      ]
     },
     {
       "nome": "Cornet de Poisson Frit",
       "descrizione": "Poisson, farine de blé dur, sel",
       "prezzo": 12,
       "immagine": "",
-      "allergeni": ["blé", "poisson"]
+      "allergeni": [
+        "blé",
+        "poisson"
+      ]
     },
     {
       "nome": "Calamar Grillé",
       "descrizione": "Calamar, huile, sel, citron",
       "prezzo": 14,
       "immagine": "",
-      "allergeni": ["mollusques"]
+      "allergeni": [
+        "mollusques"
+      ]
     },
     {
       "nome": "Tataki de Thon",
       "descrizione": "Thon, pistache, basilic, huile, sauce soja, sel, poivre",
       "prezzo": 18,
       "immagine": "",
-      "allergeni": ["poisson", "pistache", "soja", "blé"]
+      "allergeni": [
+        "poisson",
+        "pistache",
+        "soja",
+        "blé"
+      ]
     },
     {
       "nome": "Soupe de Moules",
       "descrizione": "Moules, tomate, ail, huile, vin, sel, poivre, persil",
       "prezzo": 8,
       "immagine": "",
-      "allergeni": ["mollusques", "sulfites"]
+      "allergeni": [
+        "mollusques",
+        "sulfites"
+      ]
     },
     {
       "nome": "Poisson du Jour",
       "descrizione": "Au four, grillé ou en croûte de sel (prix au KG)",
       "prezzo": 40,
       "immagine": "",
-      "allergeni": ["poisson", "mollusques", "crustacés"]
+      "allergeni": [
+        "poisson",
+        "mollusques",
+        "crustacés"
+      ]
     }
   ],
   "desserts": [
@@ -130,14 +232,24 @@
       "descrizione": "",
       "prezzo": 5,
       "immagine": "",
-      "allergeni": ["lait", "œuf", "soja", "blé"]
+      "allergeni": [
+        "lait",
+        "œuf",
+        "soja",
+        "blé"
+      ]
     },
     {
       "nome": "Fruits",
       "descrizione": "",
       "prezzo": 5,
       "immagine": "",
-      "allergeni": ["lait", "œuf", "soja", "blé"]
+      "allergeni": [
+        "lait",
+        "œuf",
+        "soja",
+        "blé"
+      ]
     }
   ],
   "boissons": [

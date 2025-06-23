@@ -1,46 +1,108 @@
 {
+  "meta": {
+    "antipasti": {
+      "label": "Vorspeisen",
+      "icon": "ri-restaurant-line"
+    },
+    "primi": {
+      "label": "Nudelgerichte",
+      "icon": "ri-bowl-line"
+    },
+    "secondi": {
+      "label": "Hauptgerichte",
+      "icon": "ri-knife-line"
+    },
+    "dolci": {
+      "label": "Desserts",
+      "icon": "ri-cake-3-line"
+    },
+    "bevande": {
+      "label": "Getränke",
+      "icon": "ri-cup-line"
+    },
+    "birre": {
+      "label": "Biere",
+      "icon": "ri-beer-line"
+    },
+    "cocktail": {
+      "label": "Cocktails",
+      "icon": "ri-goblet-line"
+    },
+    "vini bianchi": {
+      "label": "Weiße Weine",
+      "icon": "ri-wine-line"
+    },
+    "bollicine": {
+      "label": "Schaumweine",
+      "icon": "ri-sparkling-line"
+    },
+    "digestivi": {
+      "label": "Digestifs",
+      "icon": "ri-shot-line"
+    }
+  },
   "antipasti": [
     {
       "nome": "Oktopussalat",
       "descrizione": "Oktopus, Sellerie, Karotten, Öl, Zitrone, Salz, Pfeffer",
       "prezzo": 12,
       "immagine": "",
-      "allergeni": ["Weichtiere", "Sellerie"]
+      "allergeni": [
+        "Weichtiere",
+        "Sellerie"
+      ]
     },
     {
       "nome": "Schwertfisch-Caponata",
       "descrizione": "Auberginen, Schwertfisch, Zwiebel, Kapern, Tomate, Oliven, Öl, Essig, Salz, Pfeffer, Zucker",
       "prezzo": 10,
       "immagine": "",
-      "allergeni": ["Fisch", "Sulfite"]
+      "allergeni": [
+        "Fisch",
+        "Sulfite"
+      ]
     },
     {
       "nome": "Rohkost von roten Garnelen aus Mazara",
       "descrizione": "Rote Garnele",
       "prezzo": 10,
       "immagine": "",
-      "allergeni": ["Krebstiere"]
+      "allergeni": [
+        "Krebstiere"
+      ]
     },
     {
       "nome": "Rohkost von Kaisergranat",
       "descrizione": "Kaisergranat",
       "prezzo": 10,
       "immagine": "",
-      "allergeni": ["Krebstiere"]
+      "allergeni": [
+        "Krebstiere"
+      ]
     },
     {
       "nome": "Thunfisch-Tatar",
       "descrizione": "Thunfisch",
       "prezzo": 14,
       "immagine": "",
-      "allergeni": ["Fisch"]
+      "allergeni": [
+        "Fisch"
+      ]
     },
     {
       "nome": "Degustationsmenü des Tages",
       "descrizione": "(für 2 Personen)",
       "prezzo": 22,
       "immagine": "",
-      "allergeni": ["Weizen", "Fisch", "Krebstiere", "Weichtiere", "Senf", "Soja", "Sulfite"]
+      "allergeni": [
+        "Weizen",
+        "Fisch",
+        "Krebstiere",
+        "Weichtiere",
+        "Senf",
+        "Soja",
+        "Sulfite"
+      ]
     }
   ],
   "primi": [
@@ -49,35 +111,55 @@
       "descrizione": "Pasta, Venusmuscheln, Öl, Knoblauch, Petersilie, Pfeffer",
       "prezzo": 14,
       "immagine": "",
-      "allergeni": ["Weizen", "Weichtiere"]
+      "allergeni": [
+        "Weizen",
+        "Weichtiere"
+      ]
     },
     {
       "nome": "Busiate mit Meeresfrüchten",
       "descrizione": "Pasta, Venusmuscheln, Miesmuscheln, Garnelen, Tintenfische, Kaisergranat, Öl, Kirschtomaten, Zwiebel, Knoblauch, Chili, Salz, Petersilie",
       "prezzo": 16,
       "immagine": "",
-      "allergeni": ["Weizen", "Weichtiere", "Krebstiere"]
+      "allergeni": [
+        "Weizen",
+        "Weichtiere",
+        "Krebstiere"
+      ]
     },
     {
       "nome": "Cernia-Ravioli mit Krustentiersauce",
       "descrizione": "Pasta, Zackenbarsch, Krustentiere, Lachs, Tomate, Sahne, Chili, Öl, Salz, Zwiebel",
       "prezzo": 15,
       "immagine": "",
-      "allergeni": ["Weizen", "Fisch", "Krebstiere", "Milch"]
+      "allergeni": [
+        "Weizen",
+        "Fisch",
+        "Krebstiere",
+        "Milch"
+      ]
     },
     {
       "nome": "Linguine mit roter Garnele und Pistazie",
       "descrizione": "Pasta, rote Garnele, Pistazie, Kirschtomaten, Knoblauch, Wein, Öl, Salz",
       "prezzo": 16,
       "immagine": "",
-      "allergeni": ["Weizen", "Krebstiere", "Pistazie", "Sulfite"]
+      "allergeni": [
+        "Weizen",
+        "Krebstiere",
+        "Pistazie",
+        "Sulfite"
+      ]
     },
     {
       "nome": "Spaghetti Tintinnì",
       "descrizione": "Pasta, Miesmuscheln, Tomate, Knoblauch, Zwiebel, Öl, Salz, Pfeffer, Petersilie",
       "prezzo": 8,
       "immagine": "",
-      "allergeni": ["Weizen", "Weichtiere"]
+      "allergeni": [
+        "Weizen",
+        "Weichtiere"
+      ]
     }
   ],
   "secondi": [
@@ -86,42 +168,62 @@
       "descrizione": "Tintenfisch, Hartweizengrießmehl, Salz",
       "prezzo": 14,
       "immagine": "",
-      "allergeni": ["Weizen", "Weichtiere"]
+      "allergeni": [
+        "Weizen",
+        "Weichtiere"
+      ]
     },
     {
       "nome": "Frittierter Fischbecher",
       "descrizione": "Fisch, Hartweizengrießmehl, Salz",
       "prezzo": 12,
       "immagine": "",
-      "allergeni": ["Weizen", "Fisch"]
+      "allergeni": [
+        "Weizen",
+        "Fisch"
+      ]
     },
     {
       "nome": "Gegrillter Tintenfisch",
       "descrizione": "Tintenfisch, Öl, Salz, Zitrone",
       "prezzo": 14,
       "immagine": "",
-      "allergeni": ["Weichtiere"]
+      "allergeni": [
+        "Weichtiere"
+      ]
     },
     {
       "nome": "Thunfisch-Tataki",
       "descrizione": "Thunfisch, Pistazie, Basilikum, Öl, Sojasauce, Salz, Pfeffer",
       "prezzo": 18,
       "immagine": "",
-      "allergeni": ["Fisch", "Pistazie", "Soja", "Weizen"]
+      "allergeni": [
+        "Fisch",
+        "Pistazie",
+        "Soja",
+        "Weizen"
+      ]
     },
     {
       "nome": "Miesmuschelsuppe",
       "descrizione": "Miesmuscheln, Tomate, Knoblauch, Öl, Wein, Salz, Pfeffer, Petersilie",
       "prezzo": 8,
       "immagine": "",
-      "allergeni": ["Weichtiere", "Sulfite"]
+      "allergeni": [
+        "Weichtiere",
+        "Sulfite"
+      ]
     },
     {
       "nome": "Tagesfang",
       "descrizione": "Aus dem Ofen, gegrillt oder in Salzkruste (Preis pro KG)",
       "prezzo": 40,
       "immagine": "",
-      "allergeni": ["Fisch", "Weichtiere", "Krebstiere"]
+      "allergeni": [
+        "Fisch",
+        "Weichtiere",
+        "Krebstiere"
+      ]
     }
   ],
   "dolci": [
@@ -130,14 +232,24 @@
       "descrizione": "",
       "prezzo": 5,
       "immagine": "",
-      "allergeni": ["Milch", "Ei", "Soja", "Weizen"]
+      "allergeni": [
+        "Milch",
+        "Ei",
+        "Soja",
+        "Weizen"
+      ]
     },
     {
       "nome": "Obst",
       "descrizione": "",
       "prezzo": 5,
       "immagine": "",
-      "allergeni": ["Milch", "Ei", "Soja", "Weizen"]
+      "allergeni": [
+        "Milch",
+        "Ei",
+        "Soja",
+        "Weizen"
+      ]
     }
   ],
   "bevande": [

@@ -1,4 +1,16 @@
-{
+{"meta": {
+  "antipasti": { "label": "前菜", "icon": "ri-restaurant-line" },
+  "primi": { "label": "意面", "icon": "ri-bowl-line" },
+  "secondi": { "label": "主菜", "icon": "ri-knife-line" },
+  "dolci": { "label": "甜点", "icon": "ri-cake-3-line" },
+  "bevande": { "label": "饮料", "icon": "ri-cup-line" },
+  "birre": { "label": "啤酒", "icon": "ri-beer-line" },
+  "cocktail": { "label": "鸡尾酒", "icon": "ri-goblet-line" },
+  "vini bianchi": { "label": "白葡萄酒", "icon": "ri-wine-line" },
+  "bollicine": { "label": "气泡酒", "icon": "ri-sparkling-line" },
+  "digestivi": { "label": "消化酒", "icon": "ri-shot-line" }
+}
+,
   "antipasti": [
     {
       "nome": "章鱼沙拉",
