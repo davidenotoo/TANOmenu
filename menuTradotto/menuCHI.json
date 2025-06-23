@@ -197,31 +197,43 @@
     }
   ],
   "dolci": [
-    {
-      "nome": "米罗蛋糕",
-      "descrizione": "",
-      "prezzo": 5,
-      "immagine": "",
-      "allergeni": [
-        "乳制品",
-        "鸡蛋",
-        "大豆",
-        "小麦"
-      ]
-    },
-    {
-      "nome": "水果",
-      "descrizione": "",
-      "prezzo": 5,
-      "immagine": "",
-      "allergeni": [
-        "乳制品",
-        "鸡蛋",
-        "大豆",
-        "小麦"
-      ]
-    }
-  ],
+  {
+    "nome": "芝士蛋糕",
+    "descrizione": "配焦糖、巧克力或开心果酱",
+    "prezzo": 5,
+    "immagine": "",
+    "allergeni": ["乳制品", "鸡蛋", "面筋", "大豆", "坚果"]
+  },
+  {
+    "nome": "意式奶酪咖啡小蛋糕",
+    "descrizione": "",
+    "prezzo": 5,
+    "immagine": "",
+    "allergeni": ["乳制品", "鸡蛋", "面筋"]
+  },
+  {
+    "nome": "半冷冻蛋糕配混合莓果冰沙",
+    "descrizione": "",
+    "prezzo": 5,
+    "immagine": "",
+    "allergeni": ["乳制品", "鸡蛋"]
+  },
+  {
+    "nome": "米罗小蛋糕",
+    "descrizione": "",
+    "prezzo": 5,
+    "immagine": "",
+    "allergeni": ["乳制品", "鸡蛋", "面筋", "坚果"]
+  },
+  {
+    "nome": "水果",
+    "descrizione": "",
+    "prezzo": 5,
+    "immagine": "",
+    "allergeni": []
+  }
+]
+,
   "bevande": [
     {
       "nome": "矿泉水",

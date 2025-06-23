@@ -197,31 +197,43 @@
     }
   ],
   "dolci": [
-    {
-      "nome": "Τούρτα Miraggio",
-      "descrizione": "",
-      "prezzo": 5,
-      "immagine": "",
-      "allergeni": [
-        "γαλακτοκομικά",
-        "αυγά",
-        "σόγια",
-        "σίτος"
-      ]
-    },
-    {
-      "nome": "Φρούτα",
-      "descrizione": "",
-      "prezzo": 5,
-      "immagine": "",
-      "allergeni": [
-        "γαλακτοκομικά",
-        "αυγά",
-        "σόγια",
-        "σίτος"
-      ]
-    }
-  ],
+  {
+    "nome": "Τσιζκέικ",
+    "descrizione": "Με επικάλυψη καραμέλας, σοκολάτας ή φυστικιού",
+    "prezzo": 5,
+    "immagine": "",
+    "allergeni": ["γάλα", "αυγά", "γλουτένη", "σόγια", "ξηροί καρποί"]
+  },
+  {
+    "nome": "Ταρτάκι ρικότα και καφέ",
+    "descrizione": "",
+    "prezzo": 5,
+    "immagine": "",
+    "allergeni": ["γάλα", "αυγά", "γλουτένη"]
+  },
+  {
+    "nome": "Ημιπαγωμένο ταρτάκι με γρανίτα από μούρα",
+    "descrizione": "",
+    "prezzo": 5,
+    "immagine": "",
+    "allergeni": ["γάλα", "αυγά"]
+  },
+  {
+    "nome": "Ταρτάκι Mirò",
+    "descrizione": "",
+    "prezzo": 5,
+    "immagine": "",
+    "allergeni": ["γάλα", "αυγά", "γλουτένη", "ξηροί καρποί"]
+  },
+  {
+    "nome": "Φρούτα",
+    "descrizione": "",
+    "prezzo": 5,
+    "immagine": "",
+    "allergeni": []
+  }
+]
+,
   "bevande": [
     {
       "nome": "Μεταλλικό νερό",

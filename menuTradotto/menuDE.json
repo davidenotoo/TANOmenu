@@ -227,31 +227,42 @@
     }
   ],
   "dolci": [
-    {
-      "nome": "Mirò-Torte",
-      "descrizione": "",
-      "prezzo": 5,
-      "immagine": "",
-      "allergeni": [
-        "Milch",
-        "Ei",
-        "Soja",
-        "Weizen"
-      ]
-    },
-    {
-      "nome": "Obst",
-      "descrizione": "",
-      "prezzo": 5,
-      "immagine": "",
-      "allergeni": [
-        "Milch",
-        "Ei",
-        "Soja",
-        "Weizen"
-      ]
-    }
-  ],
+  {
+    "nome": "Käsekuchen",
+    "descrizione": "Mit Karamell-, Schokoladen- oder Pistazien-Topping",
+    "prezzo": 5,
+    "immagine": "",
+    "allergeni": ["Milch", "Eier", "Gluten", "Soja", "Schalenfrüchte"]
+  },
+  {
+    "nome": "Ricotta-Kaffee-Küchlein",
+    "descrizione": "",
+    "prezzo": 5,
+    "immagine": "",
+    "allergeni": ["Milch", "Eier", "Gluten"]
+  },
+  {
+    "nome": "Semifreddo mit Waldbeergranita",
+    "descrizione": "",
+    "prezzo": 5,
+    "immagine": "",
+    "allergeni": ["Milch", "Eier"]
+  },
+  {
+    "nome": "Mirò-Küchlein",
+    "descrizione": "",
+    "prezzo": 5,
+    "immagine": "",
+    "allergeni": ["Milch", "Eier", "Gluten", "Schalenfrüchte"]
+  },
+  {
+    "nome": "Obst",
+    "descrizione": "",
+    "prezzo": 5,
+    "immagine": "",
+    "allergeni": []
+  }
+],
   "bevande": [
     {
       "nome": "Stilles Wasser",

@@ -226,32 +226,43 @@
       ]
     }
   ],
-  "desserts": [
-    {
-      "nome": "Gâteau Mirò",
-      "descrizione": "",
-      "prezzo": 5,
-      "immagine": "",
-      "allergeni": [
-        "lait",
-        "œuf",
-        "soja",
-        "blé"
-      ]
-    },
-    {
-      "nome": "Fruits",
-      "descrizione": "",
-      "prezzo": 5,
-      "immagine": "",
-      "allergeni": [
-        "lait",
-        "œuf",
-        "soja",
-        "blé"
-      ]
-    }
-  ],
+  "desserts":[
+  {
+    "nome": "Cheesecake",
+    "descrizione": "Avec nappage caramel, chocolat ou pistache",
+    "prezzo": 5,
+    "immagine": "",
+    "allergeni": ["lait", "œufs", "gluten", "soja", "fruits à coque"]
+  },
+  {
+    "nome": "Gâteau ricotta et café",
+    "descrizione": "",
+    "prezzo": 5,
+    "immagine": "",
+    "allergeni": ["lait", "œufs", "gluten"]
+  },
+  {
+    "nome": "Gâteau glacé avec granité aux fruits rouges",
+    "descrizione": "",
+    "prezzo": 5,
+    "immagine": "",
+    "allergeni": ["lait", "œufs"]
+  },
+  {
+    "nome": "Gâteau Mirò",
+    "descrizione": "",
+    "prezzo": 5,
+    "immagine": "",
+    "allergeni": ["lait", "œufs", "gluten", "fruits à coque"]
+  },
+  {
+    "nome": "Fruits",
+    "descrizione": "",
+    "prezzo": 5,
+    "immagine": "",
+    "allergeni": []
+  }
+],
   "boissons": [
     {
       "nome": "Eau Plate",

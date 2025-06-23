@@ -198,31 +198,43 @@
     }
   ],
   "dolci": [
-    {
-      "nome": "ミロのケーキ",
-      "descrizione": "",
-      "prezzo": 5,
-      "immagine": "",
-      "allergeni": [
-        "乳製品",
-        "卵",
-        "大豆",
-        "小麦"
-      ]
-    },
-    {
-      "nome": "果物",
-      "descrizione": "",
-      "prezzo": 5,
-      "immagine": "",
-      "allergeni": [
-        "乳製品",
-        "卵",
-        "大豆",
-        "小麦"
-      ]
-    }
-  ],
+  {
+    "nome": "チーズケーキ",
+    "descrizione": "キャラメル、チョコレート、またはピスタチオのトッピング付き",
+    "prezzo": 5,
+    "immagine": "",
+    "allergeni": ["乳製品", "卵", "グルテン", "大豆", "ナッツ類"]
+  },
+  {
+    "nome": "リコッタとコーヒーのケーキ",
+    "descrizione": "",
+    "prezzo": 5,
+    "immagine": "",
+    "allergeni": ["乳製品", "卵", "グルテン"]
+  },
+  {
+    "nome": "ミックスベリーのグラニータ付きセミフレッドケーキ",
+    "descrizione": "",
+    "prezzo": 5,
+    "immagine": "",
+    "allergeni": ["乳製品", "卵"]
+  },
+  {
+    "nome": "ミロのケーキ",
+    "descrizione": "",
+    "prezzo": 5,
+    "immagine": "",
+    "allergeni": ["乳製品", "卵", "グルテン", "ナッツ類"]
+  },
+  {
+    "nome": "フルーツ",
+    "descrizione": "",
+    "prezzo": 5,
+    "immagine": "",
+    "allergeni": []
+  }
+]
+,
   "bevande": [
     {
       "nome": "ミネラルウォーター",

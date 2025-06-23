@@ -197,31 +197,42 @@
     }
   ],
   "dolci": [
-    {
-      "nome": "Tarta Miraggio",
-      "descrizione": "",
-      "prezzo": 5,
-      "immagine": "",
-      "allergeni": [
-        "lácteos",
-        "huevos",
-        "soja",
-        "trigo"
-      ]
-    },
-    {
-      "nome": "Frutas",
-      "descrizione": "",
-      "prezzo": 5,
-      "immagine": "",
-      "allergeni": [
-        "lácteos",
-        "huevos",
-        "soja",
-        "trigo"
-      ]
-    }
-  ],
+  {
+    "nome": "Tarta de queso",
+    "descrizione": "Con cobertura de caramelo, chocolate o pistacho",
+    "prezzo": 5,
+    "immagine": "",
+    "allergeni": ["lácteos", "huevos", "gluten", "soja", "frutos secos"]
+  },
+  {
+    "nome": "Pastel de ricotta y café",
+    "descrizione": "",
+    "prezzo": 5,
+    "immagine": "",
+    "allergeni": ["lácteos", "huevos", "gluten"]
+  },
+  {
+    "nome": "Semifreddo con granizado de frutos rojos",
+    "descrizione": "",
+    "prezzo": 5,
+    "immagine": "",
+    "allergeni": ["lácteos", "huevos"]
+  },
+  {
+    "nome": "Tarta Mirò",
+    "descrizione": "",
+    "prezzo": 5,
+    "immagine": "",
+    "allergeni": ["lácteos", "huevos", "gluten", "frutos secos"]
+  },
+  {
+    "nome": "Fruta",
+    "descrizione": "",
+    "prezzo": 5,
+    "immagine": "",
+    "allergeni": []
+  }
+],
   "bevande": [
     {
       "nome": "Agua mineral",

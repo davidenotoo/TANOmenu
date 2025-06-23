@@ -321,6 +321,16 @@
       line-height: 1;
     }
   </style>
+  <style>
+  #scratchMessage {
+    position: absolute;
+    z-index: 10;
+  }
+  #scratchCanvas {
+    position: relative;
+    z-index: 20;
+  }
+</style>
 </head>
 
 <div class="fixed inset-0 -z-10">
@@ -467,11 +477,7 @@
   </div>
 
   <script>
-    // ===== SISTEMA RILEVAMENTO AUTOMATICO LINGUA =====
-    // Il sistema rileva automaticamente la lingua del browser e carica 
-    // il file JSON appropriato dalla cartella menuTradotto/
 
-    // Variabile globale per la lingua rilevata
     let currentLanguage = '';
 
     console.log("🔧 Sistema di rilevamento automatico lingua attivo");
@@ -506,8 +512,6 @@
       const urlLang = new URLSearchParams(window.location.search).get('lang');
       const browserLang = urlLang || navigator.language || 'it';
       currentLanguage = browserLang.split('-')[0].toLowerCase();
-
-
 
       // Debug info
       console.log("🌍 Lingua del browser rilevata:", browserLang);
@@ -654,12 +658,19 @@
 
     // Funzione per inizializzare il menu dopo il caricamento dei dati
     function initializeMenu() {
-      generateCategoryNavigation(menuData.meta); // ✅ Genera dinamicamente le categorie
-      const firstCategory = Object.keys(menuData.meta)[0];
-      renderMenuItems(firstCategory);
-      setActiveCategory(firstCategory);
+      menuData.meta = {
+        gioca: {
+          label: "Gioca",
+          icon: "ri-gift-line"
+        },
+        ...menuData.meta
+      };
+      generateCategoryNavigation(menuData.meta);
+      renderMenuItems("antipasti"); // mantieni focus iniziale sugli antipasti
+      setActiveCategory("antipasti");
       window.scrollTo({ top: 0, behavior: "smooth" });
     }
+
 
 
     // Carica i dati del menu quando il documento è pronto
@@ -669,6 +680,11 @@
   <script id="menuRendering">
     // Funzione per renderizzare gli elementi del menu per una categoria specifica
     function renderMenuItems(category) {
+      if (category === "gioca") {
+        renderGameScratchCard();
+        return;
+      }
+
       const menuContainer = document.getElementById("menuContainer");
       menuContainer.innerHTML = "";
 
@@ -677,6 +693,10 @@
       categoryTitle.style.textShadow =
         "-2px -2px 0 white, 2px -2px 0 white, -2px 2px 0 white, 2px 2px 0 white";
 
+      // Modifica il titolo per dolci se c'è uno sconto attivo
+      if (category === "dolci" && menuData.dolci && menuData.dolci[0] && menuData.dolci[0].prezzoScontato) {
+        categoryTitle.innerHTML = "Dolci <span class='text-sm font-normal ml-2 text-green-600'>(Sconto 50% attivo!)</span>";
+      }
       categoryTitle.textContent = category.charAt(0).toUpperCase() + category.slice(1);
       menuContainer.appendChild(categoryTitle);
 
@@ -694,7 +714,12 @@
       <div class="p-4">
         <div class="flex flex-col items-center mb-2">
           <h4 id="name-${itemId}" class="text-lg font-medium text-gray-800">${item.nome}</h4>
-          <span class="text-primary font-medium">€${item.prezzo.toFixed(2)}</span>
+          <div class="flex flex-col items-center">
+        ${item.prezzoScontato ?
+            `<span class="text-red-500 line-through">€${item.prezzoOriginale.toFixed(2)}</span>
+          <span class="text-green-600 font-medium">€${item.prezzoScontato.toFixed(2)}</span>` :
+            `<span class="text-primary font-medium">€${item.prezzo.toFixed(2)}</span>`}
+      </div>
         </div>`;
 
         if (item.immagine && item.immagine.trim() !== "") {
@@ -991,7 +1016,171 @@
     });
   </script>
 
+  <script>
+    function renderGameScratchCard() {
+      const STORAGE_KEY = "dessertGameStatus";
+      const today = new Date().toISOString().split("T")[0];
+      let canPlay = true;
 
+      // Controlla se ha già giocato
+      const saved = localStorage.getItem(STORAGE_KEY);
+      if (saved) {
+        try {
+          const parsed = JSON.parse(saved);
+          if (parsed.date === today) canPlay = false;
+        } catch { }
+      }
+
+      const modal = document.getElementById("gameModal");
+      const playBtn = document.getElementById("playGame");
+      const closeBtn = document.getElementById("closeGame");
+      const canvas = document.getElementById("scratchCanvas");
+      const ctx = canvas.getContext("2d");
+      const message = document.getElementById("scratchMessage");
+
+      // Configura il modal
+      modal.classList.remove("hidden");
+
+      if (!canPlay) {
+        playBtn.style.display = "none";
+        message.textContent = "Riprova domani";
+        message.style.display = "flex";
+        return;
+      }
+
+      
+      // Evento click per iniziare
+      playBtn.onclick = () => {
+        playBtn.style.display = "none";
+        canvas.style.display = "block";
+        
+        const won = Math.random() < 0.5; // 50% di probabilità
+
+        // Configura la grattata
+        ctx.fillStyle = "#cccccc";
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+        ctx.globalCompositeOperation = "destination-out";
+
+        let isDrawing = false;
+        canvas.addEventListener("mousedown", () => isDrawing = true);
+        canvas.addEventListener("mouseup", () => isDrawing = false);
+        canvas.addEventListener("mousemove", (e) => {
+          if (!isDrawing) return;
+          const rect = canvas.getBoundingClientRect();
+          const x = e.clientX - rect.left;
+          const y = e.clientY - rect.top;
+          ctx.beginPath();
+          ctx.arc(x, y, 20, 0, Math.PI * 2);
+          ctx.fill();
+        });
+
+        // Risultato dopo la grattata
+        setTimeout(() => {
+          message.textContent = won ? "Hai VINTO! " : "Peccato!";
+          message.style.display = "flex";
+
+          // Aggiungi pulsante per dolci solo in caso di vittoria
+          if (won) {
+            // Crea e aggiungi il pulsante
+            const goToDessertBtn = document.createElement("button");
+            goToDessertBtn.id = "goToDessert";
+            goToDessertBtn.className = "bg-[#ec4e39] text-white px-5 py-2 rounded shadow hover:bg-[#d33c29] transition mt-3";
+            goToDessertBtn.textContent = "Vai alla sezione dolci";
+
+            // Con questa:
+            goToDessertBtn.onclick = () => {
+              // Chiudi il modale
+              const modal = document.getElementById("gameModal");
+              modal.classList.add("hidden");
+
+              // Trova il pulsante della categoria
+              const navBtn = document.querySelector('[data-category="dolci"]');
+              if (navBtn) {
+                navBtn.click(); // Simula il click sul pulsante della categoria
+              }
+            };
+
+            document.getElementById("gameModalContent").appendChild(goToDessertBtn);
+
+            // Applica lo sconto
+            applyDessertDiscount();
+          }
+
+          localStorage.setItem(STORAGE_KEY, JSON.stringify({ date: today, won }));
+        }, 1000);
+      };
+
+      // Chiudi modal
+      closeBtn.onclick = () => modal.classList.add("hidden");
+    }
+
+    // Modifica la funzione applyDessertDiscount in index.txt
+    function applyDessertDiscount() {
+      // Aggiorna i dati nel menuData
+      if (menuData.dolci) {
+        menuData.dolci.forEach(item => {
+          // Salva il prezzo originale
+          if (!item.prezzoOriginale) {
+            item.prezzoOriginale = item.prezzo;
+            // Calcola lo sconto (50%)
+            item.prezzoScontato = item.prezzo / 2;
+          }
+        });
+      }
+      // Controlla se la sezione dolci è attiva
+      const sections = document.querySelectorAll(".menu-section");
+      let dolciSection = null;
+
+      sections.forEach(section => {
+        const title = section.querySelector(".category-title");
+        if (title && title.textContent.trim().toLowerCase().includes("dolci")) {
+          dolciSection = section;
+        }
+      });
+
+      // Rirenderizza se attiva
+      if (dolciSection && dolciSection.classList.contains("active")) {
+        renderMenuItems("dolci");
+      }
+
+      // Aggiungi indicatore al pulsante
+      const navBtn = document.querySelector('[data-target="dolci"]');
+      if (navBtn && !navBtn.querySelector(".discount-badge")) {
+        const badge = document.createElement("span");
+        badge.className = "discount-badge absolute top-1 right-2 w-2 h-2 bg-red-500 rounded-full";
+        navBtn.appendChild(badge);
+      }
+    }
+
+    document.addEventListener("DOMContentLoaded", function () {
+      const closeBtn = document.getElementById("closeGame");
+      const modal = document.getElementById("gameModal");
+
+      closeBtn.addEventListener("click", function () {
+        modal.classList.add("hidden");
+      });
+    });
+    document.addEventListener('DOMContentLoaded', loadMenuData);
+
+  </script>
+
+
+  <!-- 1. Modifica il modal nel file index.txt -->
+  <div id="gameModal" class="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50 hidden">
+    <div class="bg-white p-6 rounded-xl shadow-xl w-80 text-center" id="gameModalContent">
+      <h2 class="text-xl font-bold mb-2">Gratta e Vinci!</h2>
+      <p class="text-sm mb-4">Gratta per scoprire se hai vinto un dolce scontato!</p>
+      <div class="relative w-full mb-4">
+        <div id="scratchMessage"
+          style="position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; font-size: 1.25rem; font-weight: bold; color: black; pointer-events: none;">
+          </div>
+        <canvas id="scratchCanvas" width="300" height="150" class="w-full rounded-lg border border-gray-300"></canvas>
+      </div>
+      <button id="playGame" class="bg-secondary text-white px-4 py-2 rounded-md font-medium">Gratta!</button>
+      <p id="gameResult" class="mt-4 text-lg font-semibold"></p>
+      <button id="closeGame" class="mt-2 text-sm text-gray-500 underline">Chiudi</button>
+    </div>
+  </div>
 </body>
 
 </html>

@@ -227,31 +227,42 @@
     }
   ],
   "dolci": [
-    {
-      "nome": "كيك ميراجيو",
-      "descrizione": "",
-      "prezzo": 5,
-      "immagine": "",
-      "allergeni": [
-        "منتجات ألبان",
-        "بيض",
-        "صويا",
-        "قمح"
-      ]
-    },
-    {
-      "nome": "فاكهة",
-      "descrizione": "",
-      "prezzo": 5,
-      "immagine": "",
-      "allergeni": [
-        "منتجات ألبان",
-        "بيض",
-        "صويا",
-        "قمح"
-      ]
-    }
-  ],
+  {
+    "nome": "تشيز كيك",
+    "descrizione": "يُقدم مع صوص الكراميل أو الشوكولاتة أو الفستق الحلبي",
+    "prezzo": 5,
+    "immagine": "",
+    "allergeni": ["حليب", "بيض", "جلوتين", "صويا", "مكسرات"]
+  },
+  {
+    "nome": "كيك الريكوتا مع القهوة",
+    "descrizione": "",
+    "prezzo": 5,
+    "immagine": "",
+    "allergeni": ["حليب", "بيض", "جلوتين"]
+  },
+  {
+    "nome": "كيك نصف مجمد مع جرانيتا التوت",
+    "descrizione": "",
+    "prezzo": 5,
+    "immagine": "",
+    "allergeni": ["حليب", "بيض"]
+  },
+  {
+    "nome": "كيك ميرò",
+    "descrizione": "",
+    "prezzo": 5,
+    "immagine": "",
+    "allergeni": ["حليب", "بيض", "جلوتين", "مكسرات"]
+  },
+  {
+    "nome": "فاكهة",
+    "descrizione": "",
+    "prezzo": 5,
+    "immagine": "",
+    "allergeni": []
+  }
+],
   "bevande": [
     {
       "nome": "ماء معدني",

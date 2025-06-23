@@ -227,31 +227,43 @@
     }
   ],
   "dolci": [
-    {
-      "nome": "Mirò Cake",
-      "descrizione": "",
-      "prezzo": 5,
-      "immagine": "",
-      "allergeni": [
-        "milk",
-        "egg",
-        "soy",
-        "wheat"
-      ]
-    },
-    {
-      "nome": "Fruit",
-      "descrizione": "",
-      "prezzo": 5,
-      "immagine": "",
-      "allergeni": [
-        "milk",
-        "egg",
-        "soy",
-        "wheat"
-      ]
-    }
-  ],
+  {
+    "nome": "Cheesecake",
+    "descrizione": "With caramel, chocolate or pistachio topping",
+    "prezzo": 5,
+    "immagine": "",
+    "allergeni": ["milk", "eggs", "gluten", "soy", "tree nuts"]
+  },
+  {
+    "nome": "Ricotta and Coffee Cake",
+    "descrizione": "",
+    "prezzo": 5,
+    "immagine": "",
+    "allergeni": ["milk", "eggs", "gluten"]
+  },
+  {
+    "nome": "Semifreddo Cake with Mixed Berry Granita",
+    "descrizione": "",
+    "prezzo": 5,
+    "immagine": "",
+    "allergeni": ["milk", "eggs"]
+  },
+  {
+    "nome": "Mirò Cake",
+    "descrizione": "",
+    "prezzo": 5,
+    "immagine": "",
+    "allergeni": ["milk", "eggs", "gluten", "tree nuts"]
+  },
+  {
+    "nome": "Fruit",
+    "descrizione": "",
+    "prezzo": 5,
+    "immagine": "",
+    "allergeni": []
+  }
+],
+
   "bevande": [
     {
       "nome": "Still Water",
