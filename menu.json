@@ -34,7 +34,7 @@
       ]
     },
     {
-      "nome": "Crudo di Gambero Rosso di Mazzara",
+      "nome": "Crudo di Gambero Rosso di Mazara",
       "descrizione": "Gambero rosso",
       "prezzo": 10,
       "immagine": "",
@@ -44,7 +44,7 @@
     },
     {
       "nome": "Crudo di Scampi",
-      "descrizione": "Scampi",
+      "descrizione": "Scampi",  
       "prezzo": 10,
       "immagine": "",
       "allergeni": [
@@ -53,7 +53,7 @@
     },
     {
       "nome": "Tartare di Tonno",
-      "descrizione": "Tonno ",
+      "descrizione": "Tonno, olio, sale, pepe ",
       "prezzo": 14,
       "immagine": "",
       "allergeni": [
@@ -123,7 +123,7 @@
       ]
     },
     {
-      "nome": "Spaghetto Tintinnì",
+      "nome": "Spaghetto Tintinná",
       "descrizione": "Pasta, cozze, pomodoro, aglio, cipolla, olio, sale, pepe, prezzemolo",
       "prezzo": 8,
       "immagine": "",
@@ -226,75 +226,75 @@
   "bevande": [
     {
       "nome": "Acqua Naturale",
-      "descrizione": "",
+      "descrizione": "1 Litro",
       "prezzo": 2,
       "immagine": ""
     },
     {
       "nome": "Acqua Frizzante",
-      "descrizione": "",
+      "descrizione": "1 Litro",
       "prezzo": 2,
       "immagine": ""
     },
     {
-      "nome": "Acqua Naturale SOC",
-      "descrizione": "",
+      "nome": "Acqua Naturale",
+      "descrizione": "0,5 Litri",
       "prezzo": 1,
       "immagine": ""
     },
     {
-      "nome": "Acqua Frizzante SOC",
-      "descrizione": "",
+      "nome": "Acqua Frizzante",
+      "descrizione": "0,5 Litri",
       "prezzo": 1,
       "immagine": ""
     },
     {
       "nome": "Coca Cola",
-      "descrizione": "",
+      "descrizione": "33 cl",
       "prezzo": 2.5,
       "immagine": ""
     },
     {
       "nome": "Coca Cola Zero",
-      "descrizione": "",
+      "descrizione": "33 cl",
       "prezzo": 2.5,
       "immagine": ""
     },
     {
       "nome": "Fanta",
-      "descrizione": "",
+      "descrizione": "33 cl",
       "prezzo": 2,
       "immagine": ""
     },
     {
       "nome": "Sprite",
-      "descrizione": "",
+      "descrizione": "33 cl",
       "prezzo": 2,
       "immagine": ""
     },
     {
       "nome": "Schweppes Limone",
-      "descrizione": "",
+      "descrizione": "18 cl",
       "prezzo": 2,
       "immagine": ""
     },
     {
       "nome": "Fever Tree Tonica Indian Premium",
-      "descrizione": "",
+      "descrizione": "20 cl",
       "prezzo": 3,
       "immagine": ""
     }
   ],
   "birre": [
     {
-      "nome": "Messina Cristalli di Sale 33cl",
-      "descrizione": "",
+      "nome": "Messina Cristalli di Sale",
+      "descrizione": "33cl",
       "prezzo": 3,
       "immagine": ""
     },
     {
-      "nome": "Peroni Nastro Azzurro 33cl",
-      "descrizione": "",
+      "nome": "Beck's",
+      "descrizione": "33cl",
       "prezzo": 2,
       "immagine": ""
     }
