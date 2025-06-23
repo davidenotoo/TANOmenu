@@ -322,15 +322,19 @@
     }
   </style>
   <style>
-  #scratchMessage {
-    position: absolute;
-    z-index: 10;
-  }
-  #scratchCanvas {
-    position: relative;
-    z-index: 20;
-  }
-</style>
+    #scratchMessage {
+      position: absolute;
+      z-index: 10;
+    }
+
+    #scratchCanvas {
+      cursor: pointer;
+      touch-action: none;
+      /* Impedisce gesti touch del browser */
+      position: relative;
+      z-index: 20;
+    }
+  </style>
 </head>
 
 <div class="fixed inset-0 -z-10">
@@ -1048,12 +1052,12 @@
         return;
       }
 
-      
+
       // Evento click per iniziare
       playBtn.onclick = () => {
         playBtn.style.display = "none";
         canvas.style.display = "block";
-        
+
         const won = Math.random() < 0.5; // 50% di probabilità
 
         // Configura la grattata
@@ -1163,21 +1167,68 @@
     document.addEventListener('DOMContentLoaded', loadMenuData);
 
   </script>
+  <!-- 2. Modifica gli event listener nel codice JavaScript -->
+  <script>
+    function setupScratchCard() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      ctx.fillStyle = "#cccccc";
+      ctx.fillRect(0, 0, canvas.width, canvas.height);
+      ctx.globalCompositeOperation = "destination-out";
 
+      let isDrawing = false;
+      const getXY = (e) => {
+        const rect = canvas.getBoundingClientRect();
+        const x = (e.touches ? e.touches[0].clientX : e.clientX) - rect.left;
+        const y = (e.touches ? e.touches[0].clientY : e.clientY) - rect.top;
+        return { x, y };
+      };
+
+      const draw = (x, y) => {
+        ctx.beginPath();
+        ctx.arc(x, y, 20, 0, Math.PI * 2);
+        ctx.fill();
+      };
+
+      // Mouse events
+      canvas.addEventListener("mousedown", () => (isDrawing = true));
+      canvas.addEventListener("mouseup", () => (isDrawing = false));
+      canvas.addEventListener("mousemove", (e) => {
+        if (!isDrawing) return;
+        const pos = getXY(e);
+        draw(pos.x, pos.y);
+      });
+
+      // Touch events con preventDefault
+      canvas.addEventListener("touchstart", (e) => {
+        e.preventDefault(); // Blocca scroll iniziale
+        isDrawing = true;
+      }, { passive: false });
+
+      canvas.addEventListener("touchend", () => (isDrawing = false));
+
+      canvas.addEventListener("touchmove", (e) => {
+        if (!isDrawing) return;
+        e.preventDefault(); // Blocca scroll durante il movimento
+        const pos = getXY(e);
+        draw(pos.x, pos.y);
+      }, { passive: false }); // Importante per permettere preventDefault
+    }
+  </script>
 
   <!-- 1. Modifica il modal nel file index.txt -->
   <div id="gameModal" class="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50 hidden">
     <div class="bg-white p-6 rounded-xl shadow-xl w-80 text-center" id="gameModalContent">
-      <h2 class="text-xl font-bold mb-2">Gratta e Vinci!</h2>
-      <p class="text-sm mb-4">Gratta per scoprire se hai vinto un dolce scontato!</p>
+      <!-- <h2 class="text-xl font-bold mb-2">Gratta e Vinci!</h2> -->
+      <!-- <p class="text-sm mb-4">Gratta per scoprire se hai vinto un dolce scontato!</p> -->
+      <p class="text-sm mb-4">ATTUALMENTE NON FUNZIONA, sto lavorando per farlo tornare attivo</p>
       <div class="relative w-full mb-4">
         <div id="scratchMessage"
           style="position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; font-size: 1.25rem; font-weight: bold; color: black; pointer-events: none;">
-          </div>
+        </div>
         <canvas id="scratchCanvas" width="300" height="150" class="w-full rounded-lg border border-gray-300"></canvas>
       </div>
-      <button id="playGame" class="bg-secondary text-white px-4 py-2 rounded-md font-medium">Gratta!</button>
-      <p id="gameResult" class="mt-4 text-lg font-semibold"></p>
+      <!-- <button id="playGame" class="bg-secondary text-white px-4 py-2 rounded-md font-medium">Gratta!</button> -->
+      <!-- <p id="gameResult" class="mt-4 text-lg font-semibold"></p> -->
       <button id="closeGame" class="mt-2 text-sm text-gray-500 underline">Chiudi</button>
     </div>
   </div>
