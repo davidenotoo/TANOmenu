@@ -325,14 +325,24 @@
     #scratchMessage {
       position: absolute;
       z-index: 10;
+      pointer-events: none;
     }
 
     #scratchCanvas {
-      cursor: pointer;
-      touch-action: none;
-      /* Impedisce gesti touch del browser */
       position: relative;
       z-index: 20;
+      touch-action: none;
+      /* Blocca scrolling */
+    }
+
+    @media (max-width: 640px) {
+      #gameModal {
+        padding: 1rem;
+      }
+
+      #scratchCanvas {
+        height: 180px !important;
+      }
     }
   </style>
 </head>
@@ -1057,26 +1067,23 @@
       playBtn.onclick = () => {
         playBtn.style.display = "none";
         canvas.style.display = "block";
-
-        const won = Math.random() < 0.5; // 50% di probabilità
+        const won = Math.random() < 0.5;
 
         // Configura la grattata
-        ctx.fillStyle = "#cccccc";
-        ctx.fillRect(0, 0, canvas.width, canvas.height);
-        ctx.globalCompositeOperation = "destination-out";
+        setupScratchCard();
 
-        let isDrawing = false;
-        canvas.addEventListener("mousedown", () => isDrawing = true);
-        canvas.addEventListener("mouseup", () => isDrawing = false);
-        canvas.addEventListener("mousemove", (e) => {
-          if (!isDrawing) return;
-          const rect = canvas.getBoundingClientRect();
-          const x = e.clientX - rect.left;
-          const y = e.clientY - rect.top;
-          ctx.beginPath();
-          ctx.arc(x, y, 20, 0, Math.PI * 2);
-          ctx.fill();
-        });
+        // let isDrawing = false;
+        // canvas.addEventListener("mousedown", () => isDrawing = true);
+        // canvas.addEventListener("mouseup", () => isDrawing = false);
+        // canvas.addEventListener("mousemove", (e) => {
+        //   if (!isDrawing) return;
+        //   const rect = canvas.getBoundingClientRect();
+        //   const x = e.clientX - rect.left;
+        //   const y = e.clientY - rect.top;
+        //   ctx.beginPath();
+        //   ctx.arc(x, y, 20, 0, Math.PI * 2);
+        //   ctx.fill();
+        // });
 
         // Risultato dopo la grattata
         setTimeout(() => {
@@ -1170,65 +1177,77 @@
   <!-- 2. Modifica gli event listener nel codice JavaScript -->
   <script>
     function setupScratchCard() {
-      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      const canvas = document.getElementById("scratchCanvas");
+      const ctx = canvas.getContext("2d");
+
+
+      // Inizializza il canvas
       ctx.fillStyle = "#cccccc";
       ctx.fillRect(0, 0, canvas.width, canvas.height);
       ctx.globalCompositeOperation = "destination-out";
 
       let isDrawing = false;
+
+      // Funzione per ottenere coordinate
       const getXY = (e) => {
         const rect = canvas.getBoundingClientRect();
-        const x = (e.touches ? e.touches[0].clientX : e.clientX) - rect.left;
-        const y = (e.touches ? e.touches[0].clientY : e.clientY) - rect.top;
-        return { x, y };
+        return {
+          x: (e.clientX || e.touches[0].clientX) - rect.left,
+          y: (e.clientY || e.touches[0].clientY) - rect.top
+        };
       };
 
+      // Disegna sul canvas
       const draw = (x, y) => {
         ctx.beginPath();
         ctx.arc(x, y, 20, 0, Math.PI * 2);
         ctx.fill();
       };
 
-      // Mouse events
-      canvas.addEventListener("mousedown", () => (isDrawing = true));
-      canvas.addEventListener("mouseup", () => (isDrawing = false));
+      // Eventi mouse
+      canvas.addEventListener("mousedown", () => isDrawing = true);
+      canvas.addEventListener("mouseup", () => isDrawing = false);
       canvas.addEventListener("mousemove", (e) => {
         if (!isDrawing) return;
-        const pos = getXY(e);
-        draw(pos.x, pos.y);
+        const { x, y } = getXY(e);
+        draw(x, y);
       });
 
-      // Touch events con preventDefault
+      // Eventi touch
       canvas.addEventListener("touchstart", (e) => {
-        e.preventDefault(); // Blocca scroll iniziale
+        e.preventDefault();
         isDrawing = true;
+        const { x, y } = getXY(e);
+        draw(x, y);
       }, { passive: false });
 
-      canvas.addEventListener("touchend", () => (isDrawing = false));
+      canvas.addEventListener("touchend", () => isDrawing = false);
+
 
       canvas.addEventListener("touchmove", (e) => {
         if (!isDrawing) return;
-        e.preventDefault(); // Blocca scroll durante il movimento
-        const pos = getXY(e);
-        draw(pos.x, pos.y);
-      }, { passive: false }); // Importante per permettere preventDefault
+        e.preventDefault();
+        const { x, y } = getXY(e);
+        draw(x, y);
+      }, { passive: false });
     }
+
   </script>
 
   <!-- 1. Modifica il modal nel file index.txt -->
   <div id="gameModal" class="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50 hidden">
     <div class="bg-white p-6 rounded-xl shadow-xl w-80 text-center" id="gameModalContent">
-      <!-- <h2 class="text-xl font-bold mb-2">Gratta e Vinci!</h2> -->
-      <!-- <p class="text-sm mb-4">Gratta per scoprire se hai vinto un dolce scontato!</p> -->
-      <p class="text-sm mb-4">ATTUALMENTE NON FUNZIONA, sto lavorando per farlo tornare attivo</p>
+      <h2 class="text-xl font-bold mb-2">Gratta e Vinci!</h2>
+      <p class="text-sm mb-4">Gratta per scoprire se hai vinto un dolce scontato!</p>
+      <!-- <p class="text-sm mb-4">ATTUALMENTE NON FUNZIONA, sto lavorando per farlo tornare attivo</p> -->
       <div class="relative w-full mb-4">
         <div id="scratchMessage"
           style="position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; font-size: 1.25rem; font-weight: bold; color: black; pointer-events: none;">
         </div>
         <canvas id="scratchCanvas" width="300" height="150" class="w-full rounded-lg border border-gray-300"></canvas>
       </div>
-      <!-- <button id="playGame" class="bg-secondary text-white px-4 py-2 rounded-md font-medium">Gratta!</button> -->
-      <!-- <p id="gameResult" class="mt-4 text-lg font-semibold"></p> -->
+      <button id="playGame" class="bg-secondary text-white px-4 py-2 rounded-md font-medium">Gratta!</button>
+      <p id="gameResult" class="mt-4 text-lg font-semibold"></p>
       <button id="closeGame" class="mt-2 text-sm text-gray-500 underline">Chiudi</button>
     </div>
   </div>
