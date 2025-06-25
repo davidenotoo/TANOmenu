@@ -145,6 +145,7 @@
       position: relative;
       isolation: isolate;
       overflow: hidden;
+      height: 350px;
     }
 
     .menu-item::before {
@@ -160,7 +161,7 @@
       position: relative;
       z-index: 10;
     }
-
+    
     /* Titolo e prezzo */
     .menu-item h4 {
       font-size: 1.375rem;
@@ -690,6 +691,8 @@
     // Carica i dati del menu quando il documento è pronto
     document.addEventListener("DOMContentLoaded", loadMenuData);
   </script>
+
+  
 
   <script id="menuRendering">
     // Funzione per renderizzare gli elementi del menu per una categoria specifica
