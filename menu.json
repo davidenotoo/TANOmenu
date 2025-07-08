@@ -1,16 +1,49 @@
-
 {
   "meta": {
-    "antipasti": { "label": "Antipasti", "icon": "ri-restaurant-line" },
-    "primi": { "label": "Primi", "icon": "ri-bowl-line" },
-    "secondi": { "label": "Secondi", "icon": "ri-knife-line" },
-    "dolci": { "label": "Dolci", "icon": "ri-cake-3-line" },
-    "bevande": { "label": "Bevande", "icon": "ri-cup-line" },
-    "birre": { "label": "Birre", "icon": "ri-beer-line" },
-    "cocktail": { "label": "Cocktail", "icon": "ri-goblet-line" },
-    "vini bianchi": { "label": "Vini Bianchi", "icon": "ri-glass-line" },
-    "bollicine": { "label": "Bollicine", "icon": "ri-sparkling-line" },
-"digestivi": { "label": "Digestivi", "icon": "ri-whiskey-line" }
+    "antipasti": {
+      "label": "Antipasti",
+      "icon": "ri-restaurant-line"
+    },
+    "primi": {
+      "label": "Primi",
+      "icon": "ri-bowl-line"
+    },
+    "secondi": {
+      "label": "Secondi",
+      "icon": "ri-knife-line"
+    },
+    "dolci": {
+      "label": "Dolci",
+      "icon": "ri-cake-3-line"
+    },
+    "bevande": {
+      "label": "Bevande",
+      "icon": "ri-cup-line"
+    },
+    "birre": {
+      "label": "Birre",
+      "icon": "ri-beer-line"
+    },
+    "cocktail": {
+      "label": "Cocktail",
+      "icon": "ri-goblet-line"
+    },
+    "vini bianchi": {
+      "label": "Vini Bianchi",
+      "icon": "ri-glass-line"
+    },
+    "bollicine": {
+      "label": "Bollicine",
+      "icon": "ri-sparkling-line"
+    },
+    "digestivi": {
+      "label": "Digestivi",
+      "icon": "ri-whiskey-line"
+    },
+    "social": {
+      "label": "Social",
+      "icon": "ri-share-line"
+    }
   },
   "antipasti": [
     {
@@ -44,7 +77,7 @@
     },
     {
       "nome": "Crudo di Scampi",
-      "descrizione": "Scampi",  
+      "descrizione": "Scampi",
       "prezzo": 10,
       "immagine": "piatti/4.jpg",
       "allergeni": [
@@ -145,7 +178,7 @@
       ]
     },
     {
-      "nome": "Coppo di Pesce Fritto",
+      "nome": "Coppo di Paranza",
       "descrizione": "Pesce, farina di grano duro, sale",
       "prezzo": 12,
       "immagine": "piatti/13.jpg",
@@ -198,60 +231,60 @@
     }
   ],
   "dolci": [
-  {
-    "nome": "Cheesecake",
-    "descrizione": "Con topping di caramello, cioccolato o pistacchio",
-    "prezzo": 5,
-    "immagine": "piatti/20.jpg",
-    "allergeni": [
-      "latte",
-      "uova",
-      "glutine",
-      "soia",
-      "frutta a guscio"
-    ]
-  },
-  {
-    "nome": "Tortino ricotta e caffè",
-    "descrizione": "",
-    "prezzo": 5,
-    "immagine": "",
-    "allergeni": [
-      "latte",
-      "uova",
-      "glutine"
-    ]
-  },
-  {
-    "nome": "Tortino semifreddo con granita ai frutti di bosco",
-    "descrizione": "",
-    "prezzo": 5,
-    "immagine": "piatti/22.jpg",
-    "allergeni": [
-      "latte",
-      "uova"
-    ]
-  },
-  {
-    "nome": "Tortino Mirò",
-    "descrizione": "",
-    "prezzo": 5,
-    "immagine": "piatti/23.jpg",
-    "allergeni": [
-      "latte",
-      "uova",
-      "glutine",
-      "frutta a guscio"
-    ]
-  },
-  {
-    "nome": "Frutta",
-    "descrizione": "",
-    "prezzo": 5,
-    "immagine": "piatti/24.jpg",
-    "allergeni": []
-  }
-],
+    {
+      "nome": "Cheesecake",
+      "descrizione": "Con topping di caramello, cioccolato o pistacchio",
+      "prezzo": 5,
+      "immagine": "piatti/20.jpg",
+      "allergeni": [
+        "latte",
+        "uova",
+        "glutine",
+        "soia",
+        "frutta a guscio"
+      ]
+    },
+    {
+      "nome": "Tortino ricotta e caffè",
+      "descrizione": "",
+      "prezzo": 5,
+      "immagine": "",
+      "allergeni": [
+        "latte",
+        "uova",
+        "glutine"
+      ]
+    },
+    {
+      "nome": "Tortino semifreddo con granita ai frutti di bosco",
+      "descrizione": "",
+      "prezzo": 5,
+      "immagine": "piatti/22.jpg",
+      "allergeni": [
+        "latte",
+        "uova"
+      ]
+    },
+    {
+      "nome": "Tortino Mirò",
+      "descrizione": "",
+      "prezzo": 5,
+      "immagine": "piatti/23.jpg",
+      "allergeni": [
+        "latte",
+        "uova",
+        "glutine",
+        "frutta a guscio"
+      ]
+    },
+    {
+      "nome": "Frutta",
+      "descrizione": "",
+      "prezzo": 5,
+      "immagine": "piatti/24.jpg",
+      "allergeni": []
+    }
+  ],
   "bevande": [
     {
       "nome": "Acqua Naturale",
@@ -355,136 +388,134 @@
     }
   ],
   "vini bianchi": [
-  {
-    "nome": "Mucino Grillo affinato in botte",
-    "descrizione": "Candido",
-    "prezzo": 35,
-    "immagine": ""
-  },
-  {
-    "nome": "Arrìdi Sauvignon Blanc",
-    "descrizione": "Candido",
-    "prezzo": 25,
-    "immagine": ""
-  },
-  {
-    "nome": "Guardalòmu Grillo",
-    "descrizione": "Candido",
-    "prezzo": 22,
-    "immagine": ""
-  },
-  {
-    "nome": "Inzolia",
-    "descrizione": "Candido",
-    "prezzo": 20,
-    "immagine": ""
-  },
-  {
-    "nome": "Etna Bianco",
-    "descrizione": "Tenuta San Michele",
-    "prezzo": 25,
-    "immagine": ""
-  },
-  {
-    "nome": "Grillo",
-    "descrizione": "Alessandro di Camporeale",
-    "prezzo": 20,
-    "immagine": ""
-  },
-  {
-    "nome": "Kaid Sauvignon",
-    "descrizione": "Alessandro di Camporeale",
-    "prezzo": 25,
-    "immagine": ""
-  },
-  {
-    "nome": "Benedé Catarratto",
-    "descrizione": "Alessandro di Camporeale",
-    "prezzo": 18,
-    "immagine": ""
-  },
-  {
-    "nome": "Leone Blend",
-    "descrizione": "Tenuta Regaleali",
-    "prezzo": 22,
-    "immagine": ""
-  },
-  {
-    "nome": "Pinzeri Grillo",
-    "descrizione": "Funaro",
-    "prezzo": 20,
-    "immagine": ""
-  },
-  {
-    "nome": "Mondura Catarratto",
-    "descrizione": "Funaro",
-    "prezzo": 20,
-    "immagine": ""
-  },
-  {
-    "nome": "Gatto Bianco",
-    "descrizione": "Funaro",
-    "prezzo": 18,
-    "immagine": ""
-  },
-  {
-    "nome": "Maria Costanza",
-    "descrizione": "G. Milazzo",
-    "prezzo": 28,
-    "immagine": ""
-  },
-  {
-    "nome": "Zahra",
-    "descrizione": "Vitale",
-    "prezzo": 16,
-    "immagine": ""
-  },
-  {
-    "nome": "Kikè",
-    "descrizione": "Fina",
-    "prezzo": 20,
-    "immagine": ""
-  },
-  {
-    "nome": "Kiggiari Grecanico",
-    "descrizione": "Baglio Oro",
-    "prezzo": 22,
-    "immagine": ""
-  }
-  ]
-,
+    {
+      "nome": "Mucino Grillo affinato in botte",
+      "descrizione": "Candido",
+      "prezzo": 35,
+      "immagine": ""
+    },
+    {
+      "nome": "Arrìdi Sauvignon Blanc",
+      "descrizione": "Candido",
+      "prezzo": 25,
+      "immagine": ""
+    },
+    {
+      "nome": "Guardalòmu Grillo",
+      "descrizione": "Candido",
+      "prezzo": 22,
+      "immagine": ""
+    },
+    {
+      "nome": "Inzolia",
+      "descrizione": "Candido",
+      "prezzo": 20,
+      "immagine": ""
+    },
+    {
+      "nome": "Etna Bianco",
+      "descrizione": "Tenuta San Michele",
+      "prezzo": 25,
+      "immagine": ""
+    },
+    {
+      "nome": "Grillo",
+      "descrizione": "Alessandro di Camporeale",
+      "prezzo": 20,
+      "immagine": ""
+    },
+    {
+      "nome": "Kaid Sauvignon",
+      "descrizione": "Alessandro di Camporeale",
+      "prezzo": 25,
+      "immagine": ""
+    },
+    {
+      "nome": "Benedé Catarratto",
+      "descrizione": "Alessandro di Camporeale",
+      "prezzo": 18,
+      "immagine": ""
+    },
+    {
+      "nome": "Leone Blend",
+      "descrizione": "Tenuta Regaleali",
+      "prezzo": 22,
+      "immagine": ""
+    },
+    {
+      "nome": "Pinzeri Grillo",
+      "descrizione": "Funaro",
+      "prezzo": 20,
+      "immagine": ""
+    },
+    {
+      "nome": "Mondura Catarratto",
+      "descrizione": "Funaro",
+      "prezzo": 20,
+      "immagine": ""
+    },
+    {
+      "nome": "Gatto Bianco",
+      "descrizione": "Funaro",
+      "prezzo": 18,
+      "immagine": ""
+    },
+    {
+      "nome": "Maria Costanza",
+      "descrizione": "G. Milazzo",
+      "prezzo": 28,
+      "immagine": ""
+    },
+    {
+      "nome": "Zahra",
+      "descrizione": "Vitale",
+      "prezzo": 16,
+      "immagine": ""
+    },
+    {
+      "nome": "Kikè",
+      "descrizione": "Fina",
+      "prezzo": 20,
+      "immagine": ""
+    },
+    {
+      "nome": "Kiggiari Grecanico",
+      "descrizione": "Baglio Oro",
+      "prezzo": 22,
+      "immagine": ""
+    }
+  ],
   "bollicine": [
-  {
-    "nome": "Charme",
-    "descrizione": "Firriato",
-    "prezzo": 22,
-    "immagine": ""
-  },
-  {
-    "nome": "Bianco di Nera",
-    "descrizione": "G. Milazzo",
-    "prezzo": 26,
-    "immagine": ""
-  },
-  {
-    "nome": "Viveur",
-    "descrizione": "Funaro",
-    "prezzo": 20,
-    "immagine": ""
-  },
-  {
-    "nome": "Murgo Brut",
-    "descrizione": "Tenuta San Michele",
-    "prezzo": 40,
-    "immagine": ""
-  },
-  {
-    "nome": "Sanjení Brut",
-    "descrizione": "Vitale",
-    "prezzo": 16,
-    "immagine": ""
-  },
-
+    {
+      "nome": "Charme",
+      "descrizione": "Firriato",
+      "prezzo": 22,
+      "immagine": ""
+    },
+    {
+      "nome": "Bianco di Nera",
+      "descrizione": "G. Milazzo",
+      "prezzo": 26,
+      "immagine": ""
+    },
+    {
+      "nome": "Viveur",
+      "descrizione": "Funaro",
+      "prezzo": 20,
+      "immagine": ""
+    },
+    {
+      "nome": "Murgo Brut",
+      "descrizione": "Tenuta San Michele",
+      "prezzo": 40,
+      "immagine": ""
+    },
+    {
+      "nome": "Sanjení Brut",
+      "descrizione": "Vitale",
+      "prezzo": 16,
+      "immagine": ""
+    },
     {
       "nome": "Naonis Cuvée Brut – San Jeni ",
       "descrizione": "Vitale",
@@ -558,6 +589,38 @@
       "prezzo": 5,
       "immagine": "",
       "allergeni": ""
+    }
+  ],
+  "social": [
+    {
+      "nome": "⭐ Recensioni Google",
+      "descrizione": "Condividi la tua esperienza su Google",
+      "link": "https://g.page/r/CdTS9IF7ltg4EAI/review",
+      "immagine": "https://developers.google.com/identity/images/g-logo.png"
+    },
+    {
+      "nome": "WhatsApp",
+      "descrizione": "Inviaci le foto dei tuoi Piatti",
+      "link": "https://wa.me/393663166815",
+      "immagine": "https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+    },
+    {
+      "nome": "Seguici su Instagram",
+      "descrizione": "@graalwinebar • scopri le nostre storie",
+      "link": "https://www.instagram.com/tano.pescheria/",
+      "immagine": "https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg"
+    },
+    {
+      "nome": "Seguici su Facebook",
+      "descrizione": "Unisciti alla nostra community",
+      "link": "https://www.facebook.com/profile.php?id=61568494896132",
+      "immagine": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Facebook_icon.svg"
+    },
+    {
+      "nome": "Web Tuned",
+      "descrizione": "🔧 Contattaci per avere il tuo menù digitale personalizzato.",
+      "link": "https://wa.me/393275528211",
+      "immagine": "img/webTuned.png"
     }
   ]
 }

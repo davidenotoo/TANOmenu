@@ -303,8 +303,7 @@
             </button>
 
             <div class="w-full h-52 sm:h-64 rounded-xl overflow-hidden mb-5">
-                <img src="img/rob.jpg" alt="pesce"
-                    class="w-full h-full object-cover object-center opacity-90" />
+                <img src="img/rob.jpg" alt="pesce" class="w-full h-full object-cover object-center opacity-90" />
             </div>
 
             <h2 class="text-2xl font-bold text-primary mb-3 leading-snug">
@@ -331,7 +330,8 @@
     </div>
 
     <!-- HEADER + NAV -->
-    <header class="fixed top-0 left-0 right-0 z-50 px-4 py-3 flex justify-between items-center w-full px-4 md:px-8 lg:px-12 bg-white/40 backdrop-blur-lg shadow-sm border-b border-white/30">
+    <header
+        class="fixed top-0 left-0 right-0 z-50 px-4 py-3 flex justify-between items-center w-full px-4 md:px-8 lg:px-12 bg-white/40 backdrop-blur-lg shadow-sm border-b border-white/30">
 
         <!-- Selettore lingua -->
         <div class="relative">
@@ -534,11 +534,15 @@
             const closeGame = document.getElementById("closeGame");
 
             function setupScratchCard() {
-                ctx.fillStyle = "#ccc";
+                const canvas = document.getElementById("scratchCanvas");
+                const ctx = canvas.getContext("2d");
+
+                ctx.fillStyle = "#cccccc";
                 ctx.fillRect(0, 0, canvas.width, canvas.height);
                 ctx.globalCompositeOperation = "destination-out";
 
                 let isDrawing = false;
+
                 const getXY = (e) => {
                     const rect = canvas.getBoundingClientRect();
                     return {
@@ -546,6 +550,7 @@
                         y: (e.clientY || e.touches[0].clientY) - rect.top
                     };
                 };
+
                 const draw = (x, y) => {
                     ctx.beginPath();
                     ctx.arc(x, y, 20, 0, Math.PI * 2);
@@ -554,20 +559,21 @@
 
                 canvas.addEventListener("mousedown", () => isDrawing = true);
                 canvas.addEventListener("mouseup", () => isDrawing = false);
-                canvas.addEventListener("mousemove", e => {
+                canvas.addEventListener("mousemove", (e) => {
                     if (!isDrawing) return;
                     const { x, y } = getXY(e);
                     draw(x, y);
                 });
 
-                canvas.addEventListener("touchstart", e => {
+                canvas.addEventListener("touchstart", (e) => {
                     e.preventDefault();
                     isDrawing = true;
                     const { x, y } = getXY(e);
                     draw(x, y);
                 }, { passive: false });
+
                 canvas.addEventListener("touchend", () => isDrawing = false);
-                canvas.addEventListener("touchmove", e => {
+                canvas.addEventListener("touchmove", (e) => {
                     if (!isDrawing) return;
                     e.preventDefault();
                     const { x, y } = getXY(e);
@@ -575,15 +581,38 @@
                 }, { passive: false });
             }
 
+            document.addEventListener('keydown', function (e) {
+                if (e.key === 'F12' || (e.ctrlKey && e.shiftKey && ['I', 'C', 'J'].includes(e.key))) {
+                    e.preventDefault();
+                }
+            });
+
+
             function renderGameScratchCard() {
-                const key = "dessertGameStatus";
-                const saved = JSON.parse(localStorage.getItem(key) || "{}");
-                const canPlay = saved.date !== today;
+                const STORAGE_KEY = "dessertGameStatus";
+                const today = new Date().toISOString().split("T")[0];
+                let canPlay = true;
+
+                const saved = localStorage.getItem(STORAGE_KEY);
+                if (saved) {
+                    try {
+                        const parsed = JSON.parse(saved);
+                        if (parsed.date === today) canPlay = false;
+                    } catch { }
+                }
+
+                const modal = document.getElementById("gameModal");
+                const playBtn = document.getElementById("playGame");
+                const closeBtn = document.getElementById("closeGame");
+                const canvas = document.getElementById("scratchCanvas");
+                const ctx = canvas.getContext("2d");
+                const message = document.getElementById("scratchMessage");
 
                 modal.classList.remove("hidden");
+                message.textContent = "";
+                message.style.display = "flex";
 
-                // chiudi sempre disponibile
-                closeGame.onclick = () => {
+                closeBtn.onclick = () => {
                     modal.classList.add("hidden");
                 };
 
@@ -594,28 +623,37 @@
                 }
 
                 playBtn.style.display = "block";
-                canvas.style.display = "block";
-
                 playBtn.onclick = () => {
                     playBtn.style.display = "none";
-                    const won = Math.random() < 0.5;
                     setupScratchCard();
+
+                    const won = Math.random() < 0.5;
 
                     setTimeout(() => {
                         message.textContent = won ? "Hai VINTO!" : "Peccato!";
                         if (won) {
                             const goBtn = document.createElement("button");
-                            goBtn.className = "bg-primary text-white mt-3 px-4 py-2 rounded";
                             goBtn.textContent = "Vai ai dolci";
+                            goBtn.className = "mt-3 px-4 py-2 bg-primary text-white rounded font-medium";
                             goBtn.onclick = () => {
                                 modal.classList.add("hidden");
-                                document.querySelector('[data-category="dolci"]')?.click();
-                            };
-                            document.getElementById("gameModalContent").appendChild(goBtn);
-                            applyDessertDiscount?.();
-                        }
 
-                        localStorage.setItem(key, JSON.stringify({ date: today, won }));
+                                applyDessertDiscount();
+
+                                // Forza il rerender della sezione dolci
+                                renderMenuItems("dolci");
+                                setActiveCategory("dolci");
+                                window.scrollTo({ top: 0, behavior: "smooth" });
+                            };
+
+
+
+                            document.getElementById("gameModalContent").appendChild(goBtn);
+                            localStorage.setItem(STORAGE_KEY, JSON.stringify({ date: today, won: true }));
+                            applyDessertDiscount();
+                        } else {
+                            localStorage.setItem(STORAGE_KEY, JSON.stringify({ date: today, won: false }));
+                        }
                     }, 1000);
                 };
             }
@@ -628,6 +666,29 @@
 
     <script>
         let menuData = {};
+        function applyDessertDiscount() {
+            const STORAGE_KEY = "dessertGameStatus";
+            const today = new Date().toISOString().split("T")[0];
+
+            const saved = localStorage.getItem(STORAGE_KEY);
+            if (!saved) return;
+
+            try {
+                const parsed = JSON.parse(saved);
+                if (parsed.date === today && parsed.won && menuData.dolci) {
+                    menuData.dolci = menuData.dolci.map(item => {
+                        if (!item.prezzoScontato && item.prezzo) {
+                            item.prezzoOriginale = item.prezzo;
+                            item.prezzoScontato = Number((item.prezzo / 2).toFixed(2));
+                        }
+                        return item;
+                    });
+                }
+            } catch (e) {
+                console.error("Errore parsing dati sconto dolci:", e);
+            }
+        }
+
         let menuDataIT = {};
         let currentLanguage = '';
 
@@ -667,10 +728,13 @@
                 gioca: { label: "Gioca", icon: "ri-gift-line" },
                 ...menuData.meta
             };
+
+            applyDessertDiscount();
             generateCategoryNavigation(menuData.meta);
             renderMenuItems("antipasti");
             setActiveCategory("antipasti");
         }
+
 
         function generateCategoryNavigation(meta) {
             const container = document.getElementById("categoryContainer");
@@ -737,6 +801,48 @@
                 renderGameScratchCard();
                 return;
             }
+            if (category === "social") {
+                const menuContainer = document.getElementById("menuContainer");
+                menuContainer.innerHTML = "";
+
+                const categoryTitle = document.createElement("h3");
+                categoryTitle.className = "category-title text-[#ec4e39]";
+                categoryTitle.textContent = "Social";
+                menuContainer.appendChild(categoryTitle);
+
+                const grid = document.createElement("div");
+                grid.className = "grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-6 justify-items-center";
+
+                (menuData.social || []).forEach(item => {
+                    const card = document.createElement("a");
+                    card.href = item.link;
+                    card.target = "_blank";
+                    card.rel = "noopener noreferrer";
+                    card.className =
+                        "menu-item max-w-sm w-full text-center bg-white/60 backdrop-blur-md rounded-lg shadow-md overflow-hidden transition-all duration-300 h-auto flex flex-col hover:scale-105";
+
+                    const imageWrapper = document.createElement("div");
+                    imageWrapper.className = "w-full h-40 overflow-hidden bg-[#f0f0f0]";
+                    imageWrapper.innerHTML = `
+            <img src="${item.immagine}" alt="${item.nome}" class="w-full h-full object-contain object-center p-4" />
+        `;
+
+                    const content = document.createElement("div");
+                    content.className = "p-4";
+                    content.innerHTML = `
+            <h4 class="text-lg font-medium text-gray-800">${item.nome}</h4>
+            <p class="text-sm text-gray-600 mt-2">${item.descrizione}</p>
+        `;
+
+                    card.appendChild(imageWrapper);
+                    card.appendChild(content);
+                    grid.appendChild(card);
+                });
+
+                menuContainer.appendChild(grid);
+                return;
+            }
+
 
             const menuContainer = document.getElementById("menuContainer");
             menuContainer.innerHTML = "";
@@ -849,6 +955,27 @@
         }
 
         document.addEventListener("DOMContentLoaded", loadMenuData);
+
+        function applyDessertDiscount() {
+            const key = "dessertGameStatus";
+            const saved = JSON.parse(localStorage.getItem(key) || "{}");
+
+            // Applica sconto solo se ha vinto
+            if (saved.date === new Date().toISOString().split("T")[0] && saved.won) {
+                if (!menuData.dolci) return;
+
+                menuData.dolci = menuData.dolci.map(item => {
+                    if (!item.prezzoScontato) {
+                        const prezzo = item.prezzo || 0;
+                        item.prezzoOriginale = prezzo;
+                        item.prezzoScontato = parseFloat((prezzo / 2).toFixed(2));
+
+                    }
+                    return item;
+                });
+            }
+        }
+
     </script>
 
 </body>
