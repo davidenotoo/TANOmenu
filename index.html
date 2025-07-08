@@ -1,1259 +1,856 @@
 <!DOCTYPE html>
-<html>
+<html lang="it">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Menù TANO Pescheria | Ristorante di pesce fresco ad Alcamo</title>
-  <meta name="description"
-    content="Scopri il menù di TANO Pescheria ad Alcamo: crudi di mare, primi piatti gourmet, secondi grigliati e dolci artigianali. Pescheria con cucina a km 0 in Sicilia." />
-  <meta name="keywords"
-    content="TANO Pescheria Alcamo, ristorante pesce Alcamo, pescheria con cucina Sicilia, crudi di mare, primi pesce fresco, pesce alla griglia, menù pesce Alcamo" />
-  <meta name="author" content="TANO Pescheria">
-  <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://tanomenu.netlify.app/" />
-  <meta name="theme-color" content="#3192d0" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menù TANO Pescheria | Ristorante di pesce fresco ad Alcamo</title>
+    <meta name="description"
+        content="Scopri il menù di TANO Pescheria ad Alcamo: crudi di mare, primi piatti gourmet, secondi grigliati e dolci artigianali. Pescheria con cucina a km 0 in Sicilia." />
+    <meta name="keywords"
+        content="TANO Pescheria Alcamo, ristorante pesce Alcamo, pescheria con cucina Sicilia, crudi di mare, primi pesce fresco, pesce alla griglia, menù pesce Alcamo" />
+    <meta name="author" content="TANO Pescheria">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://tanomenu.netlify.app/" />
+    <meta name="theme-color" content="#3192d0" />
 
-  <!-- Favicon -->
-  <link rel="icon" href="icons/icon.jpg" type="image/png" />
-  <link rel="apple-touch-icon" href="icons/icon.jpg" />
+    <!-- Favicon -->
+    <link rel="icon" href="icons/icon.jpg" type="image/png" />
+    <link rel="apple-touch-icon" href="icons/icon.jpg" />
 
-  <!-- Fonts e Remixicon -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" />
 
+    <!-- Manifest -->
+    <link rel="manifest" href="manifest.json" />
 
-  <!-- Manifest -->
-  <link rel="manifest" href="manifest.json" />
+    <!-- Open Graph -->
+    <meta property="og:type" content="restaurant.menu" />
+    <meta property="og:title" content="Menù TANO Pescheria | Ristorante di pesce fresco ad Alcamo" />
+    <meta property="og:description"
+        content="Consulta il menù di TANO Pescheria: specialità di mare, crudi, primi gourmet e secondi grigliati. Solo pesce fresco locale." />
+    <meta property="og:image" content="https://tanomenu.netlify.app/icon.jpg" />
+    <meta property="og:url" content="https://tanomenu.netlify.app/" />
+    <meta property="og:site_name" content="TANO Pescheria" />
+    <meta property="og:locale" content="it_IT" />
 
-  <!-- Open Graph -->
-  <meta property="og:type" content="restaurant.menu" />
-  <meta property="og:title" content="Menù TANO Pescheria | Ristorante di pesce fresco ad Alcamo" />
-  <meta property="og:description"
-    content="Consulta il menù di TANO Pescheria: specialità di mare, crudi, primi gourmet e secondi grigliati. Solo pesce fresco locale." />
-  <meta property="og:image" content="https://tanomenu.netlify.app/icon.jpg" />
-  <meta property="og:url" content="https://tanomenu.netlify.app/" />
-  <meta property="og:site_name" content="TANO Pescheria" />
-  <meta property="og:locale" content="it_IT" />
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Menù TANO Pescheria | Crudi e pesce fresco ad Alcamo" />
+    <meta name="twitter:description"
+        content="Piatti di mare freschi ogni giorno. Crudi, primi di pesce, secondi alla griglia. Consulta il menù di TANO ad Alcamo." />
+    <meta name="twitter:image" content="https://tanomenu.netlify.app/icon.jpg" />
+    <meta name="twitter:site" content="@tano_pescheria" />
 
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Menù TANO Pescheria | Crudi e pesce fresco ad Alcamo" />
-  <meta name="twitter:description"
-    content="Piatti di mare freschi ogni giorno. Crudi, primi di pesce, secondi alla griglia. Consulta il menù di TANO ad Alcamo." />
-  <meta name="twitter:image" content="https://tanomenu.netlify.app/icon.jpg" />
-  <meta name="twitter:site" content="@tano_pescheria" />
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#3192d0",
+                        secondary: "#ec4e39",
+                        accent: "#475569",
+                        bg: "#ffffff",
+                        textPrimary: "#1E3A8A",
+                        textSecondary: "#94A3B8"
+                    },
+                    borderRadius: {
+                        button: "12px"
+                    }
+                }
+            }
+        };
+    </script>
 
-  <!-- Structured Data -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Restaurant",
-    "name": "TANO Pescheria",
-    "description": "Pescheria con cucina ad Alcamo. Menù di pesce fresco, primi gourmet e secondi alla griglia. Specialità siciliane e crudi di mare.",
-    "image": "https://tanomenu.netlify.app/icon.jpg",
-    "url": "https://tanomenu.netlify.app/",
-    "telephone": "+39 0911234567",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Via del Mare 45",
-      "addressLocality": "Alcamo",
-      "addressRegion": "Sicilia",
-      "postalCode": "91011",
-      "addressCountry": "IT"
-    },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": 37.978,
-      "longitude": 12.960
-    },
-    "servesCuisine": ["Pesce", "Siciliana", "Mediterranea"],
-    "priceRange": "$$",
-    "hasMenu": {
-      "@type": "Menu",
-      "name": "Menù TANO Pescheria",
-      "url": "https://tanomenu.netlify.app/"
-    }
-  }
-  </script>
-
-  <!-- Tailwind -->
-  <script src="https://cdn.tailwindcss.com/3.4.16"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: { primary: "#3192d0", secondary: "#ec4e39" },
-          borderRadius: {
-            button: "8px"
-          }
+    <style>
+        :where([class^="ri-"])::before {
+            content: "\f3c2";
         }
-      }
-    };
-  </script>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" />
-  <!-- STILI -->
+
+        body {
+            font-family: 'Lora', serif;
+            background-color: #ffffff;
+            color: #1e293b;
+            padding-top: 30px;
+            padding-bottom: 65px;
+        }
+
+        .category-scroll::-webkit-scrollbar {
+            background-color: #ffffff;
+            height: 4px;
+        }
+
+        .category-scroll::-webkit-scrollbar-track {
+            background: #e5e7eb;
+            border-radius: 10px;
+        }
+
+        .category-scroll::-webkit-scrollbar-thumb {
+            background: #3192d0;
+            border-radius: 10px;
+        }
+
+        .category-title {
+            font-family: 'Anton', sans-serif;
+            font-size: 1.75rem;
+            color: #ec4e39;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-align: center;
+            margin-bottom: 0.5rem;
+        }
+
+        .category-icon {
+            background-color: #3192d0 !important;
+        }
+
+        .category-icon i {
+            color: white !important;
+        }
+
+        .category-icon.active {
+            background-color: #ec4e39 !important;
+        }
+
+        .category-icon.active i {
+            color: white !important;
+        }
+
+        .menu-item {
+            background-color: rgba(255, 255, 255, 0.9);
+            border: 1px solid #e2e8f0;
+            border-radius: 20px;
+            padding: 1.25rem;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            font-family: 'Lora', serif;
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.2s ease;
+        }
+
+        .menu-item:hover {
+            transform: scale(1.02);
+        }
+
+        .menu-item h4 {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: #3192d0;
+            margin-bottom: 0.25rem;
+        }
+
+        .menu-item span {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #ec4e39;
+        }
+
+        .menu-item p {
+            font-size: 1rem;
+            line-height: 1.5;
+            margin-top: 0.75rem;
+            color: #334155;
+        }
+
+        .menu-item .allergeni {
+            font-size: 0.75rem;
+            color: #dc2626;
+            font-style: italic;
+            margin-top: 0.5rem;
+        }
+
+        .load-image-btn {
+            background-color: #3192d0;
+            color: white;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            padding: 0;
+        }
+
+        .load-image-btn:hover,
+        .load-image-btn:focus {
+            background-color: #256fa1;
+            outline: none;
+        }
+
+        .load-image-btn i {
+            font-size: 16px;
+            line-height: 1;
+        }
+
+        .image-container {
+            transition: all 0.3s ease;
+        }
+
+        .modal {
+            background-color: rgba(255, 255, 255, 0.123);
+            transition: opacity 0.3s ease, transform 0.3s ease;
+        }
+
+        .modal.hidden {
+            opacity: 0;
+            transform: scale(0.95);
+            pointer-events: none;
+        }
+
+        header {
+            background-color: rgba(255, 255, 255, 0.75);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .backdrop-blur-md {
+            backdrop-filter: blur(8px);
+        }
+
+        .category-container {
+            scroll-behavior: smooth;
+        }
+
+        /* Skeleton Loading */
+        .skeleton {
+            background-color: #d1d5db;
+            background-image: linear-gradient(90deg, #d1d5db 0px, #f3f4f6 40px, #d1d5db 80px);
+            background-size: 600px;
+            background-repeat: no-repeat;
+            animation: shimmer 1.5s infinite linear;
+            border-radius: 8px;
+        }
+
+        @keyframes shimmer {
+            0% {
+                background-position: -600px 0;
+            }
+
+            100% {
+                background-position: 600px 0;
+            }
+        }
+
+        /* Scratch Canvas */
+        #scratchMessage {
+            position: absolute;
+            z-index: 10;
+            pointer-events: none;
+        }
+
+        #scratchCanvas {
+            position: relative;
+            z-index: 20;
+            touch-action: none;
+        }
+
+        @media (max-width: 640px) {
+            #gameModal {
+                padding: 1rem;
+            }
+
+            #scratchCanvas {
+                height: 180px !important;
+            }
+        }
+
+        /* Tooltip per badge lingua */
+        .badge-lingua {
+            position: fixed;
+            top: 80px;
+            right: 20px;
+            background-color: #10b981;
+            color: white;
+            padding: 0.5rem 0.75rem;
+            border-radius: 8px;
+            font-size: 0.85rem;
+            z-index: 999;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+        }
+    </style>
 
 
-  <style>
-    :where([class^="ri-"])::before {
-      content: "\f3c2";
-    }
-
-    body {
-      font-family: 'Lora', serif;
-      padding-top: 30px;
-      /* Spazio per la navbar fissa */
-      padding-bottom: 65px;
-
-    }
-
-    .category-scroll::-webkit-scrollbar {
-      background-color: #3192d0;
-      height: 4px;
-    }
-
-    .category-scroll::-webkit-scrollbar-track {
-      background: #f1f1f1;
-      border-radius: 10px;
-    }
-
-    .category-scroll::-webkit-scrollbar-thumb {
-      background: #3192d0;
-      border-radius: 10px;
-    }
-
-    .menu-item {
-      background-color: rgba(255, 255, 255, 0.123);
-      border: 1px solid #ffffff;
-      border-radius: 24px;
-      padding: 1rem 1rem;
-      box-shadow:
-        0 2px 4px rgba(0, 0, 0, 0.04),
-        0 12px 28px rgba(0, 0, 0, 0.08);
-      font-family: 'Lora', serif;
-      position: relative;
-      isolation: isolate;
-      overflow: hidden;
-      height: 350px;
-    }
-
-    .menu-item::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      border-radius: inherit;
-      background: radial-gradient(circle at 30% 20%, rgba(30, 95, 116, 0.05), transparent 70%);
-      z-index: 0;
-    }
-
-    .menu-item>div {
-      position: relative;
-      z-index: 10;
-    }
-    
-    /* Titolo e prezzo */
-    .menu-item h4 {
-      font-size: 1.375rem;
-      /* text-xl+ */
-      font-weight: 700;
-      color: #3192d0;
-      /* gray-800 */
-      letter-spacing: -0.25px;
-      margin-bottom: 0.25rem;
-      line-height: 1.3;
-    }
-
-    .menu-item span {
-      font-size: 1.125rem;
-      font-weight: 600;
-      color: #ec4e39;
-      margin-top: 0.125rem;
-    }
-
-    /* Descrizione */
-    .menu-item p {
-      font-size: 1.125rem;
-      color: #475569;
-      margin-top: 1.25rem;
-      line-height: 1.8;
-      border-top: 1px dashed #cbd5e1;
-      padding-top: 1.25rem;
-    }
-
-    .menu-item .load-image-btn {
-      background-color: rgba(255, 255, 255, 0.7);
-      color: #3192d0;
-      width: 40px;
-      height: 40px;
-      border-radius: 12px;
-      border: 1px solid rgba(30, 95, 116, 0.2);
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 18px;
-      margin-left: auto;
-      flex-shrink: 0;
-      transition: all 0.2s ease;
-      backdrop-filter: blur(4px);
-    }
-
-    .menu-item p.italic {
-      font-style: italic;
-      color: #9ca3af;
-      /* gray-400 */
-    }
-
-    .menu-item .load-image-btn:active {
-      transform: scale(0.95);
-    }
-
-
-    .menu-item .allergeni {
-      font-size: 0.75rem;
-      /* più piccolo */
-      color: #dc26266c;
-      /* rosso chiaro */
-      font-style: italic;
-      margin-top: 0.5rem;
-      word-wrap: break-word;
-      line-height: 1.4;
-      overflow-wrap: break-word;
-      white-space: normal;
-    }
-
-
-
-    /* Modal */
-    .modal {
-      background-color: rgba(255, 255, 255, 0.123);
-      transition: opacity 0.3s ease, transform 0.3s ease;
-    }
-
-    .modal.hidden {
-      opacity: 0;
-      transform: scale(0.95);
-      pointer-events: none;
-    }
-
-    .category-title {
-      font-family: 'Anton', sans-serif;
-      font-size: 1.75rem;
-      color: #ffffff;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      text-align: center;
-    }
-
-
-    /* NAVBAR COLORI */
-    .category-icon {
-      background-color: #3192d0 !important;
-    }
-
-    .category-icon i {
-      color: white !important;
-    }
-
-    .category-icon.active {
-      background-color: #ec4e39 !important;
-    }
-
-    .category-icon.active i {
-      color: white !important;
-    }
-
-
-    /* Scroll behavior */
-    .category-container {
-      scroll-behavior: smooth;
-    }
-
-    /* Navbar con sfondo semi-trasparente + blur + ombra */
-    header {
-      background-color: rgba(255, 255, 255, 0);
-      backdrop-filter: blur(10px);
-      -webkit-backdrop-filter: blur(10px);
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-      position: fixed;
-      width: 100%;
-      z-index: 50;
-    }
-
-    .load-image-btn {
-      background-color: #3192d0;
-      /* blu primario */
-      color: white;
-      /* icona bianca */
-      width: 32px;
-      height: 32px;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border: none;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-      padding: 0;
-    }
-
-    .load-image-btn:hover,
-    .load-image-btn:focus {
-      background-color: #3192d0;
-      /* blu più scuro al hover/focus */
-      outline: none;
-    }
-
-    /* Icona più piccola dentro */
-    .load-image-btn i {
-      font-size: 16px;
-      /* o ri-sm */
-      line-height: 1;
-    }
-  </style>
-  <style>
-    #scratchMessage {
-      position: absolute;
-      z-index: 10;
-      pointer-events: none;
-    }
-
-    #scratchCanvas {
-      position: relative;
-      z-index: 20;
-      touch-action: none;
-      /* Blocca scrolling */
-    }
-
-    @media (max-width: 640px) {
-      #gameModal {
-        padding: 1rem;
-      }
-
-      #scratchCanvas {
-        height: 180px !important;
-      }
-    }
-  </style>
 </head>
 
-<div class="fixed inset-0 -z-10">
-  <img src="img/sfondo.jpg" alt="Sfondo" class="w-full h-full object-cover" />
-  <div class="absolute inset-0 bg-black/5 backdrop-blur-sm"></div>
-</div>
+<body class="bg-white text-gray-800 w-full min-h-screen mx-auto relative px-4 md:px-8 lg:px-12"
+    oncontextmenu="return false" onselectstart="return false" ondragstart="return false">
 
-
-
-<body class="bg-white text-gray-800 w-full min-h-screen mx-auto relative px-4 md:px-8 lg:px-12">
-  <!-- Nav Bar -->
-  <header
-    class="fixed top-0 left-0 right-0 z-50 px-4 py-3 flex justify-between items-center w-full px-4 md:px-8 lg:px-12">
-    <!-- Selettore lingua completo -->
-    <div class="relative">
-      <button id="langSelector"
-        class="flex items-center gap-2 px-2 py-1 bg-white/80 text-gray-700 rounded-md text-sm shadow border border-gray-300 hover:bg-white transition">
-        <span id="currentFlag">🌍</span>
-        <i class="ri-arrow-down-s-line"></i>
-      </button>
-
-      <ul id="langDropdown"
-        class="absolute left-0 mt-1 w-40 bg-white rounded shadow border border-gray-200 hidden z-50">
-        <li data-lang="it" class="px-3 py-2 hover:bg-gray-100 cursor-pointer">🇮🇹 Italiano</li>
-        <li data-lang="en" class="px-3 py-2 hover:bg-gray-100 cursor-pointer">🇬🇧 English</li>
-        <li data-lang="fr" class="px-3 py-2 hover:bg-gray-100 cursor-pointer">🇫🇷 Français</li>
-        <li data-lang="de" class="px-3 py-2 hover:bg-gray-100 cursor-pointer">🇩🇪 Deutsch</li>
-        <li data-lang="es" class="px-3 py-2 hover:bg-gray-100 cursor-pointer">🇪🇸 Español</li>
-        <li data-lang="ar" class="px-3 py-2 hover:bg-gray-100 cursor-pointer text-right">🇸🇦 العربية</li>
-        <li data-lang="zh" class="px-3 py-2 hover:bg-gray-100 cursor-pointer">🇨🇳 中文</li>
-        <li data-lang="el" class="px-3 py-2 hover:bg-gray-100 cursor-pointer">🇬🇷 Ελληνικά</li>
-        <li data-lang="ja" class="px-3 py-2 hover:bg-gray-100 cursor-pointer">🇯🇵 日本語</li>
-        <li data-lang="ru" class="px-3 py-2 hover:bg-gray-100 cursor-pointer">🇷🇺 Русский</li>
-      </ul>
+    <!-- SFONDO -->
+    <div class="fixed inset-0 -z-10">
+        <img src="img/sfondo.jpg" alt="Sfondo" class="w-full h-full object-cover" />
+        <div class="absolute inset-0 bg-black/5 backdrop-blur-sm"></div>
     </div>
 
+    <!-- MODALE IMMAGINI AI -->
+    <div id="aiImageModal" class="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50 hidden">
+        <div
+            class="bg-white text-[#1e293b] border border-primary rounded-2xl shadow-xl max-w-lg w-full p-6 relative font-['Lora'] text-center">
 
-    <img src="icons/log2.png" alt="Logo" class="w-50 h-14 object-cover" />
-    <button id="infoButton"
-      class="w-8 h-8 flex items-center justify-center bg-[#ec4e39] text-white rounded-full shadow cursor-pointer">
-      <i class="ri-information-line ri-lg"></i>
-    </button>
-
-  </header>
-
-
-  <!-- Main Content -->
-  <main class="pt-20 pb-24 px-4">
-    <!-- <div class="mb-6 text-center">
-      <h2 class="font-['Pacifico'] ">
-        Menu
-      </h2>
-      <p class="text-sm text-gray-600 italic">
-        Sapori freschi del mare alla tua tavola
-      </p>
-    </div> -->
-
-    <!-- Menu Items Container -->
-    <div id="menuContainer" class="space-y-6">
-      <!-- Menu items will be loaded here -->
-    </div>
-  </main>
-  <!-- Navbar dinamica delle categorie -->
-  <div class="fixed bottom-4 left-1/2 -translate-x-1/2 z-40 
-            w-[calc(100%-1.5rem)] 
-            md:w-[calc(100%-3rem)] 
-            lg:w-[calc(100%-6rem)] 
-            max-w-4xl 
-            rounded-2xl 
-            backdrop-blur-md 
-            bg-white/60 
-            border border-white/30 
-            shadow-[0_8px_30px_rgba(0,0,0,0.1)]">
-    <div id="categoryContainer" class="category-scroll overflow-x-auto py-3 px-2 flex space-x-4 category-container">
-      <!-- Le categorie verranno caricate dinamicamente qui via JS -->
-    </div>
-  </div>
-
-  </div>
-
-  <!-- Modal Informazioni -->
-  <div id="infoModal" class="modal-overlay fixed inset-0 z-50 flex items-center justify-center p-4 hidden">
-    <!-- Overlay cliccabile per chiudere -->
-    <div id="modalOverlay" class="absolute inset-0"></div>
-
-    <!-- Contenuto del modal -->
-    <div
-      class="modal-content relative bg-white rounded-xl p-6 max-w-sm w-full mx-4 transform transition-all duration-300">
-      <!-- Header con titolo e pulsante chiudi -->
-      <div class="flex justify-between items-center mb-4">
-        <h3 class="text-xl font-bold text-gray-800">Informazioni Utili</h3>
-        <button id="closeModal"
-          class="w-8 h-8 flex items-center justify-center text-gray-400 hover:text-gray-600 rounded-full hover:bg-gray-100 transition-colors">
-          <i class="ri-close-line ri-lg"></i>
-        </button>
-      </div>
-
-      <!-- Contenuto informazioni -->
-      <div class="space-y-4 text-sm text-gray-600">
-        <!-- Coperto -->
-        <div class="flex items-center space-x-3 p-3 bg-blue-50 rounded-lg">
-          <i class="ri-restaurant-line text-blue-600 ri-lg"></i>
-          <div>
-            <p class="font-medium text-gray-800">Coperto</p>
-            <p>€2,00 a persona</p>
-          </div>
-        </div>
-
-        <!-- Prodotti congelati -->
-        <div class="flex items-start space-x-3 p-3 bg-orange-50 rounded-lg">
-          <i class="ri-snowflake-line text-orange-600 ri-lg mt-0.5"></i>
-          <div>
-            <p class="font-medium text-gray-800 mb-1">Prodotti Congelati</p>
-            <p class="text-xs leading-relaxed">In base al reg. (UE) 1169/2011, ti informiamo che alcuni prodotti
-              potrebbero essere stati congelati per garantire freschezza e sicurezza alimentare.</p>
-          </div>
-        </div>
-
-        <!-- Lista allergeni -->
-        <div class="p-3 bg-red-50 rounded-lg">
-          <div class="flex items-center space-x-2 mb-2">
-            <i class="ri-alert-line text-red-600 ri-lg"></i>
-            <p class="font-medium text-gray-800">Allergeni Presenti</p>
-          </div>
-          <div class="text-xs space-y-1 text-gray-700">
-            <p>• Glutine (frumento, segale, orzo)</p>
-            <p>• Crostacei e derivati</p>
-            <p>• Uova e derivati</p>
-            <p>• Pesce e derivati</p>
-            <p>• Arachidi e derivati</p>
-            <p>• Soia e derivati</p>
-            <p>• Latte e derivati (lattosio)</p>
-            <p>• Frutta a guscio</p>
-            <p>• Sedano e derivati</p>
-            <p>• Senape e derivati</p>
-            <p>• Semi di sesamo</p>
-            <p>• Solfiti (SO₂)</p>
-            <p>• Lupini e derivati</p>
-            <p>• Molluschi e derivati</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <script>
-
-    let currentLanguage = '';
-
-    console.log("🔧 Sistema di rilevamento automatico lingua attivo");
-
-
-  </script>
-
-
-  <!-- Scripts -->
-  <script id="menuData">
-    // Variabile globale per i dati del menu
-    let menuData = {};
-
-    // Funzione per caricare i dati del menu dal file JSON
-    async function loadMenuData() {
-      // Mappa delle lingue supportate con i suffissi dei file
-      const langMap = {
-        ar: "AR",      // Arabo
-        zh: "CHI",     // Cinese 
-        'zh-cn': "CHI", // Cinese semplificato
-        'zh-tw': "CHI", // Cinese tradizionale
-        de: "DE",      // Tedesco
-        en: "EN",      // Inglese
-        es: "ES",      // Spagnolo
-        fr: "FR",      // Francese
-        el: "GR",      // Greco
-        ja: "JAP",     // Giapponese
-        ru: "RUS"      // Russo
-      };
-
-      // Rileva la lingua del browser
-      const urlLang = new URLSearchParams(window.location.search).get('lang');
-      const browserLang = urlLang || navigator.language || 'it';
-      currentLanguage = browserLang.split('-')[0].toLowerCase();
-
-      // Debug info
-      console.log("🌍 Lingua del browser rilevata:", browserLang);
-      console.log("🔤 Lingua estratta:", currentLanguage);
-
-      // Determina il suffisso del file e il percorso
-      const langSuffix = langMap[currentLanguage] || langMap[browserLang.toLowerCase()] || 'EN';
-      const filePath = currentLanguage === 'it' ? 'menu.json' : `menuTradotto/menu${langSuffix}.json`;
-
-      console.log("📁 Caricamento file:", filePath);
-
-      try {
-        const response = await fetch(filePath);
-        if (!response.ok) {
-          // Se il file tradotto non esiste, prova con l'inglese come fallback
-          if (filePath !== 'menu.json' && filePath !== 'menuTradotto/menuEN.json') {
-            console.warn(`⚠️ File ${filePath} non trovato, uso inglese come fallback`);
-            const fallbackResponse = await fetch('menuTradotto/menuEN.json');
-            if (fallbackResponse.ok) {
-              menuData = await fallbackResponse.json();
-              console.log("✅ Menu caricato in inglese (fallback)");
-              initializeMenu();
-              showLanguageIndicator('en');
-              return;
-            }
-          }
-          throw new Error(`Errore nel caricamento del file ${filePath}`);
-        }
-
-        menuData = await response.json();
-        console.log("✅ Menu caricato con successo in", currentLanguage === 'it' ? 'italiano' : 'lingua straniera');
-        initializeMenu();
-        showLanguageIndicator(currentLanguage);
-
-      } catch (err) {
-        console.error("❌ Errore caricamento menu:", err);
-
-        // Prova a caricare il menu italiano come ultimo fallback
-        try {
-          const fallbackResponse = await fetch('menu.json');
-          if (fallbackResponse.ok) {
-            menuData = await fallbackResponse.json();
-            console.log("✅ Menu caricato in italiano (fallback finale)");
-            initializeMenu();
-            showLanguageIndicator('it');
-            return;
-          }
-        } catch (fallbackErr) {
-          console.error("❌ Errore anche nel caricamento del fallback:", fallbackErr);
-        }
-
-        // Se tutto fallisce, mostra errore dettagliato
-        document.getElementById('menuContainer').innerHTML = `
-          <div class="p-4 bg-red-100 text-red-700 rounded-lg">
-            <p class="font-bold mb-2">Errore nel caricamento del menù</p>
-            <p class="text-sm mb-2">Lingua rilevata: <span class="font-mono">${currentLanguage}</span></p>
-            <p class="text-sm mb-2">File tentato: <span class="font-mono">${filePath}</span></p>
-            <button onclick="window.location.reload()" class="mt-2 px-4 py-2 bg-red-600 text-white rounded hover:bg-red-700">
-              Ricarica Pagina
+            <button id="closeAiModal" class="absolute top-4 right-4 text-primary hover:text-secondary text-2xl">
+                <i class="ri-close-line"></i>
             </button>
-          </div>`;
-      }
-    }
 
-    // Funzione per mostrare un indicatore temporaneo della lingua caricata
-    function showLanguageIndicator(lang) {
-      const languageNames = {
-        'it': '🇮🇹 Italiano',
-        'en': '🇬🇧 English',
-        'es': '🇪🇸 Español',
-        'fr': '🇫🇷 Français',
-        'de': '🇩🇪 Deutsch',
-        'ar': '🇸🇦 العربية',
-        'zh': '🇨🇳 中文',
-        'el': '🇬🇷 Ελληνικά',
-        'ja': '🇯🇵 日本語',
-        'ru': '🇷🇺 Русский'
-      };
-
-      const languageName = languageNames[lang] || `🌍 ${lang.toUpperCase()}`;
-
-      // Crea e mostra il badge temporaneo
-      const indicator = document.createElement('div');
-      indicator.innerHTML = `
-        <div class="fixed top-20 right-4 z-50 bg-green-500 text-white px-3 py-2 rounded-lg shadow-lg text-sm font-medium transition-all duration-300">
-          ${languageName}
-        </div>
-      `;
-
-      document.body.appendChild(indicator);
-
-      // Rimuovi il badge dopo 3 secondi con animazione
-      setTimeout(() => {
-        const badge = indicator.querySelector('div');
-        if (badge) {
-          badge.style.opacity = '0';
-          badge.style.transform = 'translateX(100%)';
-          setTimeout(() => {
-            if (indicator.parentNode) {
-              indicator.remove();
-            }
-          }, 300);
-        }
-      }, 3000);
-    }
-
-
-    function generateCategoryNavigation(metaData) {
-      const container = document.getElementById("categoryContainer");
-      container.innerHTML = "";
-
-      Object.entries(metaData).forEach(([key, value], index) => {
-        const item = document.createElement("div");
-        item.className = "category-item flex flex-col items-center min-w-[70px] cursor-pointer";
-        item.setAttribute("data-category", key);
-
-        const isActive = index === 0 ? "active" : "";
-
-        item.innerHTML = `
-          <div class="category-icon w-14 h-14 rounded-lg flex items-center justify-center mb-1 border-2 border-transparent ${isActive}">
-            <i class="${value.icon} ri-lg text-white"></i>
-          </div>
-          <span id="label-${key}" class="text-xs whitespace-nowrap overflow-hidden text-overflow-ellipsis text-[#ec4e39]"
-            style="text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;">
-            ${value.label}
-          </span>
-        `;
-        container.appendChild(item);
-
-        // Le etichette sono già tradotte nel file JSON caricato
-      });
-
-
-      // Event listeners
-      document.querySelectorAll(".category-item").forEach((item) => {
-        item.addEventListener("click", function () {
-          const category = this.getAttribute("data-category");
-          renderMenuItems(category);
-          setActiveCategory(category);
-          window.scrollTo({ top: 0, behavior: "smooth" });
-        });
-      });
-    }
-
-    // Funzione per inizializzare il menu dopo il caricamento dei dati
-    function initializeMenu() {
-      menuData.meta = {
-        gioca: {
-          label: "Gioca",
-          icon: "ri-gift-line"
-        },
-        ...menuData.meta
-      };
-      generateCategoryNavigation(menuData.meta);
-      renderMenuItems("antipasti"); // mantieni focus iniziale sugli antipasti
-      setActiveCategory("antipasti");
-      window.scrollTo({ top: 0, behavior: "smooth" });
-    }
-
-
-
-    // Carica i dati del menu quando il documento è pronto
-    document.addEventListener("DOMContentLoaded", loadMenuData);
-  </script>
-
-  
-
-  <script id="menuRendering">
-    // Funzione per renderizzare gli elementi del menu per una categoria specifica
-    function renderMenuItems(category) {
-      if (category === "gioca") {
-        renderGameScratchCard();
-        return;
-      }
-
-      const menuContainer = document.getElementById("menuContainer");
-      menuContainer.innerHTML = "";
-
-      const categoryTitle = document.createElement("h3");
-      categoryTitle.className = "category-title text-[#ec4e39]";
-      categoryTitle.style.textShadow =
-        "-2px -2px 0 white, 2px -2px 0 white, -2px 2px 0 white, 2px 2px 0 white";
-
-      // Modifica il titolo per dolci se c'è uno sconto attivo
-      if (category === "dolci" && menuData.dolci && menuData.dolci[0] && menuData.dolci[0].prezzoScontato) {
-        categoryTitle.innerHTML = "Dolci <span class='text-sm font-normal ml-2 text-green-600'>(Sconto 50% attivo!)</span>";
-      }
-      categoryTitle.textContent = category.charAt(0).toUpperCase() + category.slice(1);
-      menuContainer.appendChild(categoryTitle);
-
-      const menuGrid = document.createElement("div");
-      menuGrid.className = "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center";
-
-      menuData[category].forEach((item, index) => {
-        const itemId = `item-${category.replace(/\s+/g, '-')}-${index}`;
-
-        const menuItem = document.createElement("div");
-        menuItem.className =
-          "menu-item max-w-sm w-full text-center bg-white/70 backdrop-blur-md rounded-lg shadow-md overflow-hidden transition-all duration-300 h-[300px] flex flex-col justify-between";
-
-        let menuItemHTML = `
-      <div class="p-4">
-        <div class="flex flex-col items-center mb-2">
-          <h4 id="name-${itemId}" class="text-lg font-medium text-gray-800">${item.nome}</h4>
-          <div class="flex flex-col items-center">
-        ${item.prezzoScontato ?
-            `<span class="text-red-500 line-through">€${item.prezzoOriginale.toFixed(2)}</span>
-          <span class="text-green-600 font-medium">€${item.prezzoScontato.toFixed(2)}</span>` :
-            `<span class="text-primary font-medium">€${item.prezzo.toFixed(2)}</span>`}
-      </div>
-        </div>`;
-
-        if (item.immagine && item.immagine.trim() !== "") {
-          menuItemHTML += `
-        <div class="relative flex justify-center mb-2">
-          <button
-            class="load-image-btn"
-            data-image="${item.immagine}"
-            data-alt="${item.nome}"
-            data-item-id="${itemId}"
-            aria-label="Mostra immagine"
-            title="Mostra immagine"
-          >
-            <i class="ri-image-line ri-sm"></i>
-          </button>
-          <span class="notification-dot absolute top-0 right-0 translate-x-1/2 -translate-y-1/2 w-2 h-2 rounded-full bg-red-500 border border-white"
-            data-notification-id="dot-${itemId}"></span>
-        </div>`;
-        }
-
-        menuItemHTML += `
-        <p id="desc-${itemId}" class="text-gray-600 text-sm line-clamp-3">${item.descrizione || ''}</p>
-        ${item.allergeni && item.allergeni.length > 0
-            ? `<p class="allergeni">Allergeni: ${item.allergeni.join(", ")}</p>`
-            : ""}
-      </div>
-      <div id="img-container-${itemId}" class="image-container hidden overflow-hidden transition-all duration-500" style="height: 0;"></div>
-    `;
-
-        menuItem.innerHTML = menuItemHTML;
-        menuGrid.appendChild(menuItem);
-      });
-
-      menuContainer.appendChild(menuGrid);
-
-      // Attiva i pulsanti immagine
-      document.querySelectorAll('.load-image-btn').forEach(button => {
-        if (button.hasListenerAttached) return;
-        button.hasListenerAttached = true;
-
-        button.addEventListener('click', async function () {
-          const imageSrc = this.getAttribute('data-image');
-          const imageAlt = this.getAttribute('data-alt');
-          const itemId = this.getAttribute('data-item-id');
-          const container = document.getElementById(`img-container-${itemId}`);
-
-          const dot = document.querySelector(`[data-notification-id="dot-${itemId}"]`);
-          if (dot) dot.remove();
-
-          this.disabled = true;
-          this.innerHTML = '<i class="ri-loader-4-line animate-spin"></i>';
-          container.classList.remove('hidden');
-          container.style.height = '200px';
-
-          try {
-            await loadImageWithProgressAsync(imageSrc, imageAlt, container);
-            this.remove();
-          } catch {
-            container.innerHTML = `
-          <div class="h-32 flex items-center justify-center bg-red-50 text-red-600">
-            <div class="text-center">
-              <i class="ri-error-warning-line ri-2x mb-2"></i>
-              <p class="text-sm">Errore nel caricamento dell'immagine</p>
+            <div class="w-full h-52 sm:h-64 rounded-xl overflow-hidden mb-5">
+                <img src="img/bender.jpg" alt="Robot AI rotto"
+                    class="w-full h-full object-cover object-center opacity-90" />
             </div>
-          </div>`;
-            this.disabled = false;
-            this.innerHTML = '<i class="ri-refresh-line"></i>';
-          }
-        });
-      });
-    }
 
+            <h2 class="text-2xl font-bold text-primary mb-3 leading-snug">
+                Le immagini non sono reali.<br> Sono generate dall'AI.
+            </h2>
 
-    // Funzione caricamento immagine con progress bar
-    function loadImageWithProgressAsync(src, alt, container) {
-      return new Promise((resolve, reject) => {
-        container.innerHTML = `
-      <div class="h-full flex flex-col items-center justify-center bg-gray-100 p-4">
-        <div class="w-full max-w-xs">
-          <div class="flex justify-between text-sm text-gray-600 mb-2">
-            <span>Caricamento immagine</span>
-            <span id="progress-text">0%</span>
-          </div>
-          <div class="w-full bg-gray-200 rounded-full h-2">
-            <div id="progress-bar" class="bg-primary h-2 rounded-full transition-all duration-300" style="width: 0%"></div>
-          </div>
+            <p class="text-base leading-relaxed">
+                Scatta una <strong>foto artistica</strong> del tuo piatto<br>
+                e aiutaci a migliorare il menù!
+            </p>
+
+            <div class="mt-5 text-base text-[#334155] flex items-center justify-center gap-2">
+                <i class="ri-whatsapp-line text-green-500 text-xl"></i>
+                <a href="https://wa.me/393297993538" target="_blank" class="underline hover:text-green-400">
+                    Invia la tua foto via WhatsApp
+                </a>
+            </div>
+
+            <button id="closeAiButton"
+                class="mt-6 px-6 py-2 rounded-full bg-primary text-white hover:bg-secondary transition font-semibold">
+                Ok, capito
+            </button>
         </div>
-      </div>`;
+    </div>
 
-        const progressBar = container.querySelector('#progress-bar');
-        const progressText = container.querySelector('#progress-text');
-        let progress = 0;
+    <!-- HEADER + NAV -->
+    <header class="fixed top-0 left-0 right-0 z-50 px-4 py-3 flex justify-between items-center w-full px-4 md:px-8 lg:px-12 bg-white/40 backdrop-blur-lg shadow-sm border-b border-white/30">
 
-        const interval = setInterval(() => {
-          progress += Math.random() * 15;
-          if (progress > 90) progress = 90;
-          if (progressBar) progressBar.style.width = progress + '%';
-          if (progressText) progressText.textContent = Math.round(progress) + '%';
-        }, 100);
+        <!-- Selettore lingua -->
+        <div class="relative">
+            <button id="langSelector"
+                class="flex items-center gap-2 px-2 py-1 bg-white/80 text-gray-700 rounded-md text-sm shadow border border-gray-300 hover:bg-white transition">
+                <span id="currentFlag">🌍</span>
+                <i class="ri-arrow-down-s-line"></i>
+            </button>
+            <ul id="langDropdown"
+                class="absolute left-0 mt-1 w-40 bg-white rounded shadow border border-gray-200 hidden z-50">
+                <li data-lang="it" class="px-3 py-2 hover:bg-gray-100 cursor-pointer">🇮🇹 Italiano</li>
+                <li data-lang="en" class="px-3 py-2 hover:bg-gray-100 cursor-pointer">🇬🇧 English</li>
+                <li data-lang="fr" class="px-3 py-2 hover:bg-gray-100 cursor-pointer">🇫🇷 Français</li>
+                <li data-lang="de" class="px-3 py-2 hover:bg-gray-100 cursor-pointer">🇩🇪 Deutsch</li>
+                <li data-lang="es" class="px-3 py-2 hover:bg-gray-100 cursor-pointer">🇪🇸 Español</li>
+                <li data-lang="ar" class="px-3 py-2 hover:bg-gray-100 cursor-pointer text-right">🇸🇦 العربية</li>
+                <li data-lang="zh" class="px-3 py-2 hover:bg-gray-100 cursor-pointer">🇨🇳 中文</li>
+                <li data-lang="el" class="px-3 py-2 hover:bg-gray-100 cursor-pointer">🇬🇷 Ελληνικά</li>
+                <li data-lang="ja" class="px-3 py-2 hover:bg-gray-100 cursor-pointer">🇯🇵 日本語</li>
+                <li data-lang="ru" class="px-3 py-2 hover:bg-gray-100 cursor-pointer">🇷🇺 Русский</li>
+            </ul>
+        </div>
 
-        const img = new Image();
-        img.alt = alt;
-        img.className = 'w-full h-full object-cover object-center';
+        <img src="icons/log2.png" alt="Logo" class="w-50 h-14 object-cover" />
 
-        img.onload = () => {
-          clearInterval(interval);
-          if (progressBar) progressBar.style.width = '100%';
-          if (progressText) progressText.textContent = '100%';
+        <button id="infoButton"
+            class="w-8 h-8 flex items-center justify-center bg-secondary text-white rounded-full shadow cursor-pointer">
+            <i class="ri-information-line ri-lg"></i>
+        </button>
+    </header>
 
-          setTimeout(() => {
-            container.innerHTML = '';
-            container.appendChild(img);
-            container.style.height = '200px';
-            resolve();
-          }, 300);
-        };
+    <!-- CONTENUTO PRINCIPALE -->
+    <main class="pt-20 pb-24 px-4">
+        <div id="menuContainer" class="space-y-6">
+            <!-- Menu items vengono caricati dinamicamente -->
+        </div>
+    </main>
 
-        img.onerror = () => {
-          clearInterval(interval);
-          reject();
-        };
+    <!-- CATEGORIE -->
+    <div class="fixed bottom-4 left-1/2 -translate-x-1/2 z-40 
+              w-[calc(100%-1.5rem)] 
+              md:w-[calc(100%-3rem)] 
+              lg:w-[calc(100%-6rem)] 
+              max-w-4xl 
+              rounded-2xl 
+              backdrop-blur-md 
+              bg-white/60 
+              border border-white/30 
+              shadow-[0_8px_30px_rgba(0,0,0,0.1)]">
+        <div id="categoryContainer" class="category-scroll overflow-x-auto py-3 px-2 flex space-x-4 category-container">
+            <!-- Categorie caricate via JS -->
+        </div>
+    </div>
 
-        img.src = src;
-      });
-    }
+    <!-- Modal Informazioni -->
+    <div id="infoModal" class="modal-overlay fixed inset-0 z-50 flex items-center justify-center p-4 hidden">
+        <!-- Overlay cliccabile per chiudere -->
+        <div id="modalOverlay" class="absolute inset-0"></div>
+
+        <!-- Contenuto del modal -->
+        <div
+            class="modal-content relative bg-white rounded-xl p-6 max-w-sm w-full mx-4 transform transition-all duration-300">
+            <!-- Header con titolo e pulsante chiudi -->
+            <div class="flex justify-between items-center mb-4">
+                <h3 class="text-xl font-bold text-gray-800">Informazioni Utili</h3>
+                <button id="closeModal"
+                    class="w-8 h-8 flex items-center justify-center text-gray-400 hover:text-gray-600 rounded-full hover:bg-gray-100 transition-colors">
+                    <i class="ri-close-line ri-lg"></i>
+                </button>
+            </div>
+
+            <!-- Contenuto informazioni -->
+            <div class="space-y-4 text-sm text-gray-600">
+                <!-- Coperto -->
+                <div class="flex items-center space-x-3 p-3 bg-blue-50 rounded-lg">
+                    <i class="ri-restaurant-line text-blue-600 ri-lg"></i>
+                    <div>
+                        <p class="font-medium text-gray-800">Coperto</p>
+                        <p>€2,00 a persona</p>
+                    </div>
+                </div>
+
+                <!-- Prodotti congelati -->
+                <div class="flex items-start space-x-3 p-3 bg-orange-50 rounded-lg">
+                    <i class="ri-snowflake-line text-orange-600 ri-lg mt-0.5"></i>
+                    <div>
+                        <p class="font-medium text-gray-800 mb-1">Prodotti Congelati</p>
+                        <p class="text-xs leading-relaxed">In base al reg. (UE) 1169/2011, ti informiamo che alcuni
+                            prodotti
+                            potrebbero essere stati congelati per garantire freschezza e sicurezza alimentare.</p>
+                    </div>
+                </div>
+
+                <!-- Lista allergeni -->
+                <div class="p-3 bg-red-50 rounded-lg">
+                    <div class="flex items-center space-x-2 mb-2">
+                        <i class="ri-alert-line text-red-600 ri-lg"></i>
+                        <p class="font-medium text-gray-800">Allergeni Presenti</p>
+                    </div>
+                    <div class="text-xs space-y-1 text-gray-700">
+                        <p>• Glutine (frumento, segale, orzo)</p>
+                        <p>• Crostacei e derivati</p>
+                        <p>• Uova e derivati</p>
+                        <p>• Pesce e derivati</p>
+                        <p>• Arachidi e derivati</p>
+                        <p>• Soia e derivati</p>
+                        <p>• Latte e derivati (lattosio)</p>
+                        <p>• Frutta a guscio</p>
+                        <p>• Sedano e derivati</p>
+                        <p>• Senape e derivati</p>
+                        <p>• Semi di sesamo</p>
+                        <p>• Solfiti (SO₂)</p>
+                        <p>• Lupini e derivati</p>
+                        <p>• Molluschi e derivati</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODALE GRATTA E VINCI (segue nel prossimo messaggio) -->
 
 
-    // Function to load image with progress simulation
-    HTMLButtonElement.prototype.loadImageWithProgress = function (imageSrc, imageAlt, itemId, container, button) {
-      const progressBarId = `progress-bar-${itemId}`;
-      const progressTextId = `progress-${itemId}`;
 
-      // Elementi progress bar
-      let progress = 0;
-      const progressInterval = setInterval(() => {
-        progress += Math.random() * 15;
-        if (progress > 90) progress = 90;
+    <!-- MODALE GRATTA E VINCI -->
+    <div id="gameModal" class="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50 hidden">
+        <div class="bg-white p-6 rounded-xl shadow-xl w-80 text-center" id="gameModalContent">
+            <h2 class="text-xl font-bold mb-2">Gratta e Vinci!</h2>
+            <p class="text-sm mb-4">Gratta per scoprire se hai vinto un dolce scontato!</p>
+            <div class="relative w-full mb-4">
+                <div id="scratchMessage"
+                    class="absolute inset-0 flex items-center justify-center text-lg font-bold text-black pointer-events-none">
+                </div>
+                <canvas id="scratchCanvas" width="300" height="150"
+                    class="w-full rounded-lg border border-gray-300"></canvas>
+            </div>
+            <button id="playGame" class="bg-primary text-white px-4 py-2 rounded-md font-medium">Gratta!</button>
+            <p id="gameResult" class="mt-4 text-lg font-semibold"></p>
+            <button id="closeGame" class="mt-2 text-sm text-gray-500 underline">Chiudi</button>
+        </div>
+    </div>
 
-        const bar = document.getElementById(progressBarId);
-        const text = document.getElementById(progressTextId);
-        if (bar) bar.style.width = progress + '%';
-        if (text) text.textContent = Math.round(progress) + '%';
-      }, 100);
+    <!-- SCRIPT FINALE -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            // AI Modal
+            const aiModal = document.getElementById("aiImageModal");
+            const closeAi = document.getElementById("closeAiButton");
+            const closeAiIcon = document.getElementById("closeAiModal");
+            const aiKey = "aiImageNoticeDate";
+            const today = new Date().toISOString().split("T")[0];
 
-      // Carica immagine
-      const img = document.createElement('img');
-      img.className = 'w-full h-full object-cover object-center';
-      img.alt = imageAlt;
-      img.onload = function () {
-        clearInterval(progressInterval);
-
-        // Completa la barra
-        const bar = document.getElementById(progressBarId);
-        const text = document.getElementById(progressTextId);
-        if (bar) bar.style.width = '100%';
-        if (text) text.textContent = '100%';
-
-        setTimeout(() => {
-          // Inserisce immagine
-          container.innerHTML = '';
-          container.appendChild(img);
-          container.style.height = '200px';
-
-          // Stato toggle visibilità
-          let isVisible = true;
-
-          // Bottone di toggle
-          button.disabled = false;
-          button.innerHTML = '<i class="ri-eye-off-line"></i><span class="ml-2">Nascondi immagine</span><i class="ri-arrow-up-s-line ml-1"></i>';
-
-          button.onclick = function () {
-            isVisible = !isVisible;
-            if (isVisible) {
-              container.classList.remove('hidden');
-              container.style.height = '200px';
-              button.innerHTML = '<i class="ri-eye-off-line"></i><span class="ml-2">Nascondi immagine</span><i class="ri-arrow-up-s-line ml-1"></i>';
-            } else {
-              container.classList.add('hidden');
-              container.style.height = '0';
-              button.innerHTML = '<i class="ri-image-line"></i><span class="ml-2">Mostra immagine</span><i class="ri-arrow-down-s-line ml-1"></i>';
+            if (localStorage.getItem(aiKey) !== today) {
+                aiModal.classList.remove("hidden");
             }
-          };
-        }, 500);
-      };
+            [closeAi, closeAiIcon].forEach(btn => btn?.addEventListener("click", () => {
+                aiModal.classList.add("hidden");
+                localStorage.setItem(aiKey, today);
+            }));
 
-      img.onerror = function () {
-        clearInterval(progressInterval);
-        container.innerHTML = `
-      <div class="h-32 flex items-center justify-center bg-red-50 text-red-600">
-        <div class="text-center">
-          <i class="ri-error-warning-line ri-2x mb-2"></i>
-          <p class="text-sm">Errore nel caricamento dell'immagine</p>
-        </div>
-      </div>`;
-        button.disabled = false;
-        button.innerHTML = '<i class="ri-refresh-line"></i><span class="ml-2">Riprova</span>';
-      };
+            // Modale info
+            const infoBtn = document.getElementById("infoButton");
+            const infoModal = document.getElementById("infoModal");
+            const closeModal = document.getElementById("closeModal");
+            const overlay = document.getElementById("modalOverlay");
+            infoBtn.addEventListener("click", () => infoModal.classList.remove("hidden"));
+            closeModal.addEventListener("click", () => infoModal.classList.add("hidden"));
+            overlay.addEventListener("click", () => infoModal.classList.add("hidden"));
 
-      // Imposta src (inizia caricamento)
-      img.src = imageSrc;
-    };
+            // Lingua
+            const langSelector = document.getElementById("langSelector");
+            const langDropdown = document.getElementById("langDropdown");
+            const currentFlag = document.getElementById("currentFlag");
+            const langFlags = {
+                it: "🇮🇹", en: "🇬🇧", fr: "🇫🇷", de: "🇩🇪", es: "🇪🇸",
+                ar: "🇸🇦", zh: "🇨🇳", el: "🇬🇷", ja: "🇯🇵", ru: "🇷🇺"
+            };
+            const activeLang = new URLSearchParams(window.location.search).get("lang") || navigator.language.split("-")[0];
+            currentFlag.textContent = langFlags[activeLang] || "🌍";
+            langSelector.addEventListener("click", e => {
+                e.stopPropagation();
+                langDropdown.classList.toggle("hidden");
+            });
+            window.addEventListener("click", () => langDropdown.classList.add("hidden"));
+            langDropdown.querySelectorAll("li").forEach(item => {
+                item.addEventListener("click", () => {
+                    const selected = item.dataset.lang;
+                    const url = new URL(window.location.href);
+                    url.searchParams.set("lang", selected);
+                    window.location.href = url.toString();
+                });
+            });
+
+            // Scratch card
+            const canvas = document.getElementById("scratchCanvas");
+            const ctx = canvas.getContext("2d");
+            const message = document.getElementById("scratchMessage");
+            const modal = document.getElementById("gameModal");
+            const playBtn = document.getElementById("playGame");
+            const closeGame = document.getElementById("closeGame");
+
+            function setupScratchCard() {
+                ctx.fillStyle = "#ccc";
+                ctx.fillRect(0, 0, canvas.width, canvas.height);
+                ctx.globalCompositeOperation = "destination-out";
+
+                let isDrawing = false;
+                const getXY = (e) => {
+                    const rect = canvas.getBoundingClientRect();
+                    return {
+                        x: (e.clientX || e.touches[0].clientX) - rect.left,
+                        y: (e.clientY || e.touches[0].clientY) - rect.top
+                    };
+                };
+                const draw = (x, y) => {
+                    ctx.beginPath();
+                    ctx.arc(x, y, 20, 0, Math.PI * 2);
+                    ctx.fill();
+                };
+
+                canvas.addEventListener("mousedown", () => isDrawing = true);
+                canvas.addEventListener("mouseup", () => isDrawing = false);
+                canvas.addEventListener("mousemove", e => {
+                    if (!isDrawing) return;
+                    const { x, y } = getXY(e);
+                    draw(x, y);
+                });
+
+                canvas.addEventListener("touchstart", e => {
+                    e.preventDefault();
+                    isDrawing = true;
+                    const { x, y } = getXY(e);
+                    draw(x, y);
+                }, { passive: false });
+                canvas.addEventListener("touchend", () => isDrawing = false);
+                canvas.addEventListener("touchmove", e => {
+                    if (!isDrawing) return;
+                    e.preventDefault();
+                    const { x, y } = getXY(e);
+                    draw(x, y);
+                }, { passive: false });
+            }
+
+            function renderGameScratchCard() {
+                const key = "dessertGameStatus";
+                const saved = JSON.parse(localStorage.getItem(key) || "{}");
+                const canPlay = saved.date !== today;
+
+                modal.classList.remove("hidden");
+
+                // chiudi sempre disponibile
+                closeGame.onclick = () => {
+                    modal.classList.add("hidden");
+                };
+
+                if (!canPlay) {
+                    playBtn.style.display = "none";
+                    message.textContent = "Riprova domani";
+                    return;
+                }
+
+                playBtn.style.display = "block";
+                canvas.style.display = "block";
+
+                playBtn.onclick = () => {
+                    playBtn.style.display = "none";
+                    const won = Math.random() < 0.5;
+                    setupScratchCard();
+
+                    setTimeout(() => {
+                        message.textContent = won ? "Hai VINTO!" : "Peccato!";
+                        if (won) {
+                            const goBtn = document.createElement("button");
+                            goBtn.className = "bg-primary text-white mt-3 px-4 py-2 rounded";
+                            goBtn.textContent = "Vai ai dolci";
+                            goBtn.onclick = () => {
+                                modal.classList.add("hidden");
+                                document.querySelector('[data-category="dolci"]')?.click();
+                            };
+                            document.getElementById("gameModalContent").appendChild(goBtn);
+                            applyDessertDiscount?.();
+                        }
+
+                        localStorage.setItem(key, JSON.stringify({ date: today, won }));
+                    }, 1000);
+                };
+            }
 
 
-    // Funzione per impostare la categoria attiva
-    function setActiveCategory(category) {
-      // Remove active class from all categories
-      document.querySelectorAll(".category-icon").forEach((icon) => {
-        icon.classList.remove("active");
-      });
-
-      // Add active class to selected category
-      const selectedCategory = document.querySelector(
-        `.category-item[data-category="${category}"] .category-icon`,
-      );
-      if (selectedCategory) {
-        selectedCategory.classList.add("active");
-      }
-
-      // Center the selected category
-      const categoryContainer = document.getElementById("categoryContainer");
-      const categoryItem = document.querySelector(
-        `.category-item[data-category="${category}"]`,
-      );
-
-      if (categoryContainer && categoryItem) {
-        const containerWidth = categoryContainer.offsetWidth;
-        const itemWidth = categoryItem.offsetWidth;
-        const itemLeft = categoryItem.offsetLeft;
-
-        categoryContainer.scrollLeft =
-          itemLeft - containerWidth / 2 + itemWidth / 2;
-      }
-    }
-  </script>
-
-  <script id="modalHandling">
-    document.addEventListener("DOMContentLoaded", function () {
-      const infoButton = document.getElementById("infoButton");
-      const infoModal = document.getElementById("infoModal");
-      const closeModal = document.getElementById("closeModal");
-      const modalOverlay = document.getElementById("modalOverlay");
-
-      // Open modal
-      infoButton.addEventListener("click", function () {
-        infoModal.classList.remove("hidden");
-      });
-
-      // Close modal functions
-      function closeModalFunction() {
-        infoModal.classList.add("hidden");
-      }
-
-      closeModal.addEventListener("click", closeModalFunction);
-      modalOverlay.addEventListener("click", closeModalFunction);
-    });
-
-    // Debug: il sistema di rilevamento automatico lingua è ora attivo
-    console.log("✅ Sistema completato - Lingua attiva:", currentLanguage);
-
-  </script>
-
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      const langSelector = document.getElementById("langSelector");
-      const langDropdown = document.getElementById("langDropdown");
-      const currentFlag = document.getElementById("currentFlag");
-
-      langSelector.addEventListener("click", (e) => {
-        e.stopPropagation();
-        langDropdown.classList.toggle("hidden");
-      });
-
-      window.addEventListener("click", () => {
-        langDropdown.classList.add("hidden");
-      });
-
-      const langFlags = {
-        it: "🇮🇹", en: "🇬🇧", fr: "🇫🇷", de: "🇩🇪", es: "🇪🇸",
-        ar: "🇸🇦", zh: "🇨🇳", el: "🇬🇷", ja: "🇯🇵", ru: "🇷🇺"
-      };
-
-      const urlParams = new URLSearchParams(window.location.search);
-      const activeLang = urlParams.get("lang") || (navigator.language || "it").split("-")[0];
-      currentFlag.textContent = langFlags[activeLang] || "🌍";
-
-      langDropdown.querySelectorAll("li").forEach(item => {
-        item.addEventListener("click", () => {
-          const selected = item.dataset.lang;
-          const url = new URL(window.location.href);
-          url.searchParams.set("lang", selected);
-          window.location.href = url.toString(); // reload con lingua
+            // Rendi disponibile globalmente
+            window.renderGameScratchCard = renderGameScratchCard;
         });
-      });
-    });
-  </script>
+    </script>
 
-  <script>
-    function renderGameScratchCard() {
-      const STORAGE_KEY = "dessertGameStatus";
-      const today = new Date().toISOString().split("T")[0];
-      let canPlay = true;
+    <script>
+        let menuData = {};
+        let menuDataIT = {};
+        let currentLanguage = '';
 
-      // Controlla se ha già giocato
-      const saved = localStorage.getItem(STORAGE_KEY);
-      if (saved) {
-        try {
-          const parsed = JSON.parse(saved);
-          if (parsed.date === today) canPlay = false;
-        } catch { }
-      }
-
-      const modal = document.getElementById("gameModal");
-      const playBtn = document.getElementById("playGame");
-      const closeBtn = document.getElementById("closeGame");
-      const canvas = document.getElementById("scratchCanvas");
-      const ctx = canvas.getContext("2d");
-      const message = document.getElementById("scratchMessage");
-
-      // Configura il modal
-      modal.classList.remove("hidden");
-
-      if (!canPlay) {
-        playBtn.style.display = "none";
-        message.textContent = "Riprova domani";
-        message.style.display = "flex";
-        return;
-      }
-
-
-      // Evento click per iniziare
-      playBtn.onclick = () => {
-        playBtn.style.display = "none";
-        canvas.style.display = "block";
-        const won = Math.random() < 0.5;
-
-        // Configura la grattata
-        setupScratchCard();
-
-        // let isDrawing = false;
-        // canvas.addEventListener("mousedown", () => isDrawing = true);
-        // canvas.addEventListener("mouseup", () => isDrawing = false);
-        // canvas.addEventListener("mousemove", (e) => {
-        //   if (!isDrawing) return;
-        //   const rect = canvas.getBoundingClientRect();
-        //   const x = e.clientX - rect.left;
-        //   const y = e.clientY - rect.top;
-        //   ctx.beginPath();
-        //   ctx.arc(x, y, 20, 0, Math.PI * 2);
-        //   ctx.fill();
-        // });
-
-        // Risultato dopo la grattata
-        setTimeout(() => {
-          message.textContent = won ? "Hai VINTO! " : "Peccato!";
-          message.style.display = "flex";
-
-          // Aggiungi pulsante per dolci solo in caso di vittoria
-          if (won) {
-            // Crea e aggiungi il pulsante
-            const goToDessertBtn = document.createElement("button");
-            goToDessertBtn.id = "goToDessert";
-            goToDessertBtn.className = "bg-[#ec4e39] text-white px-5 py-2 rounded shadow hover:bg-[#d33c29] transition mt-3";
-            goToDessertBtn.textContent = "Vai alla sezione dolci";
-
-            // Con questa:
-            goToDessertBtn.onclick = () => {
-              // Chiudi il modale
-              const modal = document.getElementById("gameModal");
-              modal.classList.add("hidden");
-
-              // Trova il pulsante della categoria
-              const navBtn = document.querySelector('[data-category="dolci"]');
-              if (navBtn) {
-                navBtn.click(); // Simula il click sul pulsante della categoria
-              }
+        async function loadMenuData() {
+            const langMap = {
+                ar: "AR", zh: "CHI", 'zh-cn': "CHI", 'zh-tw': "CHI",
+                de: "DE", en: "EN", es: "ES", fr: "FR", el: "GR",
+                ja: "JAP", ru: "RUS"
             };
 
-            document.getElementById("gameModalContent").appendChild(goToDessertBtn);
+            const urlLang = new URLSearchParams(window.location.search).get('lang');
+            const browserLang = urlLang || navigator.language || 'it';
+            currentLanguage = browserLang.split('-')[0].toLowerCase();
+            const langSuffix = langMap[currentLanguage] || 'EN';
 
-            // Applica lo sconto
-            applyDessertDiscount();
-          }
+            const itResponse = await fetch('menu.json');
+            menuDataIT = await itResponse.json();
 
-          localStorage.setItem(STORAGE_KEY, JSON.stringify({ date: today, won }));
-        }, 1000);
-      };
+            const filePath = currentLanguage === 'it'
+                ? 'menu.json'
+                : `menuTradotto/menu${langSuffix}.json`;
 
-      // Chiudi modal
-      closeBtn.onclick = () => modal.classList.add("hidden");
-    }
-
-    // Modifica la funzione applyDessertDiscount in index.txt
-    function applyDessertDiscount() {
-      // Aggiorna i dati nel menuData
-      if (menuData.dolci) {
-        menuData.dolci.forEach(item => {
-          // Salva il prezzo originale
-          if (!item.prezzoOriginale) {
-            item.prezzoOriginale = item.prezzo;
-            // Calcola lo sconto (50%)
-            item.prezzoScontato = item.prezzo / 2;
-          }
-        });
-      }
-      // Controlla se la sezione dolci è attiva
-      const sections = document.querySelectorAll(".menu-section");
-      let dolciSection = null;
-
-      sections.forEach(section => {
-        const title = section.querySelector(".category-title");
-        if (title && title.textContent.trim().toLowerCase().includes("dolci")) {
-          dolciSection = section;
+            try {
+                const response = await fetch(filePath);
+                if (!response.ok) throw new Error("File tradotto non trovato");
+                menuData = await response.json();
+                initializeMenu();
+            } catch (e) {
+                console.warn("Fallback su italiano");
+                menuData = menuDataIT;
+                initializeMenu();
+            }
         }
-      });
 
-      // Rirenderizza se attiva
-      if (dolciSection && dolciSection.classList.contains("active")) {
-        renderMenuItems("dolci");
-      }
+        function initializeMenu() {
+            menuData.meta = {
+                gioca: { label: "Gioca", icon: "ri-gift-line" },
+                ...menuData.meta
+            };
+            generateCategoryNavigation(menuData.meta);
+            renderMenuItems("antipasti");
+            setActiveCategory("antipasti");
+        }
 
-      // Aggiungi indicatore al pulsante
-      const navBtn = document.querySelector('[data-target="dolci"]');
-      if (navBtn && !navBtn.querySelector(".discount-badge")) {
-        const badge = document.createElement("span");
-        badge.className = "discount-badge absolute top-1 right-2 w-2 h-2 bg-red-500 rounded-full";
-        navBtn.appendChild(badge);
-      }
-    }
+        function generateCategoryNavigation(meta) {
+            const container = document.getElementById("categoryContainer");
+            container.innerHTML = '';
 
-    document.addEventListener("DOMContentLoaded", function () {
-      const closeBtn = document.getElementById("closeGame");
-      const modal = document.getElementById("gameModal");
+            Object.entries(meta).forEach(([key, value], index) => {
+                const item = document.createElement("div");
+                item.className = "category-item flex flex-col items-center min-w-[70px] cursor-pointer";
+                item.dataset.category = key;
 
-      closeBtn.addEventListener("click", function () {
-        modal.classList.add("hidden");
-      });
-    });
-    document.addEventListener('DOMContentLoaded', loadMenuData);
-
-  </script>
-  <!-- 2. Modifica gli event listener nel codice JavaScript -->
-  <script>
-    function setupScratchCard() {
-      const canvas = document.getElementById("scratchCanvas");
-      const ctx = canvas.getContext("2d");
-
-
-      // Inizializza il canvas
-      ctx.fillStyle = "#cccccc";
-      ctx.fillRect(0, 0, canvas.width, canvas.height);
-      ctx.globalCompositeOperation = "destination-out";
-
-      let isDrawing = false;
-
-      // Funzione per ottenere coordinate
-      const getXY = (e) => {
-        const rect = canvas.getBoundingClientRect();
-        return {
-          x: (e.clientX || e.touches[0].clientX) - rect.left,
-          y: (e.clientY || e.touches[0].clientY) - rect.top
-        };
-      };
-
-      // Disegna sul canvas
-      const draw = (x, y) => {
-        ctx.beginPath();
-        ctx.arc(x, y, 20, 0, Math.PI * 2);
-        ctx.fill();
-      };
-
-      // Eventi mouse
-      canvas.addEventListener("mousedown", () => isDrawing = true);
-      canvas.addEventListener("mouseup", () => isDrawing = false);
-      canvas.addEventListener("mousemove", (e) => {
-        if (!isDrawing) return;
-        const { x, y } = getXY(e);
-        draw(x, y);
-      });
-
-      // Eventi touch
-      canvas.addEventListener("touchstart", (e) => {
-        e.preventDefault();
-        isDrawing = true;
-        const { x, y } = getXY(e);
-        draw(x, y);
-      }, { passive: false });
-
-      canvas.addEventListener("touchend", () => isDrawing = false);
-
-
-      canvas.addEventListener("touchmove", (e) => {
-        if (!isDrawing) return;
-        e.preventDefault();
-        const { x, y } = getXY(e);
-        draw(x, y);
-      }, { passive: false });
-    }
-
-  </script>
-
-  <!-- 1. Modifica il modal nel file index.txt -->
-  <div id="gameModal" class="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50 hidden">
-    <div class="bg-white p-6 rounded-xl shadow-xl w-80 text-center" id="gameModalContent">
-      <h2 class="text-xl font-bold mb-2">Gratta e Vinci!</h2>
-      <p class="text-sm mb-4">Gratta per scoprire se hai vinto un dolce scontato!</p>
-      <!-- <p class="text-sm mb-4">ATTUALMENTE NON FUNZIONA, sto lavorando per farlo tornare attivo</p> -->
-      <div class="relative w-full mb-4">
-        <div id="scratchMessage"
-          style="position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; font-size: 1.25rem; font-weight: bold; color: black; pointer-events: none;">
+                const isActive = index === 0 ? "active" : "";
+                item.innerHTML = `
+        <div class="category-icon w-14 h-14 rounded-lg flex items-center justify-center mb-1 border-2 ${isActive}">
+          <i class="${value.icon} ri-lg text-white"></i>
         </div>
-        <canvas id="scratchCanvas" width="300" height="150" class="w-full rounded-lg border border-gray-300"></canvas>
-      </div>
-      <button id="playGame" class="bg-secondary text-white px-4 py-2 rounded-md font-medium">Gratta!</button>
-      <p id="gameResult" class="mt-4 text-lg font-semibold"></p>
-      <button id="closeGame" class="mt-2 text-sm text-gray-500 underline">Chiudi</button>
-    </div>
-  </div>
+        <span class="text-xs whitespace-nowrap overflow-hidden text-overflow-ellipsis text-[#ec4e39]"
+              style="text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;">
+          ${value.label}
+        </span>
+      `;
+                container.appendChild(item);
+
+                item.addEventListener("click", () => {
+                    renderMenuItems(key);
+                    setActiveCategory(key);
+                    window.scrollTo({ top: 0, behavior: "smooth" });
+                });
+            });
+        }
+
+        function setActiveCategory(category) {
+            // 1. Rimuove la classe 'active' da tutte le icone
+            document.querySelectorAll(".category-icon").forEach((icon) => {
+                icon.classList.remove("active");
+            });
+
+            // 2. Aggiunge 'active' solo a quella selezionata
+            const selectedIcon = document.querySelector(
+                `.category-item[data-category="${category}"] .category-icon`
+            );
+            if (selectedIcon) {
+                selectedIcon.classList.add("active");
+            }
+
+            // 3. Centra il pulsante attivo nella navbar
+            const container = document.getElementById("categoryContainer");
+            const currentItem = document.querySelector(
+                `.category-item[data-category="${category}"]`
+            );
+
+            if (container && currentItem) {
+                const containerWidth = container.offsetWidth;
+                const itemWidth = currentItem.offsetWidth;
+                const itemOffsetLeft = currentItem.offsetLeft;
+
+                const scrollTo = itemOffsetLeft - containerWidth / 2 + itemWidth / 2;
+                container.scrollTo({ left: scrollTo, behavior: "smooth" });
+            }
+        }
+
+
+        function renderMenuItems(category) {
+            if (category === "gioca") {
+                renderGameScratchCard();
+                return;
+            }
+
+            const menuContainer = document.getElementById("menuContainer");
+            menuContainer.innerHTML = "";
+
+            const categoryTitle = document.createElement("h3");
+            categoryTitle.className = "category-title text-[#ec4e39]";
+            categoryTitle.textContent = menuData.meta[category]?.label || category;
+            menuContainer.appendChild(categoryTitle);
+
+            const menuGrid = document.createElement("div");
+            menuGrid.className = "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center";
+
+            const translatedItems = menuData[category] || [];
+            const italianItems = menuDataIT[category] || [];
+
+            translatedItems.forEach((item, index) => {
+                const italian = italianItems[index] || {};
+                const menuItem = document.createElement("div");
+                menuItem.className = "menu-item max-w-sm w-full text-center h-auto flex flex-col";
+
+                // IMMAGINE: se presente in versione italiana
+                const imageWrapper = document.createElement("div");
+                imageWrapper.className = "w-full h-48 overflow-hidden";
+
+                if (italian.immagine && italian.immagine.trim() !== "") {
+                    const skeleton = document.createElement("div");
+                    skeleton.className = "w-full h-full skeleton";
+                    imageWrapper.appendChild(skeleton);
+
+                    const img = new Image();
+                    img.alt = item.nome;
+                    img.className = "w-full h-full object-cover object-center hidden";
+
+                    img.onload = () => {
+                        skeleton.remove();
+                        img.classList.remove("hidden");
+                    };
+
+                    img.onerror = () => {
+                        skeleton.innerHTML = `<div class="text-sm text-red-200 text-center p-4">Errore immagine</div>`;
+                    };
+
+                    img.src = italian.immagine;
+                    imageWrapper.appendChild(img);
+                } else {
+                    imageWrapper.classList.add("h-24");
+                    imageWrapper.innerHTML = `<div class="w-full h-full flex items-center justify-center text-sm text-gray-400 italic">Nessuna immagine</div>`;
+                }
+
+                const content = document.createElement("div");
+                content.className = "p-4 flex flex-col flex-grow justify-between";
+
+                // PREZZO
+                let priceHTML = "";
+                if (item.prezzoScontato) {
+                    priceHTML = `
+                    <span class="text-red-500 line-through">€${item.prezzoOriginale.toFixed(2)}</span>
+                    <span class="text-green-600 font-medium">€${item.prezzoScontato.toFixed(2)}</span>`;
+                } else {
+                    priceHTML = `<span class="text-primary font-medium">€${item.prezzo.toFixed(2)}</span>`;
+                }
+
+                content.innerHTML = `
+                    <div class="mb-2">
+                        <h4 class="text-lg font-medium text-[#3192d0]">${item.nome}</h4>
+                        <div class="flex flex-col items-center">${priceHTML}</div>
+                    </div>
+                    <p class="text-gray-600 description text-sm">${item.descrizione || ''}</p>
+                    ${item.allergeni && item.allergeni.length > 0
+                        ? `<p class="allergeni">Allergeni: ${item.allergeni.join(", ")}</p>`
+                        : ""}`;
+
+                // Rimpicciolisci descrizione se lunga
+                const desc = content.querySelector(".description");
+                if (desc && desc.textContent.length > 130) {
+                    desc.classList.remove("text-sm");
+                    desc.classList.add("text-xs");
+                }
+
+                menuItem.appendChild(imageWrapper);
+                menuItem.appendChild(content);
+                menuGrid.appendChild(menuItem);
+            });
+
+            menuContainer.appendChild(menuGrid);
+        }
+
+
+        function loadImageWithProgress(src, alt, containerId) {
+            const container = document.getElementById(containerId);
+            if (!container) return;
+            container.classList.remove("hidden");
+            container.innerHTML = `
+                <div class="w-full bg-gray-100 p-4 rounded-lg animate-pulse text-center text-sm text-gray-400">
+                    Caricamento immagine...
+                </div>`;
+
+            const img = new Image();
+            img.src = src;
+            img.alt = alt;
+            img.className = "mt-2 w-full h-48 object-cover rounded-lg";
+
+            img.onload = () => container.replaceChildren(img);
+            img.onerror = () => {
+                container.innerHTML = `
+        <div class="bg-red-50 text-red-600 p-4 text-sm text-center rounded-lg">
+          Errore nel caricamento immagine.
+        </div>`;
+            };
+        }
+
+        document.addEventListener("DOMContentLoaded", loadMenuData);
+    </script>
+
 </body>
 
 </html>

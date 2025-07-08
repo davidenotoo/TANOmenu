@@ -17,7 +17,7 @@
       "nome": "Insalata di Polpo",
       "descrizione": "Polpo, sedano, carote, olio, limone, sale, pepe",
       "prezzo": 12,
-      "immagine": "",
+      "immagine": "piatti/1.jpg",
       "allergeni": [
         "molluschi",
         "sedano"
@@ -27,7 +27,7 @@
       "nome": "Caponata di Spada",
       "descrizione": "Melanzane, pesce spada, cipolla, capperi, pomodoro, olive, olio, aceto, sale, pepe, zucchero",
       "prezzo": 10,
-      "immagine": "",
+      "immagine": "piatti/2.jpg",
       "allergeni": [
         "pesce",
         "solfiti"
@@ -37,7 +37,7 @@
       "nome": "Crudo di Gambero Rosso di Mazara",
       "descrizione": "Gambero rosso",
       "prezzo": 10,
-      "immagine": "",
+      "immagine": "piatti/3.jpg",
       "allergeni": [
         "crostacei"
       ]
@@ -46,7 +46,7 @@
       "nome": "Crudo di Scampi",
       "descrizione": "Scampi",  
       "prezzo": 10,
-      "immagine": "",
+      "immagine": "piatti/4.jpg",
       "allergeni": [
         "crostacei"
       ]
@@ -55,7 +55,7 @@
       "nome": "Tartare di Tonno",
       "descrizione": "Tonno, olio, sale, pepe ",
       "prezzo": 14,
-      "immagine": "",
+      "immagine": "piatti/5.jpg",
       "allergeni": [
         "pesce"
       ]
@@ -81,7 +81,7 @@
       "nome": "Spaghetto alle Vongole",
       "descrizione": "Pasta, vongole, olio, aglio, prezzemolo, pepe",
       "prezzo": 14,
-      "immagine": "",
+      "immagine": "piatti/7.jpg",
       "allergeni": [
         "grano",
         "molluschi"
@@ -91,7 +91,7 @@
       "nome": "Busiate allo Scoglio",
       "descrizione": "Pasta, vongole, cozze, gamberi, calamari, scampi, olio, pomodoro ciliegino, cipolla, aglio, peperoncino, sale, prezzemolo",
       "prezzo": 16,
-      "immagine": "",
+      "immagine": "piatti/8.jpg",
       "allergeni": [
         "grano",
         "molluschi",
@@ -102,7 +102,7 @@
       "nome": "Rettangoli di Cernia con Sugo ai Crostacei",
       "descrizione": "Pasta, cernia, crostacei, salmone, pomodoro, panna, peperoncino, olio, sale, cipolla",
       "prezzo": 15,
-      "immagine": "",
+      "immagine": "piatti/9.jpg",
       "allergeni": [
         "grano",
         "pesce",
@@ -114,7 +114,7 @@
       "nome": "Linguine Gambero Rosso e Pistacchio",
       "descrizione": "Pasta, gambero rosso, pistacchio, pomodoro ciliegino, aglio, vino, olio, sale",
       "prezzo": 16,
-      "immagine": "",
+      "immagine": "piatti/10.jpg",
       "allergeni": [
         "grano",
         "crostacei",
@@ -126,7 +126,7 @@
       "nome": "Spaghetto alla Tarantina",
       "descrizione": "Pasta, cozze, pomodoro, aglio, cipolla, olio, sale, pepe, prezzemolo",
       "prezzo": 8,
-      "immagine": "",
+      "immagine": "piatti/11.jpg",
       "allergeni": [
         "grano",
         "molluschi"
@@ -138,7 +138,7 @@
       "nome": "Coppo di Calamaro Fritto",
       "descrizione": "Calamaro, farina di grano duro, sale",
       "prezzo": 14,
-      "immagine": "",
+      "immagine": "piatti/12.jpg",
       "allergeni": [
         "grano",
         "molluschi"
@@ -148,7 +148,7 @@
       "nome": "Coppo di Pesce Fritto",
       "descrizione": "Pesce, farina di grano duro, sale",
       "prezzo": 12,
-      "immagine": "",
+      "immagine": "piatti/13.jpg",
       "allergeni": [
         "grano",
         "pesce"
@@ -158,7 +158,7 @@
       "nome": "Calamaro alla Griglia",
       "descrizione": "Calamaro, olio, sale, limone",
       "prezzo": 14,
-      "immagine": "",
+      "immagine": "piatti/14.jpg",
       "allergeni": [
         "molluschi"
       ]
@@ -167,7 +167,7 @@
       "nome": "Tataki di Tonno",
       "descrizione": "Tonno, pistacchio, basilico, olio, salsa di soia, sale, pepe",
       "prezzo": 18,
-      "immagine": "",
+      "immagine": "piatti/15.jpg",
       "allergeni": [
         "pesce",
         "pistacchio",
@@ -179,7 +179,7 @@
       "nome": "Zuppetta di Cozze",
       "descrizione": "Cozze, pomodoro, aglio, olio, vino, sale, pepe, prezzemolo",
       "prezzo": 8,
-      "immagine": "",
+      "immagine": "piatti/16.jpg",
       "allergeni": [
         "molluschi",
         "solfiti"
@@ -189,7 +189,7 @@
       "nome": "Pescato del Giorno",
       "descrizione": "Al forno, arrosto o al sale (prezzo al KG)",
       "prezzo": 40,
-      "immagine": "",
+      "immagine": "piatti/17.jpg",
       "allergeni": [
         "pesce",
         "molluschi",
@@ -202,7 +202,7 @@
     "nome": "Cheesecake",
     "descrizione": "Con topping di caramello, cioccolato o pistacchio",
     "prezzo": 5,
-    "immagine": "",
+    "immagine": "piatti/20.jpg",
     "allergeni": [
       "latte",
       "uova",
@@ -226,7 +226,7 @@
     "nome": "Tortino semifreddo con granita ai frutti di bosco",
     "descrizione": "",
     "prezzo": 5,
-    "immagine": "",
+    "immagine": "piatti/22.jpg",
     "allergeni": [
       "latte",
       "uova"
@@ -236,7 +236,7 @@
     "nome": "Tortino Mirò",
     "descrizione": "",
     "prezzo": 5,
-    "immagine": "",
+    "immagine": "piatti/23.jpg",
     "allergeni": [
       "latte",
       "uova",
@@ -248,7 +248,7 @@
     "nome": "Frutta",
     "descrizione": "",
     "prezzo": 5,
-    "immagine": "",
+    "immagine": "piatti/24.jpg",
     "allergeni": []
   }
 ],
@@ -319,13 +319,13 @@
       "nome": "Messina Cristalli di Sale",
       "descrizione": "33cl",
       "prezzo": 3,
-      "immagine": ""
+      "immagine": "piatti/40.jpg"
     },
     {
       "nome": "Beck's",
       "descrizione": "33cl",
       "prezzo": 2,
-      "immagine": ""
+      "immagine": "piatti/41.jpg"
     }
   ],
   "cocktail": [
@@ -333,25 +333,25 @@
       "nome": "Bombay Tonic",
       "descrizione": "",
       "prezzo": 7,
-      "immagine": ""
+      "immagine": "piatti/50.jpg"
     },
     {
       "nome": "Tanqueray Tonic",
       "descrizione": "",
       "prezzo": 7,
-      "immagine": ""
+      "immagine": "piatti/51.jpg"
     },
     {
       "nome": "Aperol Spritz",
       "descrizione": "",
       "prezzo": 7,
-      "immagine": ""
+      "immagine": "piatti/52.jpg"
     },
     {
       "nome": "Negroni",
       "descrizione": "",
       "prezzo": 7,
-      "immagine": ""
+      "immagine": "piatti/53.jpg"
     }
   ],
   "vini bianchi": [
