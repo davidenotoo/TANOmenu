@@ -11,7 +11,7 @@
         content="TANO Pescheria Alcamo, ristorante pesce Alcamo, pescheria con cucina Sicilia, crudi di mare, primi pesce fresco, pesce alla griglia, menù pesce Alcamo" />
     <meta name="author" content="TANO Pescheria">
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://tanomenu.netlify.app/" /> 
+    <link rel="canonical" href="https://tanomenu.netlify.app/" />
     <meta name="theme-color" content="#3192d0" />
 
     <!-- Favicon -->
@@ -35,7 +35,7 @@
     <meta property="og:title" content="Menù TANO Pescheria | Ristorante di pesce fresco ad Alcamo" />
     <meta property="og:description"
         content="Consulta il menù di TANO Pescheria: specialità di mare, crudi, primi gourmet e secondi grigliati. Solo pesce fresco locale." />
-    <meta property="og:image" content="https://tanomenu.netlify.app/icon.jpg" />
+    <meta property="og:image" content="https://tanomenu.netlify.app/icons/icon.jpg" />
     <meta property="og:url" content="https://tanomenu.netlify.app/" />
     <meta property="og:site_name" content="TANO Pescheria" />
     <meta property="og:locale" content="it_IT" />
@@ -45,7 +45,7 @@
     <meta name="twitter:title" content="Menù TANO Pescheria | Crudi e pesce fresco ad Alcamo" />
     <meta name="twitter:description"
         content="Piatti di mare freschi ogni giorno. Crudi, primi di pesce, secondi alla griglia. Consulta il menù di TANO ad Alcamo." />
-    <meta name="twitter:image" content="https://tanomenu.netlify.app/icon.jpg" />
+    <meta name="twitter:image" content="https://tanomenu.netlify.app/icons/icon.jpg" />
     <meta name="twitter:site" content="@tano_pescheria" />
 
     <!-- Tailwind -->
@@ -860,14 +860,17 @@
 
             translatedItems.forEach((item, index) => {
                 const italian = italianItems[index] || {};
+                const hasImage = italian.immagine && italian.immagine.trim() !== "";
+
                 const menuItem = document.createElement("div");
-                menuItem.className = "menu-item max-w-sm w-full text-center h-auto flex flex-col";
+                menuItem.className = hasImage
+                    ? "menu-item max-w-sm w-full text-center h-auto flex flex-col"
+                    : "menu-item max-w-sm w-full h-auto flex flex-row items-center gap-4 px-4 py-6";
 
-                // IMMAGINE: se presente in versione italiana
-                const imageWrapper = document.createElement("div");
-                imageWrapper.className = "w-full h-48 overflow-hidden";
+                if (hasImage) {
+                    const imageWrapper = document.createElement("div");
+                    imageWrapper.className = "w-full h-48 overflow-hidden";
 
-                if (italian.immagine && italian.immagine.trim() !== "") {
                     const skeleton = document.createElement("div");
                     skeleton.className = "w-full h-full skeleton";
                     imageWrapper.appendChild(skeleton);
@@ -875,56 +878,70 @@
                     const img = new Image();
                     img.alt = item.nome;
                     img.className = "w-full h-full object-cover object-center hidden";
-
                     img.onload = () => {
                         skeleton.remove();
                         img.classList.remove("hidden");
                     };
-
                     img.onerror = () => {
                         skeleton.innerHTML = `<div class="text-sm text-red-200 text-center p-4">Errore immagine</div>`;
                     };
-
                     img.src = italian.immagine;
                     imageWrapper.appendChild(img);
-                } else {
-                    imageWrapper.classList.add("h-24");
-                    imageWrapper.innerHTML = `<div class="w-full h-full flex items-center justify-center text-sm text-gray-400 italic">Nessuna immagine</div>`;
-                }
 
-                const content = document.createElement("div");
-                content.className = "p-4 flex flex-col flex-grow justify-between";
+                    const content = document.createElement("div");
+                    content.className = "p-4 flex flex-col flex-grow justify-between";
 
-                // PREZZO
-                let priceHTML = "";
-                if (item.prezzoScontato) {
-                    priceHTML = `
-                    <span class="text-red-500 line-through">€${item.prezzoOriginale.toFixed(2)}</span>
-                    <span class="text-green-600 font-medium">€${item.prezzoScontato.toFixed(2)}</span>`;
-                } else {
-                    priceHTML = `<span class="text-primary font-medium">€${item.prezzo.toFixed(2)}</span>`;
-                }
+                    let priceHTML = item.prezzoScontato
+                        ? `<span class="text-red-500 line-through">€${item.prezzoOriginale.toFixed(2)}</span>
+                           <span class="text-green-600 font-medium">€${item.prezzoScontato.toFixed(2)}</span>`
+                        : `<span class="text-primary font-medium">€${item.prezzo.toFixed(2)}</span>`;
 
-                content.innerHTML = `
-                    <div class="mb-2">
+                    content.innerHTML = `
+                        <div class="mb-2">
                         <h4 class="text-lg font-medium text-[#3192d0]">${item.nome}</h4>
                         <div class="flex flex-col items-center">${priceHTML}</div>
-                    </div>
-                    <p class="text-gray-600 description text-sm">${item.descrizione || ''}</p>
-                    ${item.allergeni && item.allergeni.length > 0
-                        ? `<p class="allergeni">Allergeni: ${item.allergeni.join(", ")}</p>`
-                        : ""}`;
+                        </div>
+                        <p class="text-gray-600 description text-sm">${item.descrizione || ''}</p>
+                        ${item.allergeni?.length ? `<p class="allergeni">Allergeni: ${item.allergeni.join(", ")}</p>` : ""}
+                    `;
 
-                // Rimpicciolisci descrizione se lunga
-                const desc = content.querySelector(".description");
-                if (desc && desc.textContent.length > 130) {
-                    desc.classList.remove("text-sm");
-                    desc.classList.add("text-xs");
+                    const desc = content.querySelector(".description");
+                    if (desc && desc.textContent.length > 130) {
+                        desc.classList.remove("text-sm");
+                        desc.classList.add("text-xs");
+                    }
+
+                    menuItem.appendChild(imageWrapper);
+                    menuItem.appendChild(content);
+
+                } else {
+                    const leftContent = document.createElement("div");
+                    leftContent.className = "w-[70%]";
+
+                    leftContent.innerHTML = `
+                        <h4 class="text-lg font-bold text-[#3192d0] mb-1">${item.nome}</h4>
+                        <p class="text-gray-600 text-sm leading-snug">${item.descrizione || ''}</p>
+                        ${item.allergeni?.length ? `<p class="allergeni mt-2">Allergeni: ${item.allergeni.join(", ")}</p>` : ""}
+                    `;
+
+                    const rightContent = document.createElement("div");
+                    rightContent.className = "w-[30%] flex items-center justify-center";
+
+                    const priceHTML = item.prezzoScontato
+                        ? `<div class="text-center">
+                            <div class="text-red-500 text-sm line-through">€${item.prezzoOriginale.toFixed(2)}</div>
+                            <div class="text-green-600 text-xl font-bold">€${item.prezzoScontato.toFixed(2)}</div>
+                        </div>`
+                        : `<div class="text-primary text-xl font-bold">€${item.prezzo.toFixed(2)}</div>`;
+
+                    rightContent.innerHTML = priceHTML;
+
+                    menuItem.appendChild(leftContent);
+                    menuItem.appendChild(rightContent);
                 }
 
-                menuItem.appendChild(imageWrapper);
-                menuItem.appendChild(content);
                 menuGrid.appendChild(menuItem);
+
             });
 
             menuContainer.appendChild(menuGrid);
