@@ -152,9 +152,9 @@
       ]
     },
     {
-      "nome": "Spaghetti Tintinnì",
+      "nome": "Spaghetti Tarantina",
       "descrizione": "Pâtes, moules, tomate, ail, oignon, huile, sel, poivre, persil",
-      "prezzo": 8,
+      "prezzo": 10,
       "immagine": "",
       "allergeni": [
         "blé",
@@ -207,7 +207,7 @@
     {
       "nome": "Soupe de Moules",
       "descrizione": "Moules, tomate, ail, huile, vin, sel, poivre, persil",
-      "prezzo": 8,
+      "prezzo": 10,
       "immagine": "",
       "allergeni": [
         "mollusques",

@@ -152,9 +152,9 @@
       ]
     },
     {
-      "nome": "Spaghetti Tintinnì",
+      "nome": "Spaghetti Tarantina",
       "descrizione": "Pasta, Miesmuscheln, Tomate, Knoblauch, Zwiebel, Öl, Salz, Pfeffer, Petersilie",
-      "prezzo": 8,
+      "prezzo": 10,
       "immagine": "",
       "allergeni": [
         "Weizen",
@@ -207,7 +207,7 @@
     {
       "nome": "Miesmuschelsuppe",
       "descrizione": "Miesmuscheln, Tomate, Knoblauch, Öl, Wein, Salz, Pfeffer, Petersilie",
-      "prezzo": 8,
+      "prezzo": 10,
       "immagine": "",
       "allergeni": [
         "Weichtiere",

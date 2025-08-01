@@ -152,9 +152,9 @@
       ]
     },
     {
-      "nome": "Tintinnì Spaghetti",
+      "nome": "Tarantina's Spaghetti",
       "descrizione": "Pasta, mussels, tomato, garlic, onion, oil, salt, pepper, parsley",
-      "prezzo": 8,
+      "prezzo": 10,
       "immagine": "",
       "allergeni": [
         "wheat",
@@ -207,7 +207,7 @@
     {
       "nome": "Mussel Soup",
       "descrizione": "Mussels, tomato, garlic, oil, wine, salt, pepper, parsley",
-      "prezzo": 8,
+      "prezzo": 10,
       "immagine": "",
       "allergeni": [
         "mollusks",

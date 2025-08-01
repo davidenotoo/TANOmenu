@@ -122,9 +122,9 @@
       ]
     },
     {
-      "nome": "Pasta Tintinni",
+      "nome": "Pasta Tarantina",
       "descrizione": "pasta, mejillones, tomates, ajo, cebolla, aceite, sal, pimienta, perejil",
-      "prezzo": 8,
+      "prezzo": 10,
       "immagine": "",
       "allergeni": [
         "trigo",
@@ -177,7 +177,7 @@
     {
       "nome": "Sopa de mejillones",
       "descrizione": "mejillones, tomates, ajo, aceite, vino blanco, sal, pimienta, perejil",
-      "prezzo": 8,
+      "prezzo": 10,
       "immagine": "",
       "allergeni": [
         "moluscos",
