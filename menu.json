@@ -158,7 +158,7 @@
     {
       "nome": "Spaghetto alla Tarantina",
       "descrizione": "Pasta, cozze, pomodoro, aglio, cipolla, olio, sale, pepe, prezzemolo",
-      "prezzo": 8,
+      "prezzo": 10,
       "immagine": "piatti/11.jpg",
       "allergeni": [
         "grano",
@@ -211,7 +211,7 @@
     {
       "nome": "Zuppetta di Cozze",
       "descrizione": "Cozze, pomodoro, aglio, olio, vino, sale, pepe, prezzemolo",
-      "prezzo": 8,
+      "prezzo": 10,
       "immagine": "piatti/16.jpg",
       "allergeni": [
         "molluschi",
