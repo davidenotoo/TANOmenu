@@ -122,9 +122,9 @@
       ]
     },
     {
-      "nome": "Tintinnì意大利面",
+      "nome": "Tarantina 意大利面",
       "descrizione": "意大利面、贻贝、西红柿、大蒜、洋葱、油、盐、胡椒、欧芹",
-      "prezzo": 8,
+      "prezzo": 10,
       "immagine": "",
       "allergeni": [
         "小麦",
@@ -177,7 +177,7 @@
     {
       "nome": "贻贝汤",
       "descrizione": "贻贝、西红柿、大蒜、油、葡萄酒、盐、胡椒、欧芹",
-      "prezzo": 8,
+      "prezzo": 10,
       "immagine": "",
       "allergeni": [
         "贝类",
