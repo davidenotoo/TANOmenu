@@ -16,7 +16,7 @@
     {
       "nome": "タコのサラダ",
       "descrizione": "タコ、セロリ、ニンジン、オリーブオイル、レモン、塩、コショウ",
-      "prezzo": 12,
+      "prezzo": 15,
       "immagine": "",
       "allergeni": [
         "軟体動物",
@@ -63,7 +63,7 @@
     {
       "nome": "本日の試食メニュー",
       "descrizione": "（2名様分）",
-      "prezzo": 22,
+      "prezzo": 24,
       "immagine": "",
       "allergeni": [
         "小麦",

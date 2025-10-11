@@ -15,7 +15,7 @@
     {
       "nome": "章鱼沙拉",
       "descrizione": "章鱼、芹菜、胡萝卜、橄榄油、柠檬、盐、胡椒",
-      "prezzo": 12,
+      "prezzo": 15,
       "immagine": "",
       "allergeni": [
         "贝类",
@@ -62,7 +62,7 @@
     {
       "nome": "每日品尝菜单",
       "descrizione": "（2人份）",
-      "prezzo": 22,
+      "prezzo": 24,
       "immagine": "",
       "allergeni": [
         "小麦",

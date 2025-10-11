@@ -15,7 +15,7 @@
     {
       "nome": "Ensalada de pulpo",
       "descrizione": "pulpo, apio, zanahoria, aceite de oliva, limón, sal, pimienta",
-      "prezzo": 12,
+      "prezzo": 15,
       "immagine": "",
       "allergeni": [
         "moluscos",
@@ -62,7 +62,7 @@
     {
       "nome": "Menú degustación del día",
       "descrizione": "(para 2 personas)",
-      "prezzo": 22,
+      "prezzo": 24,
       "immagine": "",
       "allergeni": [
         "trigo",

@@ -45,7 +45,7 @@
     {
       "nome": "Oktopussalat",
       "descrizione": "Oktopus, Sellerie, Karotten, Öl, Zitrone, Salz, Pfeffer",
-      "prezzo": 12,
+      "prezzo": 15,
       "immagine": "",
       "allergeni": [
         "Weichtiere",
@@ -92,7 +92,7 @@
     {
       "nome": "Degustationsmenü des Tages",
       "descrizione": "(für 2 Personen)",
-      "prezzo": 22,
+      "prezzo": 24,
       "immagine": "",
       "allergeni": [
         "Weizen",

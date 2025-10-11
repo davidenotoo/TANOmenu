@@ -49,7 +49,7 @@
     {
       "nome": "Insalata di Polpo",
       "descrizione": "Polpo, sedano, carote, olio, limone, sale, pepe",
-      "prezzo": 12,
+      "prezzo": 15,
       "immagine": "piatti/1.jpg",
       "allergeni": [
         "molluschi",
@@ -96,7 +96,7 @@
     {
       "nome": "Menù Degustazione del Giorno ",
       "descrizione": "(per 2 persone)",
-      "prezzo": 22,
+      "prezzo": 24,
       "immagine": "",
       "allergeni": [
         "grano",

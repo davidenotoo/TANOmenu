@@ -45,7 +45,7 @@
     {
       "nome": "Octopus Salad",
       "descrizione": "Octopus, celery, carrots, oil, lemon, salt, pepper",
-      "prezzo": 12,
+      "prezzo": 15,
       "immagine": "",
       "allergeni": [
         "mollusks",
@@ -92,7 +92,7 @@
     {
       "nome": "Tasting Menu of the Day",
       "descrizione": "(for 2 people)",
-      "prezzo": 22,
+      "prezzo": 24,
       "immagine": "",
       "allergeni": [
         "wheat",

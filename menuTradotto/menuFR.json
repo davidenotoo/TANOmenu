@@ -45,7 +45,7 @@
     {
       "nome": "Salade de Poulpe",
       "descrizione": "Poulpe, céleri, carottes, huile, citron, sel, poivre",
-      "prezzo": 12,
+      "prezzo": 15,
       "immagine": "",
       "allergeni": [
         "mollusques",
@@ -92,7 +92,7 @@
     {
       "nome": "Menu Dégustation du Jour",
       "descrizione": "(pour 2 personnes)",
-      "prezzo": 22,
+      "prezzo": 24,
       "immagine": "",
       "allergeni": [
         "blé",

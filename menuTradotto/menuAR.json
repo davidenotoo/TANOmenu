@@ -45,7 +45,7 @@
     {
       "nome": "سلطة الأخطبوط",
       "descrizione": "أخطبوط، كرفس، جزر، زيت زيتون، ليمون، ملح، فلفل",
-      "prezzo": 12,
+      "prezzo": 15,
       "immagine": "",
       "allergeni": [
         "رخويات",
@@ -92,7 +92,7 @@
     {
       "nome": "قائمة تذوق اليوم",
       "descrizione": "(لشخصين)",
-      "prezzo": 22,
+      "prezzo": 24,
       "immagine": "",
       "allergeni": [
         "قمح",
