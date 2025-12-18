@@ -113,7 +113,7 @@
     {
       "nome": "Spaghetto alle Vongole",
       "descrizione": "Pasta, vongole, olio, aglio, prezzemolo, pepe",
-      "prezzo": 14,
+      "prezzo": 16,
       "immagine": "piatti/7.jpg",
       "allergeni": [
         "grano",
@@ -623,4 +623,5 @@
       "immagine": "img/webTuned.png"
     }
   ]
+
 }
