@@ -197,8 +197,8 @@
       ]
     },
     {
-      "nome": "Tataki di Tonno",
-      "descrizione": "Tonno, pistacchio, basilico, olio, salsa di soia, sale, pepe",
+      "nome": "Tagliata di Tonno",
+      "descrizione": "Tonno, pistacchio, olio, sale",
       "prezzo": 18,
       "immagine": "piatti/15.jpg",
       "allergeni": [
@@ -625,3 +625,4 @@
   ]
 
 }
+
