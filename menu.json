@@ -49,7 +49,7 @@
     {
       "nome": "Insalata di Polpo",
       "descrizione": "Polpo, sedano, carote, olio, limone, sale, pepe",
-      "prezzo": 15,
+      "prezzo": 18,
       "immagine": "piatti/1.jpg",
       "allergeni": [
         "molluschi",
@@ -59,7 +59,7 @@
     {
       "nome": "Caponata di Spada",
       "descrizione": "Melanzane, pesce spada, cipolla, capperi, pomodoro, olive, olio, aceto, sale, pepe, zucchero",
-      "prezzo": 10,
+      "prezzo": 13,
       "immagine": "piatti/2.jpg",
       "allergeni": [
         "pesce",
@@ -69,7 +69,7 @@
     {
       "nome": "Crudo di Gambero Rosso di Mazara",
       "descrizione": "Gambero rosso",
-      "prezzo": 10,
+      "prezzo": 12,
       "immagine": "piatti/3.jpg",
       "allergeni": [
         "crostacei"
@@ -78,7 +78,7 @@
     {
       "nome": "Crudo di Scampi",
       "descrizione": "Scampi",
-      "prezzo": 10,
+      "prezzo": 12,
       "immagine": "piatti/4.jpg",
       "allergeni": [
         "crostacei"
@@ -87,7 +87,7 @@
     {
       "nome": "Tartare di Tonno",
       "descrizione": "Tonno, olio, sale, pepe ",
-      "prezzo": 14,
+      "prezzo": 16,
       "immagine": "piatti/5.jpg",
       "allergeni": [
         "pesce"
@@ -96,7 +96,7 @@
     {
       "nome": "Menù Degustazione del Giorno ",
       "descrizione": "(per 2 persone)",
-      "prezzo": 24,
+      "prezzo": 25,
       "immagine": "",
       "allergeni": [
         "grano",
@@ -113,7 +113,7 @@
     {
       "nome": "Spaghetto alle Vongole",
       "descrizione": "Pasta, vongole, olio, aglio, prezzemolo, pepe",
-      "prezzo": 16,
+      "prezzo": 18,
       "immagine": "piatti/7.jpg",
       "allergeni": [
         "grano",
@@ -123,7 +123,7 @@
     {
       "nome": "Busiate allo Scoglio",
       "descrizione": "Pasta, vongole, cozze, gamberi, calamari, scampi, olio, pomodoro ciliegino, cipolla, aglio, peperoncino, sale, prezzemolo",
-      "prezzo": 16,
+      "prezzo": 18,
       "immagine": "piatti/8.jpg",
       "allergeni": [
         "grano",
@@ -134,7 +134,7 @@
     {
       "nome": "Rettangoli di Cernia con Sugo ai Crostacei",
       "descrizione": "Pasta, cernia, crostacei, salmone, pomodoro, panna, peperoncino, olio, sale, cipolla",
-      "prezzo": 15,
+      "prezzo": 16,
       "immagine": "piatti/9.jpg",
       "allergeni": [
         "grano",
@@ -146,7 +146,7 @@
     {
       "nome": "Linguine Gambero Rosso e Pistacchio",
       "descrizione": "Pasta, gambero rosso, pistacchio, pomodoro ciliegino, aglio, vino, olio, sale",
-      "prezzo": 16,
+      "prezzo": 18,
       "immagine": "piatti/10.jpg",
       "allergeni": [
         "grano",
@@ -158,7 +158,7 @@
     {
       "nome": "Spaghetto alla Tarantina",
       "descrizione": "Pasta, cozze, pomodoro, aglio, cipolla, olio, sale, pepe, prezzemolo",
-      "prezzo": 10,
+      "prezzo": 12,
       "immagine": "piatti/11.jpg",
       "allergeni": [
         "grano",
@@ -170,7 +170,7 @@
     {
       "nome": "Coppo di Calamaro Fritto",
       "descrizione": "Calamaro, farina di grano duro, sale",
-      "prezzo": 14,
+      "prezzo": 16,
       "immagine": "piatti/12.jpg",
       "allergeni": [
         "grano",
@@ -180,7 +180,7 @@
     {
       "nome": "Coppo di Paranza",
       "descrizione": "Pesce, farina di grano duro, sale",
-      "prezzo": 12,
+      "prezzo": 14,
       "immagine": "piatti/13.jpg",
       "allergeni": [
         "grano",
@@ -190,7 +190,7 @@
     {
       "nome": "Calamaro alla Griglia",
       "descrizione": "Calamaro, olio, sale, limone",
-      "prezzo": 14,
+      "prezzo": 16,
       "immagine": "piatti/14.jpg",
       "allergeni": [
         "molluschi"
@@ -211,7 +211,7 @@
     {
       "nome": "Zuppetta di Cozze",
       "descrizione": "Cozze, pomodoro, aglio, olio, vino, sale, pepe, prezzemolo",
-      "prezzo": 10,
+      "prezzo": 12,
       "immagine": "piatti/16.jpg",
       "allergeni": [
         "molluschi",
@@ -221,7 +221,7 @@
     {
       "nome": "Pescato del Giorno",
       "descrizione": "Al forno, arrosto o al sale (prezzo al KG)",
-      "prezzo": 40,
+      "prezzo": 45,
       "immagine": "piatti/17.jpg",
       "allergeni": [
         "pesce",
