@@ -15,7 +15,7 @@
     {
       "nome": "章鱼沙拉",
       "descrizione": "章鱼、芹菜、胡萝卜、橄榄油、柠檬、盐、胡椒",
-      "prezzo": 15,
+      "prezzo": 18,
       "immagine": "",
       "allergeni": [
         "贝类",
@@ -25,7 +25,7 @@
     {
       "nome": "剑鱼卡波纳塔",
       "descrizione": "茄子、剑鱼、洋葱、刺山柑、西红柿、橄榄、油、醋、盐、胡椒、糖",
-      "prezzo": 10,
+      "prezzo": 13,
       "immagine": "",
       "allergeni": [
         "鱼类",
@@ -35,7 +35,7 @@
     {
       "nome": "马扎拉红虾生食",
       "descrizione": "红虾",
-      "prezzo": 10,
+      "prezzo": 12,
       "immagine": "",
       "allergeni": [
         "甲壳类"
@@ -44,7 +44,7 @@
     {
       "nome": "大虾生食",
       "descrizione": "大虾",
-      "prezzo": 10,
+      "prezzo": 12,
       "immagine": "",
       "allergeni": [
         "甲壳类"
@@ -53,7 +53,7 @@
     {
       "nome": "金枪鱼塔塔",
       "descrizione": "金枪鱼",
-      "prezzo": 14,
+      "prezzo": 16,
       "immagine": "",
       "allergeni": [
         "鱼类"
@@ -62,7 +62,7 @@
     {
       "nome": "每日品尝菜单",
       "descrizione": "（2人份）",
-      "prezzo": 24,
+      "prezzo": 25,
       "immagine": "",
       "allergeni": [
         "小麦",
@@ -79,7 +79,7 @@
     {
       "nome": "蛤蜊意大利面",
       "descrizione": "意大利面、蛤蜊、油、大蒜、欧芹、胡椒",
-      "prezzo": 14,
+      "prezzo": 18,
       "immagine": "",
       "allergeni": [
         "小麦",
@@ -89,7 +89,7 @@
     {
       "nome": "贝类海鲜意面",
       "descrizione": "意大利面、蛤蜊、贻贝、虾、鱿鱼、大虾、油、樱桃番茄、洋葱、大蒜、辣椒、盐、欧芹",
-      "prezzo": 16,
+      "prezzo": 18,
       "immagine": "",
       "allergeni": [
         "小麦",
@@ -100,7 +100,7 @@
     {
       "nome": "石斑鱼长方形意面配甲壳类酱",
       "descrizione": "意大利面、石斑鱼、甲壳类、三文鱼、西红柿、奶油、辣椒、油、盐、洋葱",
-      "prezzo": 15,
+      "prezzo": 16,
       "immagine": "",
       "allergeni": [
         "小麦",
@@ -112,7 +112,7 @@
     {
       "nome": "红虾开心果扁面",
       "descrizione": "意大利面、红虾、开心果、樱桃番茄、大蒜、葡萄酒、油、盐",
-      "prezzo": 16,
+      "prezzo": 18,
       "immagine": "",
       "allergeni": [
         "小麦",
@@ -124,7 +124,7 @@
     {
       "nome": "Tarantina 意大利面",
       "descrizione": "意大利面、贻贝、西红柿、大蒜、洋葱、油、盐、胡椒、欧芹",
-      "prezzo": 10,
+      "prezzo": 12,
       "immagine": "",
       "allergeni": [
         "小麦",
@@ -136,7 +136,7 @@
     {
       "nome": "炸鱿鱼杯",
       "descrizione": "鱿鱼、硬小麦粉、盐",
-      "prezzo": 14,
+      "prezzo": 16,
       "immagine": "",
       "allergeni": [
         "小麦",
@@ -146,7 +146,7 @@
     {
       "nome": "炸鱼杯",
       "descrizione": "鱼、硬小麦粉、盐",
-      "prezzo": 12,
+      "prezzo": 14,
       "immagine": "",
       "allergeni": [
         "小麦",
@@ -156,7 +156,7 @@
     {
       "nome": "烤鱿鱼",
       "descrizione": "鱿鱼、油、盐、柠檬",
-      "prezzo": 14,
+      "prezzo": 16,
       "immagine": "",
       "allergeni": [
         "贝类"
@@ -177,7 +177,7 @@
     {
       "nome": "贻贝汤",
       "descrizione": "贻贝、西红柿、大蒜、油、葡萄酒、盐、胡椒、欧芹",
-      "prezzo": 10,
+      "prezzo": 12,
       "immagine": "",
       "allergeni": [
         "贝类",
@@ -187,7 +187,7 @@
     {
       "nome": "每日鲜鱼",
       "descrizione": "烤、焗或盐焗（按公斤计价）",
-      "prezzo": 40,
+      "prezzo": 45,
       "immagine": "",
       "allergeni": [
         "鱼类",
