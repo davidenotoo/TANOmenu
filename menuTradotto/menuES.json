@@ -15,7 +15,7 @@
     {
       "nome": "Ensalada de pulpo",
       "descrizione": "pulpo, apio, zanahoria, aceite de oliva, limón, sal, pimienta",
-      "prezzo": 15,
+      "prezzo": 18,
       "immagine": "",
       "allergeni": [
         "moluscos",
@@ -25,7 +25,7 @@
     {
       "nome": "Caponata con pez espada",
       "descrizione": "berenjenas, pez espada, cebolla, alcaparras, tomates, aceitunas, aceite, vinagre, sal, pimienta, azúcar",
-      "prezzo": 10,
+      "prezzo": 13,
       "immagine": "",
       "allergeni": [
         "pescado",
@@ -35,7 +35,7 @@
     {
       "nome": "Carpaccio de gambas rojas Mazzara",
       "descrizione": "gambas rojas",
-      "prezzo": 10,
+      "prezzo": 12,
       "immagine": "",
       "allergeni": [
         "crustáceos"
@@ -44,7 +44,7 @@
     {
       "nome": "Carpaccio de escórpora",
       "descrizione": "escórpora",
-      "prezzo": 10,
+      "prezzo": 12,
       "immagine": "",
       "allergeni": [
         "crustáceos"
@@ -53,7 +53,7 @@
     {
       "nome": "Tartar de atún",
       "descrizione": "atún",
-      "prezzo": 14,
+      "prezzo": 16,
       "immagine": "",
       "allergeni": [
         "pescado"
@@ -62,7 +62,7 @@
     {
       "nome": "Menú degustación del día",
       "descrizione": "(para 2 personas)",
-      "prezzo": 24,
+      "prezzo": 25,
       "immagine": "",
       "allergeni": [
         "trigo",
@@ -79,7 +79,7 @@
     {
       "nome": "Spaghetti alle vongole",
       "descrizione": "spaghetti, moluscos, aceite, ajo, perejil, pimienta",
-      "prezzo": 14,
+      "prezzo": 18,
       "immagine": "",
       "allergeni": [
         "trigo",
@@ -89,7 +89,7 @@
     {
       "nome": "Spaghetti con mariscos",
       "descrizione": "spaghetti, moluscos, mejillones, gambas, calamares, escórpora, aceite, cherry, cebolla, ajo, chile, sal, perejil",
-      "prezzo": 16,
+      "prezzo": 18,
       "immagine": "",
       "allergeni": [
         "trigo",
@@ -100,7 +100,7 @@
     {
       "nome": "Tagliatelle con mero en salsa cremosa de crustáceos",
       "descrizione": "pasta, mero, crustáceos, salmón, tomates, nata, chile, aceite, sal, cebolla",
-      "prezzo": 15,
+      "prezzo": 16,
       "immagine": "",
       "allergeni": [
         "trigo",
@@ -112,7 +112,7 @@
     {
       "nome": "Tagliatelle con gambas rojas y pistachos",
       "descrizione": "pasta, gambas rojas, pistachos, cherry, ajo, vino blanco, aceite, sal",
-      "prezzo": 16,
+      "prezzo": 18,
       "immagine": "",
       "allergeni": [
         "trigo",
@@ -124,7 +124,7 @@
     {
       "nome": "Pasta Tarantina",
       "descrizione": "pasta, mejillones, tomates, ajo, cebolla, aceite, sal, pimienta, perejil",
-      "prezzo": 10,
+      "prezzo": 12,
       "immagine": "",
       "allergeni": [
         "trigo",
@@ -136,7 +136,7 @@
     {
       "nome": "Calamares fritos",
       "descrizione": "calamares, harina de trigo duro, sal",
-      "prezzo": 14,
+      "prezzo": 16,
       "immagine": "",
       "allergeni": [
         "trigo",
@@ -146,7 +146,7 @@
     {
       "nome": "Pescado frito",
       "descrizione": "pescado, harina de trigo duro, sal",
-      "prezzo": 12,
+      "prezzo": 14,
       "immagine": "",
       "allergeni": [
         "trigo",
@@ -156,7 +156,7 @@
     {
       "nome": "Calamares a la parrilla",
       "descrizione": "calamares, aceite, sal, limón",
-      "prezzo": 14,
+      "prezzo": 16,
       "immagine": "",
       "allergeni": [
         "moluscos"
@@ -177,7 +177,7 @@
     {
       "nome": "Sopa de mejillones",
       "descrizione": "mejillones, tomates, ajo, aceite, vino blanco, sal, pimienta, perejil",
-      "prezzo": 10,
+      "prezzo": 12,
       "immagine": "",
       "allergeni": [
         "moluscos",
@@ -187,7 +187,7 @@
     {
       "nome": "Pescado del día",
       "descrizione": "a la parrilla, frito, al horno con sal (precio por 100 g)",
-      "prezzo": 40,
+      "prezzo": 45,
       "immagine": "",
       "allergeni": [
         "pescado",
