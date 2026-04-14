@@ -45,7 +45,7 @@
     {
       "nome": "Octopus Salad",
       "descrizione": "Octopus, celery, carrots, oil, lemon, salt, pepper",
-      "prezzo": 15,
+      "prezzo": 18,
       "immagine": "",
       "allergeni": [
         "mollusks",
@@ -55,7 +55,7 @@
     {
       "nome": "Swordfish Caponata",
       "descrizione": "Eggplant, swordfish, onion, capers, tomato, olives, oil, vinegar, salt, pepper, sugar",
-      "prezzo": 10,
+      "prezzo": 13,
       "immagine": "",
       "allergeni": [
         "fish",
@@ -65,7 +65,7 @@
     {
       "nome": "Raw Red Shrimp from Mazara",
       "descrizione": "Red shrimp",
-      "prezzo": 10,
+      "prezzo": 12,
       "immagine": "",
       "allergeni": [
         "crustaceans"
@@ -74,7 +74,7 @@
     {
       "nome": "Raw Scampi",
       "descrizione": "Scampi",
-      "prezzo": 10,
+      "prezzo": 12,
       "immagine": "",
       "allergeni": [
         "crustaceans"
@@ -83,7 +83,7 @@
     {
       "nome": "Tuna Tartare",
       "descrizione": "Tuna",
-      "prezzo": 14,
+      "prezzo": 16,
       "immagine": "",
       "allergeni": [
         "fish"
@@ -92,7 +92,7 @@
     {
       "nome": "Tasting Menu of the Day",
       "descrizione": "(for 2 people)",
-      "prezzo": 24,
+      "prezzo": 25,
       "immagine": "",
       "allergeni": [
         "wheat",
@@ -109,7 +109,7 @@
     {
       "nome": "Spaghetti with Clams",
       "descrizione": "Pasta, clams, oil, garlic, parsley, pepper",
-      "prezzo": 14,
+      "prezzo": 18,
       "immagine": "",
       "allergeni": [
         "wheat",
@@ -119,7 +119,7 @@
     {
       "nome": "Busiate allo Scoglio",
       "descrizione": "Pasta, clams, mussels, shrimp, squid, scampi, oil, cherry tomatoes, onion, garlic, chili pepper, salt, parsley",
-      "prezzo": 16,
+      "prezzo": 18,
       "immagine": "",
       "allergeni": [
         "wheat",
@@ -130,7 +130,7 @@
     {
       "nome": "Grouper Ravioli with Crustacean Sauce",
       "descrizione": "Pasta, grouper, crustaceans, salmon, tomato, cream, chili pepper, oil, salt, onion",
-      "prezzo": 15,
+      "prezzo": 16,
       "immagine": "",
       "allergeni": [
         "wheat",
@@ -142,7 +142,7 @@
     {
       "nome": "Linguine with Red Shrimp and Pistachio",
       "descrizione": "Pasta, red shrimp, pistachio, cherry tomatoes, garlic, wine, oil, salt",
-      "prezzo": 16,
+      "prezzo": 18,
       "immagine": "",
       "allergeni": [
         "wheat",
@@ -154,7 +154,7 @@
     {
       "nome": "Tarantina's Spaghetti",
       "descrizione": "Pasta, mussels, tomato, garlic, onion, oil, salt, pepper, parsley",
-      "prezzo": 10,
+      "prezzo": 12,
       "immagine": "",
       "allergeni": [
         "wheat",
@@ -166,7 +166,7 @@
     {
       "nome": "Fried Calamari Cone",
       "descrizione": "Calamari, durum wheat flour, salt",
-      "prezzo": 14,
+      "prezzo": 16,
       "immagine": "",
       "allergeni": [
         "wheat",
@@ -176,7 +176,7 @@
     {
       "nome": "Fried Fish Cone",
       "descrizione": "Fish, durum wheat flour, salt",
-      "prezzo": 12,
+      "prezzo": 14,
       "immagine": "",
       "allergeni": [
         "wheat",
@@ -186,7 +186,7 @@
     {
       "nome": "Grilled Calamari",
       "descrizione": "Calamari, oil, salt, lemon",
-      "prezzo": 14,
+      "prezzo": 16,
       "immagine": "",
       "allergeni": [
         "mollusks"
@@ -207,7 +207,7 @@
     {
       "nome": "Mussel Soup",
       "descrizione": "Mussels, tomato, garlic, oil, wine, salt, pepper, parsley",
-      "prezzo": 10,
+      "prezzo": 12,
       "immagine": "",
       "allergeni": [
         "mollusks",
@@ -217,7 +217,7 @@
     {
       "nome": "Catch of the Day",
       "descrizione": "Baked, grilled or salt-crusted (prezzo per KG)",
-      "prezzo": 40,
+      "prezzo": 45,
       "immagine": "",
       "allergeni": [
         "fish",
