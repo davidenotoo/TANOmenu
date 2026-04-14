@@ -45,7 +45,7 @@
     {
       "nome": "Oktopussalat",
       "descrizione": "Oktopus, Sellerie, Karotten, Öl, Zitrone, Salz, Pfeffer",
-      "prezzo": 15,
+      "prezzo": 18,
       "immagine": "",
       "allergeni": [
         "Weichtiere",
@@ -55,7 +55,7 @@
     {
       "nome": "Schwertfisch-Caponata",
       "descrizione": "Auberginen, Schwertfisch, Zwiebel, Kapern, Tomate, Oliven, Öl, Essig, Salz, Pfeffer, Zucker",
-      "prezzo": 10,
+      "prezzo": 13,
       "immagine": "",
       "allergeni": [
         "Fisch",
@@ -65,7 +65,7 @@
     {
       "nome": "Rohkost von roten Garnelen aus Mazara",
       "descrizione": "Rote Garnele",
-      "prezzo": 10,
+      "prezzo": 12,
       "immagine": "",
       "allergeni": [
         "Krebstiere"
@@ -74,7 +74,7 @@
     {
       "nome": "Rohkost von Kaisergranat",
       "descrizione": "Kaisergranat",
-      "prezzo": 10,
+      "prezzo": 12,
       "immagine": "",
       "allergeni": [
         "Krebstiere"
@@ -83,7 +83,7 @@
     {
       "nome": "Thunfisch-Tatar",
       "descrizione": "Thunfisch",
-      "prezzo": 14,
+      "prezzo": 16,
       "immagine": "",
       "allergeni": [
         "Fisch"
@@ -92,7 +92,7 @@
     {
       "nome": "Degustationsmenü des Tages",
       "descrizione": "(für 2 Personen)",
-      "prezzo": 24,
+      "prezzo": 25,
       "immagine": "",
       "allergeni": [
         "Weizen",
@@ -109,7 +109,7 @@
     {
       "nome": "Spaghetti mit Venusmuscheln",
       "descrizione": "Pasta, Venusmuscheln, Öl, Knoblauch, Petersilie, Pfeffer",
-      "prezzo": 14,
+      "prezzo": 18,
       "immagine": "",
       "allergeni": [
         "Weizen",
@@ -119,7 +119,7 @@
     {
       "nome": "Busiate mit Meeresfrüchten",
       "descrizione": "Pasta, Venusmuscheln, Miesmuscheln, Garnelen, Tintenfische, Kaisergranat, Öl, Kirschtomaten, Zwiebel, Knoblauch, Chili, Salz, Petersilie",
-      "prezzo": 16,
+      "prezzo": 18,
       "immagine": "",
       "allergeni": [
         "Weizen",
@@ -130,7 +130,7 @@
     {
       "nome": "Cernia-Ravioli mit Krustentiersauce",
       "descrizione": "Pasta, Zackenbarsch, Krustentiere, Lachs, Tomate, Sahne, Chili, Öl, Salz, Zwiebel",
-      "prezzo": 15,
+      "prezzo": 16,
       "immagine": "",
       "allergeni": [
         "Weizen",
@@ -142,7 +142,7 @@
     {
       "nome": "Linguine mit roter Garnele und Pistazie",
       "descrizione": "Pasta, rote Garnele, Pistazie, Kirschtomaten, Knoblauch, Wein, Öl, Salz",
-      "prezzo": 16,
+      "prezzo": 18,
       "immagine": "",
       "allergeni": [
         "Weizen",
@@ -154,7 +154,7 @@
     {
       "nome": "Spaghetti Tarantina",
       "descrizione": "Pasta, Miesmuscheln, Tomate, Knoblauch, Zwiebel, Öl, Salz, Pfeffer, Petersilie",
-      "prezzo": 10,
+      "prezzo": 12,
       "immagine": "",
       "allergeni": [
         "Weizen",
@@ -166,7 +166,7 @@
     {
       "nome": "Frittierter Tintenfischbecher",
       "descrizione": "Tintenfisch, Hartweizengrießmehl, Salz",
-      "prezzo": 14,
+      "prezzo": 16,
       "immagine": "",
       "allergeni": [
         "Weizen",
@@ -176,7 +176,7 @@
     {
       "nome": "Frittierter Fischbecher",
       "descrizione": "Fisch, Hartweizengrießmehl, Salz",
-      "prezzo": 12,
+      "prezzo": 14,
       "immagine": "",
       "allergeni": [
         "Weizen",
@@ -186,7 +186,7 @@
     {
       "nome": "Gegrillter Tintenfisch",
       "descrizione": "Tintenfisch, Öl, Salz, Zitrone",
-      "prezzo": 14,
+      "prezzo": 16,
       "immagine": "",
       "allergeni": [
         "Weichtiere"
@@ -207,7 +207,7 @@
     {
       "nome": "Miesmuschelsuppe",
       "descrizione": "Miesmuscheln, Tomate, Knoblauch, Öl, Wein, Salz, Pfeffer, Petersilie",
-      "prezzo": 10,
+      "prezzo": 12,
       "immagine": "",
       "allergeni": [
         "Weichtiere",
@@ -217,7 +217,7 @@
     {
       "nome": "Tagesfang",
       "descrizione": "Aus dem Ofen, gegrillt oder in Salzkruste (Preis pro KG)",
-      "prezzo": 40,
+      "prezzo": 45,
       "immagine": "",
       "allergeni": [
         "Fisch",
