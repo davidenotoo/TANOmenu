@@ -16,7 +16,7 @@
     {
       "nome": "タコのサラダ",
       "descrizione": "タコ、セロリ、ニンジン、オリーブオイル、レモン、塩、コショウ",
-      "prezzo": 15,
+      "prezzo": 18,
       "immagine": "",
       "allergeni": [
         "軟体動物",
@@ -26,7 +26,7 @@
     {
       "nome": "メカジキのカポナータ",
       "descrizione": "ナス、メカジキ、タマネギ、ケーパー、トマト、オリーブ、オイル、酢、塩、コショウ、砂糖",
-      "prezzo": 10,
+      "prezzo": 13,
       "immagine": "",
       "allergeni": [
         "魚",
@@ -36,7 +36,7 @@
     {
       "nome": "マッツァラの赤エビのカルパッチョ",
       "descrizione": "赤エビ",
-      "prezzo": 10,
+      "prezzo": 12,
       "immagine": "",
       "allergeni": [
         "甲殻類"
@@ -45,7 +45,7 @@
     {
       "nome": "スカンピのカルパッチョ",
       "descrizione": "スカンピ",
-      "prezzo": 10,
+      "prezzo": 12,
       "immagine": "",
       "allergeni": [
         "甲殻類"
@@ -54,7 +54,7 @@
     {
       "nome": "マグロのタルタル",
       "descrizione": "マグロ",
-      "prezzo": 14,
+      "prezzo": 16,
       "immagine": "",
       "allergeni": [
         "魚"
@@ -63,7 +63,7 @@
     {
       "nome": "本日の試食メニュー",
       "descrizione": "（2名様分）",
-      "prezzo": 24,
+      "prezzo": 25,
       "immagine": "",
       "allergeni": [
         "小麦",
@@ -80,7 +80,7 @@
     {
       "nome": "ボンゴレ・スパゲッティ",
       "descrizione": "スパゲッティ、アサリ、オイル、ニンニク、パセリ、コショウ",
-      "prezzo": 14,
+      "prezzo": 18,
       "immagine": "",
       "allergeni": [
         "小麦",
@@ -90,7 +90,7 @@
     {
       "nome": "魚介のスパゲッティ",
       "descrizione": "スパゲッティ、アサリ、ムール貝、エビ、イカ、スカンピ、オイル、チェリートマト、タマネギ、ニンニク、唐辛子、塩、パセリ",
-      "prezzo": 16,
+      "prezzo": 18,
       "immagine": "",
       "allergeni": [
         "小麦",
@@ -101,7 +101,7 @@
     {
       "nome": "ハタのタリアテッレ 甲殻類のクリームソース",
       "descrizione": "パスタ、ハタ、甲殻類、サーモン、トマト、クリーム、唐辛子、オイル、塩、タマネギ",
-      "prezzo": 15,
+      "prezzo": 16,
       "immagine": "",
       "allergeni": [
         "小麦",
@@ -113,7 +113,7 @@
     {
       "nome": "赤エビとピスタチオのタリアテッレ",
       "descrizione": "パスタ、赤エビ、ピスタチオ、チェリートマト、ニンニク、白ワイン、オイル、塩",
-      "prezzo": 16,
+      "prezzo": 18,
       "immagine": "",
       "allergeni": [
         "小麦",
@@ -125,7 +125,7 @@
     {
       "nome": "ティンティンニのパスタ",
       "descrizione": "パスタ、ムール貝、トマト、ニンニク、タマネギ、オイル、塩、コショウ、パセリ",
-      "prezzo": 10,
+      "prezzo": 12,
       "immagine": "",
       "allergeni": [
         "小麦",
@@ -137,7 +137,7 @@
     {
       "nome": "イカのフリットカップ",
       "descrizione": "イカ、デュラム小麦粉、塩",
-      "prezzo": 14,
+      "prezzo": 16,
       "immagine": "",
       "allergeni": [
         "小麦",
@@ -147,7 +147,7 @@
     {
       "nome": "魚のフリットカップ",
       "descrizione": "魚、デュラム小麦粉、塩",
-      "prezzo": 12,
+      "prezzo": 14,
       "immagine": "",
       "allergeni": [
         "小麦",
@@ -157,7 +157,7 @@
     {
       "nome": "イカのグリル",
       "descrizione": "イカ、オイル、塩、レモン",
-      "prezzo": 14,
+      "prezzo": 16,
       "immagine": "",
       "allergeni": [
         "軟体動物"
@@ -178,7 +178,7 @@
     {
       "nome": "ムール貝のスープ",
       "descrizione": "ムール貝、トマト、ニンニク、オイル、白ワイン、塩、コショウ、パセリ",
-      "prezzo": 10,
+      "prezzo": 12,
       "immagine": "",
       "allergeni": [
         "軟体動物",
@@ -188,7 +188,7 @@
     {
       "nome": "本日の魚",
       "descrizione": "グリル・焼き・塩釜焼き（100gあたりの価格）",
-      "prezzo": 40,
+      "prezzo": 45,
       "immagine": "",
       "allergeni": [
         "魚",
