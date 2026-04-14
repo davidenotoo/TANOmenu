@@ -45,7 +45,7 @@
     {
       "nome": "Salade de Poulpe",
       "descrizione": "Poulpe, céleri, carottes, huile, citron, sel, poivre",
-      "prezzo": 15,
+      "prezzo": 18,
       "immagine": "",
       "allergeni": [
         "mollusques",
@@ -55,7 +55,7 @@
     {
       "nome": "Caponata d’Espadon",
       "descrizione": "Aubergines, espadon, oignon, câpres, tomate, olives, huile, vinaigre, sel, poivre, sucre",
-      "prezzo": 10,
+      "prezzo": 13,
       "immagine": "",
       "allergeni": [
         "poisson",
@@ -65,7 +65,7 @@
     {
       "nome": "Crevettes Rouges de Mazzara Crues",
       "descrizione": "Crevette rouge",
-      "prezzo": 10,
+      "prezzo": 12,
       "immagine": "",
       "allergeni": [
         "crustacés"
@@ -74,7 +74,7 @@
     {
       "nome": "Langoustines Crues",
       "descrizione": "Langoustines",
-      "prezzo": 10,
+      "prezzo": 12,
       "immagine": "",
       "allergeni": [
         "crustacés"
@@ -83,7 +83,7 @@
     {
       "nome": "Tartare de Thon",
       "descrizione": "Thon",
-      "prezzo": 14,
+      "prezzo": 16,
       "immagine": "",
       "allergeni": [
         "poisson"
@@ -92,7 +92,7 @@
     {
       "nome": "Menu Dégustation du Jour",
       "descrizione": "(pour 2 personnes)",
-      "prezzo": 24,
+      "prezzo": 25,
       "immagine": "",
       "allergeni": [
         "blé",
@@ -109,7 +109,7 @@
     {
       "nome": "Spaghetti aux Palourdes",
       "descrizione": "Pâtes, palourdes, huile, ail, persil, poivre",
-      "prezzo": 14,
+      "prezzo": 18,
       "immagine": "",
       "allergeni": [
         "blé",
@@ -119,7 +119,7 @@
     {
       "nome": "Busiate aux Fruits de Mer",
       "descrizione": "Pâtes, palourdes, moules, crevettes, calmars, langoustines, huile, tomates cerises, oignon, ail, piment, sel, persil",
-      "prezzo": 16,
+      "prezzo": 18,
       "immagine": "",
       "allergeni": [
         "blé",
@@ -130,7 +130,7 @@
     {
       "nome": "Raviolis de Mérou Sauce Crustacés",
       "descrizione": "Pâtes, mérou, crustacés, saumon, tomate, crème, piment, huile, sel, oignon",
-      "prezzo": 15,
+      "prezzo": 16,
       "immagine": "",
       "allergeni": [
         "blé",
@@ -142,7 +142,7 @@
     {
       "nome": "Linguine Crevette Rouge et Pistache",
       "descrizione": "Pâtes, crevette rouge, pistache, tomates cerises, ail, vin, huile, sel",
-      "prezzo": 16,
+      "prezzo": 18,
       "immagine": "",
       "allergeni": [
         "blé",
@@ -154,7 +154,7 @@
     {
       "nome": "Spaghetti Tarantina",
       "descrizione": "Pâtes, moules, tomate, ail, oignon, huile, sel, poivre, persil",
-      "prezzo": 10,
+      "prezzo": 12,
       "immagine": "",
       "allergeni": [
         "blé",
@@ -166,7 +166,7 @@
     {
       "nome": "Cornet de Calamars Frits",
       "descrizione": "Calamar, farine de blé dur, sel",
-      "prezzo": 14,
+      "prezzo": 16,
       "immagine": "",
       "allergeni": [
         "blé",
@@ -176,7 +176,7 @@
     {
       "nome": "Cornet de Poisson Frit",
       "descrizione": "Poisson, farine de blé dur, sel",
-      "prezzo": 12,
+      "prezzo": 14,
       "immagine": "",
       "allergeni": [
         "blé",
@@ -186,7 +186,7 @@
     {
       "nome": "Calamar Grillé",
       "descrizione": "Calamar, huile, sel, citron",
-      "prezzo": 14,
+      "prezzo": 16,
       "immagine": "",
       "allergeni": [
         "mollusques"
@@ -207,7 +207,7 @@
     {
       "nome": "Soupe de Moules",
       "descrizione": "Moules, tomate, ail, huile, vin, sel, poivre, persil",
-      "prezzo": 10,
+      "prezzo": 12,
       "immagine": "",
       "allergeni": [
         "mollusques",
@@ -217,7 +217,7 @@
     {
       "nome": "Poisson du Jour",
       "descrizione": "Au four, grillé ou en croûte de sel (prix au KG)",
-      "prezzo": 40,
+      "prezzo": 45,
       "immagine": "",
       "allergeni": [
         "poisson",
