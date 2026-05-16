@@ -365,75 +365,58 @@
       "prezzo": 7,
       "immagine": ""
     }
-  ],"vini bianchi": [
+  ],
+  "vini bianchi": [
     {
-      "nome": "Mucino Grillo affinato in botte",
-      "descrizione": "Candido",
-      "prezzo": 35,
-      "immagine": ""
-    },
-    {
-      "nome": "Arrìdi Sauvignon Blanc",
-      "descrizione": "Candido",
+      "nome": "Grillo vigne Mandranova",
+      "descrizione": "Alessandro di Camporeale",
       "prezzo": 25,
       "immagine": ""
     },
     {
-      "nome": "Guardalòmu Grillo",
-      "descrizione": "Candido",
+      "nome": "Benedè catarratto",
+      "descrizione": "Alessandro di Camporeale",
+      "prezzo": 19,
+      "immagine": ""
+    },
+    {
+      "nome": "Kaid sauvignon blanc",
+      "descrizione": "Alessandro di Camporeale",
+      "prezzo": 26,
+      "immagine": ""
+    },
+    {
+      "nome": "Tenute San Michele Etna bianco",
+      "descrizione": "Murgo",
+      "prezzo": 34,
+      "immagine": ""
+    },
+    {
+      "nome": "Leone",
+      "descrizione": "Tenute regaleali",
+      "prezzo": 28,
+      "immagine": ""
+    },
+    {
+      "nome": "Pinzeri grillo",
+      "descrizione": "Funaro",
       "prezzo": 22,
       "immagine": ""
     },
     {
-      "nome": "Inzolia",
-      "descrizione": "Candido",
-      "prezzo": 20,
-      "immagine": ""
-    },
-    {
-      "nome": "Etna Bianco",
-      "descrizione": "Tenuta San Michele",
-      "prezzo": 25,
-      "immagine": ""
-    },
-    {
-      "nome": "Grillo",
-      "descrizione": "Alessandro di Camporeale",
-      "prezzo": 20,
-      "immagine": ""
-    },
-    {
-      "nome": "Kaid Sauvignon",
-      "descrizione": "Alessandro di Camporeale",
-      "prezzo": 25,
-      "immagine": ""
-    },
-    {
-      "nome": "Benedé Catarratto",
-      "descrizione": "Alessandro di Camporeale",
-      "prezzo": 18,
-      "immagine": ""
-    },
-    {
-      "nome": "Leone Blend",
-      "descrizione": "Tenuta Regaleali",
+      "nome": "Mondura catarratto",
+      "descrizione": "Funaro",
       "prezzo": 22,
       "immagine": ""
     },
     {
-      "nome": "Pinzeri Grillo",
+      "nome": "Verdelicia Chardonnay",
       "descrizione": "Funaro",
-      "prezzo": 20,
+      "prezzo": 22,
       "immagine": ""
     },
     {
-      "nome": "Mondura Catarratto",
-      "descrizione": "Funaro",
-      "prezzo": 20,
-      "immagine": ""
-    },
-    {
-      "nome": "Gatto Bianco",
+      "nome": "Gatto bianco",
       "descrizione": "Funaro",
       "prezzo": 18,
       "immagine": ""
@@ -441,53 +424,41 @@
     {
       "nome": "Maria Costanza",
       "descrizione": "G. Milazzo",
-      "prezzo": 28,
+      "prezzo": 30,
       "immagine": ""
     },
     {
-      "nome": "Zahra",
+      "nome": "Terre della baronia",
+      "descrizione": "G. Milazzo",
+      "prezzo": 25,
+      "immagine": ""
+    },
+    {
+      "nome": "Piccola stazione catarratto",
+      "descrizione": "Tenute Castello Inici",
+      "prezzo": 22,
+      "immagine": ""
+    },
+    {
+      "nome": "Due corti grillo",
+      "descrizione": "Tenute Castello Inici",
+      "prezzo": 22,
+      "immagine": ""
+    },
+    {
+      "nome": "kike",
+      "descrizione": "Fina",
+      "prezzo": 22,
+      "immagine": ""
+    },
+    {
+      "nome": "Zahra grillo",
       "descrizione": "Vitale",
       "prezzo": 16,
       "immagine": ""
     },
     {
-      "nome": "Kikè",
-      "descrizione": "Fina",
-      "prezzo": 20,
-      "immagine": ""
-    },
-    {
-      "nome": "Kiggiari Grecanico",
-      "descrizione": "Baglio Oro",
-      "prezzo": 22,
-      "immagine": ""
-    },
-    {
-      "nome": "Charme",
-      "descrizione": "Firriato",
-      "prezzo": 22,
-      "immagine": ""
-    },
-    {
-      "nome": "Bianco di Nera",
-      "descrizione": "G. Milazzo",
-      "prezzo": 26,
-      "immagine": ""
-    },
-    {
-      "nome": "Viveur",
-      "descrizione": "Funaro",
-      "prezzo": 20,
-      "immagine": ""
-    },
-    {
-      "nome": "Murgo Brut",
-      "descrizione": "Tenuta San Michele",
-      "prezzo": 40,
-      "immagine": ""
-    },
-    {
-      "nome": "Sanjení Brut",
+      "nome": "Phasis catarratto",
       "descrizione": "Vitale",
       "prezzo": 16,
       "immagine": ""
@@ -495,33 +466,39 @@
   ],
   "bollicine": [
     {
-      "nome": "Naonis Cuvée Brut – San Jeni ",
-      "descrizione": "Vitale",
-      "prezzo": 15,
-      "immagine": ""
-    },
-    {
-      "nome": "Charme Bianco",
-      "descrizione": "Firriato",
-      "prezzo": 22,
-      "immagine": ""
-    },
-    {
-      "nome": "Charme Rosé",
-      "descrizione": "Firriato",
-      "prezzo": 22,
-      "immagine": ""
-    },
-    {
-      "nome": "Metodo Classico Brut",
+      "nome": "Brut metodo classico",
       "descrizione": "Murgo",
-      "prezzo": 0,
+      "prezzo": 40,
       "immagine": ""
     },
     {
-      "nome": "Petramater Metodo Classico Brut",
-      "descrizione": "Tenute Orestiadi",
-      "prezzo": 35,
+      "nome": "Metodo classico",
+      "descrizione": "G. Milazzo",
+      "prezzo": 45,
+      "immagine": ""
+    },
+    {
+      "nome": "Bianco di nera",
+      "descrizione": "G. Milazzo",
+      "prezzo": 26,
+      "immagine": ""
+    },
+    {
+      "nome": "san jenì",
+      "descrizione": "Vitale",
+      "prezzo": 16,
+      "immagine": ""
+    },
+    {
+      "nome": "Charme bianco",
+      "descrizione": "Firriato",
+      "prezzo": 22,
+      "immagine": ""
+    },
+    {
+      "nome": "Charme rosè",
+      "descrizione": "Firriato",
+      "prezzo": 22,
       "immagine": ""
     }
   ],
