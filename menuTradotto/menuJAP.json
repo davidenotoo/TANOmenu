@@ -1,17 +1,50 @@
 {
   "meta": {
-  "antipasti": { "label": "前菜", "icon": "ri-restaurant-line" },
-  "primi": { "label": "パスタ", "icon": "ri-bowl-line" },
-  "secondi": { "label": "メインディッシュ", "icon": "ri-knife-line" },
-  "dolci": { "label": "デザート", "icon": "ri-cake-3-line" },
-  "bevande": { "label": "飲み物", "icon": "ri-cup-line" },
-  "birre": { "label": "ビール", "icon": "ri-beer-line" },
-  "cocktail": { "label": "カクテル", "icon": "ri-goblet-line" },
-  "vini bianchi": { "label": "白ワイン", "icon": "ri-wine-line" },
-  "bollicine": { "label": "スパークリング", "icon": "ri-sparkling-line" },
-  "digestivi": { "label": "食後酒", "icon": "ri-shot-line" }
-}
-,
+    "antipasti": {
+      "label": "前菜",
+      "icon": "ri-restaurant-line"
+    },
+    "primi": {
+      "label": "パスタ",
+      "icon": "ri-bowl-line"
+    },
+    "secondi": {
+      "label": "メインディッシュ",
+      "icon": "ri-knife-line"
+    },
+    "dolci": {
+      "label": "デザート",
+      "icon": "ri-cake-3-line"
+    },
+    "bevande": {
+      "label": "飲み物",
+      "icon": "ri-cup-line"
+    },
+    "birre": {
+      "label": "ビール",
+      "icon": "ri-beer-line"
+    },
+    "cocktail": {
+      "label": "カクテル",
+      "icon": "ri-goblet-line"
+    },
+    "vini bianchi": {
+      "label": "白ワイン",
+      "icon": "ri-wine-line"
+    },
+    "bollicine": {
+      "label": "スパークリング",
+      "icon": "ri-sparkling-line"
+    },
+    "digestivi": {
+      "label": "食後酒",
+      "icon": "ri-shot-line"
+    },
+    "social": {
+      "label": "Social",
+      "icon": "ri-share-line"
+    }
+  },
   "antipasti": [
     {
       "nome": "タコのサラダ",
@@ -198,43 +231,60 @@
     }
   ],
   "dolci": [
-  {
-    "nome": "チーズケーキ",
-    "descrizione": "キャラメル、チョコレート、またはピスタチオのトッピング付き",
-    "prezzo": 5,
-    "immagine": "",
-    "allergeni": ["乳製品", "卵", "グルテン", "大豆", "ナッツ類"]
-  },
-  {
-    "nome": "リコッタとコーヒーのケーキ",
-    "descrizione": "",
-    "prezzo": 5,
-    "immagine": "",
-    "allergeni": ["乳製品", "卵", "グルテン"]
-  },
-  {
-    "nome": "ミックスベリーのグラニータ付きセミフレッドケーキ",
-    "descrizione": "",
-    "prezzo": 5,
-    "immagine": "",
-    "allergeni": ["乳製品", "卵"]
-  },
-  {
-    "nome": "ミロのケーキ",
-    "descrizione": "",
-    "prezzo": 5,
-    "immagine": "",
-    "allergeni": ["乳製品", "卵", "グルテン", "ナッツ類"]
-  },
-  {
-    "nome": "フルーツ",
-    "descrizione": "",
-    "prezzo": 5,
-    "immagine": "",
-    "allergeni": []
-  }
-]
-,
+    {
+      "nome": "チーズケーキ",
+      "descrizione": "キャラメル、チョコレート、またはピスタチオのトッピング付き",
+      "prezzo": 5,
+      "immagine": "",
+      "allergeni": [
+        "乳製品",
+        "卵",
+        "グルテン",
+        "大豆",
+        "ナッツ類"
+      ]
+    },
+    {
+      "nome": "リコッタとコーヒーのケーキ",
+      "descrizione": "",
+      "prezzo": 5,
+      "immagine": "",
+      "allergeni": [
+        "乳製品",
+        "卵",
+        "グルテン"
+      ]
+    },
+    {
+      "nome": "ミックスベリーのグラニータ付きセミフレッドケーキ",
+      "descrizione": "",
+      "prezzo": 5,
+      "immagine": "",
+      "allergeni": [
+        "乳製品",
+        "卵"
+      ]
+    },
+    {
+      "nome": "ミロのケーキ",
+      "descrizione": "",
+      "prezzo": 5,
+      "immagine": "",
+      "allergeni": [
+        "乳製品",
+        "卵",
+        "グルテン",
+        "ナッツ類"
+      ]
+    },
+    {
+      "nome": "フルーツ",
+      "descrizione": "",
+      "prezzo": 5,
+      "immagine": "",
+      "allergeni": []
+    }
+  ],
   "bevande": [
     {
       "nome": "ミネラルウォーター",
@@ -335,6 +385,16 @@
       "descrizione": "",
       "prezzo": 7,
       "immagine": ""
+    },
+    {
+      "nome": "test cocktail",
+      "descrizione": "test cocktail",
+      "prezzo": 12,
+      "immagine": "piatti/1782052629622_webtuned_png.png",
+      "allergeni": [
+        "grano",
+        "semi di sesamo"
+      ]
     }
   ],
   "vini bianchi": [
@@ -515,6 +575,38 @@
       "prezzo": 5,
       "immagine": "",
       "allergeni": ""
+    }
+  ],
+  "social": [
+    {
+      "nome": "⭐ Recensioni Google",
+      "descrizione": "Condividi la tua esperienza su Google",
+      "link": "https://search.google.com/local/writereview?placeid=ChIJcXykyAyHGRMR2LxlbZLJvTg&source=g.page.m.nr._&laa=nmx-review-solicitation-recommendation-card",
+      "immagine": "https://developers.google.com/identity/images/g-logo.png"
+    },
+    {
+      "nome": "WhatsApp",
+      "descrizione": "Inviaci le foto dei tuoi Piatti",
+      "link": "https://wa.me/393663166815",
+      "immagine": "https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+    },
+    {
+      "nome": "Seguici su Instagram",
+      "descrizione": "@tano.pescheria <br> scopri le nostre storie",
+      "link": "https://www.instagram.com/tano.pescheria/",
+      "immagine": "https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg"
+    },
+    {
+      "nome": "Seguici su Facebook",
+      "descrizione": "Unisciti alla nostra community",
+      "link": "https://www.facebook.com/profile.php?id=61568494896132",
+      "immagine": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Facebook_icon.svg"
+    },
+    {
+      "nome": "Web Tuned",
+      "descrizione": "🔧 Contattaci per avere il tuo menù digitale personalizzato.",
+      "link": "https://wa.me/393275528211",
+      "immagine": "img/webTuned.png"
     }
   ]
 }
