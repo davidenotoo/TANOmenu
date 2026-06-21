@@ -243,21 +243,7 @@
             }
         }
 
-        /* Tooltip per badge lingua */
-        .badge-lingua {
-            position: fixed;
-            top: 80px;
-            right: 20px;
-            background-color: #10b981;
-            color: white;
-            padding: 0.5rem 0.75rem;
-            border-radius: 8px;
-            font-size: 0.85rem;
-            z-index: 999;
-            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
-        }
-
-        /* --- GRATTA E VINCI RIMOSSO DAL CSS ---
+        /* Scratch Canvas */
         #scratchMessage {
             position: absolute;
             z-index: 10;
@@ -279,8 +265,22 @@
                 height: 180px !important;
             }
         }
-        ----------------------------------------- */
+
+        /* Tooltip per badge lingua */
+        .badge-lingua {
+            position: fixed;
+            top: 80px;
+            right: 20px;
+            background-color: #10b981;
+            color: white;
+            padding: 0.5rem 0.75rem;
+            border-radius: 8px;
+            font-size: 0.85rem;
+            z-index: 999;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+        }
     </style>
+
 
 </head>
 
@@ -452,7 +452,7 @@
         </div>
     </div>
 
-    <!-- MODALE GRATTA E VINCI (Disattivato) -->
+    <!-- MODALE GRATTA E VINCI -->
     <!-- <div id="gameModal" class="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50 hidden">
         <div class="bg-white p-6 rounded-xl shadow-xl w-80 text-center" id="gameModalContent">
             <h2 class="text-xl font-bold mb-2">Gratta e Vinci!</h2>
@@ -521,26 +521,169 @@
                 });
             });
 
+            // Scratch card
+            const canvas = document.getElementById("scratchCanvas");
+            const ctx = canvas.getContext("2d");
+            const message = document.getElementById("scratchMessage");
+            const modal = document.getElementById("gameModal");
+            const playBtn = document.getElementById("playGame");
+            const closeGame = document.getElementById("closeGame");
+
+            function setupScratchCard() {
+                const canvas = document.getElementById("scratchCanvas");
+                const ctx = canvas.getContext("2d");
+
+                ctx.fillStyle = "#cccccc";
+                ctx.fillRect(0, 0, canvas.width, canvas.height);
+                ctx.globalCompositeOperation = "destination-out";
+
+                let isDrawing = false;
+
+                const getXY = (e) => {
+                    const rect = canvas.getBoundingClientRect();
+                    return {
+                        x: (e.clientX || e.touches[0].clientX) - rect.left,
+                        y: (e.clientY || e.touches[0].clientY) - rect.top
+                    };
+                };
+
+                const draw = (x, y) => {
+                    ctx.beginPath();
+                    ctx.arc(x, y, 20, 0, Math.PI * 2);
+                    ctx.fill();
+                };
+
+                canvas.addEventListener("mousedown", () => isDrawing = true);
+                canvas.addEventListener("mouseup", () => isDrawing = false);
+                canvas.addEventListener("mousemove", (e) => {
+                    if (!isDrawing) return;
+                    const { x, y } = getXY(e);
+                    draw(x, y);
+                });
+
+                canvas.addEventListener("touchstart", (e) => {
+                    e.preventDefault();
+                    isDrawing = true;
+                    const { x, y } = getXY(e);
+                    draw(x, y);
+                }, { passive: false });
+
+                canvas.addEventListener("touchend", () => isDrawing = false);
+                canvas.addEventListener("touchmove", (e) => {
+                    if (!isDrawing) return;
+                    e.preventDefault();
+                    const { x, y } = getXY(e);
+                    draw(x, y);
+                }, { passive: false });
+            }
+
             document.addEventListener('keydown', function (e) {
                 if (e.key === 'F12' || (e.ctrlKey && e.shiftKey && ['I', 'C', 'J'].includes(e.key))) {
                     e.preventDefault();
                 }
             });
 
-            /* --- LOGICA GRATTA E VINCI RIMOSSA ---
-            const canvas = document.getElementById("scratchCanvas");
-            ...
+
+            function renderGameScratchCard() {
+                const STORAGE_KEY = "dessertGameStatus";
+                const today = new Date().toISOString().split("T")[0];
+                let canPlay = true;
+
+                const saved = localStorage.getItem(STORAGE_KEY);
+                if (saved) {
+                    try {
+                        const parsed = JSON.parse(saved);
+                        if (parsed.date === today) canPlay = false;
+                    } catch { }
+                }
+
+                const modal = document.getElementById("gameModal");
+                const playBtn = document.getElementById("playGame");
+                const closeBtn = document.getElementById("closeGame");
+                const canvas = document.getElementById("scratchCanvas");
+                const ctx = canvas.getContext("2d");
+                const message = document.getElementById("scratchMessage");
+
+                modal.classList.remove("hidden");
+                message.textContent = "";
+                message.style.display = "flex";
+
+                closeBtn.onclick = () => {
+                    modal.classList.add("hidden");
+                };
+
+                if (!canPlay) {
+                    playBtn.style.display = "none";
+                    message.textContent = "Riprova domani";
+                    return;
+                }
+
+                playBtn.style.display = "block";
+                playBtn.onclick = () => {
+                    playBtn.style.display = "none";
+                    setupScratchCard();
+
+                    const won = Math.random() < 0.5;
+
+                    setTimeout(() => {
+                        message.textContent = won ? "Hai VINTO!" : "Peccato!";
+                        if (won) {
+                            const goBtn = document.createElement("button");
+                            goBtn.textContent = "Vai ai dolci";
+                            goBtn.className = "mt-3 px-4 py-2 bg-primary text-white rounded font-medium";
+                            goBtn.onclick = () => {
+                                modal.classList.add("hidden");
+
+                                applyDessertDiscount();
+
+                                // Forza il rerender della sezione dolci
+                                renderMenuItems("dolci");
+                                setActiveCategory("dolci");
+                                window.scrollTo({ top: 0, behavior: "smooth" });
+                            };
+
+
+
+                            document.getElementById("gameModalContent").appendChild(goBtn);
+                            localStorage.setItem(STORAGE_KEY, JSON.stringify({ date: today, won: true }));
+                            applyDessertDiscount();
+                        } else {
+                            localStorage.setItem(STORAGE_KEY, JSON.stringify({ date: today, won: false }));
+                        }
+                    }, 1000);
+                };
+            }
+
+
+            // Rendi disponibile globalmente
             window.renderGameScratchCard = renderGameScratchCard;
-            ----------------------------------------- */
         });
     </script>
 
     <script>
         let menuData = {};
-        
-        /* --- LOGICA SCONTO DOLCI RIMOSSA ---
-        function applyDessertDiscount() { ... }
-        -------------------------------------- */
+        function applyDessertDiscount() {
+            const STORAGE_KEY = "dessertGameStatus";
+            const today = new Date().toISOString().split("T")[0];
+
+            const saved = localStorage.getItem(STORAGE_KEY);
+            if (!saved) return;
+
+            try {
+                const parsed = JSON.parse(saved);
+                if (parsed.date === today && parsed.won && menuData.dolci) {
+                    menuData.dolci = menuData.dolci.map(item => {
+                        if (!item.prezzoScontato && item.prezzo) {
+                            item.prezzoOriginale = item.prezzo;
+                            item.prezzoScontato = Number((item.prezzo / 2).toFixed(2));
+                        }
+                        return item;
+                    });
+                }
+            } catch (e) {
+                console.error("Errore parsing dati sconto dolci:", e);
+            }
+        }
 
         let menuDataIT = {};
         let currentLanguage = '';
@@ -576,12 +719,18 @@
             }
         }
 
-        // --- FUNZIONE INITIALIZEMENU ATTIVATA E PRIVATA DI "GIOCA" E "SCONTO" ---
-        function initializeMenu() {
-             generateCategoryNavigation(menuData.meta);
-             renderMenuItems("antipasti");
-             setActiveCategory("antipasti");
-        }
+        // function initializeMenu() {
+        //     menuData.meta = {
+        //         gioca: { label: "Gioca", icon: "ri-gift-line" },
+        //         ...menuData.meta
+        //     };
+
+        //     applyDessertDiscount();
+        //     generateCategoryNavigation(menuData.meta);
+        //     renderMenuItems("antipasti");
+        //     setActiveCategory("antipasti");
+        // }
+        
 
 
         function generateCategoryNavigation(meta) {
@@ -589,9 +738,6 @@
             container.innerHTML = '';
 
             Object.entries(meta).forEach(([key, value], index) => {
-                // Esclude l'icona del gioco dalla barra di navigazione
-                if(key === "gioca") return;
-
                 const item = document.createElement("div");
                 item.className = "category-item flex flex-col items-center min-w-[70px] cursor-pointer";
                 item.dataset.category = key;
@@ -617,10 +763,12 @@
         }
 
         function setActiveCategory(category) {
+            // 1. Rimuove la classe 'active' da tutte le icone
             document.querySelectorAll(".category-icon").forEach((icon) => {
                 icon.classList.remove("active");
             });
 
+            // 2. Aggiunge 'active' solo a quella selezionata
             const selectedIcon = document.querySelector(
                 `.category-item[data-category="${category}"] .category-icon`
             );
@@ -628,6 +776,7 @@
                 selectedIcon.classList.add("active");
             }
 
+            // 3. Centra il pulsante attivo nella navbar
             const container = document.getElementById("categoryContainer");
             const currentItem = document.querySelector(
                 `.category-item[data-category="${category}"]`
@@ -645,13 +794,10 @@
 
 
         function renderMenuItems(category) {
-            /* --- TRIGGER DEL GIOCO RIMOSSO ---
             if (category === "gioca") {
                 renderGameScratchCard();
                 return;
             }
-            ------------------------------------ */
-            
             if (category === "social") {
                 const menuContainer = document.getElementById("menuContainer");
                 menuContainer.innerHTML = "";
@@ -742,8 +888,10 @@
                     const content = document.createElement("div");
                     content.className = "p-4 flex flex-col flex-grow justify-between";
 
-                    // Modificato per rimuovere la referenza al prezzo scontato
-                    let priceHTML = `<span class="text-primary font-medium">€${item.prezzo.toFixed(2)}</span>`;
+                    let priceHTML = item.prezzoScontato
+                        ? `<span class="text-red-500 line-through">€${item.prezzoOriginale.toFixed(2)}</span>
+                           <span class="text-green-600 font-medium">€${item.prezzoScontato.toFixed(2)}</span>`
+                        : `<span class="text-primary font-medium">€${item.prezzo.toFixed(2)}</span>`;
 
                     content.innerHTML = `
                         <div class="mb-2">
@@ -776,8 +924,12 @@
                     const rightContent = document.createElement("div");
                     rightContent.className = "w-[30%] flex items-center justify-center";
 
-                    // Modificato per rimuovere la referenza al prezzo scontato
-                    const priceHTML = `<div class="text-primary text-xl font-bold">€${item.prezzo.toFixed(2)}</div>`;
+                    const priceHTML = item.prezzoScontato
+                        ? `<div class="text-center">
+                            <div class="text-red-500 text-sm line-through">€${item.prezzoOriginale.toFixed(2)}</div>
+                            <div class="text-green-600 text-xl font-bold">€${item.prezzoScontato.toFixed(2)}</div>
+                        </div>`
+                        : `<div class="text-primary text-xl font-bold">€${item.prezzo.toFixed(2)}</div>`;
 
                     rightContent.innerHTML = priceHTML;
 
@@ -818,9 +970,25 @@
 
         document.addEventListener("DOMContentLoaded", loadMenuData);
 
-        /* --- LOGICA SCONTO DOLCI 2 RIMOSSA ---
-        function applyDessertDiscount() { ... }
-        -------------------------------------- */
+        function applyDessertDiscount() {
+            const key = "dessertGameStatus";
+            const saved = JSON.parse(localStorage.getItem(key) || "{}");
+
+            // Applica sconto solo se ha vinto
+            if (saved.date === new Date().toISOString().split("T")[0] && saved.won) {
+                if (!menuData.dolci) return;
+
+                menuData.dolci = menuData.dolci.map(item => {
+                    if (!item.prezzoScontato) {
+                        const prezzo = item.prezzo || 0;
+                        item.prezzoOriginale = prezzo;
+                        item.prezzoScontato = parseFloat((prezzo / 2).toFixed(2));
+
+                    }
+                    return item;
+                });
+            }
+        }
 
     </script>
 
