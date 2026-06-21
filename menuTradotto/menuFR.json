@@ -39,6 +39,10 @@
     "digestivi": {
       "label": "Digestifs",
       "icon": "ri-shot-line"
+    },
+    "social": {
+      "label": "Social",
+      "icon": "ri-share-line"
     }
   },
   "antipasti": [
@@ -226,43 +230,61 @@
       ]
     }
   ],
-  "dolci":[
-  {
-    "nome": "Cheesecake",
-    "descrizione": "Avec nappage caramel, chocolat ou pistache",
-    "prezzo": 5,
-    "immagine": "",
-    "allergeni": ["lait", "œufs", "gluten", "soja", "fruits à coque"]
-  },
-  {
-    "nome": "Gâteau ricotta et café",
-    "descrizione": "",
-    "prezzo": 5,
-    "immagine": "",
-    "allergeni": ["lait", "œufs", "gluten"]
-  },
-  {
-    "nome": "Gâteau glacé avec granité aux fruits rouges",
-    "descrizione": "",
-    "prezzo": 5,
-    "immagine": "",
-    "allergeni": ["lait", "œufs"]
-  },
-  {
-    "nome": "Gâteau Mirò",
-    "descrizione": "",
-    "prezzo": 5,
-    "immagine": "",
-    "allergeni": ["lait", "œufs", "gluten", "fruits à coque"]
-  },
-  {
-    "nome": "Fruits",
-    "descrizione": "",
-    "prezzo": 5,
-    "immagine": "",
-    "allergeni": []
-  }
-],
+  "dolci": [
+    {
+      "nome": "Cheesecake",
+      "descrizione": "Avec nappage caramel, chocolat ou pistache",
+      "prezzo": 5,
+      "immagine": "",
+      "allergeni": [
+        "lait",
+        "œufs",
+        "gluten",
+        "soja",
+        "fruits à coque"
+      ]
+    },
+    {
+      "nome": "Gâteau ricotta et café",
+      "descrizione": "",
+      "prezzo": 5,
+      "immagine": "",
+      "allergeni": [
+        "lait",
+        "œufs",
+        "gluten"
+      ]
+    },
+    {
+      "nome": "Gâteau glacé avec granité aux fruits rouges",
+      "descrizione": "",
+      "prezzo": 5,
+      "immagine": "",
+      "allergeni": [
+        "lait",
+        "œufs"
+      ]
+    },
+    {
+      "nome": "Gâteau Mirò",
+      "descrizione": "",
+      "prezzo": 5,
+      "immagine": "",
+      "allergeni": [
+        "lait",
+        "œufs",
+        "gluten",
+        "fruits à coque"
+      ]
+    },
+    {
+      "nome": "Fruits",
+      "descrizione": "",
+      "prezzo": 5,
+      "immagine": "",
+      "allergeni": []
+    }
+  ],
   "bevande": [
     {
       "nome": "Eau Plate",
@@ -363,6 +385,16 @@
       "descrizione": "",
       "prezzo": 7,
       "immagine": ""
+    },
+    {
+      "nome": "test cocktail",
+      "descrizione": "test cocktail",
+      "prezzo": 12,
+      "immagine": "piatti/1782052629622_webtuned_png.png",
+      "allergeni": [
+        "grano",
+        "semi di sesamo"
+      ]
     }
   ],
   "vini bianchi": [
@@ -543,6 +575,38 @@
       "prezzo": 5,
       "immagine": "",
       "allergeni": ""
+    }
+  ],
+  "social": [
+    {
+      "nome": "⭐ Recensioni Google",
+      "descrizione": "Condividi la tua esperienza su Google",
+      "link": "https://search.google.com/local/writereview?placeid=ChIJcXykyAyHGRMR2LxlbZLJvTg&source=g.page.m.nr._&laa=nmx-review-solicitation-recommendation-card",
+      "immagine": "https://developers.google.com/identity/images/g-logo.png"
+    },
+    {
+      "nome": "WhatsApp",
+      "descrizione": "Inviaci le foto dei tuoi Piatti",
+      "link": "https://wa.me/393663166815",
+      "immagine": "https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+    },
+    {
+      "nome": "Seguici su Instagram",
+      "descrizione": "@tano.pescheria <br> scopri le nostre storie",
+      "link": "https://www.instagram.com/tano.pescheria/",
+      "immagine": "https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg"
+    },
+    {
+      "nome": "Seguici su Facebook",
+      "descrizione": "Unisciti alla nostra community",
+      "link": "https://www.facebook.com/profile.php?id=61568494896132",
+      "immagine": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Facebook_icon.svg"
+    },
+    {
+      "nome": "Web Tuned",
+      "descrizione": "🔧 Contattaci per avere il tuo menù digitale personalizzato.",
+      "link": "https://wa.me/393275528211",
+      "immagine": "img/webTuned.png"
     }
   ]
 }

@@ -385,6 +385,16 @@
       "descrizione": "",
       "prezzo": 7,
       "immagine": "piatti/53.jpg"
+    },
+    {
+      "nome": "test cocktail",
+      "descrizione": "test cocktail",
+      "prezzo": 12,
+      "immagine": "piatti/1782052629622_webtuned_png.png",
+      "allergeni": [
+        "grano",
+        "semi di sesamo"
+      ]
     }
   ],
   "vini bianchi": [
@@ -599,6 +609,4 @@
       "immagine": "img/webTuned.png"
     }
   ]
-
 }
-
