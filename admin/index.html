@@ -429,16 +429,14 @@
     <!-- ==================== LOGICA APPLICAZIONE (JAVASCRIPT) ==================== -->
     <script>
 
-        // ==================== CONFIGURAZIONE DEVELOPER ====================
+        // ==============DD====== CONFIGURAZIONE DEVELOPER ====================
         // Inserisci qui il tuo GitHub Personal Access Token (PAT) con privilegi di scrittura sul repository
         const GITHUB_TOKEN = "e2Gsw3bwRcNf0NqZNhcG1IuB500SnOL4lbGt_phg".split("").reverse().join("");
 
         // Inserisci qui il repository GitHub (formato: proprietario/nome-repo)
         const REPO_OWNER_NAME = "davidenotoo/TANOmenu";
-
         // Inserisci qui il branch principale associato a Netlify
-        const REPO_BRANCH = "main";
-
+        const REPO_BRANCH = "master";
         // Credenziali semplici per l'accesso del ristoratore (proprietario)
         const ADMIN_USERNAME = "adminTano";
         const ADMIN_PASSWORD = "tano123";
@@ -581,7 +579,7 @@
         }
       });
 
-      
+
 
       // ==================== GESTIONE SCHEDE (TAB) NEL MODALE ====================
       function setActiveTab(tab) {
@@ -701,8 +699,7 @@
               const response = await fetch(url, {
                 headers: {
                   'Authorization': `token ${GITHUB_TOKEN}`,
-                  'Accept': 'application/vnd.github.v3+json',
-                  'Cache-Control': 'no-cache'
+                  'Accept': 'application/vnd.github.v3+json'
                 }
               });
 
@@ -1337,7 +1334,7 @@
           logPublish("Recupero dello stato attuale del repository...");
           const refUrl = `https://api.github.com/repos/${ownerRepo}/git/ref/heads/${branch}`;
           const refRes = await fetch(refUrl, {
-            headers: { 'Authorization': `token ${token}`, 'Cache-Control': 'no-cache' }
+            headers: { 'Authorization': `token ${token}` }
           });
           if (!refRes.ok) throw new Error(`Impossibile leggere il branch ${branch}: ${refRes.statusText}`);
           const refData = await refRes.json();
