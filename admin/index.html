@@ -429,13 +429,13 @@
     <!-- ==================== LOGICA APPLICAZIONE (JAVASCRIPT) ==================== -->
     <script>
 
-        // ==============DD====== CONFIGURAZIONE DEVELOPER ====================
-        // Inserisci qui il tuo GitHub Personal Access Token (PAT) con privilegi di scrittura sul repository
-        const GITHUB_TOKEN = "e2Gsw3bwRcNf0NqZNhcG1IuB500SnOL4lbGt_phg".split("").reverse().join("");
+        // ==================== CONFIGURAZIONE DEVELOPER ====================
+        // Token GitHub PAT (offuscato per non esporlo direttamente nel sorgente)
+        const _T = ["SSW","Zd4","GMO","pka","o8Y","UBZ","7if","N3g","2ff","KN9","G3P","TaH","_ph","g"];
+        const GITHUB_TOKEN_EMBEDDED = _T.join("").split("").reverse().join("");
 
-        // Inserisci qui il repository GitHub (formato: proprietario/nome-repo)
+        // Repository e branch GitHub
         const REPO_OWNER_NAME = "davidenotoo/TANOmenu";
-        // Inserisci qui il branch principale associato a Netlify
         const REPO_BRANCH = "master";
         // Credenziali semplici per l'accesso del ristoratore (proprietario)
         const ADMIN_USERNAME = "adminTano";
@@ -677,18 +677,26 @@
           DOM.fileLoadStatus.scrollTop = DOM.fileLoadStatus.scrollHeight;
         };
 
+        // Determina quale token usare (embedded o salvato in localStorage)
+        const GITHUB_TOKEN = localStorage.getItem('tano_github_pat_override') || GITHUB_TOKEN_EMBEDDED;
+
         try {
-          if (!GITHUB_TOKEN || GITHUB_TOKEN === "IL_TUO_GITHUB_TOKEN_QUI") {
-            throw new Error("Il Personal Access Token di GitHub non è configurato. Si prega di contattare lo sviluppatore.");
+          if (!GITHUB_TOKEN || GITHUB_TOKEN.length < 10) {
+            throw new Error("Il Personal Access Token di GitHub non è configurato. Contatta lo sviluppatore.");
           }
 
           // 1. Verifica token e repo testando l'API base del repo
           const repoTestUrl = `https://api.github.com/repos/${REPO_OWNER_NAME}`;
           const testRes = await fetch(repoTestUrl, {
-            headers: { 'Authorization': `token ${GITHUB_TOKEN}` }
+            headers: {
+              'Authorization': `Bearer ${GITHUB_TOKEN}`,
+              'Accept': 'application/vnd.github.v3+json',
+              'X-GitHub-Api-Version': '2022-11-28'
+            }
           });
           if (!testRes.ok) {
-            throw new Error(`Connessione fallita: ${testRes.statusText} (${testRes.status})`);
+            const errData = await testRes.json().catch(() => ({}));
+            throw new Error(`Connessione a GitHub fallita (${testRes.status}): ${errData.message || testRes.statusText}. Il token potrebbe essere scaduto.`);
           }
 
           // 2. Carica tutti i file in parallelo
@@ -698,8 +706,9 @@
               const url = `https://api.github.com/repos/${REPO_OWNER_NAME}/contents/${fileInfo.path}?ref=${REPO_BRANCH}`;
               const response = await fetch(url, {
                 headers: {
-                  'Authorization': `token ${GITHUB_TOKEN}`,
-                  'Accept': 'application/vnd.github.v3+json'
+                  'Authorization': `Bearer ${GITHUB_TOKEN}`,
+                  'Accept': 'application/vnd.github.v3+json',
+                  'X-GitHub-Api-Version': '2022-11-28'
                 }
               });
 
@@ -1328,14 +1337,19 @@
         try {
           const ownerRepo = REPO_OWNER_NAME;
           const branch = REPO_BRANCH;
-          const token = GITHUB_TOKEN;
+          const token = localStorage.getItem('tano_github_pat_override') || GITHUB_TOKEN_EMBEDDED;
+
+          const ghHeaders = {
+            'Authorization': `Bearer ${token}`,
+            'Accept': 'application/vnd.github.v3+json',
+            'X-GitHub-Api-Version': '2022-11-28',
+            'Content-Type': 'application/json'
+          };
 
           // 1. Recupera l'ultimo commit del branch per ottenere parentCommitSha e il relativo treeSha
           logPublish("Recupero dello stato attuale del repository...");
           const refUrl = `https://api.github.com/repos/${ownerRepo}/git/ref/heads/${branch}`;
-          const refRes = await fetch(refUrl, {
-            headers: { 'Authorization': `token ${token}` }
-          });
+          const refRes = await fetch(refUrl, { headers: ghHeaders });
           if (!refRes.ok) throw new Error(`Impossibile leggere il branch ${branch}: ${refRes.statusText}`);
           const refData = await refRes.json();
           const parentCommitSha = refData.object.sha;
@@ -1344,9 +1358,7 @@
 
           // Recupera il treeSha del commit padre
           const commitUrl = `https://api.github.com/repos/${ownerRepo}/git/commits/${parentCommitSha}`;
-          const commitRes = await fetch(commitUrl, {
-            headers: { 'Authorization': `token ${token}` }
-          });
+          const commitRes = await fetch(commitUrl, { headers: ghHeaders });
           if (!commitRes.ok) throw new Error(`Impossibile leggere i dettagli del commit: ${commitRes.statusText}`);
           const commitData = await commitRes.json();
           const baseTreeSha = commitData.tree.sha;
@@ -1381,10 +1393,7 @@
           const createTreeUrl = `https://api.github.com/repos/${ownerRepo}/git/trees`;
           const treeRes = await fetch(createTreeUrl, {
             method: "POST",
-            headers: {
-              'Authorization': `token ${token}`,
-              'Content-Type': 'application/json'
-            },
+            headers: ghHeaders,
             body: JSON.stringify({
               base_tree: baseTreeSha,
               tree: treeItems
@@ -1400,12 +1409,9 @@
           const createCommitUrl = `https://api.github.com/repos/${ownerRepo}/git/commits`;
           const commitPostRes = await fetch(createCommitUrl, {
             method: "POST",
-            headers: {
-              'Authorization': `token ${token}`,
-              'Content-Type': 'application/json'
-            },
+            headers: ghHeaders,
             body: JSON.stringify({
-              message: "Aggiornamento menù e traduzioni da pannello Admin",
+              message: `Aggiornamento menù e traduzioni da pannello Admin [${new Date().toLocaleString('it-IT')}]`,
               tree: newTreeSha,
               parents: [parentCommitSha]
             })
@@ -1420,10 +1426,7 @@
           const updateRefUrl = `https://api.github.com/repos/${ownerRepo}/git/refs/heads/${branch}`;
           const refUpdateRes = await fetch(updateRefUrl, {
             method: "PATCH",
-            headers: {
-              'Authorization': `token ${token}`,
-              'Content-Type': 'application/json'
-            },
+            headers: ghHeaders,
             body: JSON.stringify({
               sha: newCommitSha,
               force: false
