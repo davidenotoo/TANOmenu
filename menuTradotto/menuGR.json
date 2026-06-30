@@ -402,7 +402,8 @@
       "nome": "Grillo vigne Mandranova",
       "descrizione": "Alessandro di Camporeale",
       "prezzo": 25,
-      "immagine": ""
+      "immagine": "piatti/1782859383570_man_jpg.jpg",
+      "allergeni": []
     },
     {
       "nome": "Benedè catarratto",

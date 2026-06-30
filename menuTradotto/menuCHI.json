@@ -365,8 +365,9 @@
     {
       "nome": "Mucino Grillo affinato in botte",
       "descrizione": "Candido",
-      "prezzo": 35,
-      "immagine": ""
+      "prezzo": 25,
+      "immagine": "piatti/1782859383570_man_jpg.jpg",
+      "allergeni": []
     },
     {
       "nome": "Arrìdi Sauvignon Blanc",
