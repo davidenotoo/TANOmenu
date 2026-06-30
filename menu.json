@@ -575,6 +575,13 @@
       "prezzo": 5,
       "immagine": "",
       "allergeni": ""
+    },
+    {
+      "nome": "Caffè",
+      "descrizione": "",
+      "prezzo": 1.5,
+      "immagine": "",
+      "allergeni": []
     }
   ],
   "social": [
