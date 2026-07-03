@@ -560,11 +560,14 @@
       "allergeni": ""
     },
     {
-      "nome": "caffè",
+      "nome": "Caffè",
       "descrizione": "",
       "prezzo": 1.5,
-      "immagine": "",
-      "allergeni": []
+      "immagine": "piatti/1783116932188_images_jpg.jpg",
+      "allergeni": [
+        "soia",
+        "frutta a guscio"
+      ]
     }
   ],
   "social": [
