@@ -159,10 +159,10 @@
       "nome": "Spaghetti Tarantina",
       "descrizione": "Pasta, Miesmuscheln, Tomate, Knoblauch, Zwiebel, Öl, Salz, Pfeffer, Petersilie",
       "prezzo": 12,
-      "immagine": "",
+      "immagine": "piatti/11.jpg",
       "allergeni": [
-        "Weizen",
-        "Weichtiere"
+        "grano",
+        "molluschi"
       ]
     }
   ],

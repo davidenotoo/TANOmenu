@@ -159,10 +159,10 @@
       "nome": "Ζυμαρικά Tarantina",
       "descrizione": "ζυμαρικά, μύδια, ντομάτες, σκόρδο, κρεμμύδι, λάδι, αλάτι, πιπέρι, μαϊντανός",
       "prezzo": 12,
-      "immagine": "",
+      "immagine": "piatti/11.jpg",
       "allergeni": [
-        "σίτος",
-        "μαλάκια"
+        "grano",
+        "molluschi"
       ]
     }
   ],

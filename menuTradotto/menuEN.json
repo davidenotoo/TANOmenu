@@ -159,10 +159,10 @@
       "nome": "Tarantina's Spaghetti",
       "descrizione": "Pasta, mussels, tomato, garlic, onion, oil, salt, pepper, parsley",
       "prezzo": 12,
-      "immagine": "",
+      "immagine": "piatti/11.jpg",
       "allergeni": [
-        "wheat",
-        "mollusks"
+        "grano",
+        "molluschi"
       ]
     }
   ],

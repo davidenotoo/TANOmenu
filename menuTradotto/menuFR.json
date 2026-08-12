@@ -159,10 +159,10 @@
       "nome": "Spaghetti Tarantina",
       "descrizione": "Pâtes, moules, tomate, ail, oignon, huile, sel, poivre, persil",
       "prezzo": 12,
-      "immagine": "",
+      "immagine": "piatti/11.jpg",
       "allergeni": [
-        "blé",
-        "mollusques"
+        "grano",
+        "molluschi"
       ]
     }
   ],

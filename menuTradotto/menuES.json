@@ -159,10 +159,10 @@
       "nome": "Pasta Tarantina",
       "descrizione": "pasta, mejillones, tomates, ajo, cebolla, aceite, sal, pimienta, perejil",
       "prezzo": 12,
-      "immagine": "",
+      "immagine": "piatti/11.jpg",
       "allergeni": [
-        "trigo",
-        "moluscos"
+        "grano",
+        "molluschi"
       ]
     }
   ],

@@ -157,7 +157,7 @@
     },
     {
       "nome": "Spaghetto alla Tarantina",
-      "descrizione": "Pasta, cozze, pomodoro, aglio, cipolla, olio, sale, pepe, prezzemolo",
+      "descrizione": "Pasta, cozze, pomodoro, aglio, olio, sale, peperoncino, prezzemolo",
       "prezzo": 12,
       "immagine": "piatti/11.jpg",
       "allergeni": [

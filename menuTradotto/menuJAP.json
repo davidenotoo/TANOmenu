@@ -159,10 +159,10 @@
       "nome": "ティンティンニのパスタ",
       "descrizione": "パスタ、ムール貝、トマト、ニンニク、タマネギ、オイル、塩、コショウ、パセリ",
       "prezzo": 12,
-      "immagine": "",
+      "immagine": "piatti/11.jpg",
       "allergeni": [
-        "小麦",
-        "軟体動物"
+        "grano",
+        "molluschi"
       ]
     }
   ],

@@ -159,10 +159,10 @@
       "nome": "Tarantina 意大利面",
       "descrizione": "意大利面、贻贝、西红柿、大蒜、洋葱、油、盐、胡椒、欧芹",
       "prezzo": 12,
-      "immagine": "",
+      "immagine": "piatti/11.jpg",
       "allergeni": [
-        "小麦",
-        "贝类"
+        "grano",
+        "molluschi"
       ]
     }
   ],

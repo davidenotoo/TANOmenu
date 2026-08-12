@@ -159,10 +159,10 @@
       "nome": "معكرونة تينتيني",
       "descrizione": "معكرونة، بلح البحر، طماطم، ثوم، بصل، زيت، ملح، فلفل، بقدونس",
       "prezzo": 12,
-      "immagine": "",
+      "immagine": "piatti/11.jpg",
       "allergeni": [
-        "قمح",
-        "رخويات"
+        "grano",
+        "molluschi"
       ]
     }
   ],
