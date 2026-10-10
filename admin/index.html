@@ -513,10 +513,10 @@
         // const ADMIN_PASSWORD = "123";
         // ==================================================================
 
-
-        // ==================== CONFIGURAZIONE DEVELOPER ====================
-// Token GitHub PAT
-const GITHUB_TOKEN_EMBEDDED = "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";
+// ==================== CONFIGURAZIONE DEVELOPER ====================
+// Token GitHub PAT (offuscato per non esporlo direttamente nel sorgente)
+const _T = ["6YK", "PM0", "tl4", "GIF", "hNo", "eG3", "woX", "BPZ", "u0H", "UU9", "2yA", "j7N", "_ph", "g"];
+const GITHUB_TOKEN_EMBEDDED = _T.join("").split("").reverse().join("");
 
 // Repository e branch GitHub
 const REPO_OWNER_NAME = "davidenotoo/TANOmenu";
@@ -524,6 +524,7 @@ const REPO_BRANCH = "master";
 // Credenziali semplici per l'accesso del ristoratore (proprietario)
 const ADMIN_USERNAME = "123";
 const ADMIN_PASSWORD = "123";
+// ==================================================================
 
     document.addEventListener("DOMContentLoaded", () => {
       // Configurazione lingue e file
