@@ -221,12 +221,12 @@
     {
       "nome": "Pescado del día",
       "descrizione": "a la parrilla, frito, al horno con sal (precio por 100 g)",
-      "prezzo": 45,
-      "immagine": "",
+      "prezzo": 50,
+      "immagine": "piatti/17.jpg",
       "allergeni": [
-        "pescado",
-        "moluscos",
-        "crustáceos"
+        "crostacei",
+        "pesce",
+        "molluschi"
       ]
     }
   ],

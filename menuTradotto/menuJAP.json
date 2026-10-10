@@ -221,12 +221,12 @@
     {
       "nome": "本日の魚",
       "descrizione": "グリル・焼き・塩釜焼き（100gあたりの価格）",
-      "prezzo": 45,
-      "immagine": "",
+      "prezzo": 50,
+      "immagine": "piatti/17.jpg",
       "allergeni": [
-        "魚",
-        "軟体動物",
-        "甲殻類"
+        "crostacei",
+        "pesce",
+        "molluschi"
       ]
     }
   ],

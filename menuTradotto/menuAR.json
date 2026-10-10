@@ -221,12 +221,12 @@
     {
       "nome": "سمك اليوم",
       "descrizione": "مشوي، مقلي، مشوي بالملح (السعر لكل 100 غرام)",
-      "prezzo": 45,
-      "immagine": "",
+      "prezzo": 50,
+      "immagine": "piatti/17.jpg",
       "allergeni": [
-        "سمك",
-        "رخويات",
-        "قشريات"
+        "crostacei",
+        "pesce",
+        "molluschi"
       ]
     }
   ],

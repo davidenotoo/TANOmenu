@@ -221,12 +221,12 @@
     {
       "nome": "Tagesfang",
       "descrizione": "Aus dem Ofen, gegrillt oder in Salzkruste (Preis pro KG)",
-      "prezzo": 45,
-      "immagine": "",
+      "prezzo": 50,
+      "immagine": "piatti/17.jpg",
       "allergeni": [
-        "Fisch",
-        "Weichtiere",
-        "Krebstiere"
+        "crostacei",
+        "pesce",
+        "molluschi"
       ]
     }
   ],

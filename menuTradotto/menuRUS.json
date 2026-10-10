@@ -221,12 +221,12 @@
     {
       "nome": "Рыба дня",
       "descrizione": "гриль, жареная, запеченная в соли (цена за 100 г)",
-      "prezzo": 45,
-      "immagine": "",
+      "prezzo": 50,
+      "immagine": "piatti/17.jpg",
       "allergeni": [
-        "рыба",
-        "моллюски",
-        "ракообразные"
+        "crostacei",
+        "pesce",
+        "molluschi"
       ]
     }
   ],

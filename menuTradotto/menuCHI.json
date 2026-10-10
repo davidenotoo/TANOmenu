@@ -221,12 +221,12 @@
     {
       "nome": "每日鲜鱼",
       "descrizione": "烤、焗或盐焗（按公斤计价）",
-      "prezzo": 45,
-      "immagine": "",
+      "prezzo": 50,
+      "immagine": "piatti/17.jpg",
       "allergeni": [
-        "鱼类",
-        "贝类",
-        "甲壳类"
+        "crostacei",
+        "pesce",
+        "molluschi"
       ]
     }
   ],

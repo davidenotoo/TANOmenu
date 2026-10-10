@@ -221,12 +221,12 @@
     {
       "nome": "Pescato del Giorno",
       "descrizione": "Al forno, arrosto o al sale (prezzo al KG)",
-      "prezzo": 45,
+      "prezzo": 50,
       "immagine": "piatti/17.jpg",
       "allergeni": [
+        "crostacei",
         "pesce",
-        "molluschi",
-        "crostacei"
+        "molluschi"
       ]
     }
   ],

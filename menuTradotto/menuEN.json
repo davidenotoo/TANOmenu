@@ -221,12 +221,12 @@
     {
       "nome": "Catch of the Day",
       "descrizione": "Baked, grilled or salt-crusted (prezzo per KG)",
-      "prezzo": 45,
-      "immagine": "",
+      "prezzo": 50,
+      "immagine": "piatti/17.jpg",
       "allergeni": [
-        "fish",
-        "mollusks",
-        "crustaceans"
+        "crostacei",
+        "pesce",
+        "molluschi"
       ]
     }
   ],

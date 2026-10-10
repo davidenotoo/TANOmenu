@@ -221,12 +221,12 @@
     {
       "nome": "Poisson du Jour",
       "descrizione": "Au four, grillé ou en croûte de sel (prix au KG)",
-      "prezzo": 45,
-      "immagine": "",
+      "prezzo": 50,
+      "immagine": "piatti/17.jpg",
       "allergeni": [
-        "poisson",
-        "mollusques",
-        "crustacés"
+        "crostacei",
+        "pesce",
+        "molluschi"
       ]
     }
   ],
