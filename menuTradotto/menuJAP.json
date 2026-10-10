@@ -350,15 +350,17 @@
   "birre": [
     {
       "nome": "メッシーナ 塩の結晶ビール 33cl",
-      "descrizione": "",
-      "prezzo": 3,
-      "immagine": ""
+      "descrizione": "33cl",
+      "prezzo": 3.5,
+      "immagine": "piatti/40.jpg",
+      "allergeni": []
     },
     {
-      "nome": "ペローニ・ナストロ・アズーロ 33cl",
-      "descrizione": "",
-      "prezzo": 2,
-      "immagine": ""
+      "nome": "Messina Cristalli di Sale",
+      "descrizione": "50 cl",
+      "prezzo": 5,
+      "immagine": "piatti/1791627847104_257117_jpg.jpg",
+      "allergeni": []
     }
   ],
   "cocktail": [

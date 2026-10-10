@@ -350,15 +350,17 @@
   "birre": [
     {
       "nome": "بيرة ميسينا كريستالي دي سال 33سم",
-      "descrizione": "",
-      "prezzo": 3,
-      "immagine": ""
+      "descrizione": "33cl",
+      "prezzo": 3.5,
+      "immagine": "piatti/40.jpg",
+      "allergeni": []
     },
     {
-      "nome": "بيروني ناسترو أزورو 33سم",
-      "descrizione": "",
-      "prezzo": 2,
-      "immagine": ""
+      "nome": "Messina Cristalli di Sale",
+      "descrizione": "50 cl",
+      "prezzo": 5,
+      "immagine": "piatti/1791627847104_257117_jpg.jpg",
+      "allergeni": []
     }
   ],
   "cocktail": [
