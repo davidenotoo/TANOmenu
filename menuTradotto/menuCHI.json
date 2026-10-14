@@ -96,16 +96,16 @@
     {
       "nome": "每日品尝菜单",
       "descrizione": "（2人份）",
-      "prezzo": 25,
+      "prezzo": 28,
       "immagine": "",
       "allergeni": [
-        "小麦",
-        "鱼类",
-        "甲壳类",
-        "贝类",
-        "芥末",
-        "大豆",
-        "亚硫酸盐"
+        "grano",
+        "crostacei",
+        "pesce",
+        "soia",
+        "senape",
+        "solfiti",
+        "molluschi"
       ]
     }
   ],
@@ -464,8 +464,9 @@
     {
       "nome": "Charme",
       "descrizione": "Firriato",
-      "prezzo": 22,
-      "immagine": ""
+      "prezzo": 20,
+      "immagine": "",
+      "allergeni": []
     },
     {
       "nome": "Bianco di Nera",
@@ -490,6 +491,20 @@
       "descrizione": "Vitale",
       "prezzo": 16,
       "immagine": ""
+    },
+    {
+      "nome": "Tenute Maltese Disìo Grillo",
+      "descrizione": "",
+      "prezzo": 20,
+      "immagine": "",
+      "allergeni": []
+    },
+    {
+      "nome": "Passofondo Catarratto",
+      "descrizione": "Tenute Maltese",
+      "prezzo": 18,
+      "immagine": "",
+      "allergeni": []
     }
   ],
   "cocktail": [

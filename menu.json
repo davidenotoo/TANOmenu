@@ -94,18 +94,18 @@
       ]
     },
     {
-      "nome": "Menù Degustazione del Giorno ",
+      "nome": "Menù Degustazione del Giorno",
       "descrizione": "(per 2 persone)",
-      "prezzo": 25,
+      "prezzo": 28,
       "immagine": "",
       "allergeni": [
         "grano",
-        "pesce",
         "crostacei",
-        "molluschi",
-        "senape",
+        "pesce",
         "soia",
-        "solfiti"
+        "senape",
+        "solfiti",
+        "molluschi"
       ]
     }
   ],
@@ -486,6 +486,20 @@
       "descrizione": "Vitale",
       "prezzo": 16,
       "immagine": ""
+    },
+    {
+      "nome": "Disìo Grillo",
+      "descrizione": "Tenute Maltese",
+      "prezzo": 20,
+      "immagine": "",
+      "allergeni": []
+    },
+    {
+      "nome": "Passofondo Catarratto",
+      "descrizione": "Tenute Maltese",
+      "prezzo": 18,
+      "immagine": "",
+      "allergeni": []
     }
   ],
   "bollicine": [
