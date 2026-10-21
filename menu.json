@@ -122,13 +122,13 @@
     },
     {
       "nome": "Busiate allo Scoglio",
-      "descrizione": "Pasta, vongole, cozze, gamberi, calamari, scampi, olio, pomodoro ciliegino, cipolla, aglio, peperoncino, sale, prezzemolo",
+      "descrizione": "Pasta, vongole, cozze, gamberi, calamari, scampi, olio, pomodoro ciliegino, aglio, pepe, peperoncino, sale, prezzemolo",
       "prezzo": 18,
       "immagine": "piatti/8.jpg",
       "allergeni": [
         "grano",
-        "molluschi",
-        "crostacei"
+        "crostacei",
+        "molluschi"
       ]
     },
     {
@@ -145,20 +145,19 @@
     },
     {
       "nome": "Linguine Gambero Rosso e Pistacchio",
-      "descrizione": "Pasta, gambero rosso, pistacchio, pomodoro ciliegino, aglio, vino, olio, sale",
+      "descrizione": "Pasta, gambero rosso, pistacchio, pomodoro ciliegino, aglio, olio, sale, pepe",
       "prezzo": 18,
       "immagine": "piatti/10.jpg",
       "allergeni": [
         "grano",
         "crostacei",
-        "pistacchio",
         "solfiti"
       ]
     },
     {
       "nome": "Spaghetto alla Tarantina",
-      "descrizione": "Pasta, cozze, pomodoro, aglio, olio, sale, peperoncino, prezzemolo",
-      "prezzo": 12,
+      "descrizione": "Pasta, cozze, pomodoro, aglio, olio, sale, pepe, peperoncino, prezzemolo",
+      "prezzo": 14,
       "immagine": "piatti/11.jpg",
       "allergeni": [
         "grano",

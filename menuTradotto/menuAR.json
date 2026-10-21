@@ -114,21 +114,21 @@
       "nome": "سباغيتي مع بلح البحر",
       "descrizione": "سباغيتي، رخويات، زيت، ثوم، بقدونس، فلفل",
       "prezzo": 18,
-      "immagine": "",
+      "immagine": "piatti/7.jpg",
       "allergeni": [
-        "قمح",
-        "رخويات"
+        "grano",
+        "molluschi"
       ]
     },
     {
       "nome": "سباغيتي مع المأكولات البحرية",
       "descrizione": "سباغيتي، رخويات، بلح البحر، جمبري، كالاماري، سمك العقرب، زيت، طماطم كرزية، بصل، ثوم، فلفل حار، ملح، بقدونس",
       "prezzo": 18,
-      "immagine": "",
+      "immagine": "piatti/8.jpg",
       "allergeni": [
-        "قمح",
-        "رخويات",
-        "قشريات"
+        "grano",
+        "crostacei",
+        "molluschi"
       ]
     },
     {
@@ -147,18 +147,17 @@
       "nome": "تالياتيلي مع الجمبري الأحمر والفستق",
       "descrizione": "معكرونة، جمبري أحمر، فستق، طماطم كرزية، ثوم، نبيذ أبيض، زيت، ملح",
       "prezzo": 18,
-      "immagine": "",
+      "immagine": "piatti/10.jpg",
       "allergeni": [
-        "قمح",
-        "قشريات",
-        "فستق",
-        "كبريتات وكبريتات صوديوم"
+        "grano",
+        "crostacei",
+        "solfiti"
       ]
     },
     {
       "nome": "معكرونة تينتيني",
       "descrizione": "معكرونة، بلح البحر، طماطم، ثوم، بصل، زيت، ملح، فلفل، بقدونس",
-      "prezzo": 12,
+      "prezzo": 14,
       "immagine": "piatti/11.jpg",
       "allergeni": [
         "grano",

@@ -114,21 +114,21 @@
       "nome": "Spaghetti alle vongole",
       "descrizione": "spaghetti, moluscos, aceite, ajo, perejil, pimienta",
       "prezzo": 18,
-      "immagine": "",
+      "immagine": "piatti/7.jpg",
       "allergeni": [
-        "trigo",
-        "moluscos"
+        "grano",
+        "molluschi"
       ]
     },
     {
       "nome": "Spaghetti con mariscos",
       "descrizione": "spaghetti, moluscos, mejillones, gambas, calamares, escórpora, aceite, cherry, cebolla, ajo, chile, sal, perejil",
       "prezzo": 18,
-      "immagine": "",
+      "immagine": "piatti/8.jpg",
       "allergeni": [
-        "trigo",
-        "moluscos",
-        "crustáceos"
+        "grano",
+        "crostacei",
+        "molluschi"
       ]
     },
     {
@@ -147,18 +147,17 @@
       "nome": "Tagliatelle con gambas rojas y pistachos",
       "descrizione": "pasta, gambas rojas, pistachos, cherry, ajo, vino blanco, aceite, sal",
       "prezzo": 18,
-      "immagine": "",
+      "immagine": "piatti/10.jpg",
       "allergeni": [
-        "trigo",
-        "crustáceos",
-        "pistachos",
-        "dióxidos y sulfitos"
+        "grano",
+        "crostacei",
+        "solfiti"
       ]
     },
     {
       "nome": "Pasta Tarantina",
       "descrizione": "pasta, mejillones, tomates, ajo, cebolla, aceite, sal, pimienta, perejil",
-      "prezzo": 12,
+      "prezzo": 14,
       "immagine": "piatti/11.jpg",
       "allergeni": [
         "grano",

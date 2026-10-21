@@ -114,21 +114,21 @@
       "nome": "ボンゴレ・スパゲッティ",
       "descrizione": "スパゲッティ、アサリ、オイル、ニンニク、パセリ、コショウ",
       "prezzo": 18,
-      "immagine": "",
+      "immagine": "piatti/7.jpg",
       "allergeni": [
-        "小麦",
-        "軟体動物"
+        "grano",
+        "molluschi"
       ]
     },
     {
       "nome": "魚介のスパゲッティ",
       "descrizione": "スパゲッティ、アサリ、ムール貝、エビ、イカ、スカンピ、オイル、チェリートマト、タマネギ、ニンニク、唐辛子、塩、パセリ",
       "prezzo": 18,
-      "immagine": "",
+      "immagine": "piatti/8.jpg",
       "allergeni": [
-        "小麦",
-        "軟体動物",
-        "甲殻類"
+        "grano",
+        "crostacei",
+        "molluschi"
       ]
     },
     {
@@ -147,18 +147,17 @@
       "nome": "赤エビとピスタチオのタリアテッレ",
       "descrizione": "パスタ、赤エビ、ピスタチオ、チェリートマト、ニンニク、白ワイン、オイル、塩",
       "prezzo": 18,
-      "immagine": "",
+      "immagine": "piatti/10.jpg",
       "allergeni": [
-        "小麦",
-        "甲殻類",
-        "ピスタチオ",
-        "亜硫酸塩"
+        "grano",
+        "crostacei",
+        "solfiti"
       ]
     },
     {
       "nome": "ティンティンニのパスタ",
       "descrizione": "パスタ、ムール貝、トマト、ニンニク、タマネギ、オイル、塩、コショウ、パセリ",
-      "prezzo": 12,
+      "prezzo": 14,
       "immagine": "piatti/11.jpg",
       "allergeni": [
         "grano",

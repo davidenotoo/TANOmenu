@@ -114,21 +114,21 @@
       "nome": "蛤蜊意大利面",
       "descrizione": "意大利面、蛤蜊、油、大蒜、欧芹、胡椒",
       "prezzo": 18,
-      "immagine": "",
+      "immagine": "piatti/7.jpg",
       "allergeni": [
-        "小麦",
-        "贝类"
+        "grano",
+        "molluschi"
       ]
     },
     {
       "nome": "贝类海鲜意面",
       "descrizione": "意大利面、蛤蜊、贻贝、虾、鱿鱼、大虾、油、樱桃番茄、洋葱、大蒜、辣椒、盐、欧芹",
       "prezzo": 18,
-      "immagine": "",
+      "immagine": "piatti/8.jpg",
       "allergeni": [
-        "小麦",
-        "贝类",
-        "甲壳类"
+        "grano",
+        "crostacei",
+        "molluschi"
       ]
     },
     {
@@ -147,18 +147,17 @@
       "nome": "红虾开心果扁面",
       "descrizione": "意大利面、红虾、开心果、樱桃番茄、大蒜、葡萄酒、油、盐",
       "prezzo": 18,
-      "immagine": "",
+      "immagine": "piatti/10.jpg",
       "allergeni": [
-        "小麦",
-        "甲壳类",
-        "开心果",
-        "亚硫酸盐"
+        "grano",
+        "crostacei",
+        "solfiti"
       ]
     },
     {
       "nome": "Tarantina 意大利面",
       "descrizione": "意大利面、贻贝、西红柿、大蒜、洋葱、油、盐、胡椒、欧芹",
-      "prezzo": 12,
+      "prezzo": 14,
       "immagine": "piatti/11.jpg",
       "allergeni": [
         "grano",

@@ -114,21 +114,21 @@
       "nome": "Spaghetti with Clams",
       "descrizione": "Pasta, clams, oil, garlic, parsley, pepper",
       "prezzo": 18,
-      "immagine": "",
+      "immagine": "piatti/7.jpg",
       "allergeni": [
-        "wheat",
-        "mollusks"
+        "grano",
+        "molluschi"
       ]
     },
     {
       "nome": "Busiate allo Scoglio",
       "descrizione": "Pasta, clams, mussels, shrimp, squid, scampi, oil, cherry tomatoes, onion, garlic, chili pepper, salt, parsley",
       "prezzo": 18,
-      "immagine": "",
+      "immagine": "piatti/8.jpg",
       "allergeni": [
-        "wheat",
-        "mollusks",
-        "crustaceans"
+        "grano",
+        "crostacei",
+        "molluschi"
       ]
     },
     {
@@ -147,18 +147,17 @@
       "nome": "Linguine with Red Shrimp and Pistachio",
       "descrizione": "Pasta, red shrimp, pistachio, cherry tomatoes, garlic, wine, oil, salt",
       "prezzo": 18,
-      "immagine": "",
+      "immagine": "piatti/10.jpg",
       "allergeni": [
-        "wheat",
-        "crustaceans",
-        "pistachio",
-        "sulfites"
+        "grano",
+        "crostacei",
+        "solfiti"
       ]
     },
     {
       "nome": "Tarantina's Spaghetti",
       "descrizione": "Pasta, mussels, tomato, garlic, onion, oil, salt, pepper, parsley",
-      "prezzo": 12,
+      "prezzo": 14,
       "immagine": "piatti/11.jpg",
       "allergeni": [
         "grano",

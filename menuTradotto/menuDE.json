@@ -114,21 +114,21 @@
       "nome": "Spaghetti mit Venusmuscheln",
       "descrizione": "Pasta, Venusmuscheln, Öl, Knoblauch, Petersilie, Pfeffer",
       "prezzo": 18,
-      "immagine": "",
+      "immagine": "piatti/7.jpg",
       "allergeni": [
-        "Weizen",
-        "Weichtiere"
+        "grano",
+        "molluschi"
       ]
     },
     {
       "nome": "Busiate mit Meeresfrüchten",
       "descrizione": "Pasta, Venusmuscheln, Miesmuscheln, Garnelen, Tintenfische, Kaisergranat, Öl, Kirschtomaten, Zwiebel, Knoblauch, Chili, Salz, Petersilie",
       "prezzo": 18,
-      "immagine": "",
+      "immagine": "piatti/8.jpg",
       "allergeni": [
-        "Weizen",
-        "Weichtiere",
-        "Krebstiere"
+        "grano",
+        "crostacei",
+        "molluschi"
       ]
     },
     {
@@ -147,18 +147,17 @@
       "nome": "Linguine mit roter Garnele und Pistazie",
       "descrizione": "Pasta, rote Garnele, Pistazie, Kirschtomaten, Knoblauch, Wein, Öl, Salz",
       "prezzo": 18,
-      "immagine": "",
+      "immagine": "piatti/10.jpg",
       "allergeni": [
-        "Weizen",
-        "Krebstiere",
-        "Pistazie",
-        "Sulfite"
+        "grano",
+        "crostacei",
+        "solfiti"
       ]
     },
     {
       "nome": "Spaghetti Tarantina",
       "descrizione": "Pasta, Miesmuscheln, Tomate, Knoblauch, Zwiebel, Öl, Salz, Pfeffer, Petersilie",
-      "prezzo": 12,
+      "prezzo": 14,
       "immagine": "piatti/11.jpg",
       "allergeni": [
         "grano",

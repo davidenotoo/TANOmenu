@@ -114,21 +114,21 @@
       "nome": "Spaghetti aux Palourdes",
       "descrizione": "Pâtes, palourdes, huile, ail, persil, poivre",
       "prezzo": 18,
-      "immagine": "",
+      "immagine": "piatti/7.jpg",
       "allergeni": [
-        "blé",
-        "mollusques"
+        "grano",
+        "molluschi"
       ]
     },
     {
       "nome": "Busiate aux Fruits de Mer",
       "descrizione": "Pâtes, palourdes, moules, crevettes, calmars, langoustines, huile, tomates cerises, oignon, ail, piment, sel, persil",
       "prezzo": 18,
-      "immagine": "",
+      "immagine": "piatti/8.jpg",
       "allergeni": [
-        "blé",
-        "mollusques",
-        "crustacés"
+        "grano",
+        "crostacei",
+        "molluschi"
       ]
     },
     {
@@ -147,18 +147,17 @@
       "nome": "Linguine Crevette Rouge et Pistache",
       "descrizione": "Pâtes, crevette rouge, pistache, tomates cerises, ail, vin, huile, sel",
       "prezzo": 18,
-      "immagine": "",
+      "immagine": "piatti/10.jpg",
       "allergeni": [
-        "blé",
-        "crustacés",
-        "pistache",
-        "sulfites"
+        "grano",
+        "crostacei",
+        "solfiti"
       ]
     },
     {
       "nome": "Spaghetti Tarantina",
       "descrizione": "Pâtes, moules, tomate, ail, oignon, huile, sel, poivre, persil",
-      "prezzo": 12,
+      "prezzo": 14,
       "immagine": "piatti/11.jpg",
       "allergeni": [
         "grano",
