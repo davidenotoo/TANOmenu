@@ -323,21 +323,24 @@
     },
     {
       "nome": "芬达",
-      "descrizione": "",
-      "prezzo": 2,
-      "immagine": ""
+      "descrizione": "33 cl",
+      "prezzo": 2.5,
+      "immagine": "",
+      "allergeni": []
     },
     {
       "nome": "雪碧",
-      "descrizione": "",
-      "prezzo": 2,
-      "immagine": ""
+      "descrizione": "33 cl",
+      "prezzo": 2.5,
+      "immagine": "",
+      "allergeni": []
     },
     {
       "nome": "雪碧柠檬味",
-      "descrizione": "",
-      "prezzo": 2,
-      "immagine": ""
+      "descrizione": "18 cl",
+      "prezzo": 2.5,
+      "immagine": "",
+      "allergeni": []
     },
     {
       "nome": "Fever Tree 印度奢华汤力水",

@@ -324,20 +324,23 @@
     {
       "nome": "Fanta",
       "descrizione": "33 cl",
-      "prezzo": 2,
-      "immagine": ""
+      "prezzo": 2.5,
+      "immagine": "",
+      "allergeni": []
     },
     {
       "nome": "Sprite",
       "descrizione": "33 cl",
-      "prezzo": 2,
-      "immagine": ""
+      "prezzo": 2.5,
+      "immagine": "",
+      "allergeni": []
     },
     {
       "nome": "Schweppes Limone",
       "descrizione": "18 cl",
-      "prezzo": 2,
-      "immagine": ""
+      "prezzo": 2.5,
+      "immagine": "",
+      "allergeni": []
     },
     {
       "nome": "Fever Tree Tonica Indian Premium",

@@ -323,21 +323,24 @@
     },
     {
       "nome": "فانتا",
-      "descrizione": "",
-      "prezzo": 2,
-      "immagine": ""
+      "descrizione": "33 cl",
+      "prezzo": 2.5,
+      "immagine": "",
+      "allergeni": []
     },
     {
       "nome": "سبرايت",
-      "descrizione": "",
-      "prezzo": 2,
-      "immagine": ""
+      "descrizione": "33 cl",
+      "prezzo": 2.5,
+      "immagine": "",
+      "allergeni": []
     },
     {
       "nome": "سبرايت بالليمون",
-      "descrizione": "",
-      "prezzo": 2,
-      "immagine": ""
+      "descrizione": "18 cl",
+      "prezzo": 2.5,
+      "immagine": "",
+      "allergeni": []
     },
     {
       "nome": "تونيك فيفر تري إندي",

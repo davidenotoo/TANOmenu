@@ -323,21 +323,24 @@
     },
     {
       "nome": "Фанта",
-      "descrizione": "",
-      "prezzo": 2,
-      "immagine": ""
+      "descrizione": "33 cl",
+      "prezzo": 2.5,
+      "immagine": "",
+      "allergeni": []
     },
     {
       "nome": "Спрайт",
-      "descrizione": "",
-      "prezzo": 2,
-      "immagine": ""
+      "descrizione": "33 cl",
+      "prezzo": 2.5,
+      "immagine": "",
+      "allergeni": []
     },
     {
       "nome": "Лимонный Спрайт",
-      "descrizione": "",
-      "prezzo": 2,
-      "immagine": ""
+      "descrizione": "18 cl",
+      "prezzo": 2.5,
+      "immagine": "",
+      "allergeni": []
     },
     {
       "nome": "Тоник Fever-Tree Indian",

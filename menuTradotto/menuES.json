@@ -323,21 +323,24 @@
     },
     {
       "nome": "Fanta",
-      "descrizione": "",
-      "prezzo": 2,
-      "immagine": ""
+      "descrizione": "33 cl",
+      "prezzo": 2.5,
+      "immagine": "",
+      "allergeni": []
     },
     {
       "nome": "Sprite",
-      "descrizione": "",
-      "prezzo": 2,
-      "immagine": ""
+      "descrizione": "33 cl",
+      "prezzo": 2.5,
+      "immagine": "",
+      "allergeni": []
     },
     {
       "nome": "Sprite con limón",
-      "descrizione": "",
-      "prezzo": 2,
-      "immagine": ""
+      "descrizione": "18 cl",
+      "prezzo": 2.5,
+      "immagine": "",
+      "allergeni": []
     },
     {
       "nome": "Tónica Fever-Tree Indian",
