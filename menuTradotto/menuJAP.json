@@ -60,28 +60,33 @@
       "nome": "メカジキのカポナータ",
       "descrizione": "ナス、メカジキ、タマネギ、ケーパー、トマト、オリーブ、オイル、酢、塩、コショウ、砂糖",
       "prezzo": 13,
-      "immagine": "",
+      "immagine": "piatti/2.jpg",
       "allergeni": [
-        "魚",
-        "亜硫酸塩"
+        "pesce",
+        "frutta a guscio",
+        "solfiti"
       ]
     },
     {
       "nome": "マッツァラの赤エビのカルパッチョ",
       "descrizione": "赤エビ",
       "prezzo": 12,
-      "immagine": "",
+      "immagine": "piatti/3.jpg",
       "allergeni": [
-        "甲殻類"
+        "crostacei",
+        "soia",
+        "solfiti"
       ]
     },
     {
       "nome": "スカンピのカルパッチョ",
       "descrizione": "スカンピ",
       "prezzo": 12,
-      "immagine": "",
+      "immagine": "piatti/4.jpg",
       "allergeni": [
-        "甲殻類"
+        "crostacei",
+        "soia",
+        "solfiti"
       ]
     },
     {
@@ -106,6 +111,18 @@
         "senape",
         "solfiti",
         "molluschi"
+      ]
+    },
+    {
+      "nome": "Tris di cruditè",
+      "descrizione": "Gambero rosso, scampi, tonno",
+      "prezzo": 25,
+      "immagine": "piatti/1795603547885_202091_jpg.jpg",
+      "allergeni": [
+        "crostacei",
+        "pesce",
+        "soia",
+        "solfiti"
       ]
     }
   ],

@@ -60,28 +60,33 @@
       "nome": "Капоната с меч-рыбой",
       "descrizione": "баклажаны, меч-рыба, лук, каперсы, помидоры, оливки, масло, уксус, соль, перец, сахар",
       "prezzo": 13,
-      "immagine": "",
+      "immagine": "piatti/2.jpg",
       "allergeni": [
-        "рыба",
-        "диоксиды и сульфиты"
+        "pesce",
+        "frutta a guscio",
+        "solfiti"
       ]
     },
     {
       "nome": "Карпаччо из красных креветок Маццара",
       "descrizione": "красные креветки",
       "prezzo": 12,
-      "immagine": "",
+      "immagine": "piatti/3.jpg",
       "allergeni": [
-        "ракообразные"
+        "crostacei",
+        "soia",
+        "solfiti"
       ]
     },
     {
       "nome": "Карпаччо из скарпи",
       "descrizione": "скарпи",
       "prezzo": 12,
-      "immagine": "",
+      "immagine": "piatti/4.jpg",
       "allergeni": [
-        "ракообразные"
+        "crostacei",
+        "soia",
+        "solfiti"
       ]
     },
     {
@@ -106,6 +111,18 @@
         "senape",
         "solfiti",
         "molluschi"
+      ]
+    },
+    {
+      "nome": "Tris di cruditè",
+      "descrizione": "Gambero rosso, scampi, tonno",
+      "prezzo": 25,
+      "immagine": "piatti/1795603547885_202091_jpg.jpg",
+      "allergeni": [
+        "crostacei",
+        "pesce",
+        "soia",
+        "solfiti"
       ]
     }
   ],

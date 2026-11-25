@@ -60,28 +60,33 @@
       "nome": "Caponata con pez espada",
       "descrizione": "berenjenas, pez espada, cebolla, alcaparras, tomates, aceitunas, aceite, vinagre, sal, pimienta, azúcar",
       "prezzo": 13,
-      "immagine": "",
+      "immagine": "piatti/2.jpg",
       "allergeni": [
-        "pescado",
-        "dióxidos y sulfitos"
+        "pesce",
+        "frutta a guscio",
+        "solfiti"
       ]
     },
     {
       "nome": "Carpaccio de gambas rojas Mazzara",
       "descrizione": "gambas rojas",
       "prezzo": 12,
-      "immagine": "",
+      "immagine": "piatti/3.jpg",
       "allergeni": [
-        "crustáceos"
+        "crostacei",
+        "soia",
+        "solfiti"
       ]
     },
     {
       "nome": "Carpaccio de escórpora",
       "descrizione": "escórpora",
       "prezzo": 12,
-      "immagine": "",
+      "immagine": "piatti/4.jpg",
       "allergeni": [
-        "crustáceos"
+        "crostacei",
+        "soia",
+        "solfiti"
       ]
     },
     {
@@ -106,6 +111,18 @@
         "senape",
         "solfiti",
         "molluschi"
+      ]
+    },
+    {
+      "nome": "Tris di cruditè",
+      "descrizione": "Gambero rosso, scampi, tonno",
+      "prezzo": 25,
+      "immagine": "piatti/1795603547885_202091_jpg.jpg",
+      "allergeni": [
+        "crostacei",
+        "pesce",
+        "soia",
+        "solfiti"
       ]
     }
   ],

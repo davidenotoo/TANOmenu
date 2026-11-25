@@ -60,28 +60,33 @@
       "nome": "Καπονάτα με ξιφία",
       "descrizione": "μελιτζάνες, ξιφίας, κρεμμύδι, κάπαρη, ντομάτες, ελιές, λάδι, ξύδι, αλάτι, πιπέρι, ζάχαρη",
       "prezzo": 13,
-      "immagine": "",
+      "immagine": "piatti/2.jpg",
       "allergeni": [
-        "ψάρι",
-        "θειώδη και θειώδη άλατα"
+        "pesce",
+        "frutta a guscio",
+        "solfiti"
       ]
     },
     {
       "nome": "Καρπάτσιο κόκκινων γαρίδων Μάζαρα",
       "descrizione": "κόκκινες γαρίδες",
       "prezzo": 12,
-      "immagine": "",
+      "immagine": "piatti/3.jpg",
       "allergeni": [
-        "καρκινοειδή"
+        "crostacei",
+        "soia",
+        "solfiti"
       ]
     },
     {
       "nome": "Καρπάτσιο σκόρπας",
       "descrizione": "σκόρπα",
       "prezzo": 12,
-      "immagine": "",
+      "immagine": "piatti/4.jpg",
       "allergeni": [
-        "καρκινοειδή"
+        "crostacei",
+        "soia",
+        "solfiti"
       ]
     },
     {
@@ -106,6 +111,18 @@
         "senape",
         "solfiti",
         "molluschi"
+      ]
+    },
+    {
+      "nome": "Tris di cruditè",
+      "descrizione": "Gambero rosso, scampi, tonno",
+      "prezzo": 25,
+      "immagine": "piatti/1795603547885_202091_jpg.jpg",
+      "allergeni": [
+        "crostacei",
+        "pesce",
+        "soia",
+        "solfiti"
       ]
     }
   ],

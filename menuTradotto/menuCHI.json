@@ -60,28 +60,33 @@
       "nome": "剑鱼卡波纳塔",
       "descrizione": "茄子、剑鱼、洋葱、刺山柑、西红柿、橄榄、油、醋、盐、胡椒、糖",
       "prezzo": 13,
-      "immagine": "",
+      "immagine": "piatti/2.jpg",
       "allergeni": [
-        "鱼类",
-        "亚硫酸盐"
+        "pesce",
+        "frutta a guscio",
+        "solfiti"
       ]
     },
     {
       "nome": "马扎拉红虾生食",
       "descrizione": "红虾",
       "prezzo": 12,
-      "immagine": "",
+      "immagine": "piatti/3.jpg",
       "allergeni": [
-        "甲壳类"
+        "crostacei",
+        "soia",
+        "solfiti"
       ]
     },
     {
       "nome": "大虾生食",
       "descrizione": "大虾",
       "prezzo": 12,
-      "immagine": "",
+      "immagine": "piatti/4.jpg",
       "allergeni": [
-        "甲壳类"
+        "crostacei",
+        "soia",
+        "solfiti"
       ]
     },
     {
@@ -106,6 +111,18 @@
         "senape",
         "solfiti",
         "molluschi"
+      ]
+    },
+    {
+      "nome": "Tris di cruditè",
+      "descrizione": "Gambero rosso, scampi, tonno",
+      "prezzo": 25,
+      "immagine": "piatti/1795603547885_202091_jpg.jpg",
+      "allergeni": [
+        "crostacei",
+        "pesce",
+        "soia",
+        "solfiti"
       ]
     }
   ],

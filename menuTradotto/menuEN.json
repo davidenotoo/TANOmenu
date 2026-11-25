@@ -60,28 +60,33 @@
       "nome": "Swordfish Caponata",
       "descrizione": "Eggplant, swordfish, onion, capers, tomato, olives, oil, vinegar, salt, pepper, sugar",
       "prezzo": 13,
-      "immagine": "",
+      "immagine": "piatti/2.jpg",
       "allergeni": [
-        "fish",
-        "sulfites"
+        "pesce",
+        "frutta a guscio",
+        "solfiti"
       ]
     },
     {
       "nome": "Raw Red Shrimp from Mazara",
       "descrizione": "Red shrimp",
       "prezzo": 12,
-      "immagine": "",
+      "immagine": "piatti/3.jpg",
       "allergeni": [
-        "crustaceans"
+        "crostacei",
+        "soia",
+        "solfiti"
       ]
     },
     {
       "nome": "Raw Scampi",
       "descrizione": "Scampi",
       "prezzo": 12,
-      "immagine": "",
+      "immagine": "piatti/4.jpg",
       "allergeni": [
-        "crustaceans"
+        "crostacei",
+        "soia",
+        "solfiti"
       ]
     },
     {
@@ -106,6 +111,18 @@
         "senape",
         "solfiti",
         "molluschi"
+      ]
+    },
+    {
+      "nome": "Tris di cruditè",
+      "descrizione": "Gambero rosso, scampi, tonno",
+      "prezzo": 25,
+      "immagine": "piatti/1795603547885_202091_jpg.jpg",
+      "allergeni": [
+        "crostacei",
+        "pesce",
+        "soia",
+        "solfiti"
       ]
     }
   ],

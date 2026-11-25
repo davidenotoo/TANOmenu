@@ -63,6 +63,7 @@
       "immagine": "piatti/2.jpg",
       "allergeni": [
         "pesce",
+        "frutta a guscio",
         "solfiti"
       ]
     },
@@ -72,7 +73,9 @@
       "prezzo": 12,
       "immagine": "piatti/3.jpg",
       "allergeni": [
-        "crostacei"
+        "crostacei",
+        "soia",
+        "solfiti"
       ]
     },
     {
@@ -81,7 +84,9 @@
       "prezzo": 12,
       "immagine": "piatti/4.jpg",
       "allergeni": [
-        "crostacei"
+        "crostacei",
+        "soia",
+        "solfiti"
       ]
     },
     {
@@ -106,6 +111,18 @@
         "senape",
         "solfiti",
         "molluschi"
+      ]
+    },
+    {
+      "nome": "Tris di cruditè",
+      "descrizione": "Gambero rosso, scampi, tonno",
+      "prezzo": 25,
+      "immagine": "piatti/1795603547885_202091_jpg.jpg",
+      "allergeni": [
+        "crostacei",
+        "pesce",
+        "soia",
+        "solfiti"
       ]
     }
   ],
